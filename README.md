@@ -1,4 +1,4 @@
-# CRAnimation计 划
+# CRAnimation计划
 
 [![Join the chat at https://gitter.im/CRAnimation/Lobby](https://badges.gitter.im/CRAnimation/Lobby.svg)](https://gitter.im/CRAnimation/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -41,7 +41,7 @@ CRAnimation为开源项目，CRAnimation Pod仓库中整理了各种封装好的
 <img src="http://oftcdgt2m.bkt.clouddn.com/S0002/CRImageGradientDemoVC2.gif" width=150 />
 
 - S0003
-- Gif demo
+- [Gif demo](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0003_GifDemo)
 - Gif播放控件
 
 <img src="http://oftcdgt2m.bkt.clouddn.com/S0003/GifPlay1.gif" width=150 />
