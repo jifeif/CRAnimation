@@ -9,6 +9,7 @@
 #import "CRAppDelegate.h"
 #import "CRBaseNavigationViewController.h"
 #import "CRViewController.h"
+#import "CRBaseTabBarController.h"
 
 @implementation CRAppDelegate
 
@@ -16,15 +17,43 @@
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    CRViewController *rootVC = [[CRViewController alloc] init];
-    CRBaseNavigationViewController *baseNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:rootVC];
+    [self initSetTabbarVC];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = baseNaviVC;
-    [self.window makeKeyAndVisible];
-    
-    // Override point for customization after application launch.
     return YES;
+}
+
+- (void)initSetTabbarVC
+{
+    //  codeAnimationVC
+    CRViewController *codeAnimationVC = [[CRViewController alloc] init];
+    CRBaseNavigationViewController *codeAnimationNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeAnimationVC];
+    
+    //  codeWidgetVC
+    CRViewController *codeWidgetVC = [[CRViewController alloc] init];
+    CRBaseNavigationViewController *codeWidgetNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeWidgetVC];
+    
+    //  designerStageVC
+    CRViewController *designerStageVC = [[CRViewController alloc] init];
+    CRBaseNavigationViewController *designerStageNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:designerStageVC];
+    
+    //  memberFileVC
+    CRViewController *memberFileVC = [[CRViewController alloc] init];
+    CRBaseNavigationViewController *memberFileNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:memberFileVC];
+    
+    //  baseTabBarVC
+    NSMutableArray *tabbarControllers = [[NSMutableArray alloc] initWithObjects:
+                                         codeAnimationNaviVC,
+                                         codeWidgetNaviVC,
+                                         designerStageNaviVC,
+                                         memberFileNaviVC,
+                                         nil];
+    CRBaseTabBarController *baseTabBarVC = [[CRBaseTabBarController alloc] initWithViewControllers:tabbarControllers];
+    
+    
+    //  rootVC
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = baseTabBarVC;
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
