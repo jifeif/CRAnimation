@@ -8,8 +8,12 @@
 
 #import "CRAppDelegate.h"
 #import "CRBaseNavigationViewController.h"
-#import "CRViewController.h"
 #import "CRBaseTabBarController.h"
+
+#import "CRCodeAnimationVC.h"
+#import "CRCodeWidgetVC.h"
+#import "CRDesignerStageVC.h"
+#import "CRMemberFileVC.h"
 
 @implementation CRAppDelegate
 
@@ -24,20 +28,20 @@
 
 - (void)initSetTabbarVC
 {
-    //  codeAnimationVC
-    CRViewController *codeAnimationVC = [[CRViewController alloc] init];
+    //  CRCodeAnimationVC
+    CRCodeAnimationVC *codeAnimationVC = [[CRCodeAnimationVC alloc] init];
     CRBaseNavigationViewController *codeAnimationNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeAnimationVC];
     
-    //  codeWidgetVC
-    CRViewController *codeWidgetVC = [[CRViewController alloc] init];
+    //  CRCodeWidgetVC
+    CRCodeWidgetVC *codeWidgetVC = [[CRCodeWidgetVC alloc] init];
     CRBaseNavigationViewController *codeWidgetNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeWidgetVC];
     
-    //  designerStageVC
-    CRViewController *designerStageVC = [[CRViewController alloc] init];
+    //  CRDesignerStageVC
+    CRDesignerStageVC *designerStageVC = [[CRDesignerStageVC alloc] init];
     CRBaseNavigationViewController *designerStageNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:designerStageVC];
     
-    //  memberFileVC
-    CRViewController *memberFileVC = [[CRViewController alloc] init];
+    //  CRMemberFileVC
+    CRMemberFileVC *memberFileVC = [[CRMemberFileVC alloc] init];
     CRBaseNavigationViewController *memberFileNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:memberFileVC];
     
     //  baseTabBarVC

@@ -1,12 +1,12 @@
 //
-//  CRViewController.m
+//  CRCodeAnimationVC.m
 //  CRAnimation
 //
 //  Created by BearRan on 10/07/2016.
 //  Copyright (c) 2016 BearRan. All rights reserved.
 //
 
-#import "CRViewController.h"
+#import "CRCodeAnimationVC.h"
 #import "CRDemoInfoModel.h"
 #import "CRItemBriefCollectionViewCell.h"
 #import "CRItemBriefSetcionHeaderView.h"
@@ -17,7 +17,7 @@ static NSString *collectionViewReusableViewID   = @"collectionViewReusableViewID
 static NSString *__kCRDemoStorage       = @"动效仓库";
 static NSString *__kCRDemoCombination   = @"组合动效";
 
-@interface CRViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface CRCodeAnimationVC () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) NSMutableArray    *dataArrayTitle;
 @property (strong, nonatomic) NSMutableArray    *dataArrayDemoModel;
@@ -30,12 +30,12 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 @end
 
-@implementation CRViewController
+@implementation CRCodeAnimationVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
     
     [self dataReady];
     [self createUI];
@@ -43,6 +43,8 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     self.navigationController.navigationBarHidden = YES;
