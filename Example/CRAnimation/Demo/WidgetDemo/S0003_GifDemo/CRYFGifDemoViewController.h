@@ -6,8 +6,8 @@
 //  Copyright © 2016年 BearRan. All rights reserved.
 //
 
-#import "CRBaseViewController.h"
+#import "CRProductionBaseVC.h"
 
-@interface CRYFGifDemoViewController : CRBaseViewController
+@interface CRYFGifDemoViewController : CRProductionBaseVC
 
 @end

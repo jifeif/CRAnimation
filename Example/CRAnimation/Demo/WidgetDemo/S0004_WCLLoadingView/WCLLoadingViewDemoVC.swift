@@ -25,7 +25,7 @@
 
 import UIKit
 
-class WCLLoadingViewDemoVC: CRBaseViewController {
+class WCLLoadingViewDemoVC: CRProductionBaseVC {
 
     @IBOutlet weak var loadingView: WCLLoadingView!
     //MARK: Public Methods

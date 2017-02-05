@@ -6,8 +6,8 @@
 //  Copyright © 2016年 BearRan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CRProductionBaseVC.h"
 
-@interface CRGatlingVC : CRBaseViewController
+@interface CRGatlingVC : CRProductionBaseVC
 
 @end

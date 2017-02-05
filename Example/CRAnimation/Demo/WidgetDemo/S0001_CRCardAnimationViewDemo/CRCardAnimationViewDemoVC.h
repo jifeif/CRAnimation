@@ -6,8 +6,8 @@
 //  Copyright © 2016年 BearRan. All rights reserved.
 //
 
-#import "CRBaseViewController.h"
+#import "CRProductionBaseVC.h"
 
-@interface CRCardAnimationViewDemoVC : CRBaseViewController
+@interface CRCardAnimationViewDemoVC : CRProductionBaseVC
 
 @end

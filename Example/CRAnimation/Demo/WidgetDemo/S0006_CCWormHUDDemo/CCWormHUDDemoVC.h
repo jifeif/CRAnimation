@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Cocos. All rights reserved.
 //
 
-#import "CRBaseViewController.h"
+#import "CRProductionBaseVC.h"
 
-@interface CCWormHUDDemoVC : CRBaseViewController
+@interface CCWormHUDDemoVC : CRProductionBaseVC
 
 @end

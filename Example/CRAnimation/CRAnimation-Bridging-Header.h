@@ -9,6 +9,6 @@
 #ifndef CRAnimation_Bridging_Header_h
 #define CRAnimation_Bridging_Header_h
 
-#import "CRBaseViewController.h"
+#import "CRProductionBaseVC.h"
 
 #endif /* CRAnimation_Bridging_Header_h */
