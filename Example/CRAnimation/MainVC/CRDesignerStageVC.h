@@ -6,8 +6,8 @@
 //  Copyright © 2017年 BearRan. All rights reserved.
 //
 
-#import "CRTabBarRootShowVC.h"
+#import "CRBaseViewController.h"
 
-@interface CRDesignerStageVC : CRTabBarRootShowVC
+@interface CRDesignerStageVC : CRBaseViewController
 
 @end

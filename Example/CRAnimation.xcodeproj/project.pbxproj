@@ -39,7 +39,6 @@
 		092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D641DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib */; };
 		0993B46D1DA9C6790012F962 /* CRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993B46C1DA9C6790012F962 /* CRBaseViewController.m */; };
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
-		0996C44F1E4764A1000CA8EC /* CRTabBarRootShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44D1E4764A1000CA8EC /* CRTabBarRootShowVC.m */; };
 		0996C4521E476A94000CA8EC /* CRCodeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C4511E476A94000CA8EC /* CRCodeAnimationVC.m */; };
 		0996C4551E476AA3000CA8EC /* CRCodeWidgetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C4541E476AA3000CA8EC /* CRCodeWidgetVC.m */; };
 		0996C4581E476AB3000CA8EC /* CRDesignerStageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C4571E476AB3000CA8EC /* CRDesignerStageVC.m */; };
@@ -143,8 +142,6 @@
 		0993B46C1DA9C6790012F962 /* CRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseViewController.m; sourceTree = "<group>"; };
 		0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseTabBarController.h; sourceTree = "<group>"; };
 		0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseTabBarController.m; sourceTree = "<group>"; };
-		0996C44C1E4764A1000CA8EC /* CRTabBarRootShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTabBarRootShowVC.h; sourceTree = "<group>"; };
-		0996C44D1E4764A1000CA8EC /* CRTabBarRootShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRTabBarRootShowVC.m; sourceTree = "<group>"; };
 		0996C4501E476A94000CA8EC /* CRCodeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCodeAnimationVC.h; sourceTree = "<group>"; };
 		0996C4511E476A94000CA8EC /* CRCodeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCodeAnimationVC.m; sourceTree = "<group>"; };
 		0996C4531E476AA3000CA8EC /* CRCodeWidgetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCodeWidgetVC.h; sourceTree = "<group>"; };
@@ -384,8 +381,6 @@
 			children = (
 				0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */,
 				0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */,
-				0996C44C1E4764A1000CA8EC /* CRTabBarRootShowVC.h */,
-				0996C44D1E4764A1000CA8EC /* CRTabBarRootShowVC.m */,
 			);
 			path = CRTabBar;
 			sourceTree = "<group>";
@@ -773,7 +768,6 @@
 				0996C4521E476A94000CA8EC /* CRCodeAnimationVC.m in Sources */,
 				09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */,
 				18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */,
-				0996C44F1E4764A1000CA8EC /* CRTabBarRootShowVC.m in Sources */,
 				092A2D651DBCA8DA00650DE1 /* README.md in Sources */,
 				0920035D1DADC74F008266B8 /* CRDefines.m in Sources */,
 				092A2D2E1DBCA51C00650DE1 /* CRImageGradientDemoVC.m in Sources */,

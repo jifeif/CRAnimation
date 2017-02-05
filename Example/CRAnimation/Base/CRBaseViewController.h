@@ -10,7 +10,8 @@
 
 @interface CRBaseViewController : UIViewController
 
-@property (strong, nonatomic) UIColor     *backBtnColor;
+@property (strong, nonatomic) UIColor       *backBtnColor;
+@property (strong, nonatomic) NSNumber      *ifHideTabBar;
 
 - (void)createUI;
 

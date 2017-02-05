@@ -32,6 +32,17 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 @implementation CRCodeAnimationVC
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self) {
+        self.ifHideTabBar = [NSNumber numberWithBool:NO];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

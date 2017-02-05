@@ -19,6 +19,26 @@
 
 @implementation CRBaseViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self) {
+        
+    }
+    
+    return self;
+}
+
+- (BOOL)hidesBottomBarWhenPushed
+{
+    if (!_ifHideTabBar) {
+        _ifHideTabBar = [NSNumber numberWithBool:YES];
+    }
+    
+    return [_ifHideTabBar boolValue];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
