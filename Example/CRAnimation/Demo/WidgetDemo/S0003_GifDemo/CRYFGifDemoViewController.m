@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     [self createUI];
-    [self addTopBar];
+    [self addTopBarWithTitle:@"CRYFGif"];
 }
 
 - (void)createUI

@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
     [self createUI1];
-    [self addTopBar];
+    [self addTopBarWithTitle:@"CRGatling"];
 }
 
 

@@ -33,7 +33,7 @@
     [super viewDidLoad];
     
     [self createUI];
-    [self addTopBar];
+    [self addTopBarWithTitle:@"CRMusicCard"];
 }
 
 - (void)createUI

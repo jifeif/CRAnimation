@@ -27,7 +27,7 @@
     [super viewDidLoad];
     
     [self createUI];
-    [self addTopBar];
+    [self addTopBarWithTitle:@"CRImageGradient"];
 }
 
 - (void)viewWillAppear:(BOOL)animated

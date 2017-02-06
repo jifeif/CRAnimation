@@ -22,7 +22,7 @@
     [self createUI];
     
     self.backBtnColor = [UIColor blackColor];
-    [self addTopBar];
+    [self addTopBarWithTitle:@"GifDemo"];
 }
 
 - (void)createUI

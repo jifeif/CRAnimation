@@ -37,7 +37,7 @@ class WCLLoadingViewDemoVC: CRProductionBaseVC {
         // Do any additional setup after loading the view.
         loadingView.startAnimation()
         view.backgroundColor = UIColor.init(rgba: "#F6F4F2")
-        addTopBar()
+        addTopBar(withTitle: "WCLLoadingView")
     }
 
     override func didReceiveMemoryWarning() {

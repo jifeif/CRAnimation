@@ -19,7 +19,7 @@
     [super viewDidLoad];
     CCWormView *wormView = [CCWormView wormHUDWithStyle:CCWormHUDStyleLarge toView:self.view];
     self.ccView = wormView;
-    [self addTopBar];
+    [self addTopBarWithTitle:@"CCWorm"];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -11,6 +11,7 @@
 @interface CRProductionBaseVC ()
 {
     UIButton    *_backBtn;
+    UILabel     *_productionTitleLabel;
     UIView      *_topBarView;
 }
 
@@ -28,15 +29,30 @@
 {
     [super createUI];
     
-    [self addTopBar];
+    [self addTopBarWithTitle:nil];
 }
 
-- (void)addTopBar
+- (void)addTopBarWithTitle:(NSString *)title
 {
     if (!_topBarView) {
         _topBarView = [[UIView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, 40)];
+        _topBarView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
         [self.view addSubview:_topBarView];
     }
+    
+    if (!title) {
+        title = @"";
+    }
+    if (!_productionTitleLabel) {
+        _productionTitleLabel = [UILabel new];
+        _productionTitleLabel.textColor = [UIColor whiteColor];
+        _productionTitleLabel.font = FontSize_6(12);
+        [_topBarView addSubview:_productionTitleLabel];
+    }
+    _productionTitleLabel.text = title;
+    [_productionTitleLabel sizeToFit];
+    [_productionTitleLabel BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
+    
     
     if (!_backBtn) {
         

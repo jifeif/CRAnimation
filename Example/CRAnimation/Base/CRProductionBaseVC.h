@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) UIColor       *backBtnColor;
 
-- (void)addTopBar;
+- (void)addTopBarWithTitle:(NSString *)title;
 - (void)popSelf;
 
 @end

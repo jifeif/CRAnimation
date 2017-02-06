@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     [self createUI];
-    [self addTopBar];
+    [self addTopBarWithTitle:@"HZLaunchView"];
 }
 
 -(void)createUI{

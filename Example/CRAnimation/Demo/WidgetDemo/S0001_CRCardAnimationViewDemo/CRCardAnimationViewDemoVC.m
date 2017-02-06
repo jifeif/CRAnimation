@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     [self createUI];
-    [self addTopBar];
+    [self addTopBarWithTitle:@"CRCardAnimation"];
 }
 
 - (void)createUI

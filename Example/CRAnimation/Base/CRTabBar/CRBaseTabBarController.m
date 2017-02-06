@@ -41,7 +41,7 @@
                               @"动效原型",
                               @"成员档案"];
         
-        NSArray *unSelectImageArr = @[@"tab_btn_index_s",
+        NSArray *unSelectImageArr = @[@"tab_btn_index_n",
                                       @"tab_btn_control_n",
                                       @"tab_btn_prototype_n",
                                       @"tab_btn_member_n"];
