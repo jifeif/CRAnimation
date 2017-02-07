@@ -7,6 +7,7 @@
 //
 
 #import "CRProductionBaseVC.h"
+#import "CRProductionShowDetailManager.h"
 
 @interface CRProductionBaseVC ()
 {
@@ -15,6 +16,7 @@
     UIButton    *_detailsBtn;
     UILabel     *_productionTitleLabel;
     UIView      *_topBarView;
+    CRProductionShowDetailManager   *_showDetailManager;
 }
 
 @end
@@ -139,7 +141,13 @@
 
 - (void)detailBtnEvent
 {
-    NSLog(@"--detailBtnEvent");
+    __weak typeof(self) weakSelf = self;
+    
+    if (!_showDetailManager) {
+        _showDetailManager = [CRProductionShowDetailManager commonManagerInVC:weakSelf];
+    }
+    
+    [_showDetailManager showDetailView];
 }
 
 - (void)didReceiveMemoryWarning {
