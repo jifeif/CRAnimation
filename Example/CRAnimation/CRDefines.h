@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define color_Master [UIColor blackColor]
+#define color_Master    [UIColor blackColor]
+#define color_323341    UIColorFromHEX(0x323341)
+
 
 //  适配对应 高度 < 5高度时，高度 = 5高度
 #define LayOutHeight  ((HEIGHT < HEIGHT5) ? HEIGHT5 : HEIGHT)

@@ -11,6 +11,9 @@
 @interface CRProductionDetailView ()
 {
     CRDemoInfoModel         *_infoModel;
+    UIScrollView            *_mainScrollView;
+    UIView                  *_topView;
+    UIView                  *_bodyView;
 }
 
 @end
@@ -31,11 +34,24 @@
     
     if (self) {
         _infoModel = infoModel;
+        [self createUI];
     }
     
     return self;
 }
 
+- (void)createUI
+{
+    self.backgroundColor = [UIColor clearColor];
+    
+    _mainScrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    _mainScrollView.backgroundColor = [UIColor clearColor];
+    [self addSubview:_mainScrollView];
+    
+    _topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _mainScrollView.width, YY_6N(236))];
+    _topView.backgroundColor = [color_323341 colorWithAlphaComponent:0.95];
+    [_mainScrollView addSubview:_topView];
+}
 
 
 @end

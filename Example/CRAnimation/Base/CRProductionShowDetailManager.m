@@ -69,7 +69,6 @@ typedef enum {
     if (!_detailView) {
         CRCardAnimationViewDemoInfoModel *tempModel = [CRCardAnimationViewDemoInfoModel new];
         _detailView = [CRProductionDetailView commonDetailViewWithInfoModel:tempModel];
-        _detailView.backgroundColor = [UIColor orangeColor];
         [_detailContentView addSubview:_detailView];
         [_detailView setMaxX:_detailContentView.width];
     }
