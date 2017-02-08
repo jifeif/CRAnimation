@@ -14,5 +14,6 @@
 + (CRProductionShowDetailManager *)commonManagerInVC:(__weak CRBaseViewController *)inVC;
 
 - (void)showDetailView;
+- (void)fadeDetailView;
 
 @end
