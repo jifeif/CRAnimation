@@ -95,6 +95,7 @@
     UILabel     *_codeLanguageContentLabel;
     UILabel     *_briefTitleLabel;
     UILabel     *_briefContentLabel;
+    UIView      *_sepLineV;
     
     _bodyUpView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _bodyView.width, 0)];
     [_bodyView addSubview:_bodyUpView];
@@ -136,7 +137,11 @@
     [self setContentLabel:_briefContentLabel text:_infoModel.demoSummary inView:_bodyUpView textColor:color_777777 font:[UIFont systemFontOfSize:15]];
     [_briefContentLabel setY:_briefTitleLabel.maxY + YY_6N(30)];
     
-    [_bodyUpView setHeight:_briefContentLabel.maxY + YY_6N(40)];
+    _sepLineV = [[UIView alloc] initWithFrame:CGRectMake(_offX_start, _briefContentLabel.maxY + YY_6N(40), _mainScrollView.width - _offX_start, 0.5)];
+    _sepLineV.backgroundColor = color_e5e5e5;
+    [_bodyUpView addSubview:_sepLineV];
+    
+    [_bodyUpView setHeight:_sepLineV.maxY];
 }
 
 - (void)setTitleLabel:(UILabel *)label text:(NSString *)text inView:(UIView *)inView
