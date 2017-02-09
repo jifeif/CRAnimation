@@ -13,7 +13,7 @@
 #import "CRCodeAnimationVC.h"
 #import "CRCodeWidgetVC.h"
 #import "CRDesignerStageVC.h"
-#import "CRMemberFileVC.h"
+#import "CRMembersVC.h"
 
 @implementation CRAppDelegate
 
@@ -41,15 +41,15 @@
     CRBaseNavigationViewController *designerStageNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:designerStageVC];
     
     //  CRMemberFileVC
-    CRMemberFileVC *memberFileVC = [[CRMemberFileVC alloc] init];
-    CRBaseNavigationViewController *memberFileNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:memberFileVC];
+    CRMembersVC *memberVC = [[CRMembersVC alloc] init];
+    CRBaseNavigationViewController *memberNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:memberVC];
     
     //  baseTabBarVC
     NSMutableArray *tabbarControllers = [[NSMutableArray alloc] initWithObjects:
                                          codeAnimationNaviVC,
                                          codeWidgetNaviVC,
                                          designerStageNaviVC,
-                                         memberFileNaviVC,
+                                         memberNaviVC,
                                          nil];
     CRBaseTabBarController *baseTabBarVC = [[CRBaseTabBarController alloc] initWithViewControllers:tabbarControllers];
     
