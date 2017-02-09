@@ -7,6 +7,7 @@
 //
 
 #import "CRProductionDetailView.h"
+#import "CRHeadersView.h"
 
 @interface CRProductionDetailView ()
 {
@@ -85,6 +86,7 @@
     [_mainScrollView addSubview:_bodyView];
     
     [self createBodyUpView];
+    [self createBodyDownView];
 }
 
 - (void)createBodyUpView
@@ -142,6 +144,45 @@
     [_bodyUpView addSubview:_sepLineV];
     
     [_bodyUpView setHeight:_sepLineV.maxY];
+}
+
+- (void)createBodyDownView
+{
+    UILabel         *_CRCoderTitleLabel;
+    CRHeadersView   *_CRCoderHeadersView;
+    UILabel         *_CRDesignerTitleLabel;
+    CRHeadersView   *_CRDesignerHeadersView;
+    UILabel         *_urlTitleLabel;
+    UILabel         *_urlDetailsLabel;
+    
+    _bodyDownView = [[UIView alloc] initWithFrame:CGRectMake(0, _bodyUpView.maxY, _bodyView.width, 0)];
+    [_bodyView addSubview:_bodyDownView];
+    
+    _CRCoderTitleLabel = [UILabel new];
+    [self setTitleLabel:_CRCoderTitleLabel text:@"CRCoder:" inView:_bodyDownView];
+    [_CRCoderTitleLabel setY:YY_6N(30)];
+    
+    _CRCoderHeadersView = [CRHeadersView commonHeasersViewWithStaffArray:nil];
+    [_bodyDownView addSubview:_CRCoderHeadersView];
+    [_CRCoderHeadersView setOrigin:CGPointMake(_CRCoderTitleLabel.x, _CRCoderTitleLabel.maxY + YY_6N(30))];
+    
+    _CRDesignerTitleLabel = [UILabel new];
+    [self setTitleLabel:_CRDesignerTitleLabel text:@"CRDesigner:" inView:_bodyDownView];
+    [_CRDesignerTitleLabel setY:_CRCoderHeadersView.maxY + YY_6N(44)];
+    
+    _CRDesignerHeadersView = [CRHeadersView commonHeasersViewWithStaffArray:nil];
+    [_bodyDownView addSubview:_CRDesignerHeadersView];
+    [_CRDesignerHeadersView setOrigin:CGPointMake(_CRDesignerTitleLabel.x, _CRDesignerTitleLabel.maxY + YY_6N(30))];
+    
+    _urlTitleLabel = [UILabel new];
+    [self setTitleLabel:_urlTitleLabel text:@"项目源地址" inView:_bodyDownView];
+    [_urlTitleLabel setY:_CRDesignerHeadersView.maxY + YY_6N(60)];
+    
+    _urlDetailsLabel = [UILabel new];
+    [self setContentLabel:_urlDetailsLabel text:_infoModel.originGitHubAddress inView:_bodyDownView textColor:color_354ff1 font:[UIFont systemFontOfSize:15]];
+    [_urlDetailsLabel setY:_urlTitleLabel.maxY + YY_6N(20)];
+    
+    [_bodyDownView setHeight:_urlDetailsLabel.maxY + YY_6N(55)];
 }
 
 - (void)setTitleLabel:(UILabel *)label text:(NSString *)text inView:(UIView *)inView
