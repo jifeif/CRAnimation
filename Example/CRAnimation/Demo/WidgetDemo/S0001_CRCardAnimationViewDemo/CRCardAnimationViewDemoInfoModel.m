@@ -34,7 +34,7 @@
     authorInfo.nickName = @"Bear";
     authorInfo.mail     = @"648070256@qq.com";
     authorInfo.qq       = @"648070256";
-    authorInfo.homePage = @"";
+    authorInfo.homePage = @"https://github.com/BearRan/CRAnimation";
     authorInfo.professionType = kProfessionTypeiOSDeveloper;
     
     return authorInfo;

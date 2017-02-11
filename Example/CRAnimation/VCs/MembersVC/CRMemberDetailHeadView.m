@@ -70,6 +70,7 @@
     _personalHomePageLabel = [UILabel new];
     _personalHomePageLabel.font = FontSize(15);
     _personalHomePageLabel.textColor = color_5e67f7;
+    _personalHomePageLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:_personalHomePageLabel];
     
     _keyWordsView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, YY_6N(55))];
