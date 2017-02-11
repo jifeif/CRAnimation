@@ -9,11 +9,13 @@
 #import "CRMembersVC.h"
 #import "CRMembersTableViewCell.h"
 #import "CRCardAnimationViewDemoInfoModel.h"
+#import "CRCustomNaviBarView.h"
+#import "CRMemberDetailVC.h"
 
 @interface CRMembersVC () <UITableViewDelegate, UITableViewDataSource>
 {
-    UITableView *_mainTableView;
-    UIView      *_naviBarView;
+    UITableView             *_mainTableView;
+    CRCustomNaviBarView     *_naviBarView;
 }
 
 @end
@@ -47,16 +49,10 @@
 
 - (void)createNaviBarView
 {
-    _naviBarView = [[UIView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, NAVIGATIONBAR_HEIGHT)];
-    _naviBarView.backgroundColor = color_323341;
+    __weak typeof(self) weakSelf = self;
+    _naviBarView = [CRCustomNaviBarView commonNaviBarViewWithTitle:@"团队成员" inVC:weakSelf];
+    _naviBarView.showBackBtn = NO;
     [self.view addSubview:_naviBarView];
-    
-    UILabel *titleLabel = [UILabel new];
-    titleLabel.text = @"团队成员";
-    titleLabel.textColor = [UIColor whiteColor];
-    [titleLabel sizeToFit];
-    [_naviBarView addSubview:titleLabel];
-    [titleLabel BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
     
     CGFloat shareBtn_width = _naviBarView.height;
     UIButton *shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, shareBtn_width, shareBtn_width)];
@@ -85,7 +81,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    CRMemberDetailVC *destinationVC = [CRMemberDetailVC new];
+    [self.navigationController pushViewController:destinationVC animated:YES];
 }
 
 
