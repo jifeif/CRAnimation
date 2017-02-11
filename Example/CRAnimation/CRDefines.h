@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define TestCRIconURL @"http://oftcdgt2m.bkt.clouddn.com/CRLogo.png"
+
 #define color_Master    [UIColor blackColor]
 #define color_323341    UIColorFromHEX(0x323341)
 #define color_5868f2    UIColorFromHEX(0x5868f2)
@@ -17,6 +19,7 @@
 
 #define color_354ff1    UIColorFromHEX(0x354ff1)
 #define color_e1e3ff    UIColorFromHEX(0xe1e3ff)
+#define color_5e67f7    UIColorFromHEX(0x5e67f7)
 
 
 //  适配对应 高度 < 5高度时，高度 = 5高度

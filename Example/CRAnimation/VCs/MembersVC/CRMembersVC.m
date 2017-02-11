@@ -8,6 +8,7 @@
 
 #import "CRMembersVC.h"
 #import "CRMembersTableViewCell.h"
+#import "CRCardAnimationViewDemoInfoModel.h"
 
 @interface CRMembersVC () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -39,6 +40,8 @@
     _mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     _mainTableView.delegate = self;
     _mainTableView.dataSource = self;
+    _mainTableView.backgroundColor = color_323341;
+    _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_mainTableView];
 }
 
@@ -59,14 +62,18 @@
     CRMembersTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
         cell = [[CRMembersTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    return [UITableViewCell new];
+    CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
+    [cell setDataWithMemberInfoModel:infoModel.authorInfo];
+    
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return YY_6N(280);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

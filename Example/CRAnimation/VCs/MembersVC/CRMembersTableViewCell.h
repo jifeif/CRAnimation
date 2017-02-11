@@ -11,4 +11,6 @@
 
 @interface CRMembersTableViewCell : UITableViewCell
 
+- (void)setDataWithMemberInfoModel:(CRMemberInfoModel *)model;
+
 @end

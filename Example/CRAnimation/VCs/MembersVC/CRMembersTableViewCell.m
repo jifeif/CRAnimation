@@ -11,7 +11,9 @@
 
 @interface CRMembersTableViewCell ()
 {
-    UIView  *_mainContentView;
+    CRMemberInfoModel   *_memberInfoModel;
+    
+    UIView      *_mainContentView;
     
     UIImageView *_headerImageV;
     UIImageView *_jobIconImageV;
@@ -21,8 +23,7 @@
     UILabel     *_productsCountLabel;
     UIImageView *_popularityCountIconImageV;
     UILabel     *_popularityCountLabel;
-    
-    CRMemberInfoModel   *_memberInfoModel;
+
 }
 
 @end
@@ -40,8 +41,13 @@
     return self;
 }
 
+
+#pragma mark - CreateUI
+
 - (void)createUI
 {
+    self.backgroundColor = color_323341;
+    
     [self createMainContentView];
     [self setMainContentViewContents];
 }
@@ -52,6 +58,7 @@
     CGFloat contentView_width = WIDTH - 2 * off_x;
     CGFloat contentView_height = YY_6N(250);
     _mainContentView = [[UIView alloc] initWithFrame:CGRectMake(off_x, 0, contentView_width, contentView_height)];
+    _mainContentView.backgroundColor = color_5e67f7;
     [self.contentView addSubview:_mainContentView];
 }
 
@@ -74,7 +81,7 @@
     
     _jobIconImageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, XX_6N(44), XX_6N(44))];
     [_mainContentView addSubview:_jobIconImageV];
-    
+    [_jobIconImageV BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:nil parentRelation:YES distance:0 center:NO];
     
     //  _productsCount
     _productsCountIconImageV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"member_icon_work"]];
@@ -96,11 +103,42 @@
     [_mainContentView addSubview:_popularityCountLabel];
 }
 
+
+#pragma mark - RelayUI
+
 - (void)relayUI
 {
+    CGFloat label_x = _headerImageV.maxX + XX_6N(24);
     
+    [_nameLabel sizeToFit];
+    [_nameLabel setOrigin:CGPointMake(label_x, YY_6N(32))];
+    
+    [_professionLabel sizeToFit];
+    [_professionLabel setOrigin:CGPointMake(label_x, _nameLabel.maxY + YY_6N(40))];
+    
+    
+    //  _productsCount
+    [_productsCountIconImageV setOrigin:CGPointMake(label_x, _professionLabel.maxY + YY_6N(44))];
+    
+    [_productsCountLabel sizeToFit];
+    [_productsCountLabel BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:_productsCountIconImageV parentRelation:NO distance:XX_6N(14) center:YES];
+    
+    
+    //  _popularityCount
+    [_popularityCountIconImageV BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:_productsCountLabel parentRelation:NO distance:XX_6N(36) center:YES];
+    
+    [_popularityCountLabel sizeToFit];
+    [_popularityCountLabel BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:_popularityCountIconImageV parentRelation:NO distance:XX_6N(14) center:YES];
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self relayUI];
+}
+
+
+#pragma mark - Set Data
 - (void)setDataWithMemberInfoModel:(CRMemberInfoModel *)model
 {
     _memberInfoModel = model;
@@ -108,7 +146,7 @@
     
     
 #warning DAD Test
-    _memberInfoModel.headURL = @"";
+    _memberInfoModel.headURL = TestCRIconURL;
     _memberInfoModel.productsCount = @10;
     _memberInfoModel.popularityCount = @20;
     
@@ -135,6 +173,8 @@
     
     _productsCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.productsCount];
     _popularityCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.popularityCount];
+    
+    [self relayUI];
 }
 
 - (void)awakeFromNib {
