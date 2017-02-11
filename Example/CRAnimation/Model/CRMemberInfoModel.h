@@ -1,5 +1,5 @@
 //
-//  CRStaffInfoModel.h
+//  CRmemberInfoModel.h
 //  CRAnimation
 //
 //  Created by Bear on 16/10/23.
@@ -13,7 +13,11 @@ typedef enum {
 
 #import <Foundation/Foundation.h>
 
-@interface CRStaffInfoModel : NSObject
+@interface CRMemberInfoModel : NSObject
+
+//  Optional
+//  头像地址
+@property (strong, nonatomic) NSString  *headURL;
 
 //  Optional
 //  真实姓名

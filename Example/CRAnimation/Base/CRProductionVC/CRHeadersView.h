@@ -11,6 +11,6 @@
 
 @interface CRHeadersView : UIView
 
-+ (CRHeadersView *)commonHeasersViewWithStaffArray:(NSArray <CRHeaderButton *> *)staffArray;
++ (CRHeadersView *)commonHeasersViewWithMemberArray:(NSArray <CRHeaderButton *> *)memberArray;
 
 @end

@@ -162,7 +162,7 @@
     [self setTitleLabel:_CRCoderTitleLabel text:@"CRCoder:" inView:_bodyDownView];
     [_CRCoderTitleLabel setY:YY_6N(30)];
     
-    _CRCoderHeadersView = [CRHeadersView commonHeasersViewWithStaffArray:nil];
+    _CRCoderHeadersView = [CRHeadersView commonHeasersViewWithMemberArray:nil];
     [_bodyDownView addSubview:_CRCoderHeadersView];
     [_CRCoderHeadersView setOrigin:CGPointMake(_CRCoderTitleLabel.x, _CRCoderTitleLabel.maxY + YY_6N(30))];
     
@@ -170,7 +170,7 @@
     [self setTitleLabel:_CRDesignerTitleLabel text:@"CRDesigner:" inView:_bodyDownView];
     [_CRDesignerTitleLabel setY:_CRCoderHeadersView.maxY + YY_6N(44)];
     
-    _CRDesignerHeadersView = [CRHeadersView commonHeasersViewWithStaffArray:nil];
+    _CRDesignerHeadersView = [CRHeadersView commonHeasersViewWithMemberArray:nil];
     [_bodyDownView addSubview:_CRDesignerHeadersView];
     [_CRDesignerHeadersView setOrigin:CGPointMake(_CRDesignerTitleLabel.x, _CRDesignerTitleLabel.maxY + YY_6N(30))];
     

@@ -10,25 +10,25 @@
 
 @interface CRHeadersView ()
 {
-    NSArray <CRHeaderButton *> *_staffArray;
+    NSArray <CRHeaderButton *> *_memberArray;
 }
 
 @end
 
 @implementation CRHeadersView
 
-+ (CRHeadersView *)commonHeasersViewWithStaffArray:(NSArray <CRHeaderButton *> *)staffArray
++ (CRHeadersView *)commonHeasersViewWithMemberArray:(NSArray <CRHeaderButton *> *)memberArray
 {
-    CRHeadersView *headersView = [[CRHeadersView alloc] initWithStaffArray:staffArray];
+    CRHeadersView *headersView = [[CRHeadersView alloc] initWithMemberArray:memberArray];
     return headersView;
 }
 
-- (instancetype)initWithStaffArray:(NSArray <CRHeaderButton *> *)staffArray
+- (instancetype)initWithMemberArray:(NSArray <CRHeaderButton *> *)memberArray
 {
     self = [super init];
     
     if (self) {
-        _staffArray = staffArray;
+        _memberArray = memberArray;
         [self createUI];
     }
     

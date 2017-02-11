@@ -27,9 +27,9 @@
     
 }
 
-- (CRStaffInfoModel *)authorInfo
+- (CRMemberInfoModel *)authorInfo
 {
-    CRStaffInfoModel *authorInfo = [CRStaffInfoModel new];
+    CRMemberInfoModel *authorInfo = [CRMemberInfoModel new];
     authorInfo.realName = @"";
     authorInfo.nickName = @"Flipboard";
     authorInfo.mail     = @"";

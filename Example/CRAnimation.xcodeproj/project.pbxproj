@@ -21,7 +21,8 @@
 		092003151DAA9B63008266B8 /* CRBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092003141DAA9B63008266B8 /* CRBaseNavigationViewController.m */; };
 		0920032D1DAAA1A6008266B8 /* CRDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0920032C1DAAA1A6008266B8 /* CRDemoInfoModel.m */; };
 		0920035D1DADC74F008266B8 /* CRDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 0920035C1DADC74F008266B8 /* CRDefines.m */; };
-		092A2D0A1DBC9A5C00650DE1 /* CRStaffInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D091DBC9A5C00650DE1 /* CRStaffInfoModel.m */; };
+		09203AC71E4F22DE00FB2B25 /* CRMembersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09203AC61E4F22DE00FB2B25 /* CRMembersTableViewCell.m */; };
+		092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D091DBC9A5C00650DE1 /* CRMemberInfoModel.m */; };
 		092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D0D1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m */; };
 		092A2D2A1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D0E1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif */; };
 		092A2D2B1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D101DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m */; };
@@ -121,8 +122,10 @@
 		0920032C1DAAA1A6008266B8 /* CRDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDemoInfoModel.m; sourceTree = "<group>"; };
 		0920035B1DADC74F008266B8 /* CRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDefines.h; sourceTree = "<group>"; };
 		0920035C1DADC74F008266B8 /* CRDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDefines.m; sourceTree = "<group>"; };
-		092A2D081DBC9A5C00650DE1 /* CRStaffInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRStaffInfoModel.h; sourceTree = "<group>"; };
-		092A2D091DBC9A5C00650DE1 /* CRStaffInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRStaffInfoModel.m; sourceTree = "<group>"; };
+		09203AC51E4F22DE00FB2B25 /* CRMembersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMembersTableViewCell.h; sourceTree = "<group>"; };
+		09203AC61E4F22DE00FB2B25 /* CRMembersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMembersTableViewCell.m; sourceTree = "<group>"; };
+		092A2D081DBC9A5C00650DE1 /* CRMemberInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemberInfoModel.h; sourceTree = "<group>"; };
+		092A2D091DBC9A5C00650DE1 /* CRMemberInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMemberInfoModel.m; sourceTree = "<group>"; };
 		092A2D0C1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardAnimationViewDemoInfoModel.h; sourceTree = "<group>"; };
 		092A2D0D1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardAnimationViewDemoInfoModel.m; sourceTree = "<group>"; };
 		092A2D0E1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CRCardAnimationViewDemoVC.gif; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 			children = (
 				090080A51E4CB9AE00AE60A5 /* CRMembersVC.h */,
 				090080A61E4CB9AE00AE60A5 /* CRMembersVC.m */,
+				09203AC51E4F22DE00FB2B25 /* CRMembersTableViewCell.h */,
+				09203AC61E4F22DE00FB2B25 /* CRMembersTableViewCell.m */,
 			);
 			path = MembersVC;
 			sourceTree = "<group>";
@@ -299,8 +304,8 @@
 			children = (
 				0920032B1DAAA1A6008266B8 /* CRDemoInfoModel.h */,
 				0920032C1DAAA1A6008266B8 /* CRDemoInfoModel.m */,
-				092A2D081DBC9A5C00650DE1 /* CRStaffInfoModel.h */,
-				092A2D091DBC9A5C00650DE1 /* CRStaffInfoModel.m */,
+				092A2D081DBC9A5C00650DE1 /* CRMemberInfoModel.h */,
+				092A2D091DBC9A5C00650DE1 /* CRMemberInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -824,7 +829,7 @@
 				092A2D651DBCA8DA00650DE1 /* README.md in Sources */,
 				0920035D1DADC74F008266B8 /* CRDefines.m in Sources */,
 				092A2D2E1DBCA51C00650DE1 /* CRImageGradientDemoVC.m in Sources */,
-				092A2D0A1DBC9A5C00650DE1 /* CRStaffInfoModel.m in Sources */,
+				092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */,
 				092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */,
 				0920032D1DAAA1A6008266B8 /* CRDemoInfoModel.m in Sources */,
 				092A2D681DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m in Sources */,
@@ -852,6 +857,7 @@
 				09D168D81DC620210082C35E /* README.md in Sources */,
 				092A2D311DBCA51C00650DE1 /* GifDemoInfoModel.m in Sources */,
 				0900808B1E4CAD6800AE60A5 /* CRProductionDetailView.m in Sources */,
+				09203AC71E4F22DE00FB2B25 /* CRMembersTableViewCell.m in Sources */,
 				257751531DC25A790019D38B /* HZLaunchViewDemoVC.m in Sources */,
 				090080A11E4CB91200AE60A5 /* CRItemBriefCollectionViewCell.m in Sources */,
 				092A2D2F1DBCA51C00650DE1 /* README.md in Sources */,

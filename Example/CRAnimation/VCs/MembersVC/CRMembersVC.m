@@ -7,6 +7,7 @@
 //
 
 #import "CRMembersVC.h"
+#import "CRMembersTableViewCell.h"
 
 @interface CRMembersVC () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -36,9 +37,41 @@
 - (void)createUI
 {
     _mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
-//    _mainTableView.delegate = self;
-//    _mainTableView.dataSource = self;
+    _mainTableView.delegate = self;
+    _mainTableView.dataSource = self;
     [self.view addSubview:_mainTableView];
+}
+
+
+#pragma mark - delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+}
+
+
+#pragma mark - dataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellID = @"cellID";
+    CRMembersTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[CRMembersTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    return [UITableViewCell new];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
 }
 
 - (void)didReceiveMemoryWarning {

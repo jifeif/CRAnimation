@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRStaffInfoModel.h"
+#import "CRMemberInfoModel.h"
 
 typedef enum {
     kCRDemoTypeStorage,       //  动效仓库
@@ -65,11 +65,11 @@ typedef enum {
 
 //  Require
 //  作者信息
-@property (strong, nonatomic) CRStaffInfoModel      *authorInfo;
+@property (strong, nonatomic) CRMemberInfoModel      *authorInfo;
 
 //  Optional
 //  UI设计师信息
-@property (strong, nonatomic) CRStaffInfoModel      *UIDesignerInfo;
+@property (strong, nonatomic) CRMemberInfoModel      *UIDesignerInfo;
 
 
 - (void)fillDemoInfo;

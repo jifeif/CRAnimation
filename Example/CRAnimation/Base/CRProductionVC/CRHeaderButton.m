@@ -10,12 +10,12 @@
 
 @implementation CRHeaderButton
 
-- (instancetype)initWithCRStaffInfoModel:(CRStaffInfoModel *)model
+- (instancetype)initWithCRMemberInfoModel:(CRMemberInfoModel *)model
 {
     self = [super init];
     
     if (self) {
-        _staffInfoModel = model;
+        _memberInfoModel = model;
     }
     
     return self;

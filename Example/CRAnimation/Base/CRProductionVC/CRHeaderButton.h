@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CRStaffInfoModel.h"
+#import "CRMemberInfoModel.h"
 
 @interface CRHeaderButton : UIButton
 
-@property (strong, nonatomic) CRStaffInfoModel *staffInfoModel;
+@property (strong, nonatomic) CRMemberInfoModel *memberInfoModel;
 
-- (instancetype)initWithCRStaffInfoModel:(CRStaffInfoModel *)model;
+- (instancetype)initWithCRMemberInfoModel:(CRMemberInfoModel *)model;
 
 @end
