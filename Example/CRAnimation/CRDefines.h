@@ -54,13 +54,13 @@
 
 
 //  Font
+#define BoldFont(value)         [UIFont fontWithName:@"Helvetica-Bold" size:value]
 #define SystemFont(value)       [UIFont systemFontOfSize:value]
 #define FontSize(value)         [UIFont systemFontOfSize:(CGFloat)floor(value)]
 #define FontSize_4(value)       FontSize(XX_4(value))
 #define FontSize_5(value)       FontSize(XX_5(value))
 #define FontSize_6(value)       FontSize(XX_6(value))
 #define FontSize_6P(value)      FontSize(XX_6P(value))
-
 
 @interface CRDefines : NSObject
 

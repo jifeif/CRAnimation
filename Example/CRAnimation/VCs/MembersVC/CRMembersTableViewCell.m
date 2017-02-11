@@ -70,7 +70,7 @@
     [_mainContentView addSubview:_headerImageV];
     
     _nameLabel = [UILabel new];
-    _nameLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:19];
+    _nameLabel.font = BoldFont(19);
     _nameLabel.textColor = [UIColor whiteColor];
     [_mainContentView addSubview:_nameLabel];
     

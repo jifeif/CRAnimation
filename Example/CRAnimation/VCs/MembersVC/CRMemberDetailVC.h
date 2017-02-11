@@ -7,7 +7,13 @@
 //
 
 #import "CRBaseViewController.h"
+#import "CRMemberInfoModel.h"
 
 @interface CRMemberDetailVC : CRBaseViewController
+
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
+
+- (instancetype)initWithInfoModel:(CRMemberInfoModel *)model;
 
 @end

@@ -11,11 +11,13 @@
 #import "CRCardAnimationViewDemoInfoModel.h"
 #import "CRCustomNaviBarView.h"
 #import "CRMemberDetailVC.h"
+#import "CRMemberInfoModel.h"
 
 @interface CRMembersVC () <UITableViewDelegate, UITableViewDataSource>
 {
     UITableView             *_mainTableView;
     CRCustomNaviBarView     *_naviBarView;
+    NSMutableArray          *_memberInfoModelArray;
 }
 
 @end
@@ -40,6 +42,7 @@
 
 - (void)createUI
 {
+    [self createFakeData];
     self.navigationController.navigationBar.hidden = YES;
     self.view.backgroundColor = color_323341;
     
@@ -76,12 +79,21 @@
     _mainTableView.tableHeaderView = tableHeaderView;
 }
 
+- (void)createFakeData
+{
+    _memberInfoModelArray = [NSMutableArray new];
+    for (int i = 0; i < 15; i++) {
+        CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
+        [_memberInfoModelArray addObject:infoModel.authorInfo];
+    }
+}
+
 
 #pragma mark - delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CRMemberDetailVC *destinationVC = [CRMemberDetailVC new];
+    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithInfoModel:_memberInfoModelArray[indexPath.row]];
     [self.navigationController pushViewController:destinationVC animated:YES];
 }
 
@@ -97,8 +109,7 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
-    [cell setDataWithMemberInfoModel:infoModel.authorInfo];
+    [cell setDataWithMemberInfoModel:_memberInfoModelArray[indexPath.row]];
     
     return cell;
 }
@@ -110,7 +121,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return [_memberInfoModelArray count];
 }
 
 

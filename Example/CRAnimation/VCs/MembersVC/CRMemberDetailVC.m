@@ -8,15 +8,29 @@
 
 #import "CRMemberDetailVC.h"
 #import "CRCustomNaviBarView.h"
+#import "CRMemberDetailHeadView.h"
 
 @interface CRMemberDetailVC ()
 {
-    CRCustomNaviBarView *_naviBarView;
+    CRCustomNaviBarView     *_naviBarView;
+    CRMemberDetailHeadView  *_detailHeadView;
+    CRMemberInfoModel       *_memberInfoModel;
 }
 
 @end
 
 @implementation CRMemberDetailVC
+
+- (instancetype)initWithInfoModel:(CRMemberInfoModel *)model
+{
+    self = [super init];
+    
+    if (self) {
+        _memberInfoModel = model;
+    }
+    
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +46,11 @@
     __weak typeof(self) weakSelf = self;
     _naviBarView = [CRCustomNaviBarView commonNaviBarViewWithTitle:@"个人详情" inVC:weakSelf];
     [self.view addSubview:_naviBarView];
+    
+    _detailHeadView = [CRMemberDetailHeadView commonHeadView];
+    [_detailHeadView setDataWithMemberInfoModel:_memberInfoModel];
+    [self.view addSubview:_detailHeadView];
+    [self.view bringSubviewToFront:_naviBarView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -71,7 +71,7 @@
     [_mainScrollView addSubview:_topView];
     
     _productNameLabel = [UILabel new];
-    _productNameLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:18];
+    _productNameLabel.font = BoldFont(18);
     _productNameLabel.textColor = color_5868f2;
     _productNameLabel.text = _infoModel.demoName;
     [_productNameLabel sizeToFit];
