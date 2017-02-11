@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CRmemberInfoModel.h"
+#import "CRMemberInfoModel.h"
 
 @interface CRMembersTableViewCell : UITableViewCell
 

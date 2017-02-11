@@ -26,12 +26,16 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - FLAnimatedImage (1.0.12)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - YLGIFImage (0.11)
 
 DEPENDENCIES:
   - CRAnimation (from `../`)
   - FBSnapshotTestCase
   - FLAnimatedImage (~> 1.0)
+  - SDWebImage
   - YLGIFImage
 
 EXTERNAL SOURCES:
@@ -43,8 +47,9 @@ SPEC CHECKSUMS:
   CRAnimation: 1a6e3a2dcd55878364fd8d66a2aa80b47e092997
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
-PODFILE CHECKSUM: 7e503d935803ad0247bc57082a826a2bf742b066
+PODFILE CHECKSUM: 33ef65f83de027d0b514d4fc5f83a921f4fa36f4
 
 COCOAPODS: 1.1.0.rc.2

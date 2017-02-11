@@ -16,10 +16,6 @@ typedef enum {
 @interface CRMemberInfoModel : NSObject
 
 //  Optional
-//  头像地址
-@property (strong, nonatomic) NSString  *headURL;
-
-//  Optional
 //  真实姓名
 @property (strong, nonatomic) NSString  *realName;
 
@@ -43,6 +39,21 @@ typedef enum {
 //  职业
 //  kProfessionTypeiOSDeveloper    开发者
 //  kProfessionTypeDesigner        UI设计师
-@property (assign, nonatomic) ProfessionType  *professionType;
+@property (assign, nonatomic) ProfessionType  professionType;
+
+
+//  New add in 2017/02/11, 预留用来对接接口
+
+//  Optional
+//  头像地址
+@property (strong, nonatomic) NSString  *headURL;
+
+//  Optional
+//  作品数量
+@property (strong, nonatomic) NSNumber  *productsCount;
+
+//  Optional
+//  人气
+@property (strong, nonatomic) NSNumber  *popularityCount;
 
 @end
