@@ -11,6 +11,9 @@
 
 @interface CRMemberDetailHeadView ()
 {
+    UIImageView     *_backgroundHeaderImageV;
+    UIView          *_darkMaskV;
+    
     UIImageView     *_headerImageV;
     
     UIView          *_nameAndProfessionView;
@@ -48,10 +51,31 @@
 
 - (void)createUI
 {
+    [self createBackgroundView];
+    [self createContents];
+    
+    self.layer.masksToBounds = YES;
+}
+
+- (void)createBackgroundView
+{
+    _backgroundHeaderImageV = [[UIImageView alloc] initWithFrame:self.bounds];
+    _backgroundHeaderImageV.contentMode = UIViewContentModeScaleAspectFill;
+    [self addSubview:_backgroundHeaderImageV];
+    
+    _darkMaskV = [[UIView alloc] initWithFrame:self.bounds];
+    _darkMaskV.backgroundColor = [color_323341 colorWithAlphaComponent:0.1];
+    [self addSubview:_darkMaskV];
+}
+
+- (void)createContents
+{
     CGFloat headerImageV_width = XX_6N(150);
     _headerImageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, headerImageV_width, headerImageV_width)];
     _headerImageV.layer.cornerRadius = headerImageV_width / 2.0;
     _headerImageV.layer.masksToBounds = YES;
+    _headerImageV.layer.borderWidth = 3;
+    _headerImageV.layer.borderColor = color_6a696f.CGColor;
     [self addSubview:_headerImageV];
     
     _nameAndProfessionView = [UIView new];
@@ -78,7 +102,6 @@
     [self addSubview:_keyWordsView];
 }
 
-
 #pragma mark - relayUI
 
 - (void)relayUI
@@ -95,8 +118,8 @@
     
     [UIView BearAutoLayViewArray:(NSMutableArray *)@[_headerImageV, _nameAndProfessionView, _personalHomePageLabel, _keyWordsView]
                       layoutAxis:kLAYOUT_AXIS_Y
-                          center:YES gapAray:@[@160, @24, @28, @40, @44]
-                       gapDisAll:YY_6N(160 + 24 + 28 + 40 + 44)];
+                          center:YES
+                         gapAray:@[@160, @24, @28, @40, @44]];
 }
 
 - (void)layoutSubviews
@@ -115,8 +138,10 @@
     UIImage *placeHolderHeaderImage = [UIImage imageNamed:@"tab_btn_control_n"];
     if ([_memberInfoModel.headURL length] > 0) {
         [_headerImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headURL] placeholderImage:placeHolderHeaderImage];
+        [_backgroundHeaderImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headURL] placeholderImage:placeHolderHeaderImage];
     }else{
         _headerImageV.image = placeHolderHeaderImage;
+        _backgroundHeaderImageV.image = placeHolderHeaderImage;
     }
     
     _nameLabel.text = _memberInfoModel.nickName;

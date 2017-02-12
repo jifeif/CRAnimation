@@ -43,8 +43,6 @@
 
 - (void)createUI
 {
-    self.backgroundColor = color_323341;
-    
     _titleLabel = [UILabel new];
     _titleLabel.text = _titleStr;
     _titleLabel.font = [UIFont systemFontOfSize:18];

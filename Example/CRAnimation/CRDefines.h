@@ -20,6 +20,7 @@
 #define color_354ff1    UIColorFromHEX(0x354ff1)
 #define color_e1e3ff    UIColorFromHEX(0xe1e3ff)
 #define color_5e67f7    UIColorFromHEX(0x5e67f7)
+#define color_6a696f    UIColorFromHEX(0x6a696f)
 
 
 //  适配对应 高度 < 5高度时，高度 = 5高度
