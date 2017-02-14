@@ -34,16 +34,13 @@
 {
     _imageView = [[CRFLAnimatiatedImageView alloc] init];
     _imageView.frame = self.bounds;
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
+    _imageView.clipsToBounds = YES;
     [self addSubview:_imageView];
 }
 
 - (void)loadDemoInfoModel:(CRDemoBriefDemoInfo *)demoInfoModel
 {
-//    NSURL *gifAddressUrl = [NSURL URLWithString:demoInfoModel.gifAddress];
-//    NSData *gifData = [NSData dataWithContentsOfURL:gifAddressUrl];
-//    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:demoInfoModel.demoGifName];
-//    _image = [FLAnimatedImage animatedImageWithGIFData:gifData];
-//    _imageView.animatedImage = _image;
     [_imageView setGifImageWithURLStr:demoInfoModel.gifAddress];
 }
 

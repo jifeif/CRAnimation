@@ -118,8 +118,8 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
         CRMemberDetailHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:__collectionViewReusableViewID forIndexPath:indexPath];
         if (!headerView) {
             headerView = [CRMemberDetailHeadView commonHeadView];
-            [headerView setDataWithMemberInfoModel:_memberInfoModel];
         }
+        [headerView setDataWithMemberInfoModel:_memberInfoModel];
         
         return headerView;
     }else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
@@ -143,7 +143,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     CGFloat cellGapX = XX_6N(16);
     CGFloat cellOffX = XX_6N(30);
     
-    CGFloat cellWidth = (WIDTH - 2 * cellOffX - 2 * cellGapX) / 2.0;
+    CGFloat cellWidth = (WIDTH - 2 * cellOffX - 2 * cellGapX) / 3.0;
     CGFloat cellHeight = cellWidth;
     return (CGSize){cellWidth, cellHeight};
 }
