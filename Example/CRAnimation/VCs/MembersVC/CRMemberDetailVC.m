@@ -49,7 +49,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     NSMutableArray *briefDemoInfoArray = [NSMutableArray new];
     for (int i = 0; i < 10; i++) {
         CRDemoBriefDemoInfo *briefDemoInfo = [CRDemoBriefDemoInfo new];
-        briefDemoInfo.gifAddress = @"http://oftcdgt2m.bkt.clouddn.com/C0001/CRMusicCardDemoVC3.gif";
+        briefDemoInfo.gifAddress = TestCRDemoGifURL_Card;
         [briefDemoInfoArray addObject:briefDemoInfo];
     }
     _memberInfoModel.productBriefModelArray = briefDemoInfoArray;
@@ -106,7 +106,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     
     CRDemoBriefDemoInfo *demoInfoModel = _memberInfoModel.productBriefModelArray[indexPath.row];
     if (demoInfoModel.gifAddress) {
-        [cell loadDemoInfoModel:demoInfoModel];
+        [cell loadBriefDemoInfoModel:demoInfoModel];
     }
     
     return cell;

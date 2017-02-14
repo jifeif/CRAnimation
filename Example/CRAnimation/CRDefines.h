@@ -10,6 +10,7 @@
 
 #define TestCRIconURL @"http://oftcdgt2m.bkt.clouddn.com/CRLogo.png"
 #define TestCRIconSquareURL @"http://oftcdgt2m.bkt.clouddn.com/CRLogoSquare.png"
+#define TestCRDemoGifURL_Card @"http://oftcdgt2m.bkt.clouddn.com/C0001/CRMusicCardDemoVC3.gif"
 
 #define color_Master    [UIColor blackColor]
 #define color_323341    UIColorFromHEX(0x323341)

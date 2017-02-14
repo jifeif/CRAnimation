@@ -7,151 +7,93 @@
 //
 
 #import "CRCodeWidgetVC.h"
+#import "CRCustomNaviBarView.h"
 #import "CRDemoInfoModel.h"
-#import "CRItemBriefCollectionViewCell.h"
-#import "CRItemBriefSetcionHeaderView.h"
+#import "CRMemberDetailProductCollectionViewCell.h"
 
-static NSString *collectionViewCellID           = @"collectionViewCellID";
-static NSString *collectionViewReusableViewID   = @"collectionViewReusableViewID";
-
-static NSString *__kCRDemoStorage       = @"动效仓库";
-static NSString *__kCRDemoCombination   = @"组合动效";
+static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 @interface CRCodeWidgetVC () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
-
-@property (strong, nonatomic) NSMutableArray    *dataArrayTitle;
-@property (strong, nonatomic) NSMutableArray    *dataArrayDemoModel;
-
-@property (strong, nonatomic) NSArray           *storageDemoInfoModelNameArray;
-@property (strong, nonatomic) NSArray           *combinationDemoInfoModelNameArray;
-
-
-@property (strong, nonatomic) UICollectionView  *mainCollectionView;
+{
+    CRCustomNaviBarView     *_naviBarView;
+    NSMutableArray <CRDemoInfoModel *> *_demoInfoModelArray;
+    
+    UICollectionView        *_mainCollectionView;
+}
 
 @end
 
 @implementation CRCodeWidgetVC
 
-- (instancetype)init
-{
-    self = [super init];
-    
-    if (self) {
-        self.ifHideTabBar = [NSNumber numberWithBool:NO];
-    }
-    
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    [self dataReady];
+    [self createFakeDataWithAddBriefDemoInfo];
     [self createUI];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)createFakeDataWithAddBriefDemoInfo
 {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
-    self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)dataReady
-{
-    _dataArrayTitle = [[NSMutableArray alloc] initWithArray:@[
-                                                              __kCRDemoStorage,
-                                                              __kCRDemoCombination,
-                                                              ]];
-    
-    _storageDemoInfoModelNameArray = @[
-                                       @"CRCardAnimationViewDemoInfoModel",
-                                       @"CRImageGradientDemoInfoModel",
-                                       @"GifDemoInfoModel",
-                                       @"WCLLoadingViewDemoInfoModel",
-                                       @"HZLaunchViewDemoInfoModel",
-                                       @"CCWormHUDDemoInfoModel",
-                                       @"CRGatlingModel",
-                                       ];
-    
-    _combinationDemoInfoModelNameArray = @[
-                                           @"CRMusicCardDemoInfoModel"
-                                           ];
-    
-    [self dealDemoNameArray:_storageDemoInfoModelNameArray withGroupName:__kCRDemoStorage];
-    [self dealDemoNameArray:_combinationDemoInfoModelNameArray withGroupName:__kCRDemoCombination];
-}
-
-- (void)dealDemoNameArray:(NSArray *)demoNameArray withGroupName:(NSString *)groupName
-{
-    for (NSString *demoName in demoNameArray) {
-        [self addDemoInfoModelName:demoName withGroupName:groupName];
-    }
-}
-
-- (void)addDemoInfoModelName:(NSString *)demoInfoModelName withGroupName:(NSString *)groupName
-{
-    if (!_dataArrayDemoModel) {
-        _dataArrayDemoModel = [[NSMutableArray alloc] init];
-        
-        for (int i = 0; i < [_dataArrayTitle count]; i++) {
-            NSMutableArray *subMutableArray = [NSMutableArray new];
-            [_dataArrayDemoModel addObject:subMutableArray];
-        }
-    }
-    
-    if ([demoInfoModelName length] > 0) {
-        
-        CRDemoInfoModel *infoModel = [[NSClassFromString(demoInfoModelName) alloc] init];
-        if (infoModel) {
-            
-            //  添加新的Demo数据模型
-            NSInteger index = [self.dataArrayTitle indexOfObject:groupName];
-            NSMutableArray *subMutableArray = self.dataArrayDemoModel[index];
-            [subMutableArray addObject:infoModel];
-            _dataArrayDemoModel[index] = subMutableArray;
-        }
+    _demoInfoModelArray = [NSMutableArray new];
+    for (int i = 0; i < 10; i++) {
+        CRDemoInfoModel *demoInfoModel = [CRDemoInfoModel new];
+        demoInfoModel.gifAddress = TestCRDemoGifURL_Card;
+        [_demoInfoModelArray addObject:demoInfoModel];
     }
 }
 
 - (void)createUI
 {
-    self.view.backgroundColor = color_Master;
+    self.navigationController.navigationBarHidden = YES;
+    self.view.backgroundColor = color_323341;
     
+    [self creteNaviBarView];
+    [self createCollectionView];
+    
+    [self.view bringSubviewToFront:_naviBarView];
+}
+
+- (void)creteNaviBarView
+{
+    __weak typeof(self) weakSelf = self;
+    _naviBarView = [CRCustomNaviBarView commonNaviBarViewWithTitle:@"精巧控件" inVC:weakSelf];
+    _naviBarView.showBackBtn = NO;
+    [self.view addSubview:_naviBarView];
+}
+
+- (void)createCollectionView
+{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, HEIGHT - STATUS_HEIGHT) collectionViewLayout:layout];
-    _mainCollectionView.backgroundColor = color_Master;
+    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, _naviBarView.maxY, WIDTH, HEIGHT - _naviBarView.maxY - TABBAR_HEIGHT) collectionViewLayout:layout];
     _mainCollectionView.delegate = self;
     _mainCollectionView.dataSource = self;
+    _mainCollectionView.backgroundColor = color_323341;
     [self.view addSubview:_mainCollectionView];
-    [_mainCollectionView registerClass:[CRItemBriefCollectionViewCell class] forCellWithReuseIdentifier:collectionViewCellID];
-    [_mainCollectionView registerClass:[CRItemBriefSetcionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:collectionViewReusableViewID];
+    [_mainCollectionView registerClass:[CRMemberDetailProductCollectionViewCell class] forCellWithReuseIdentifier:__collectionViewCellID];
 }
 
 
-#pragma mark - collectionView dataSource
+#pragma mark - collectionView DataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return [_dataArrayDemoModel count];
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [_dataArrayDemoModel[section] count];
+    return [_demoInfoModelArray count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CRItemBriefCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellID forIndexPath:indexPath];
+    CRMemberDetailProductCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:__collectionViewCellID forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor purpleColor];
     
-    CRDemoInfoModel *demoInfoModel = _dataArrayDemoModel[indexPath.section][indexPath.row];
-    if (demoInfoModel.demoVCName) {
+    CRDemoInfoModel *demoInfoModel = _demoInfoModelArray[indexPath.row];
+    if (demoInfoModel.gifAddress) {
         [cell loadDemoInfoModel:demoInfoModel];
     }
     
@@ -160,75 +102,47 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    
-    if([kind isEqualToString:UICollectionElementKindSectionHeader])
-    {
-        CRItemBriefSetcionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:collectionViewReusableViewID forIndexPath:indexPath];
-        if(headerView == nil)
-        {
-            headerView = [[CRItemBriefSetcionHeaderView alloc] init];
-        }
-        headerView.titleLabel.text = _dataArrayTitle[indexPath.section];
-        
-        return headerView;
-    }
-    else if([kind isEqualToString:UICollectionElementKindSectionFooter])
-    {
-        nil;
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        return nil;
+    }else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
+        return nil;
     }
     
     return nil;
 }
 
 
-#pragma mark - collectionView delegate
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    CRDemoInfoModel *demoInfoModel = _dataArrayDemoModel[indexPath.section][indexPath.row];
-    
-    if (demoInfoModel.demoVCName) {
-        CRBaseViewController *destinationVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
-        [self.navigationController pushViewController:destinationVC animated:YES];
-    }
-}
-
-
 #pragma mark - UICollectionViewDelegateFlowLayout
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
-{
-    return (CGSize){WIDTH, 40};
-}
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat cellWidth = WIDTH / 2.0 - 10;
-    CGFloat cellHeight = 1.0 * HEIGHT6 / WIDTH6 * cellWidth;
+    CGFloat cellGapX = XX_6N(38);
+    CGFloat cellOffX = XX_6N(38);
+    
+    CGFloat cellWidth = (WIDTH - 2 * cellOffX - 1 * cellGapX) / 2.0;
+    CGFloat cellHeight = cellWidth;
     return (CGSize){cellWidth, cellHeight};
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(5, 5, 5, 5);
+    CGFloat cellOffX = XX_6N(38);
+    CGFloat cellOffYStart = YY_6N(16);
+    CGFloat cellOffYEnd = YY_6N(36);
+    return UIEdgeInsetsMake(cellOffYStart, cellOffX, cellOffYEnd, cellOffX);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 5.f;
+    CGFloat cellGapX = XX_6N(38);
+    return cellGapX;
 }
 
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 10.f;
-}
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    CGFloat cellGapY = YY_6N(30);
+    return cellGapY;
 }
 
 @end

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CRDemoBriefDemoInfo, CRDemoInfoModel;
 
 @interface CRMemberDetailProductCollectionViewCell : UICollectionViewCell
 
-- (void)loadDemoInfoModel:(CRDemoBriefDemoInfo *)demoInfoModel;
+- (void)loadBriefDemoInfoModel:(CRDemoBriefDemoInfo *)demoInfoModel;
+- (void)loadDemoInfoModel:(CRDemoInfoModel *)demoInfoModel;
 
 @end

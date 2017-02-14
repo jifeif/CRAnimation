@@ -8,6 +8,7 @@
 
 #import "CRMemberDetailProductCollectionViewCell.h"
 #import "CRFLAnimatiatedImageView.h"
+#import "CRDemoInfoModel.h"
 
 @interface CRMemberDetailProductCollectionViewCell ()
 {
@@ -39,7 +40,12 @@
     [self addSubview:_imageView];
 }
 
-- (void)loadDemoInfoModel:(CRDemoBriefDemoInfo *)demoInfoModel
+- (void)loadBriefDemoInfoModel:(CRDemoBriefDemoInfo *)demoInfoModel
+{
+    [_imageView setGifImageWithURLStr:demoInfoModel.gifAddress];
+}
+
+- (void)loadDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
 {
     [_imageView setGifImageWithURLStr:demoInfoModel.gifAddress];
 }
