@@ -12,6 +12,7 @@ typedef enum {
 }ProfessionType;
 
 #import <Foundation/Foundation.h>
+#import "CRDemoBriefDemoInfo.h"
 
 @interface CRMemberInfoModel : NSObject
 
@@ -55,5 +56,9 @@ typedef enum {
 //  Optional
 //  人气
 @property (strong, nonatomic) NSNumber  *popularityCount;
+
+//  Optional
+//  作品简要信息数组
+@property (strong, nonatomic) NSArray  <CRDemoBriefDemoInfo *> *productBriefModelArray;
 
 @end

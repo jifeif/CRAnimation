@@ -1,25 +1,14 @@
 //
-//  CRDemoInfoModel.h
+//  CRDemoBriefDemoInfo.h
 //  CRAnimation
 //
-//  Created by Bear on 16/10/7.
-//  Copyright © 2016年 BearRan. All rights reserved.
+//  Created by Bear on 17/2/14.
+//  Copyright © 2017年 BearRan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "CRMemberInfoModel.h"
 
-typedef enum {
-    kCRDemoTypeStorage,       //  动效仓库
-    kCRDemoTypeCombination,   //  组合动效
-} CRDemoType;
-
-typedef enum {
-    kCRLanguageTypeObjectiveC,  //  Objective-C
-    kCRLanguageTypeSwift,       //  Swift
-} CRLanguage;
-
-@interface CRDemoInfoModel : NSObject
+@interface CRDemoBriefDemoInfo : NSObject
 
 //  Require
 //  demoVC名称（用于push到指定名称的VC）
@@ -34,7 +23,7 @@ typedef enum {
 //  动效类型
 //  kCRDemoTypeStorage:         动效仓库
 //  kCRDemoTypeCombination:     组合动效
-@property (assign, nonatomic) CRDemoType    demoType;
+//@property (assign, nonatomic) CRDemoType    demoType;
 
 //  Require
 //  ID编号
@@ -53,7 +42,7 @@ typedef enum {
 //  Require
 //  语言
 //  OC/Swift
-@property (assign, nonatomic) CRLanguage    codeLanguage;
+//@property (assign, nonatomic) CRLanguage    codeLanguage;
 
 //  Optional
 //  作者源gitHub地址
@@ -65,15 +54,14 @@ typedef enum {
 
 //  Require
 //  作者信息
-@property (strong, nonatomic) CRMemberInfoModel      *authorInfo;
+//@property (strong, nonatomic) CRMemberInfoModel      *authorInfo;
 
 //  Optional
 //  UI设计师信息
-@property (strong, nonatomic) CRMemberInfoModel      *UIDesignerInfo;
+//@property (strong, nonatomic) CRMemberInfoModel      *UIDesignerInfo;
 
 
 - (void)fillDemoInfo;
-
 
 //  New add in 2017/02/11, 预留用来对接接口
 

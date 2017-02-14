@@ -146,7 +146,7 @@
     
     
 #warning DAD Test
-    _memberInfoModel.headURL = TestCRIconURL;
+    _memberInfoModel.headURL = TestCRIconSquareURL;
     _memberInfoModel.productsCount = @10;
     _memberInfoModel.popularityCount = @20;
     

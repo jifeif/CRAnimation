@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #define TestCRIconURL @"http://oftcdgt2m.bkt.clouddn.com/CRLogo.png"
+#define TestCRIconSquareURL @"http://oftcdgt2m.bkt.clouddn.com/CRLogoSquare.png"
 
 #define color_Master    [UIColor blackColor]
 #define color_323341    UIColorFromHEX(0x323341)

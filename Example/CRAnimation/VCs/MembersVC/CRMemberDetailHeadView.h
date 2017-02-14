@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CRMemberInfoModel.h"
 
-@interface CRMemberDetailHeadView : UIView
+@interface CRMemberDetailHeadView : UICollectionReusableView
 
 + (CRMemberDetailHeadView *)commonHeadView;
 
