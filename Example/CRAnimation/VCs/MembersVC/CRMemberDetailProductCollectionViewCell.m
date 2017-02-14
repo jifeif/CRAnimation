@@ -7,12 +7,12 @@
 //
 
 #import "CRMemberDetailProductCollectionViewCell.h"
-#import "FLAnimatedImage.h"
+#import "CRFLAnimatiatedImageView.h"
 
 @interface CRMemberDetailProductCollectionViewCell ()
 {
-    FLAnimatedImage         *_image;
-    FLAnimatedImageView     *_imageView;
+    FLAnimatedImage             *_image;
+    CRFLAnimatiatedImageView    *_imageView;
 }
 
 @end
@@ -32,18 +32,19 @@
 
 - (void)createUI
 {
-    _imageView = [[FLAnimatedImageView alloc] init];
+    _imageView = [[CRFLAnimatiatedImageView alloc] init];
     _imageView.frame = self.bounds;
     [self addSubview:_imageView];
 }
 
 - (void)loadDemoInfoModel:(CRDemoBriefDemoInfo *)demoInfoModel
 {
-    NSURL *gifAddressUrl = [NSURL URLWithString:demoInfoModel.gifAddress];
-    NSData *gifData = [NSData dataWithContentsOfURL:gifAddressUrl];
+//    NSURL *gifAddressUrl = [NSURL URLWithString:demoInfoModel.gifAddress];
+//    NSData *gifData = [NSData dataWithContentsOfURL:gifAddressUrl];
 //    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:demoInfoModel.demoGifName];
-    _image = [FLAnimatedImage animatedImageWithGIFData:gifData];
-    _imageView.animatedImage = _image;
+//    _image = [FLAnimatedImage animatedImageWithGIFData:gifData];
+//    _imageView.animatedImage = _image;
+    [_imageView setGifImageWithURLStr:demoInfoModel.gifAddress];
 }
 
 @end
