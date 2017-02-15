@@ -24,6 +24,17 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 @implementation CRCodeWidgetVC
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self) {
+        self.ifHideTabBar = [NSNumber numberWithBool:NO];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -63,7 +74,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, _naviBarView.maxY, WIDTH, HEIGHT - _naviBarView.maxY - TABBAR_HEIGHT) collectionViewLayout:layout];
+    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, _naviBarView.maxY, WIDTH, HEIGHT - _naviBarView.maxY) collectionViewLayout:layout];
     _mainCollectionView.delegate = self;
     _mainCollectionView.dataSource = self;
     _mainCollectionView.backgroundColor = color_323341;
