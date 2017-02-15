@@ -10,6 +10,7 @@
 #import "CRDemoInfoModel.h"
 #import "CRItemBriefCollectionViewCell.h"
 #import "CRItemBriefSetcionHeaderView.h"
+#import "CRHomeNaviBarView.h"
 
 static NSString *collectionViewCellID           = @"collectionViewCellID";
 static NSString *collectionViewReusableViewID   = @"collectionViewReusableViewID";
@@ -18,13 +19,15 @@ static NSString *__kCRDemoStorage       = @"动效仓库";
 static NSString *__kCRDemoCombination   = @"组合动效";
 
 @interface CRCodeAnimationVC () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+{
+    CRHomeNaviBarView   *_naviBarView;
+}
 
 @property (strong, nonatomic) NSMutableArray    *dataArrayTitle;
 @property (strong, nonatomic) NSMutableArray    *dataArrayDemoModel;
 
 @property (strong, nonatomic) NSArray           *storageDemoInfoModelNameArray;
 @property (strong, nonatomic) NSArray           *combinationDemoInfoModelNameArray;
-
 
 @property (strong, nonatomic) UICollectionView  *mainCollectionView;
 
@@ -120,11 +123,25 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (void)createUI
 {
+    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = color_Master;
     
+    [self createNaviBarView];
+    [self createCollectionView];
+}
+
+- (void)createNaviBarView
+{
+    __weak typeof(self) weakSelf = self;
+    _naviBarView = [CRHomeNaviBarView commonNaviBarViewWithTitle:@"动效体验" inVC:weakSelf];
+    [self.view addSubview:_naviBarView];
+}
+
+- (void)createCollectionView
+{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, HEIGHT - STATUS_HEIGHT) collectionViewLayout:layout];
+    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, _naviBarView.maxY, WIDTH, HEIGHT - _naviBarView.maxY - TABBAR_HEIGHT) collectionViewLayout:layout];
     _mainCollectionView.backgroundColor = color_Master;
     _mainCollectionView.delegate = self;
     _mainCollectionView.dataSource = self;

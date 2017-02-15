@@ -12,7 +12,6 @@
 #define TestCRIconSquareURL @"http://oftcdgt2m.bkt.clouddn.com/CRLogoSquare.png"
 #define TestCRDemoGifURL_Card @"http://oftcdgt2m.bkt.clouddn.com/C0001/CRMusicCardDemoVC3.gif"
 
-#define color_Master    [UIColor blackColor]
 #define color_323341    UIColorFromHEX(0x323341)
 #define color_5868f2    UIColorFromHEX(0x5868f2)
 #define color_c5c5c5    UIColorFromHEX(0xc5c5c5)
@@ -24,6 +23,7 @@
 #define color_5e67f7    UIColorFromHEX(0x5e67f7)
 #define color_6a696f    UIColorFromHEX(0x6a696f)
 
+#define color_Master    color_323341
 
 //  适配对应 高度 < 5高度时，高度 = 5高度
 #define LayOutHeight  ((HEIGHT < HEIGHT5) ? HEIGHT5 : HEIGHT)
