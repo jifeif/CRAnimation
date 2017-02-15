@@ -136,7 +136,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     CGFloat cellOffX = XX_6N(38);
-    CGFloat cellOffYStart = YY_6N(16);
+    CGFloat cellOffYStart = YY_6N(0);
     CGFloat cellOffYEnd = YY_6N(36);
     return UIEdgeInsetsMake(cellOffYStart, cellOffX, cellOffYEnd, cellOffX);
 }

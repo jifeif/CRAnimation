@@ -26,6 +26,8 @@
     
     if (self) {
         [self createUI];
+        self.layer.cornerRadius = 5.0;
+        self.layer.masksToBounds = YES;
     }
     
     return self;
@@ -36,7 +38,6 @@
     _imageView = [[CRFLAnimatiatedImageView alloc] init];
     _imageView.frame = self.bounds;
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
-    _imageView.clipsToBounds = YES;
     [self addSubview:_imageView];
 }
 
