@@ -55,6 +55,9 @@
 		092A2D681DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */; };
 		092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D631DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift */; };
 		092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D641DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib */; };
+		0950D5A91E54A5DF009214E2 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A61E54A5DF009214E2 /* iTunesArtwork.png */; };
+		0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A71E54A5DF009214E2 /* iTunesArtwork@2x.png */; };
+		0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A81E54A5DF009214E2 /* iTunesArtwork@3x.png */; };
 		0993B46D1DA9C6790012F962 /* CRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993B46C1DA9C6790012F962 /* CRBaseViewController.m */; };
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
@@ -188,6 +191,9 @@
 		092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLLoadingViewDemoInfoModel.m; sourceTree = "<group>"; };
 		092A2D631DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingViewDemoVC.swift; sourceTree = "<group>"; };
 		092A2D641DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCLLoadingViewDemoVC.xib; sourceTree = "<group>"; };
+		0950D5A61E54A5DF009214E2 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		0950D5A71E54A5DF009214E2 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		0950D5A81E54A5DF009214E2 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		0993B46B1DA9C6790012F962 /* CRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseViewController.h; sourceTree = "<group>"; };
 		0993B46C1DA9C6790012F962 /* CRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseViewController.m; sourceTree = "<group>"; };
 		0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseTabBarController.h; sourceTree = "<group>"; };
@@ -599,6 +605,9 @@
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* CRAnimation-Prefix.pch */,
 				09D937D51DAEAC69007694BA /* README.md */,
+				0950D5A61E54A5DF009214E2 /* iTunesArtwork.png */,
+				0950D5A71E54A5DF009214E2 /* iTunesArtwork@2x.png */,
+				0950D5A81E54A5DF009214E2 /* iTunesArtwork@3x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -755,13 +764,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x.png in Resources */,
 				092A2D2D1DBCA51C00650DE1 /* CRImageGradientDemoVC.gif in Resources */,
 				092A2D661DBCA8DA00650DE1 /* WCLLoadingView.gif in Resources */,
 				257751551DC25B070019D38B /* HZLaunchView.gif in Resources */,
 				5247C4F81DD212320024DF8B /* GatlingProgress.gif in Resources */,
 				092A2D2A1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif in Resources */,
 				092A2D331DBCA51C00650DE1 /* GifPlay.gif in Resources */,
+				0950D5A91E54A5DF009214E2 /* iTunesArtwork.png in Resources */,
 				ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */,
+				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */,
 				ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */,
