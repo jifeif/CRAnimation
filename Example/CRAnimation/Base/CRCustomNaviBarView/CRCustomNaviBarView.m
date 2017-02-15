@@ -34,8 +34,6 @@
         _titleStr = title;
         _inVC = inVC;
         [self createUI];
-        
-        self.showBackBtn = YES;
     }
     
     return self;
@@ -55,6 +53,8 @@
     [_backBtn addTarget:self action:@selector(backBtnEvent) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_backBtn];
     [_backBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:nil parentRelation:YES distance:10 center:YES];
+    
+    self.showBackBtn = YES;
 }
 
 - (void)relayUI
@@ -90,13 +90,15 @@
     _backBtn.hidden = !_showBackBtn;
 }
 
+#pragma mark - get
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (CRBaseViewController *)getInVC
+{
+    if (_inVC) {
+        return _inVC;
+    }
+    
+    return nil;
 }
-*/
 
 @end

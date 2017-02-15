@@ -58,6 +58,7 @@
 		0950D5A91E54A5DF009214E2 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A61E54A5DF009214E2 /* iTunesArtwork.png */; };
 		0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A71E54A5DF009214E2 /* iTunesArtwork@2x.png */; };
 		0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A81E54A5DF009214E2 /* iTunesArtwork@3x.png */; };
+		0950D5AE1E54A7AC009214E2 /* CRHomeNaviBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5AD1E54A7AC009214E2 /* CRHomeNaviBarView.m */; };
 		0993B46D1DA9C6790012F962 /* CRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993B46C1DA9C6790012F962 /* CRBaseViewController.m */; };
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
@@ -194,6 +195,8 @@
 		0950D5A61E54A5DF009214E2 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		0950D5A71E54A5DF009214E2 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		0950D5A81E54A5DF009214E2 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		0950D5AC1E54A7AC009214E2 /* CRHomeNaviBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHomeNaviBarView.h; sourceTree = "<group>"; };
+		0950D5AD1E54A7AC009214E2 /* CRHomeNaviBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRHomeNaviBarView.m; sourceTree = "<group>"; };
 		0993B46B1DA9C6790012F962 /* CRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseViewController.h; sourceTree = "<group>"; };
 		0993B46C1DA9C6790012F962 /* CRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseViewController.m; sourceTree = "<group>"; };
 		0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseTabBarController.h; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 			children = (
 				09203ACC1E4F460D00FB2B25 /* CRCustomNaviBarView.h */,
 				09203ACD1E4F460D00FB2B25 /* CRCustomNaviBarView.m */,
+				0950D5AC1E54A7AC009214E2 /* CRHomeNaviBarView.h */,
+				0950D5AD1E54A7AC009214E2 /* CRHomeNaviBarView.m */,
 			);
 			path = CRCustomNaviBarView;
 			sourceTree = "<group>";
@@ -935,6 +940,7 @@
 				ED36EAD51DD2AF9B0050416B /* README.md in Sources */,
 				527FF73C1DD0E9770055026D /* CRGatlingVC.m in Sources */,
 				09109A7D1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m in Sources */,
+				0950D5AE1E54A7AC009214E2 /* CRHomeNaviBarView.m in Sources */,
 				09203AD11E4F4BB600FB2B25 /* CRMemberDetailHeadView.m in Sources */,
 				092A2D4E1DBCA54C00650DE1 /* CRMyCardView.m in Sources */,
 				09D168D81DC620210082C35E /* README.md in Sources */,

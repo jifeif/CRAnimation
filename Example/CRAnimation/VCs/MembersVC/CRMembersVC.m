@@ -9,14 +9,14 @@
 #import "CRMembersVC.h"
 #import "CRMembersTableViewCell.h"
 #import "CRCardAnimationViewDemoInfoModel.h"
-#import "CRCustomNaviBarView.h"
+#import "CRHomeNaviBarView.h"
 #import "CRMemberDetailVC.h"
 #import "CRMemberInfoModel.h"
 
 @interface CRMembersVC () <UITableViewDelegate, UITableViewDataSource>
 {
     UITableView             *_mainTableView;
-    CRCustomNaviBarView     *_naviBarView;
+    CRHomeNaviBarView       *_naviBarView;
     NSMutableArray          *_memberInfoModelArray;
 }
 
@@ -53,16 +53,8 @@
 - (void)createNaviBarView
 {
     __weak typeof(self) weakSelf = self;
-    _naviBarView = [CRCustomNaviBarView commonNaviBarViewWithTitle:@"团队成员" inVC:weakSelf];
-    _naviBarView.showBackBtn = NO;
+    _naviBarView = [CRHomeNaviBarView commonNaviBarViewWithTitle:@"团队成员" inVC:weakSelf];
     [self.view addSubview:_naviBarView];
-    
-    CGFloat shareBtn_width = _naviBarView.height;
-    UIButton *shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, shareBtn_width, shareBtn_width)];
-    [shareBtn setImage:[UIImage imageNamed:@"Nav_btn_share"] forState:UIControlStateNormal];
-    [shareBtn addTarget:self action:@selector(shareBtnEvent) forControlEvents:UIControlEventTouchUpInside];
-    [_naviBarView addSubview:shareBtn];
-    [shareBtn BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:nil parentRelation:YES distance:10 center:YES];
 }
 
 - (void)createTableView
@@ -122,14 +114,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [_memberInfoModelArray count];
-}
-
-
-#pragma mark - BtnEvent
-
-- (void)shareBtnEvent
-{
-    NSLog(@"--shareBtnEvent");
 }
 
 

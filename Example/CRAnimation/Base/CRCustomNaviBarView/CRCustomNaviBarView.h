@@ -14,5 +14,9 @@
 @property (assign, nonatomic) BOOL  showBackBtn;
 
 + (CRCustomNaviBarView *)commonNaviBarViewWithTitle:(NSString *)title inVC:(__weak CRBaseViewController *)inVC;
+- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title inVC:(__weak CRBaseViewController *)inVC;
+
+- (void)createUI;
+- (CRBaseViewController *)getInVC;
 
 @end

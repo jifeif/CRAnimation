@@ -7,7 +7,7 @@
 //
 
 #import "CRCodeWidgetVC.h"
-#import "CRCustomNaviBarView.h"
+#import "CRHomeNaviBarView.h"
 #import "CRDemoInfoModel.h"
 #import "CRMemberDetailProductCollectionViewCell.h"
 
@@ -15,10 +15,9 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 @interface CRCodeWidgetVC () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 {
-    CRCustomNaviBarView     *_naviBarView;
+    CRHomeNaviBarView *_naviBarView;
     NSMutableArray <CRDemoInfoModel *> *_demoInfoModelArray;
-    
-    UICollectionView        *_mainCollectionView;
+    UICollectionView  *_mainCollectionView;
 }
 
 @end
@@ -47,17 +46,16 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
     self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = color_323341;
     
-    [self creteNaviBarView];
+    [self createNaviBarView];
     [self createCollectionView];
     
     [self.view bringSubviewToFront:_naviBarView];
 }
 
-- (void)creteNaviBarView
+- (void)createNaviBarView
 {
     __weak typeof(self) weakSelf = self;
-    _naviBarView = [CRCustomNaviBarView commonNaviBarViewWithTitle:@"精巧控件" inVC:weakSelf];
-    _naviBarView.showBackBtn = NO;
+    _naviBarView = [CRHomeNaviBarView commonNaviBarViewWithTitle:@"精巧控件" inVC:weakSelf];
     [self.view addSubview:_naviBarView];
 }
 
