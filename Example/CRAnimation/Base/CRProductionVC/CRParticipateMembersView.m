@@ -114,15 +114,17 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    CGFloat cellGapX = XX_6N(24);
-    return cellGapX;
+    CGFloat cellGapY = YY_6N(24);
+    return cellGapY;
 }
 
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    CGFloat cellGapY = YY_6N(30);
-    return cellGapY;
+    return 0;
+    
+    CGFloat cellGapX = XX_6N(12);
+    return cellGapX;
 }
 
 

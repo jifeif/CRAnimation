@@ -7,7 +7,6 @@
 //
 
 #import "CRProductionDetailView.h"
-#import "CRHeadersView.h"
 #import "CRParticipateMembersView.h"
 
 #warning DAD Delete
@@ -60,6 +59,7 @@
     self.backgroundColor = [UIColor clearColor];
     
     _mainScrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    _mainScrollView.showsVerticalScrollIndicator = NO;
     _mainScrollView.backgroundColor = [UIColor clearColor];
     [self addSubview:_mainScrollView];
     
@@ -91,6 +91,7 @@
     
     [self createBodyUpView];
     [self createBodyDownView];
+    [_bodyView setHeight:_bodyDownView.maxY];
 }
 
 - (void)createBodyUpView
@@ -196,7 +197,7 @@
 - (NSArray *)createFakeParticipateData
 {
     NSMutableArray *memberInfoModelArray = [NSMutableArray new];
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 17; i++) {
         CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
         infoModel.authorInfo.headURL = TestCRIconSquareURL;
         [memberInfoModelArray addObject:infoModel.authorInfo];
