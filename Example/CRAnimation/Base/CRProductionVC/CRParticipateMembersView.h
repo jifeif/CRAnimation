@@ -10,7 +10,7 @@
 
 @interface CRParticipateMembersView : UIView
 
-+ (CRParticipateMembersView *)commonHeadersView;
++ (CRParticipateMembersView *)commonHeadersViewWithWidth:(CGFloat)width;
 
 - (void)setMemberInfoModelArray:(NSArray<CRMemberInfoModel *> *)memberInfoModelArray;
 

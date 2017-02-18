@@ -23,9 +23,9 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 @implementation CRParticipateMembersView
 
-+ (CRParticipateMembersView *)commonHeadersView
++ (CRParticipateMembersView *)commonHeadersViewWithWidth:(CGFloat)width
 {
-    CRParticipateMembersView *view = [[CRParticipateMembersView alloc] initWithWidth:XX_6N(100)];
+    CRParticipateMembersView *view = [[CRParticipateMembersView alloc] initWithWidth:width];
     return view;
 }
 
@@ -54,7 +54,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
     _mainCollectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
     _mainCollectionView.delegate = self;
     _mainCollectionView.dataSource = self;
-    _mainCollectionView.backgroundColor = color_323341;
+    _mainCollectionView.backgroundColor = [UIColor whiteColor];
     [self addSubview:_mainCollectionView];
     [_mainCollectionView registerClass:[CRParticipateMemberCollectionCell class] forCellWithReuseIdentifier:__collectionViewCellID];
 }
@@ -99,25 +99,22 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat cellGapX = XX_6N(24);
-    CGFloat cellOffX = XX_6N(38);
-    
-    CGFloat cellWidth = (WIDTH - 2 * cellOffX - 1 * cellGapX) / 2.0;
+    CGFloat cellWidth = XX_6N(100);
     CGFloat cellHeight = cellWidth;
     return (CGSize){cellWidth, cellHeight};
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    CGFloat cellOffX = XX_6N(38);
-    CGFloat cellOffYStart = YY_6N(0);
-    CGFloat cellOffYEnd = YY_6N(36);
+    CGFloat cellOffX = 0;
+    CGFloat cellOffYStart = 0;
+    CGFloat cellOffYEnd = 0;
     return UIEdgeInsetsMake(cellOffYStart, cellOffX, cellOffYEnd, cellOffX);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    CGFloat cellGapX = XX_6N(38);
+    CGFloat cellGapX = XX_6N(24);
     return cellGapX;
 }
 
@@ -134,7 +131,9 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 - (void)relayUI
 {
     [_mainCollectionView reloadData];
-    [self setHeight:_mainCollectionView.contentSize.height];
+    [_mainCollectionView layoutSubviews];
+    [_mainCollectionView setHeight:_mainCollectionView.contentSize.height];
+    [self setHeight:_mainCollectionView.height];
 }
 
 #pragma mark - setData

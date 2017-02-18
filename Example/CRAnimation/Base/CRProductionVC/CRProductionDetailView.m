@@ -158,6 +158,7 @@
     CRParticipateMembersView *_CRDesignerHeadersView;
     UILabel         *_urlTitleLabel;
     UILabel         *_urlDetailsLabel;
+    CGFloat         maxWidth = _mainScrollView.width - _offX_start - _offX_end;
     
     _bodyDownView = [[UIView alloc] initWithFrame:CGRectMake(0, _bodyUpView.maxY, _bodyView.width, 0)];
     [_bodyView addSubview:_bodyDownView];
@@ -166,7 +167,7 @@
     [self setTitleLabel:_CRCoderTitleLabel text:@"CRCoder:" inView:_bodyDownView];
     [_CRCoderTitleLabel setY:YY_6N(30)];
     
-    _CRCoderHeadersView = [CRParticipateMembersView commonHeadersView];
+    _CRCoderHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth];
     [_CRCoderHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
     [_bodyDownView addSubview:_CRCoderHeadersView];
     [_CRCoderHeadersView setOrigin:CGPointMake(_CRCoderTitleLabel.x, _CRCoderTitleLabel.maxY + YY_6N(30))];
@@ -175,7 +176,7 @@
     [self setTitleLabel:_CRDesignerTitleLabel text:@"CRDesigner:" inView:_bodyDownView];
     [_CRDesignerTitleLabel setY:_CRCoderHeadersView.maxY + YY_6N(44)];
     
-    _CRDesignerHeadersView = [CRParticipateMembersView commonHeadersView];
+    _CRDesignerHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth];
     [_CRDesignerHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
     [_bodyDownView addSubview:_CRDesignerHeadersView];
     [_CRDesignerHeadersView setOrigin:CGPointMake(_CRDesignerTitleLabel.x, _CRDesignerTitleLabel.maxY + YY_6N(30))];
@@ -195,8 +196,9 @@
 - (NSArray *)createFakeParticipateData
 {
     NSMutableArray *memberInfoModelArray = [NSMutableArray new];
-    for (int i = 0; i < 15; i++) {
+    for (int i = 0; i < 20; i++) {
         CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
+        infoModel.authorInfo.headURL = TestCRIconSquareURL;
         [memberInfoModelArray addObject:infoModel.authorInfo];
     }
     return memberInfoModelArray;
