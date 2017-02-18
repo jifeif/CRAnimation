@@ -30,16 +30,6 @@
 }
 
 
-- (void)createFakeData
-{
-    _memberInfoModelArray = [NSMutableArray new];
-    for (int i = 0; i < 15; i++) {
-        CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
-        [_memberInfoModelArray addObject:infoModel.authorInfo];
-    }
-}
-
-
 #pragma mark - createUI
 
 - (void)createUI

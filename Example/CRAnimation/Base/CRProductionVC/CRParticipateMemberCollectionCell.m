@@ -7,7 +7,45 @@
 //
 
 #import "CRParticipateMemberCollectionCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+@interface CRParticipateMemberCollectionCell ()
+{
+    UIImageView *_headerImageV;
+}
+
+@end
 
 @implementation CRParticipateMemberCollectionCell
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        [self createUI];
+    }
+    
+    return self;
+}
+
+- (void)createUI
+{
+    self.layer.cornerRadius = self.width / 2.0;
+    self.layer.masksToBounds = YES;
+    
+    _headerImageV = [[UIImageView alloc] initWithFrame:self.bounds];
+    [self addSubview:_headerImageV];
+}
+
+- (void)setDataWithMemberInfoModel:(CRMemberInfoModel *)model
+{
+    UIImage *placeHolderHeaderImage = [UIImage imageNamed:@"tab_btn_control_n"];
+    if ([model.headURL length] > 0) {
+        [_headerImageV sd_setImageWithURL:[NSURL URLWithString:model.headURL] placeholderImage:placeHolderHeaderImage];
+    }else{
+        _headerImageV.image = placeHolderHeaderImage;
+    }
+}
 
 @end

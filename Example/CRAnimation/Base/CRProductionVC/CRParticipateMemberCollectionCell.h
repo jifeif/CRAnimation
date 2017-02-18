@@ -10,4 +10,6 @@
 
 @interface CRParticipateMemberCollectionCell : UICollectionViewCell
 
+- (void)setDataWithMemberInfoModel:(CRMemberInfoModel *)model;
+
 @end

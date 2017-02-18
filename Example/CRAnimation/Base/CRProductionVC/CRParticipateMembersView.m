@@ -7,7 +7,6 @@
 //
 
 #import "CRParticipateMembersView.h"
-#import "CRCardAnimationViewDemoInfoModel.h"
 #import "CRParticipateMemberCollectionCell.h"
 
 static NSString *__collectionViewCellID = @"__collectionViewCellID";
@@ -15,13 +14,20 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 @interface CRParticipateMembersView () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 {
     UICollectionView  *_mainCollectionView;
+    NSArray <CRMemberInfoModel *> *_memberInfoModelArray;
 }
 
-@property (strong, nonatomic) NSArray <CRMemberInfoModel *> *memberInfoModelArray;
+
 
 @end
 
 @implementation CRParticipateMembersView
+
++ (CRParticipateMembersView *)commonHeadersView
+{
+    CRParticipateMembersView *view = [[CRParticipateMembersView alloc] initWithWidth:XX_6N(100)];
+    return view;
+}
 
 - (instancetype)initWithWidth:(CGFloat)width
 {
@@ -30,6 +36,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
     
     if (self) {
         [self createUI];
+        [self relayUI];
     }
     
     return self;
@@ -71,9 +78,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
     cell.backgroundColor = [UIColor purpleColor];
     
     CRMemberInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
-//    if (demoInfoModel.gifAddress) {
-//        [cell loadDemoInfoModel:demoInfoModel];
-//    }
+    [cell setDataWithMemberInfoModel:memberInfoModel];
     
     return cell;
 }
@@ -132,7 +137,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
     [self setHeight:_mainCollectionView.contentSize.height];
 }
 
-#pragma mark - Rewrite
+#pragma mark - setData
 
 - (void)setMemberInfoModelArray:(NSArray<CRMemberInfoModel *> *)memberInfoModelArray
 {

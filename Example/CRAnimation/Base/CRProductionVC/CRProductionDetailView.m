@@ -8,6 +8,10 @@
 
 #import "CRProductionDetailView.h"
 #import "CRHeadersView.h"
+#import "CRParticipateMembersView.h"
+
+#warning DAD Delete
+#import "CRCardAnimationViewDemoInfoModel.h"
 
 @interface CRProductionDetailView ()
 {
@@ -149,9 +153,9 @@
 - (void)createBodyDownView
 {
     UILabel         *_CRCoderTitleLabel;
-    CRHeadersView   *_CRCoderHeadersView;
+    CRParticipateMembersView *_CRCoderHeadersView;
     UILabel         *_CRDesignerTitleLabel;
-    CRHeadersView   *_CRDesignerHeadersView;
+    CRParticipateMembersView *_CRDesignerHeadersView;
     UILabel         *_urlTitleLabel;
     UILabel         *_urlDetailsLabel;
     
@@ -162,7 +166,8 @@
     [self setTitleLabel:_CRCoderTitleLabel text:@"CRCoder:" inView:_bodyDownView];
     [_CRCoderTitleLabel setY:YY_6N(30)];
     
-    _CRCoderHeadersView = [CRHeadersView commonHeasersViewWithMemberArray:nil];
+    _CRCoderHeadersView = [CRParticipateMembersView commonHeadersView];
+    [_CRCoderHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
     [_bodyDownView addSubview:_CRCoderHeadersView];
     [_CRCoderHeadersView setOrigin:CGPointMake(_CRCoderTitleLabel.x, _CRCoderTitleLabel.maxY + YY_6N(30))];
     
@@ -170,7 +175,8 @@
     [self setTitleLabel:_CRDesignerTitleLabel text:@"CRDesigner:" inView:_bodyDownView];
     [_CRDesignerTitleLabel setY:_CRCoderHeadersView.maxY + YY_6N(44)];
     
-    _CRDesignerHeadersView = [CRHeadersView commonHeasersViewWithMemberArray:nil];
+    _CRDesignerHeadersView = [CRParticipateMembersView commonHeadersView];
+    [_CRDesignerHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
     [_bodyDownView addSubview:_CRDesignerHeadersView];
     [_CRDesignerHeadersView setOrigin:CGPointMake(_CRDesignerTitleLabel.x, _CRDesignerTitleLabel.maxY + YY_6N(30))];
     
@@ -183,6 +189,17 @@
     [_urlDetailsLabel setY:_urlTitleLabel.maxY + YY_6N(20)];
     
     [_bodyDownView setHeight:_urlDetailsLabel.maxY + YY_6N(55)];
+}
+
+#warning DAD Test
+- (NSArray *)createFakeParticipateData
+{
+    NSMutableArray *memberInfoModelArray = [NSMutableArray new];
+    for (int i = 0; i < 15; i++) {
+        CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
+        [memberInfoModelArray addObject:infoModel.authorInfo];
+    }
+    return memberInfoModelArray;
 }
 
 - (void)setTitleLabel:(UILabel *)label text:(NSString *)text inView:(UIView *)inView
