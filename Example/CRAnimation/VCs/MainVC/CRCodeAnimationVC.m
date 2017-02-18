@@ -11,6 +11,7 @@
 #import "CRItemBriefCollectionViewCell.h"
 #import "CRItemBriefSetcionHeaderView.h"
 #import "CRHomeNaviBarView.h"
+#import "CRJumpManager.h"
 
 static NSString *collectionViewCellID           = @"collectionViewCellID";
 static NSString *collectionViewReusableViewID   = @"collectionViewReusableViewID";
@@ -204,12 +205,9 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    __weak typeof(self) weakSelf = self;
     CRDemoInfoModel *demoInfoModel = _dataArrayDemoModel[indexPath.section][indexPath.row];
-    
-    if (demoInfoModel.demoVCName) {
-        CRBaseViewController *destinationVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
-        [self.navigationController pushViewController:destinationVC animated:YES];
-    }
+    [[CRJumpManager commonManagerInVC:weakSelf] jumpToProductDetailVCWithDemoInfoModel:demoInfoModel];
 }
 
 

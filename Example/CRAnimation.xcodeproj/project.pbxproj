@@ -63,6 +63,7 @@
 		0993B46D1DA9C6790012F962 /* CRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993B46C1DA9C6790012F962 /* CRBaseViewController.m */; };
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
+		09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
@@ -206,6 +207,8 @@
 		0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseTabBarController.m; sourceTree = "<group>"; };
 		09D168D61DC620210082C35E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09D937D51DAEAC69007694BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		09DC1C391E583A4D007A8B10 /* CRJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRJumpManager.h; sourceTree = "<group>"; };
+		09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJumpManager.m; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -523,6 +526,16 @@
 			path = S0000_SampleDemo;
 			sourceTree = "<group>";
 		};
+		09DC1C381E583A0C007A8B10 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				09DC1C391E583A4D007A8B10 /* CRJumpManager.h */,
+				09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */,
+			);
+			name = Manager;
+			path = VCs/Manager;
+			sourceTree = "<group>";
+		};
 		2577514D1DC25A790019D38B /* S0005_HZLaunchView */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +608,7 @@
 				09203AD31E4F528100FB2B25 /* CRConstants.m */,
 				09109A811E5351B300031210 /* CRFLAnimatiatedImageView.h */,
 				09109A821E5351B300031210 /* CRFLAnimatiatedImageView.m */,
+				09DC1C381E583A0C007A8B10 /* Manager */,
 				090080901E4CB91200AE60A5 /* VCs */,
 				0920032A1DAAA197008266B8 /* Model */,
 				0993B46A1DA9C6650012F962 /* Base */,
@@ -739,7 +753,7 @@
 				ORGANIZATIONNAME = BearRan;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 28R7P5U993;
+						DevelopmentTeam = LSACC47SM4;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 					};
@@ -903,6 +917,7 @@
 				ED36EAD21DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m in Sources */,
 				ED36EAD31DD2AF9B0050416B /* CCWormHUDDemoVC.m in Sources */,
 				0900808A1E4CAD6800AE60A5 /* CRProductionBaseVC.m in Sources */,
+				09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */,
 				092A2D2B1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m in Sources */,
 				09109A7A1E533D7300031210 /* CRMemberDetailProductsView.m in Sources */,
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
@@ -1090,16 +1105,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 28R7P5U993;
+				DEVELOPMENT_TEAM = LSACC47SM4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRAnimation/CRAnimation-Prefix.pch";
 				INFOPLIST_FILE = "CRAnimation/CRAnimation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crossStreet.forDevelopment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bear.cranimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "469a68e7-2aa4-420d-aa90-f2726a23598e";
-				PROVISIONING_PROFILE_SPECIFIER = crossStreet_dev_05;
+				PROVISIONING_PROFILE = "f26c020e-62d7-447f-ad64-0d79993e56b1";
+				PROVISIONING_PROFILE_SPECIFIER = CRAnimationProfile_Dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "CRAnimation/CRAnimation-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
@@ -1118,7 +1133,7 @@
 				INFOPLIST_FILE = "CRAnimation/CRAnimation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crossStreet.forDevelopment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bear.cranimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CRAnimation/CRAnimation-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -10,6 +10,7 @@
 #import "CRHomeNaviBarView.h"
 #import "CRDemoInfoModel.h"
 #import "CRMemberDetailProductCollectionViewCell.h"
+#import "CRJumpManager.h"
 
 static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
@@ -151,6 +152,15 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 {
     CGFloat cellGapY = 0;
     return cellGapY;
+}
+
+#pragma mark - collectionView delegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    __weak typeof(self) weakSelf = self;
+    CRDemoInfoModel *demoInfoModel = _demoInfoModelArray[indexPath.row];
+    [[CRJumpManager commonManagerInVC:weakSelf] jumpToProductDetailVCWithDemoInfoModel:demoInfoModel];
 }
 
 @end
