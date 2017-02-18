@@ -8,6 +8,7 @@
 
 #import "CRParticipateMembersView.h"
 #import "CRParticipateMemberCollectionCell.h"
+#import "CRMemberDetailVC.h"
 
 static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
@@ -15,6 +16,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 {
     UICollectionView  *_mainCollectionView;
     NSArray <CRMemberInfoModel *> *_memberInfoModelArray;
+    CRBaseViewController *_inVC;
 }
 
 
@@ -23,18 +25,19 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 @implementation CRParticipateMembersView
 
-+ (CRParticipateMembersView *)commonHeadersViewWithWidth:(CGFloat)width
++ (CRParticipateMembersView *)commonHeadersViewWithWidth:(CGFloat)width inVC:(__weak CRBaseViewController *)inVC
 {
-    CRParticipateMembersView *view = [[CRParticipateMembersView alloc] initWithWidth:width];
+    CRParticipateMembersView *view = [[CRParticipateMembersView alloc] initWithWidth:width inVC:inVC];
     return view;
 }
 
-- (instancetype)initWithWidth:(CGFloat)width
+- (instancetype)initWithWidth:(CGFloat)width inVC:(__weak CRBaseViewController *)inVC
 {
     CGFloat defaultHeght = YY_6N(100);
     self = [super initWithFrame:CGRectMake(0, 0, width, defaultHeght)];
     
     if (self) {
+        _inVC = inVC;
         [self createUI];
         [self relayUI];
     }
@@ -125,6 +128,15 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
     
     CGFloat cellGapX = XX_6N(12);
     return cellGapX;
+}
+
+#pragma mark - UICollection Delegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CRMemberInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
+    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithInfoModel:memberInfoModel];
+    [_inVC.navigationController pushViewController:destinationVC animated:YES];
 }
 
 

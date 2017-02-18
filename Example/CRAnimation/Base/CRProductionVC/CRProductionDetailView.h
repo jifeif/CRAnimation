@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "CRDemoInfoModel.h"
+@class CRBaseViewController;
 
 @interface CRProductionDetailView : UIView
 
-+ (CRProductionDetailView *)commonDetailViewWithInfoModel:(CRDemoInfoModel *)infoModel;
++ (CRProductionDetailView *)commonDetailViewWithInfoModel:(CRDemoInfoModel *)infoModel
+                                                     inVC:(__weak CRBaseViewController *)inVC;
 
 @end

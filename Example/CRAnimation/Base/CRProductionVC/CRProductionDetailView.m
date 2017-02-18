@@ -26,25 +26,30 @@
     
     CGFloat                 _offX_start;
     CGFloat                 _offX_end;
+    
+    CRBaseViewController    *_inVC;
 }
 
 @end
 
 @implementation CRProductionDetailView
 
-+ (CRProductionDetailView *)commonDetailViewWithInfoModel:(CRDemoInfoModel *)infoModel
++ (CRProductionDetailView *)commonDetailViewWithInfoModel:(CRDemoInfoModel *)infoModel inVC:(__weak CRBaseViewController *)inVC
 {
     CRProductionDetailView *detailView = [[CRProductionDetailView alloc] initWithFrame:CGRectMake(0, 0, XX_6N(544), HEIGHT)
-                                                                             infoModel:infoModel];
+                                                                             infoModel:infoModel
+                                                                                  inVC:inVC];
     return detailView;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
                     infoModel:(CRDemoInfoModel *)infoModel
+                         inVC:(__weak CRBaseViewController *)inVC
 {
     self = [super initWithFrame:frame];
     
     if (self) {
+        _inVC = inVC;
         _infoModel = infoModel;
         _offX_start = XX_6N(40);
         _offX_end = XX_6N(70);
@@ -168,7 +173,7 @@
     [self setTitleLabel:_CRCoderTitleLabel text:@"CRCoder:" inView:_bodyDownView];
     [_CRCoderTitleLabel setY:YY_6N(30)];
     
-    _CRCoderHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth];
+    _CRCoderHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth inVC:_inVC];
     [_CRCoderHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
     [_bodyDownView addSubview:_CRCoderHeadersView];
     [_CRCoderHeadersView setOrigin:CGPointMake(_CRCoderTitleLabel.x, _CRCoderTitleLabel.maxY + YY_6N(30))];
@@ -177,7 +182,7 @@
     [self setTitleLabel:_CRDesignerTitleLabel text:@"CRDesigner:" inView:_bodyDownView];
     [_CRDesignerTitleLabel setY:_CRCoderHeadersView.maxY + YY_6N(44)];
     
-    _CRDesignerHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth];
+    _CRDesignerHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth inVC:_inVC];
     [_CRDesignerHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
     [_bodyDownView addSubview:_CRDesignerHeadersView];
     [_CRDesignerHeadersView setOrigin:CGPointMake(_CRDesignerTitleLabel.x, _CRDesignerTitleLabel.maxY + YY_6N(30))];

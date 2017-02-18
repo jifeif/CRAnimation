@@ -68,7 +68,7 @@ typedef enum {
     
     if (!_detailView) {
         CRCardAnimationViewDemoInfoModel *tempModel = [CRCardAnimationViewDemoInfoModel new];
-        _detailView = [CRProductionDetailView commonDetailViewWithInfoModel:tempModel];
+        _detailView = [CRProductionDetailView commonDetailViewWithInfoModel:tempModel inVC:_inVC];
         [_detailContentView addSubview:_detailView];
         [_detailView setMaxX:_detailContentView.width];
     }
