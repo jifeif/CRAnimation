@@ -53,7 +53,7 @@
 {
     if (!_topBarView) {
         _topBarView = [[UIView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, 40)];
-        _topBarView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+        _topBarView.backgroundColor = [UIColor clearColor];
         [self.view addSubview:_topBarView];
     }
 }

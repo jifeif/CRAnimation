@@ -32,7 +32,7 @@
     
     _cardAnimationView = [[CRCardAnimationView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     _cardAnimationView.delegate = self;
-    _cardAnimationView.backgroundColor = [UIColor clearColor];
+    _cardAnimationView.backgroundColor = color_323341;
     _cardAnimationView.cardShowInView_Count = 3;
     _cardAnimationView.cardOffSetPoint = CGPointMake(0, 30);
     _cardAnimationView.cardScaleRatio  = 0.09;
@@ -55,7 +55,7 @@
         cardView.layer.cornerRadius = 7.0f;
     }
     
-    cardView.backgroundColor = UIColorFromHEX(0xC9162C);
+    cardView.backgroundColor = UIColorFromHEX(0x494fa5);
     
     return cardView;
 }
