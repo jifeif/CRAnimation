@@ -28,9 +28,10 @@
 
 - (void)createUI
 {
+    [super createUI];
     self.view.backgroundColor = color_Master;
     
-    _cardAnimationView = [[CRCardAnimationView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    _cardAnimationView = [[CRCardAnimationView alloc] initWithFrame:CGRectMake(0, NAV_STA, WIDTH, HEIGHT - NAV_STA)];
     _cardAnimationView.delegate = self;
     _cardAnimationView.backgroundColor = color_323341;
     _cardAnimationView.cardShowInView_Count = 3;
