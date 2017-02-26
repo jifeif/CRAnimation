@@ -21,7 +21,6 @@
 		09109A831E5351B300031210 /* CRFLAnimatiatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A821E5351B300031210 /* CRFLAnimatiatedImageView.m */; };
 		09109A871E53596600031210 /* CRCodeWidgetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A861E53596600031210 /* CRCodeWidgetVC.m */; };
 		09109A8B1E5359B500031210 /* CRDesignerStageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A8A1E5359B500031210 /* CRDesignerStageVC.m */; };
-		092003151DAA9B63008266B8 /* CRBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092003141DAA9B63008266B8 /* CRBaseNavigationViewController.m */; };
 		0920032D1DAAA1A6008266B8 /* CRDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0920032C1DAAA1A6008266B8 /* CRDemoInfoModel.m */; };
 		0920035D1DADC74F008266B8 /* CRDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 0920035C1DADC74F008266B8 /* CRDefines.m */; };
 		09203AC71E4F22DE00FB2B25 /* CRMembersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09203AC61E4F22DE00FB2B25 /* CRMembersTableViewCell.m */; };
@@ -54,13 +53,15 @@
 		092A2D681DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */; };
 		092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D631DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift */; };
 		092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D641DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib */; };
+		09449E671E631CE70008BD8F /* CRBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09449E631E631CE70008BD8F /* CRBaseNavigationViewController.m */; };
+		09449E681E631CE70008BD8F /* CRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09449E661E631CE70008BD8F /* CRBaseViewController.m */; };
+		09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09449E6B1E631D3D0008BD8F /* CRBaseRequestManager.m */; };
 		0950D5A91E54A5DF009214E2 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A61E54A5DF009214E2 /* iTunesArtwork.png */; };
 		0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A71E54A5DF009214E2 /* iTunesArtwork@2x.png */; };
 		0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0950D5A81E54A5DF009214E2 /* iTunesArtwork@3x.png */; };
 		0950D5AE1E54A7AC009214E2 /* CRHomeNaviBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5AD1E54A7AC009214E2 /* CRHomeNaviBarView.m */; };
 		0950D5B11E54B0D4009214E2 /* CRParticipateMembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5B01E54B0D4009214E2 /* CRParticipateMembersView.m */; };
 		0950D5B41E54B269009214E2 /* CRParticipateMemberCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5B31E54B269009214E2 /* CRParticipateMemberCollectionCell.m */; };
-		0993B46D1DA9C6790012F962 /* CRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0993B46C1DA9C6790012F962 /* CRBaseViewController.m */; };
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
 		09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */; };
@@ -136,8 +137,6 @@
 		09109A861E53596600031210 /* CRCodeWidgetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCodeWidgetVC.m; sourceTree = "<group>"; };
 		09109A891E5359B500031210 /* CRDesignerStageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDesignerStageVC.h; sourceTree = "<group>"; };
 		09109A8A1E5359B500031210 /* CRDesignerStageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDesignerStageVC.m; sourceTree = "<group>"; };
-		092003131DAA9B63008266B8 /* CRBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseNavigationViewController.h; sourceTree = "<group>"; };
-		092003141DAA9B63008266B8 /* CRBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseNavigationViewController.m; sourceTree = "<group>"; };
 		0920032B1DAAA1A6008266B8 /* CRDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDemoInfoModel.h; sourceTree = "<group>"; };
 		0920032C1DAAA1A6008266B8 /* CRDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDemoInfoModel.m; sourceTree = "<group>"; };
 		0920035B1DADC74F008266B8 /* CRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDefines.h; sourceTree = "<group>"; };
@@ -192,6 +191,12 @@
 		092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLLoadingViewDemoInfoModel.m; sourceTree = "<group>"; };
 		092A2D631DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingViewDemoVC.swift; sourceTree = "<group>"; };
 		092A2D641DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCLLoadingViewDemoVC.xib; sourceTree = "<group>"; };
+		09449E621E631CE70008BD8F /* CRBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseNavigationViewController.h; sourceTree = "<group>"; };
+		09449E631E631CE70008BD8F /* CRBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseNavigationViewController.m; sourceTree = "<group>"; };
+		09449E651E631CE70008BD8F /* CRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseViewController.h; sourceTree = "<group>"; };
+		09449E661E631CE70008BD8F /* CRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseViewController.m; sourceTree = "<group>"; };
+		09449E6A1E631D3D0008BD8F /* CRBaseRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseRequestManager.h; sourceTree = "<group>"; };
+		09449E6B1E631D3D0008BD8F /* CRBaseRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseRequestManager.m; sourceTree = "<group>"; };
 		0950D5A61E54A5DF009214E2 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		0950D5A71E54A5DF009214E2 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		0950D5A81E54A5DF009214E2 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
@@ -201,8 +206,6 @@
 		0950D5B01E54B0D4009214E2 /* CRParticipateMembersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRParticipateMembersView.m; sourceTree = "<group>"; };
 		0950D5B21E54B269009214E2 /* CRParticipateMemberCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRParticipateMemberCollectionCell.h; sourceTree = "<group>"; };
 		0950D5B31E54B269009214E2 /* CRParticipateMemberCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRParticipateMemberCollectionCell.m; sourceTree = "<group>"; };
-		0993B46B1DA9C6790012F962 /* CRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseViewController.h; sourceTree = "<group>"; };
-		0993B46C1DA9C6790012F962 /* CRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseViewController.m; sourceTree = "<group>"; };
 		0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseTabBarController.h; sourceTree = "<group>"; };
 		0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseTabBarController.m; sourceTree = "<group>"; };
 		09D168D61DC620210082C35E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -495,14 +498,40 @@
 			path = S0004_WCLLoadingView;
 			sourceTree = "<group>";
 		};
+		09449E611E631CE70008BD8F /* CRBaseNaviVC */ = {
+			isa = PBXGroup;
+			children = (
+				09449E621E631CE70008BD8F /* CRBaseNavigationViewController.h */,
+				09449E631E631CE70008BD8F /* CRBaseNavigationViewController.m */,
+			);
+			path = CRBaseNaviVC;
+			sourceTree = "<group>";
+		};
+		09449E641E631CE70008BD8F /* CRBaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				09449E651E631CE70008BD8F /* CRBaseViewController.h */,
+				09449E661E631CE70008BD8F /* CRBaseViewController.m */,
+			);
+			path = CRBaseVC;
+			sourceTree = "<group>";
+		};
+		09449E691E631D110008BD8F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				09449E6A1E631D3D0008BD8F /* CRBaseRequestManager.h */,
+				09449E6B1E631D3D0008BD8F /* CRBaseRequestManager.m */,
+			);
+			name = Request;
+			path = Base/Request;
+			sourceTree = "<group>";
+		};
 		0993B46A1DA9C6650012F962 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				0993B46B1DA9C6790012F962 /* CRBaseViewController.h */,
-				0993B46C1DA9C6790012F962 /* CRBaseViewController.m */,
+				09449E641E631CE70008BD8F /* CRBaseVC */,
+				09449E611E631CE70008BD8F /* CRBaseNaviVC */,
 				090080801E4CAD6800AE60A5 /* CRProductionVC */,
-				092003131DAA9B63008266B8 /* CRBaseNavigationViewController.h */,
-				092003141DAA9B63008266B8 /* CRBaseNavigationViewController.m */,
 				09203ACB1E4F45FC00FB2B25 /* CRCustomNaviBarView */,
 				0996C4491E4764A1000CA8EC /* CRTabBar */,
 			);
@@ -612,6 +641,7 @@
 				090080901E4CB91200AE60A5 /* VCs */,
 				0920032A1DAAA197008266B8 /* Model */,
 				0993B46A1DA9C6650012F962 /* Base */,
+				09449E691E631D110008BD8F /* Request */,
 				0920032E1DAAA20B008266B8 /* Demo */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -923,6 +953,7 @@
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
 				0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */,
 				09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */,
+				09449E671E631CE70008BD8F /* CRBaseNavigationViewController.m in Sources */,
 				18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */,
 				0950D5B41E54B269009214E2 /* CRParticipateMemberCollectionCell.m in Sources */,
 				090080891E4CAD6800AE60A5 /* CRHeaderButton.m in Sources */,
@@ -935,6 +966,7 @@
 				092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */,
 				092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */,
 				0920032D1DAAA1A6008266B8 /* CRDemoInfoModel.m in Sources */,
+				09449E681E631CE70008BD8F /* CRBaseViewController.m in Sources */,
 				09203AD41E4F528100FB2B25 /* CRConstants.m in Sources */,
 				09109A831E5351B300031210 /* CRFLAnimatiatedImageView.m in Sources */,
 				092A2D681DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m in Sources */,
@@ -948,15 +980,14 @@
 				0900809E1E4CB91200AE60A5 /* CRCodeAnimationVC.m in Sources */,
 				092A2D2C1DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.m in Sources */,
 				527FF7431DD0EBB60055026D /* CRGatlingModel.m in Sources */,
-				092003151DAA9B63008266B8 /* CRBaseNavigationViewController.m in Sources */,
 				09109A871E53596600031210 /* CRCodeWidgetVC.m in Sources */,
 				092A2D481DBCA54C00650DE1 /* CRBottomPageView.m in Sources */,
 				092A2D4A1DBCA54C00650DE1 /* CRCardViewFront.m in Sources */,
 				0950D5B11E54B0D4009214E2 /* CRParticipateMembersView.m in Sources */,
+				09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */,
 				092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */,
 				973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */,
 				090080A21E4CB91200AE60A5 /* CRItemBriefSetcionHeaderView.m in Sources */,
-				0993B46D1DA9C6790012F962 /* CRBaseViewController.m in Sources */,
 				09203ACA1E4F435D00FB2B25 /* CRMemberDetailVC.m in Sources */,
 				ED36EAD51DD2AF9B0050416B /* README.md in Sources */,
 				527FF73C1DD0E9770055026D /* CRGatlingVC.m in Sources */,
