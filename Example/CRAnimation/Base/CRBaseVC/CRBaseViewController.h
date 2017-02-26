@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
-@interface CRBaseViewController : UIViewController
+@interface CRBaseViewController : UIViewController <MBProgressHUDDelegate>
 
 @property (strong, nonatomic) NSNumber      *ifHideTabBar;
 
 - (void)createUI;
+
+- (void)showHud:(NSString *)text;
+- (void)textStateHUD:(NSString *)text;
+- (void)hideHUDView;
 
 @end
