@@ -33,10 +33,10 @@ static CRBaseRequestManager *kSharedManager;
     return self;
 }
 
-- (void)getReuestWithURLStr:(NSString *)urlStr
-                   paraDict:(NSDictionary *)paraDict
-                    success:(void (^) ())success
-                    failure:(void (^) ())failure
+- (void)getReuestWithSuffixURLStr:(NSString *)urlStr
+                         paraDict:(NSDictionary *)paraDict
+                          success:(void (^) ())success
+                          failure:(void (^) ())failure
 {
     urlStr = [NSString stringWithFormat:@"%@%@", CR_BASE_URL, urlStr];
     
@@ -51,10 +51,10 @@ static CRBaseRequestManager *kSharedManager;
                 }];
 }
 
-- (void)postReuestWithURLStr:(NSString *)urlStr
-                    paraDict:(NSDictionary *)paraDict
-                     success:(void (^) ())success
-                     failure:(void (^) ())failure
+- (void)postReuestWithSuffixURLStr:(NSString *)urlStr
+                          paraDict:(NSDictionary *)paraDict
+                           success:(void (^) ())success
+                           failure:(void (^) ())failure
 {
     urlStr = [NSString stringWithFormat:@"%@%@", CR_BASE_URL, urlStr];
     

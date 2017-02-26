@@ -14,14 +14,14 @@
 
 + (id)sharedManager;
 
-- (void)getReuestWithURLStr:(NSString *)urlStr
-                   paraDict:(NSDictionary *)paraDict
-                    success:(void (^) ())success
-                    failure:(void (^) ())failure;
+- (void)getReuestWithSuffixURLStr:(NSString *)urlStr
+                         paraDict:(NSDictionary *)paraDict
+                          success:(void (^) ())success
+                          failure:(void (^) ())failure;
 
-- (void)postReuestWithURLStr:(NSString *)urlStr
-                    paraDict:(NSDictionary *)paraDict
-                     success:(void (^) ())success
-                     failure:(void (^) ())failure;
+- (void)postReuestWithSuffixURLStr:(NSString *)urlStr
+                          paraDict:(NSDictionary *)paraDict
+                           success:(void (^) ())success
+                           failure:(void (^) ())failure;
 
 @end

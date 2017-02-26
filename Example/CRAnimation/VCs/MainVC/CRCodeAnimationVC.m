@@ -71,13 +71,12 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (void)requestForProducts
 {
-    NSDictionary *paraDict = @{@"": @""};
-    [CRProductsRequest reuestProductsWithParaDict:paraDict
-                                                          success:^{
-                                                              nil;
-                                                          } failure:^{
-                                                              nil;
-                                                          }];
+    [CRProductsRequest reuestProductsWithParaDict:nil
+                                          success:^{
+                                              nil;
+                                          } failure:^{
+                                              nil;
+                                          }];
 }
 
 - (void)dataReady

@@ -14,14 +14,13 @@
                            success:(void (^) ())success
                            failure:(void (^) ())failure
 {
-    [[CRBaseRequestManager sharedManager] getReuestWithURLStr:CR_HOME_PRODUCTS_URL
-                     paraDict:paraDict
-                      success:^{
-                          nil;
-                      }
-                      failure:^{
-                          nil;
-                      }];
+    [[CRBaseRequestManager sharedManager] getReuestWithSuffixURLStr:CR_HOME_PRODUCTS_URL
+                                                           paraDict:paraDict
+                                                            success:^{
+                                                                nil;
+                                                            } failure:^{
+                                                                nil;
+                                                            }];
 }
 
 @end
