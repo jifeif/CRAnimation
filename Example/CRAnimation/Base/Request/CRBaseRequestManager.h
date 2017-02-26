@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRUrls.h"
 @class CRBaseRequestManager;
 
 @interface CRBaseRequestManager : NSObject
 
-+ (CRBaseRequestManager *)sharedManager;
++ (id)sharedManager;
+
+- (void)getReuestWithURLStr:(NSString *)urlStr
+                   paraDict:(NSDictionary *)paraDict
+                    success:(void (^) ())success
+                    failure:(void (^) ())failure;
 
 - (void)postReuestWithURLStr:(NSString *)urlStr
                     paraDict:(NSDictionary *)paraDict

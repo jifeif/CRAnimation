@@ -12,6 +12,7 @@
 #import "CRItemBriefSetcionHeaderView.h"
 #import "CRHomeNaviBarView.h"
 #import "CRJumpManager.h"
+#import "CRProductsRequest.h"
 
 static NSString *collectionViewCellID           = @"collectionViewCellID";
 static NSString *collectionViewReusableViewID   = @"collectionViewReusableViewID";
@@ -54,6 +55,9 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     
     [self dataReady];
     [self createUI];
+    [self requestForProducts];
+    [self showHud:@"777"];
+//    [self textStateHUD:@"777"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -63,6 +67,17 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)requestForProducts
+{
+    NSDictionary *paraDict = @{@"": @""};
+    [CRProductsRequest reuestProductsWithParaDict:paraDict
+                                                          success:^{
+                                                              nil;
+                                                          } failure:^{
+                                                              nil;
+                                                          }];
 }
 
 - (void)dataReady
