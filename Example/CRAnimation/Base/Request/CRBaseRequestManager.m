@@ -11,6 +11,7 @@
 #import <MJExtension/MJExtension.h>
 
 static CRBaseRequestManager *kSharedManager;
+static NSNumber *successCodeNumber;
 
 @implementation CRBaseRequestManager
 
@@ -28,6 +29,7 @@ static CRBaseRequestManager *kSharedManager;
     self = [super init];
     
     if (self) {
+        successCodeNumber = @0;
         return self;
     }
     
@@ -48,9 +50,19 @@ static CRBaseRequestManager *kSharedManager;
                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                     NSDictionary *responseDict = (NSDictionary *)responseObject;
                     CRResponseBaseModel *responseBaseModel = [CRResponseBaseModel mj_objectWithKeyValues:responseDict];
-                    NSLog(@"--responseObject:%@", responseObject);
+                    if ([responseBaseModel.code isEqualToNumber:successCodeNumber]) {
+                        if (success) {
+                            success(responseBaseModel);
+                        }
+                    }else{
+                        if (failure) {
+                            failure(responseBaseModel.msg);
+                        }
+                    }
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                    NSLog(@"--error:%@", error);
+                    if (failure) {
+                        failure(error.domain);
+                    }
                 }];
 }
 
@@ -64,13 +76,24 @@ static CRBaseRequestManager *kSharedManager;
     AFHTTPSessionManager *sessionManager =[AFHTTPSessionManager manager];
     [sessionManager POST:urlStr
               parameters:paraDict
-                progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                    NSDictionary *responseDict = (NSDictionary *)responseObject;
-                    CRResponseBaseModel *responseBaseModel = [CRResponseBaseModel mj_objectWithKeyValues:responseDict];
-                    NSLog(@"--responseObject:%@", responseObject);
-                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                    NSLog(@"--error:%@", error);
-                }];
+                progress:nil
+                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                     NSDictionary *responseDict = (NSDictionary *)responseObject;
+                     CRResponseBaseModel *responseBaseModel = [CRResponseBaseModel mj_objectWithKeyValues:responseDict];
+                     if ([responseBaseModel.code isEqualToNumber:successCodeNumber]) {
+                         if (success) {
+                             success(responseBaseModel);
+                         }
+                     }else{
+                         if (failure) {
+                             failure(responseBaseModel.msg);
+                         }
+                     }
+                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                     if (failure) {
+                         failure(error.domain);
+                     }
+                 }];
 }
 
 @end

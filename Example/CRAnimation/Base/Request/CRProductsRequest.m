@@ -17,6 +17,7 @@
     [[CRBaseRequestManager sharedManager] getReuestWithSuffixURLStr:CR_HOME_PRODUCTS_URL
                                                            paraDict:paraDict
                                                             success:^(CRResponseBaseModel *responseBaseModel) {
+                                                                responseBaseModel;
                                                                 nil;
                                                             } failure:^(NSString *errorMsg) {
                                                                 nil;
