@@ -11,7 +11,7 @@
 @interface CRProductsRequest : CRBaseRequestManager
 
 + (void)reuestProductsWithParaDict:(NSDictionary *)paraDict
-                           success:(void (^) ())success
-                           failure:(void (^) ())failure;
+                           success:(void (^) (CRResponseBaseModel *responseBaseModel))success
+                           failure:(void (^) (NSString *errorMsg))failure;
 
 @end

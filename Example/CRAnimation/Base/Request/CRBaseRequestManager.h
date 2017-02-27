@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "CRUrls.h"
+#import "CRResponseBaseModel.h"
+
 @class CRBaseRequestManager;
 
 @interface CRBaseRequestManager : NSObject
@@ -16,12 +18,12 @@
 
 - (void)getReuestWithSuffixURLStr:(NSString *)urlStr
                          paraDict:(NSDictionary *)paraDict
-                          success:(void (^) ())success
-                          failure:(void (^) ())failure;
+                          success:(void (^) (CRResponseBaseModel *responseBaseModel))success
+                          failure:(void (^) (NSString *errorMsg))failure;
 
 - (void)postReuestWithSuffixURLStr:(NSString *)urlStr
                           paraDict:(NSDictionary *)paraDict
-                           success:(void (^) ())success
-                           failure:(void (^) ())failure;
+                           success:(void (^) (CRResponseBaseModel *responseBaseModel))success
+                           failure:(void (^) (NSString *errorMsg))failure;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "CRBaseRequestManager.h"
 #import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
 
 static CRBaseRequestManager *kSharedManager;
 
@@ -35,8 +36,8 @@ static CRBaseRequestManager *kSharedManager;
 
 - (void)getReuestWithSuffixURLStr:(NSString *)urlStr
                          paraDict:(NSDictionary *)paraDict
-                          success:(void (^) ())success
-                          failure:(void (^) ())failure
+                          success:(void (^) (CRResponseBaseModel *responseBaseModel))success
+                          failure:(void (^) (NSString *errorMsg))failure
 {
     urlStr = [NSString stringWithFormat:@"%@%@", CR_BASE_URL, urlStr];
     
@@ -45,6 +46,8 @@ static CRBaseRequestManager *kSharedManager;
              parameters:paraDict
                progress:nil
                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                    NSDictionary *responseDict = (NSDictionary *)responseObject;
+                    CRResponseBaseModel *responseBaseModel = [CRResponseBaseModel mj_objectWithKeyValues:responseDict];
                     NSLog(@"--responseObject:%@", responseObject);
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                     NSLog(@"--error:%@", error);
@@ -53,8 +56,8 @@ static CRBaseRequestManager *kSharedManager;
 
 - (void)postReuestWithSuffixURLStr:(NSString *)urlStr
                           paraDict:(NSDictionary *)paraDict
-                           success:(void (^) ())success
-                           failure:(void (^) ())failure
+                           success:(void (^) (CRResponseBaseModel *responseBaseModel))success
+                           failure:(void (^) (NSString *errorMsg))failure
 {
     urlStr = [NSString stringWithFormat:@"%@%@", CR_BASE_URL, urlStr];
     
@@ -62,6 +65,8 @@ static CRBaseRequestManager *kSharedManager;
     [sessionManager POST:urlStr
               parameters:paraDict
                 progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                    NSDictionary *responseDict = (NSDictionary *)responseObject;
+                    CRResponseBaseModel *responseBaseModel = [CRResponseBaseModel mj_objectWithKeyValues:responseDict];
                     NSLog(@"--responseObject:%@", responseObject);
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                     NSLog(@"--error:%@", error);

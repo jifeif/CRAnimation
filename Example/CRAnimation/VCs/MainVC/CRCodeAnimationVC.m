@@ -72,9 +72,9 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 - (void)requestForProducts
 {
     [CRProductsRequest reuestProductsWithParaDict:nil
-                                          success:^{
+                                          success:^(CRResponseBaseModel *responseBaseModel) {
                                               nil;
-                                          } failure:^{
+                                          } failure:^(NSString *errorMsg) {
                                               nil;
                                           }];
 }

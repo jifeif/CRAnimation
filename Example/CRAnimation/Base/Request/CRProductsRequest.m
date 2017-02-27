@@ -11,14 +11,14 @@
 @implementation CRProductsRequest
 
 + (void)reuestProductsWithParaDict:(NSDictionary *)paraDict
-                           success:(void (^) ())success
-                           failure:(void (^) ())failure
+                           success:(void (^) (CRResponseBaseModel *responseBaseModel))success
+                           failure:(void (^) (NSString *errorMsg))failure
 {
     [[CRBaseRequestManager sharedManager] getReuestWithSuffixURLStr:CR_HOME_PRODUCTS_URL
                                                            paraDict:paraDict
-                                                            success:^{
+                                                            success:^(CRResponseBaseModel *responseBaseModel) {
                                                                 nil;
-                                                            } failure:^{
+                                                            } failure:^(NSString *errorMsg) {
                                                                 nil;
                                                             }];
 }
