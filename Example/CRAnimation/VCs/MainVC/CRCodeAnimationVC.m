@@ -53,11 +53,9 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self dataReady];
+//    [self localDataReady];
     [self createUI];
-    [self requestForProducts];
-    [self showHud:@"777"];
-//    [self textStateHUD:@"777"];
+    [self requestData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -69,17 +67,31 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     self.navigationController.navigationBarHidden = YES;
 }
 
+- (void)requestData
+{
+    [self requestForProducts];
+}
+
 - (void)requestForProducts
 {
+    _dataArrayTitle = [[NSMutableArray alloc] initWithArray:@[
+                                                              __kCRDemoStorage,
+                                                              //__kCRDemoCombination,
+                                                              ]];
+    
+    [self showHud:nil];
+    __weak typeof(self) weakSelf = self;
     [CRProductsRequest reuestProductsWithParaDict:nil
-                                          success:^(CRResponseBaseModel *responseBaseModel) {
-                                              nil;
+                                          success:^(CRHomeProductsModel *homeProductModel) {
+                                              [weakSelf dealDemoArray:homeProductModel.list withGroupName:__kCRDemoStorage];
+                                              [weakSelf hideHUDView];
+                                              [weakSelf.mainCollectionView reloadData];
                                           } failure:^(NSString *errorMsg) {
                                               nil;
                                           }];
 }
 
-- (void)dataReady
+- (void)localDataReady
 {
     _dataArrayTitle = [[NSMutableArray alloc] initWithArray:@[
                                                               __kCRDemoStorage,
@@ -133,6 +145,37 @@ static NSString *__kCRDemoCombination   = @"组合动效";
             [subMutableArray addObject:infoModel];
             _dataArrayDemoModel[index] = subMutableArray;
         }
+    }
+}
+
+- (void)dealDemoArray:(NSArray *)demoArray withGroupName:(NSString *)groupName
+{
+    if (!demoArray || [demoArray count] == 0) {
+        return;
+    }
+    for (CRDemoInfoModel *demo in demoArray) {
+        [self addDemoInfoModel:demo withGroupName:groupName];
+    }
+}
+
+- (void)addDemoInfoModel:(CRDemoInfoModel *)demoInfoModel withGroupName:(NSString *)groupName
+{
+    if (!_dataArrayDemoModel) {
+        _dataArrayDemoModel = [[NSMutableArray alloc] init];
+        
+        for (int i = 0; i < [_dataArrayTitle count]; i++) {
+            NSMutableArray *subMutableArray = [NSMutableArray new];
+            [_dataArrayDemoModel addObject:subMutableArray];
+        }
+    }
+    
+    if (demoInfoModel) {
+        
+        //  添加新的Demo数据模型
+        NSInteger index = [self.dataArrayTitle indexOfObject:groupName];
+        NSMutableArray *subMutableArray = self.dataArrayDemoModel[index];
+        [subMutableArray addObject:demoInfoModel];
+        _dataArrayDemoModel[index] = subMutableArray;
     }
 }
 

@@ -7,11 +7,12 @@
 //
 
 #import "CRBaseRequestManager.h"
+#import "CRHomeProductsModel.h"
 
 @interface CRProductsRequest : CRBaseRequestManager
 
 + (void)reuestProductsWithParaDict:(NSDictionary *)paraDict
-                           success:(void (^) (CRResponseBaseModel *responseBaseModel))success
+                           success:(void (^) (CRHomeProductsModel *homeProductModel))success
                            failure:(void (^) (NSString *errorMsg))failure;
 
 @end

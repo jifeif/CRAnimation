@@ -23,7 +23,7 @@ typedef enum {
 
 //  Require
 //  demoVC名称（用于push到指定名称的VC）
-@property (strong, nonatomic) NSString      *demoVCName;
+@property (strong, nonatomic) NSString      *demoVCName;//
 
 //  Require
 //  demoGif名称
@@ -34,21 +34,29 @@ typedef enum {
 //  动效类型
 //  kCRDemoTypeStorage:         动效仓库
 //  kCRDemoTypeCombination:     组合动效
-@property (assign, nonatomic) CRDemoType    demoType;
+@property (assign, nonatomic) CRDemoType    demoType;//
 
 //  Require
 //  ID编号
 //  S0001:动效仓库
 //  C0001:组合动效
-@property (strong, nonatomic) NSString      *CRID;
+@property (strong, nonatomic) NSString      *CRID;//
 
 //  Require
 //  动效名称
-@property (strong, nonatomic) NSString      *demoName;
+@property (strong, nonatomic) NSString      *demoName;//
 
 //  Require
 //  动效简介
-@property (strong, nonatomic) NSString      *demoSummary;
+@property (strong, nonatomic) NSString      *demoSummary;//
+
+//  Require
+//  动效详情
+@property (strong, nonatomic) NSString      *detailDesc;//
+
+//  Require
+//  语言(字符串类型)
+@property (assign, nonatomic) NSString      *language;//
 
 //  Require
 //  语言
@@ -57,11 +65,15 @@ typedef enum {
 
 //  Optional
 //  作者源gitHub地址
-@property (strong, nonatomic) NSString      *originGitHubAddress;
+@property (strong, nonatomic) NSString      *originGitHubAddress;//
 
 //  Optional
 //  主页／该demo其他相关介绍文章地址，如csdn，简书，blog地址
-@property (strong, nonatomic) NSString      *homePage;
+@property (strong, nonatomic) NSString      *homePage;//
+
+//  Optional
+//  出处地址
+@property (strong, nonatomic) NSString      *referenceAddress;//
 
 //  Require
 //  作者信息
@@ -79,6 +91,9 @@ typedef enum {
 
 //  Require
 //  Gif地址
-@property (strong, nonatomic) NSString      *gifAddress;
+@property (strong, nonatomic) NSString      *gifAddress;//
+
+//  数据库用id
+@property (strong, nonatomic) NSNumber  *animationId;//
 
 @end
