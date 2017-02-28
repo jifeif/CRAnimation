@@ -11,12 +11,30 @@
 
 @implementation CRProductsRequest
 
-+ (void)reuestProductsWithParaDict:(NSDictionary *)paraDict
-                           success:(void (^) (CRHomeProductsModel *homeProductModel))success
-                           failure:(void (^) (NSString *errorMsg))failure
++ (void)reuestProductsWithAnmationType:(CRHomeProductType)anmationType
+                               success:(void (^) (CRHomeProductsModel *homeProductModel))success
+                               failure:(void (^) (NSString *errorMsg))failure
 {
-    [[CRBaseRequestManager sharedManager] getReuestWithSuffixURLStr:CR_HOME_PRODUCTS_URL
-                                                           paraDict:paraDict
+    
+    NSString *suffixUrlStr;
+    switch (anmationType) {
+        case kCRHomeProductType_CodeAnimation:
+            suffixUrlStr = CR_HOME_PRODUCTS_CODE_ANIMATION_URL;
+            break;
+            
+        case kCRHomeProductType_CodeWidgetAnimation:
+            suffixUrlStr = CR_HOME_PRODUCTS_CODE_WIDGET_ANIMATION_URL;
+            break;
+            
+        case kCRHomeProductType_DesignerAnimation:
+            suffixUrlStr = CR_HOME_PRODUCTS_DESIGN_ANIMATION_URL;
+            break;
+            
+        default:
+            break;
+    }
+    [[CRBaseRequestManager sharedManager] getReuestWithSuffixURLStr:suffixUrlStr
+                                                           paraDict:nil
                                                             success:^(CRResponseBaseModel *responseBaseModel) {
                                                                 
                                                                 [CRDemoInfoModel mj_setupReplacedKeyFromPropertyName:^NSDictionary *{

@@ -81,14 +81,14 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     
     [self showHud:nil];
     __weak typeof(self) weakSelf = self;
-    [CRProductsRequest reuestProductsWithParaDict:nil
-                                          success:^(CRHomeProductsModel *homeProductModel) {
-                                              [weakSelf dealDemoArray:homeProductModel.list withGroupName:__kCRDemoStorage];
-                                              [weakSelf hideHUDView];
-                                              [weakSelf.mainCollectionView reloadData];
-                                          } failure:^(NSString *errorMsg) {
-                                              nil;
-                                          }];
+    [CRProductsRequest reuestProductsWithAnmationType:kCRHomeProductType_CodeAnimation
+                                              success:^(CRHomeProductsModel *homeProductModel) {
+                                                  [weakSelf dealDemoArray:homeProductModel.list withGroupName:__kCRDemoStorage];
+                                                  [weakSelf hideHUDView];
+                                                  [weakSelf.mainCollectionView reloadData];
+                                              } failure:^(NSString *errorMsg) {
+                                                  nil;
+                                              }];
 }
 
 - (void)localDataReady
