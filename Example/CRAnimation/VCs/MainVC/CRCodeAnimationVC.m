@@ -74,17 +74,17 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (void)requestForProducts
 {
+    __weak typeof(self) weakSelf = self;
     _dataArrayTitle = [[NSMutableArray alloc] initWithArray:@[
                                                               __kCRDemoStorage,
                                                               //__kCRDemoCombination,
                                                               ]];
     
     [self showHud:nil];
-    __weak typeof(self) weakSelf = self;
     [CRProductsRequest reuestProductsWithAnmationType:kCRHomeProductType_CodeAnimation
                                               success:^(CRHomeProductsModel *homeProductModel) {
-                                                  [weakSelf dealDemoArray:homeProductModel.list withGroupName:__kCRDemoStorage];
                                                   [weakSelf hideHUDView];
+                                                  [weakSelf dealDemoArray:homeProductModel.list withGroupName:__kCRDemoStorage];
                                                   [weakSelf.mainCollectionView reloadData];
                                               } failure:^(NSString *errorMsg) {
                                                   nil;

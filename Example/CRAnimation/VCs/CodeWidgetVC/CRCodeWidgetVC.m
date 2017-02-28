@@ -11,6 +11,7 @@
 #import "CRDemoInfoModel.h"
 #import "CRMemberDetailProductCollectionViewCell.h"
 #import "CRJumpManager.h"
+#import "CRProductsRequest.h"
 
 static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
@@ -18,8 +19,9 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 {
     CRHomeNaviBarView *_naviBarView;
     NSMutableArray <CRDemoInfoModel *> *_demoInfoModelArray;
-    UICollectionView  *_mainCollectionView;
 }
+
+@property (strong, nonatomic) UICollectionView  *mainCollectionView;
 
 @end
 
@@ -39,8 +41,39 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self createFakeDataWithAddBriefDemoInfo];
+//    [self createFakeDataWithAddBriefDemoInfo];
     [self createUI];
+    [self requestForProducts];
+}
+
+- (void)requestForProducts
+{
+    __weak typeof(self) weakSelf = self;
+    [self showHud:nil];
+    [CRProductsRequest reuestProductsWithAnmationType:kCRHomeProductType_CodeAnimation
+                                              success:^(CRHomeProductsModel *homeProductModel) {
+                                                  [weakSelf hideHUDView];
+                                                  [weakSelf dealDemoArray:homeProductModel.list];
+                                                  [weakSelf.mainCollectionView reloadData];
+                                              } failure:^(NSString *errorMsg) {
+                                                  nil;
+                                              }];
+}
+
+- (void)dealDemoArray:(NSArray *)demoArray
+{
+    if (!_demoInfoModelArray) {
+        _demoInfoModelArray = [NSMutableArray new];
+    }
+    [_demoInfoModelArray removeAllObjects];
+    
+    if (!demoArray || [demoArray count] == 0) {
+        return;
+    }
+    
+    for (CRDemoInfoModel *demo in demoArray) {
+        [_demoInfoModelArray addObject:demo];
+    }
 }
 
 - (void)createFakeDataWithAddBriefDemoInfo
