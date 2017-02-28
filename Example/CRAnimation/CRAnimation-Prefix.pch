@@ -19,3 +19,4 @@
 #import "BearConstants.h"
 #import "CRDefines.h"
 #import "CRConstants.h"
+#import "CRCommon.h"

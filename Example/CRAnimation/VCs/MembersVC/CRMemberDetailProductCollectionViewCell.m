@@ -12,7 +12,6 @@
 
 @interface CRMemberDetailProductCollectionViewCell ()
 {
-    FLAnimatedImage             *_image;
     CRFLAnimatiatedImageView    *_imageView;
 }
 

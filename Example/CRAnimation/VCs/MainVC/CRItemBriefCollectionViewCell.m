@@ -7,12 +7,11 @@
 //
 
 #import "CRItemBriefCollectionViewCell.h"
-#import "FLAnimatedImage.h"
+#import "CRFLAnimatiatedImageView.h"
 
 @interface CRItemBriefCollectionViewCell ()
 {
-    FLAnimatedImage         *_image;
-    FLAnimatedImageView     *_imageView;
+    CRFLAnimatiatedImageView     *_imageView;
     
     UIView                  *_labelView;
     UILabel                 *_namelabel;
@@ -38,8 +37,9 @@
 {
     CGFloat off_x = 5;
     
-    _imageView = [[FLAnimatedImageView alloc] init];
+    _imageView = [[CRFLAnimatiatedImageView alloc] init];
     _imageView.frame = self.bounds;
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:_imageView];
     
     _labelView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.width, 0)];
@@ -65,9 +65,14 @@
 
 - (void)loadDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
 {
-    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:demoInfoModel.demoGifName];
-    _image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile:path]];
-    _imageView.animatedImage = _image;
+    if ([CRCommon validateStr:demoInfoModel.gifAddress]) {
+        [_imageView setGifImageWithURLStr:demoInfoModel.gifAddress];
+    }
+    else if ([CRCommon validateStr:demoInfoModel.demoGifName]){
+        NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:demoInfoModel.demoGifName];
+        FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile:path]];
+        _imageView.animatedImage = image;
+    }
     
     _namelabel.text = demoInfoModel.demoName;
     _summaryLabel.text = demoInfoModel.demoSummary;
