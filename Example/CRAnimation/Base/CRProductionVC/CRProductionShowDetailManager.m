@@ -8,9 +8,8 @@
 
 #import "CRProductionShowDetailManager.h"
 #import "CRProductionDetailView.h"
-
-#warning Test
-#import "CRCardAnimationViewDemoInfoModel.h"
+#import "CRDemoInfoModel.h"
+#import "CRBaseViewController.h"
 
 typedef enum {
     kProductionDetailViewStatus_Idle,
@@ -21,6 +20,7 @@ typedef enum {
 @interface CRProductionShowDetailManager ()
 
 @property (strong, nonatomic) CRBaseViewController          *inVC;
+@property (strong, nonatomic) CRDemoInfoModel               *demoInfoModel;
 @property (strong, nonatomic) UIView                        *maskBgView;
 @property (strong, nonatomic) UIView                        *detailContentView;
 @property (strong, nonatomic) CRProductionDetailView        *detailView;
@@ -31,29 +31,32 @@ typedef enum {
 
 @implementation CRProductionShowDetailManager
 
-+ (CRProductionShowDetailManager *)commonManagerInVC:(__weak CRBaseViewController *)inVC
++ (CRProductionShowDetailManager *)commonManager
 {
-    CRProductionShowDetailManager *manager = [[CRProductionShowDetailManager alloc] initInVC:inVC];
+    CRProductionShowDetailManager *manager = [[CRProductionShowDetailManager alloc] init];
     return manager;
 }
 
-- (instancetype)initInVC:(__weak CRBaseViewController *)inVC
+- (instancetype)init
 {
     self = [super init];
     
     if (self) {
-        _inVC = inVC;
         _viewStatus = kProductionDetailViewStatus_Idle;
-        [self createMaskBgView];
-        [self createDetailView];
     }
     
     return self;
 }
 
+- (void)loadUI
+{
+    [self createMaskBgView];
+    [self createDetailView];
+}
+
 - (void)createMaskBgView
 {
-    if (!_maskBgView) {
+    if (!_maskBgView && _inVC) {
         _maskBgView = [[UIView alloc] initWithFrame:_inVC.view.bounds];
         _maskBgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
     }
@@ -66,9 +69,8 @@ typedef enum {
         [_maskBgView addSubview:_detailContentView];
     }
     
-    if (!_detailView) {
-        CRCardAnimationViewDemoInfoModel *tempModel = [CRCardAnimationViewDemoInfoModel new];
-        _detailView = [CRProductionDetailView commonDetailViewWithInfoModel:tempModel inVC:_inVC];
+    if (!_detailView && _demoInfoModel) {
+        _detailView = [CRProductionDetailView commonDetailViewWithInfoModel:_demoInfoModel inVC:_inVC];
         [_detailContentView addSubview:_detailView];
         [_detailView setMaxX:_detailContentView.width];
     }
@@ -130,5 +132,12 @@ typedef enum {
     }];
 }
 
+#pragma mark - Set Data
+- (void)setParaWithInVC:(__weak CRBaseViewController *)inVC
+       AndDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
+{
+    _inVC = inVC;
+    _demoInfoModel = demoInfoModel;
+}
 
 @end

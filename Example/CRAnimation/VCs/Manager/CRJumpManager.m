@@ -9,6 +9,7 @@
 #import "CRJumpManager.h"
 #import "CRBaseViewController.h"
 #import "CRDemoInfoModel.h"
+#import "CRProductionBaseVC.h"
 
 @interface CRJumpManager ()
 {
@@ -39,8 +40,12 @@
 - (void)jumpToProductDetailVCWithDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
 {
     if (demoInfoModel.demoVCName) {
-        CRBaseViewController *destinationVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
-        [_inVC.navigationController pushViewController:destinationVC animated:YES];
+        id idVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
+        if ([idVC isKindOfClass:[CRProductionBaseVC class]]) {
+            CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)idVC;
+            [destinationVC setDemoInfoModel:demoInfoModel];
+            [_inVC.navigationController pushViewController:destinationVC animated:YES];
+        }
     }
 }
 

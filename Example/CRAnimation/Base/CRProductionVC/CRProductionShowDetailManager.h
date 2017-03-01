@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRBaseViewController.h"
+@class CRDemoInfoModel, CRBaseViewController;
 
 @interface CRProductionShowDetailManager : NSObject
 
-+ (CRProductionShowDetailManager *)commonManagerInVC:(__weak CRBaseViewController *)inVC;
++ (CRProductionShowDetailManager *)commonManager;
+
+- (void)setParaWithInVC:(__weak CRBaseViewController *)inVC
+       AndDemoInfoModel:(CRDemoInfoModel *)demoInfoModel;
+- (void)loadUI;
 
 - (void)showDetailView;
 - (void)fadeDetailView;

@@ -7,11 +7,13 @@
 //
 
 #import "CRBaseViewController.h"
+@class CRDemoInfoModel;
 
 @interface CRProductionBaseVC : CRBaseViewController
 
 @property (strong, nonatomic) UIColor       *backBtnColor;
 
+- (void)setDemoInfoModel:(CRDemoInfoModel *)demoInfoModel;
 - (void)addTopBarWithTitle:(NSString *)title;
 - (void)popSelf;
 

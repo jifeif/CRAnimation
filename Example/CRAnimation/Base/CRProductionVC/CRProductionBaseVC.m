@@ -8,6 +8,7 @@
 
 #import "CRProductionBaseVC.h"
 #import "CRProductionShowDetailManager.h"
+#import "CRDemoInfoModel.h"
 
 @interface CRProductionBaseVC ()
 {
@@ -16,6 +17,7 @@
     UIButton    *_detailsBtn;
     UILabel     *_productionTitleLabel;
     UIView      *_topBarView;
+    CRDemoInfoModel *_demoInfoModel;
     CRProductionShowDetailManager   *_showDetailManager;
 }
 
@@ -143,11 +145,19 @@
 {
     __weak typeof(self) weakSelf = self;
     
-    if (!_showDetailManager) {
-        _showDetailManager = [CRProductionShowDetailManager commonManagerInVC:weakSelf];
+    if (!_showDetailManager && _demoInfoModel) {
+        _showDetailManager = [CRProductionShowDetailManager commonManager];
+        [_showDetailManager setParaWithInVC:weakSelf AndDemoInfoModel:_demoInfoModel];
+        [_showDetailManager loadUI];
     }
     
     [_showDetailManager showDetailView];
+}
+
+#pragma mark - Set CRDemoInfoModel
+- (void)setDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
+{
+    _demoInfoModel = demoInfoModel;
 }
 
 - (void)didReceiveMemoryWarning {
