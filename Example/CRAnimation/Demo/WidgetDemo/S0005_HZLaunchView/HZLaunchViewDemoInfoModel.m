@@ -22,8 +22,7 @@
     
     self.originGitHubAddress            = @"https://github.com/zzgo/TwitterLaunchDemo";
     self.homePage                       = @"";
-    self.authorInfo                     = self.authorInfo;
-    self.UIDesignerInfo                 = self.UIDesignerInfo;
+
     
 }
 

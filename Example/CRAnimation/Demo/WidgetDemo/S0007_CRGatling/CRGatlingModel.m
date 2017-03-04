@@ -21,8 +21,7 @@
     
     self.originGitHubAddress            = @"https://github.com/JMT451/CRGatling";
     self.homePage                       = @"";
-    self.authorInfo                     = self.authorInfo;
-    self.UIDesignerInfo                 = self.UIDesignerInfo;
+
     
 }
 

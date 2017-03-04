@@ -22,8 +22,7 @@
     
     self.originGitHubAddress            = @"";
     self.homePage                       = @"";
-    self.authorInfo                     = self.authorInfo;
-    self.UIDesignerInfo                 = self.UIDesignerInfo;
+
     
 }
 

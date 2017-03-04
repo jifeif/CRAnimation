@@ -22,8 +22,7 @@
     
     self.originGitHubAddress            = @"https://github.com/Flipboard/FLAnimatedImage";
     self.homePage                       = @"https://github.com/Flipboard/FLAnimatedImage";
-    self.authorInfo                     = self.authorInfo;
-    self.UIDesignerInfo                 = self.UIDesignerInfo;
+
     
 }
 

@@ -38,8 +38,7 @@
     
     self.originGitHubAddress            = @"https://github.com/631106979/WCLLoadingView";
     self.homePage                       = @"";
-    self.authorInfo                     = self.authorInfo;
-    self.UIDesignerInfo                 = self.UIDesignerInfo;
+
     
 }
 

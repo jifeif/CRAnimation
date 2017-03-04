@@ -49,6 +49,12 @@
                                                                              @"homePage" : @"otherAddress"
                                                                              };
                                                                 }];
+                                                                [CRDemoInfoModel mj_setupObjectClassInArray:^NSDictionary *{
+                                                                    return @{
+                                                                             @"developAuthors" : @"CRProductsMemberBriefInfoModel",
+                                                                             @"designAuthors" : @"CRProductsMemberBriefInfoModel",
+                                                                             };
+                                                                }];
                                                                 [CRHomeProductsModel mj_setupObjectClassInArray:^NSDictionary *{
                                                                     return @{
                                                                              @"list" : @"CRDemoInfoModel"

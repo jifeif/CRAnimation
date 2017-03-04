@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CRMemberInfoModel.h"
+#import "CRProductsMemberBriefInfoModel.h"
 
 typedef enum {
     kCRDemoTypeStorage,       //  动效仓库
@@ -95,5 +96,8 @@ typedef enum {
 
 //  数据库用id
 @property (strong, nonatomic) NSNumber  *animationId;//
+
+@property (strong, nonatomic) NSArray <CRProductsMemberBriefInfoModel *> *developAuthors;
+@property (strong, nonatomic) NSArray <CRProductsMemberBriefInfoModel *> *designAuthors;
 
 @end

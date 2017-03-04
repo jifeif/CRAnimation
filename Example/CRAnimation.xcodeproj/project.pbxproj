@@ -70,6 +70,7 @@
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
 		09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */; };
+		09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
@@ -227,6 +228,8 @@
 		09D937D51DAEAC69007694BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		09DC1C391E583A4D007A8B10 /* CRJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRJumpManager.h; sourceTree = "<group>"; };
 		09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJumpManager.m; sourceTree = "<group>"; };
+		09E40CB01E6B17270042B5AE /* CRProductsMemberBriefInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRProductsMemberBriefInfoModel.h; sourceTree = "<group>"; };
+		09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRProductsMemberBriefInfoModel.m; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -395,6 +398,8 @@
 				09109A7F1E53420300031210 /* CRDemoBriefDemoInfo.m */,
 				092A2D081DBC9A5C00650DE1 /* CRMemberInfoModel.h */,
 				092A2D091DBC9A5C00650DE1 /* CRMemberInfoModel.m */,
+				09E40CB01E6B17270042B5AE /* CRProductsMemberBriefInfoModel.h */,
+				09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1016,6 +1021,7 @@
 				09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */,
 				092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */,
 				973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */,
+				09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */,
 				090080A21E4CB91200AE60A5 /* CRItemBriefSetcionHeaderView.m in Sources */,
 				09203ACA1E4F435D00FB2B25 /* CRMemberDetailVC.m in Sources */,
 				ED36EAD51DD2AF9B0050416B /* README.md in Sources */,

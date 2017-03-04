@@ -22,8 +22,7 @@
     
     self.originGitHubAddress            = @"https://github.com/BearRan/CRAnimation";
     self.homePage                       = @"https://github.com/BearRan/CRAnimation";
-    self.authorInfo                     = self.authorInfo;
-    self.UIDesignerInfo                 = self.UIDesignerInfo;
+
     
 }
 
