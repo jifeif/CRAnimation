@@ -78,11 +78,11 @@ typedef enum {
 
 //  Require
 //  作者信息
-@property (strong, nonatomic) CRMemberInfoModel      *authorInfo;
+//@property (strong, nonatomic) CRMemberInfoModel      *authorInfo;
 
 //  Optional
 //  UI设计师信息
-@property (strong, nonatomic) CRMemberInfoModel      *UIDesignerInfo;
+//@property (strong, nonatomic) CRMemberInfoModel      *UIDesignerInfo;
 
 
 - (void)fillDemoInfo;

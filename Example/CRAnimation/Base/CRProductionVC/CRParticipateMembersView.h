@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "CRBaseViewController.h"
+#import "CRProductsMemberBriefInfoModel.h"
 
 @interface CRParticipateMembersView : UIView
 
 + (CRParticipateMembersView *)commonHeadersViewWithWidth:(CGFloat)width inVC:(__weak CRBaseViewController *)inVC;
 
-- (void)setMemberInfoModelArray:(NSArray<CRMemberInfoModel *> *)memberInfoModelArray;
+- (void)setMemberInfoModelArray:(NSArray<CRProductsMemberBriefInfoModel *> *)memberInfoModelArray;
 
 @end

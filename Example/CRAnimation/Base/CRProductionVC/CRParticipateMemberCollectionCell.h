@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CRProductsMemberBriefInfoModel.h"
 
 @interface CRParticipateMemberCollectionCell : UICollectionViewCell
 
-- (void)setDataWithMemberInfoModel:(CRMemberInfoModel *)model;
+- (void)setDataWithMemberInfoModel:(CRProductsMemberBriefInfoModel *)model;
 
 @end

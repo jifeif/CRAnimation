@@ -38,11 +38,11 @@
     [self addSubview:_headerImageV];
 }
 
-- (void)setDataWithMemberInfoModel:(CRMemberInfoModel *)model
+- (void)setDataWithMemberInfoModel:(CRProductsMemberBriefInfoModel *)model
 {
     UIImage *placeHolderHeaderImage = [UIImage imageNamed:@"tab_btn_control_n"];
-    if ([model.headURL length] > 0) {
-        [_headerImageV sd_setImageWithURL:[NSURL URLWithString:model.headURL] placeholderImage:placeHolderHeaderImage];
+    if ([model.authorHeadImageAddress length] > 0) {
+        [_headerImageV sd_setImageWithURL:[NSURL URLWithString:model.authorHeadImageAddress] placeholderImage:placeHolderHeaderImage];
     }else{
         _headerImageV.image = placeHolderHeaderImage;
     }

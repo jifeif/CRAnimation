@@ -15,7 +15,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 @interface CRParticipateMembersView () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 {
     UICollectionView  *_mainCollectionView;
-    NSArray <CRMemberInfoModel *> *_memberInfoModelArray;
+    NSArray <CRProductsMemberBriefInfoModel *> *_memberInfoModelArray;
     CRBaseViewController *_inVC;
 }
 
@@ -80,7 +80,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
     
     cell.backgroundColor = [UIColor purpleColor];
     
-    CRMemberInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
+    CRProductsMemberBriefInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
     [cell setDataWithMemberInfoModel:memberInfoModel];
     
     return cell;
@@ -134,8 +134,8 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CRMemberInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
-    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithInfoModel:memberInfoModel];
+    CRProductsMemberBriefInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
+    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithUserId:memberInfoModel.authorId];
     [_inVC.navigationController pushViewController:destinationVC animated:YES];
 }
 
@@ -152,7 +152,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 #pragma mark - setData
 
-- (void)setMemberInfoModelArray:(NSArray<CRMemberInfoModel *> *)memberInfoModelArray
+- (void)setMemberInfoModelArray:(NSArray<CRProductsMemberBriefInfoModel *> *)memberInfoModelArray
 {
     _memberInfoModelArray = memberInfoModelArray;
     [self relayUI];

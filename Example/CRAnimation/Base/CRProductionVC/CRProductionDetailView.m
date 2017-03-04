@@ -9,9 +9,6 @@
 #import "CRProductionDetailView.h"
 #import "CRParticipateMembersView.h"
 
-#warning DAD Delete
-#import "CRCardAnimationViewDemoInfoModel.h"
-
 @interface CRProductionDetailView ()
 {
     CRDemoInfoModel         *_infoModel;
@@ -174,7 +171,7 @@
     [_CRCoderTitleLabel setY:YY_6N(30)];
     
     _CRCoderHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth inVC:_inVC];
-    [_CRCoderHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
+    [_CRCoderHeadersView setMemberInfoModelArray:_infoModel.developAuthors];
     [_bodyDownView addSubview:_CRCoderHeadersView];
     [_CRCoderHeadersView setOrigin:CGPointMake(_CRCoderTitleLabel.x, _CRCoderTitleLabel.maxY + YY_6N(30))];
     
@@ -183,7 +180,7 @@
     [_CRDesignerTitleLabel setY:_CRCoderHeadersView.maxY + YY_6N(44)];
     
     _CRDesignerHeadersView = [CRParticipateMembersView commonHeadersViewWithWidth:maxWidth inVC:_inVC];
-    [_CRDesignerHeadersView setMemberInfoModelArray:[self createFakeParticipateData]];
+    [_CRDesignerHeadersView setMemberInfoModelArray:_infoModel.designAuthors];
     [_bodyDownView addSubview:_CRDesignerHeadersView];
     [_CRDesignerHeadersView setOrigin:CGPointMake(_CRDesignerTitleLabel.x, _CRDesignerTitleLabel.maxY + YY_6N(30))];
     
@@ -196,18 +193,6 @@
     [_urlDetailsLabel setY:_urlTitleLabel.maxY + YY_6N(20)];
     
     [_bodyDownView setHeight:_urlDetailsLabel.maxY + YY_6N(55)];
-}
-
-#warning DAD Test
-- (NSArray *)createFakeParticipateData
-{
-    NSMutableArray *memberInfoModelArray = [NSMutableArray new];
-    for (int i = 0; i < 17; i++) {
-        CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
-        infoModel.authorInfo.headURL = TestCRIconSquareURL;
-        [memberInfoModelArray addObject:infoModel.authorInfo];
-    }
-    return memberInfoModelArray;
 }
 
 - (void)setTitleLabel:(UILabel *)label text:(NSString *)text inView:(UIView *)inView

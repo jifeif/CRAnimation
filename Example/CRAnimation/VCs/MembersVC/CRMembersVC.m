@@ -42,7 +42,6 @@
 
 - (void)createUI
 {
-    [self createFakeData];
     self.navigationController.navigationBar.hidden = YES;
     self.view.backgroundColor = color_323341;
     
@@ -71,22 +70,14 @@
     _mainTableView.tableHeaderView = tableHeaderView;
 }
 
-- (void)createFakeData
-{
-    _memberInfoModelArray = [NSMutableArray new];
-    for (int i = 0; i < 15; i++) {
-        CRCardAnimationViewDemoInfoModel *infoModel = [CRCardAnimationViewDemoInfoModel new];
-        [_memberInfoModelArray addObject:infoModel.authorInfo];
-    }
-}
-
 
 #pragma mark - delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithInfoModel:_memberInfoModelArray[indexPath.row]];
-    [self.navigationController pushViewController:destinationVC animated:YES];
+#warning Modify 调整成员详情跳转
+//    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithInfoModel:_memberInfoModelArray[indexPath.row]];
+//    [self.navigationController pushViewController:destinationVC animated:YES];
 }
 
 

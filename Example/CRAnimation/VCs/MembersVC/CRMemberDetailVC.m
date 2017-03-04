@@ -26,12 +26,12 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 
 @implementation CRMemberDetailVC
 
-- (instancetype)initWithInfoModel:(CRMemberInfoModel *)model
+- (instancetype)initWithUserId:(NSNumber *)userId
 {
     self = [super init];
     
     if (self) {
-        _memberInfoModel = model;
+        
     }
     
     return self;
