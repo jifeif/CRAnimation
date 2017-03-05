@@ -7,6 +7,8 @@
 //
 
 #import "CRGetAuthorInfoRequest.h"
+#import "CRCommonExtendsManager.h"
+#import <MJExtension/MJExtension.h>
 
 @implementation CRGetAuthorInfoRequest
 
@@ -15,38 +17,22 @@
                         failure:(void (^) (NSString *errorMsg))failure
 {
     NSString *suffixUrlStr = [NSString stringWithFormat:@"%@/%@", CR_AUTHOR_INFO_URL, userId];
-    [[CRBaseRequestManager sharedManager] getReuestWithSuffixURLStr:suffixUrlStr
+    [[CRBaseRequestManager sharedManager] postReuestWithSuffixURLStr:suffixUrlStr
                                                            paraDict:nil
                                                             success:^(CRResponseBaseModel *responseBaseModel) {
                                                                 
-//                                                                [CRDemoInfoModel mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
-//                                                                    return @{
-//                                                                             @"demoVCName" : @"vcName",
-//                                                                             @"CRID" : @"crid",
-//                                                                             @"demoType" : @"type",
-//                                                                             @"gifAddress" : @"showUrl",
-//                                                                             @"demoName" : @"name",
-//                                                                             @"demoSummary" : @"shortDesc",
-//                                                                             @"originGitHubAddress" : @"originGithubAddress",
-//                                                                             @"homePage" : @"otherAddress"
-//                                                                             };
-//                                                                }];
-//                                                                [CRDemoInfoModel mj_setupObjectClassInArray:^NSDictionary *{
-//                                                                    return @{
-//                                                                             @"developAuthors" : @"CRProductsMemberBriefInfoModel",
-//                                                                             @"designAuthors" : @"CRProductsMemberBriefInfoModel",
-//                                                                             };
-//                                                                }];
-//                                                                [CRHomeProductsModel mj_setupObjectClassInArray:^NSDictionary *{
-//                                                                    return @{
-//                                                                             @"list" : @"CRDemoInfoModel"
-//                                                                             };
-//                                                                }];
-//                                                                
-//                                                                CRHomeProductsModel *homeProductModel = [CRHomeProductsModel mj_objectWithKeyValues:responseBaseModel.data];
-//                                                                if (success) {
-//                                                                    success(homeProductModel);
-//                                                                }
+                                                                [CRMemberInfoModel mj_setupObjectClassInArray:^NSDictionary *{
+                                                                    return @{
+                                                                             @"animationList" : @"CRDemoInfoModel",
+                                                                             };
+                                                                }];
+                                                                [CRCommonExtendsManager productsExtendsSetting];
+
+                                                                CRMemberInfoModel *memberInfoModel = [CRMemberInfoModel mj_objectWithKeyValues:responseBaseModel.data];
+                                                                
+                                                                if (success) {
+                                                                    success(memberInfoModel);
+                                                                }
                                                                 
                                                             } failure:^(NSString *errorMsg) {
                                                                 if (failure) {

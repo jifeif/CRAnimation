@@ -10,6 +10,7 @@
 #import "CRCustomNaviBarView.h"
 #import "CRMemberDetailHeadView.h"
 #import "CRMemberDetailProductCollectionViewCell.h"
+#import "CRGetAuthorInfoRequest.h"
 
 static NSString *__collectionViewCellID = @"__collectionViewCellID";
 static NSString *__collectionViewReusableViewID = @"__collectionViewReusableViewID";
@@ -41,11 +42,23 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self createFakeDataWithAddBriefDemoInfo];
+//    [self createFakeDataWithAddBriefDemoInfo];
+    [self getAuthorInfo];
     [self createUI];
 }
 
-
+- (void)getAuthorInfo
+{
+    __weak typeof(self) weakSelf = self;
+    
+    [self showHud:@""];
+    [CRGetAuthorInfoRequest getAuthorInfoWithUserId:_userId success:^(CRMemberInfoModel *memeberInfoModel) {
+        [weakSelf hideHUDView];
+        memeberInfoModel;
+    } failure:^(NSString *errorMsg) {
+        [weakSelf textStateHUD:errorMsg];
+    }];
+}
 
 - (void)createFakeDataWithAddBriefDemoInfo
 {

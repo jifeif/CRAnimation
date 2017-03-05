@@ -7,8 +7,8 @@
 //
 
 #import "CRProductsRequest.h"
-#import <MJExtension/MJExtension.h>
 #import "CRCommonExtendsManager.h"
+#import <MJExtension/MJExtension.h>
 
 @implementation CRProductsRequest
 

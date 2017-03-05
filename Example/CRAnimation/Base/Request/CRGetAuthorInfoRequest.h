@@ -11,4 +11,8 @@
 
 @interface CRGetAuthorInfoRequest : CRBaseRequestManager
 
++ (void)getAuthorInfoWithUserId:(NSNumber *)userId
+                        success:(void (^) (CRMemberInfoModel *memeberInfoModel))success
+                        failure:(void (^) (NSString *errorMsg))failure;
+
 @end
