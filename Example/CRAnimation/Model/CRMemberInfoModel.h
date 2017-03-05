@@ -16,7 +16,7 @@ typedef enum {
 
 @interface CRMemberInfoModel : NSObject
 
-@property (strong, nonatomic) NSString  *authorId;//
+@property (strong, nonatomic) NSNumber  *authorId;//
 
 //  Optional
 //  真实姓名

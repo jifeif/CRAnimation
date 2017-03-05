@@ -50,6 +50,7 @@ static NSNumber *successCodeNumber;
                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                     NSDictionary *responseDict = (NSDictionary *)responseObject;
                     CRResponseBaseModel *responseBaseModel = [CRResponseBaseModel mj_objectWithKeyValues:responseDict];
+                    responseBaseModel.originData = responseDict;
                     if ([responseBaseModel.code isEqualToNumber:successCodeNumber]) {
                         if (success) {
                             success(responseBaseModel);
@@ -80,6 +81,7 @@ static NSNumber *successCodeNumber;
                  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                      NSDictionary *responseDict = (NSDictionary *)responseObject;
                      CRResponseBaseModel *responseBaseModel = [CRResponseBaseModel mj_objectWithKeyValues:responseDict];
+                     responseBaseModel.originData = responseDict;
                      if ([responseBaseModel.code isEqualToNumber:successCodeNumber]) {
                          if (success) {
                              success(responseBaseModel);

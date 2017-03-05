@@ -143,15 +143,6 @@
 {
     _memberInfoModel = model;
     
-    
-    
-#warning DAD Test
-    _memberInfoModel.headImageAddress = TestCRIconSquareURL;
-    _memberInfoModel.productionAmount = @10;
-    _memberInfoModel.hotDegree = @20;
-    
-    
-    
     UIImage *placeHolderHeaderImage = [UIImage imageNamed:@"tab_btn_control_n"];
     if ([_memberInfoModel.headImageAddress length] > 0) {
         [_headerImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headImageAddress] placeholderImage:placeHolderHeaderImage];

@@ -12,13 +12,15 @@
 #import "CRHomeNaviBarView.h"
 #import "CRMemberDetailVC.h"
 #import "CRMemberInfoModel.h"
+#import "CRGetMemebersListRequest.h"
 
 @interface CRMembersVC () <UITableViewDelegate, UITableViewDataSource>
 {
     UITableView             *_mainTableView;
     CRHomeNaviBarView       *_naviBarView;
-    NSMutableArray          *_memberInfoModelArray;
 }
+
+@property (strong, nonatomic) NSArray <CRMemberInfoModel *> *memberInfoModelArray;
 
 @end
 
@@ -38,6 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createUI];
+    [self getMemberListReuest];
 }
 
 - (void)createUI
@@ -70,14 +73,33 @@
     _mainTableView.tableHeaderView = tableHeaderView;
 }
 
+#pragma mark - reloadData
+- (void)reloadData
+{
+    [_mainTableView reloadData];
+}
+
+#pragma mark - Request
+- (void)getMemberListReuest
+{
+    __weak typeof(self) weakSelf = self;
+    [self showHud:nil];
+    [CRGetMemebersListRequest getAuthorInfoWithSuccess:^(NSArray<CRMemberInfoModel *> *membersList) {
+        [weakSelf hideHUDView];
+        weakSelf.memberInfoModelArray = membersList;
+        [weakSelf reloadData];
+    } failure:^(NSString *errorMsg) {
+        [weakSelf textStateHUD:errorMsg];
+    }];
+}
 
 #pragma mark - delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-#warning Modify 调整成员详情跳转
-//    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithInfoModel:_memberInfoModelArray[indexPath.row]];
-//    [self.navigationController pushViewController:destinationVC animated:YES];
+    CRMemberInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
+    CRMemberDetailVC *destinationVC = [[CRMemberDetailVC alloc] initWithUserId:memberInfoModel.authorId];
+    [self.navigationController pushViewController:destinationVC animated:YES];
 }
 
 
