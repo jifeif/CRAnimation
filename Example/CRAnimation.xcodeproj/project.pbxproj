@@ -71,6 +71,7 @@
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
 		09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */; };
 		09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */; };
+		09E40CB81E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB71E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
@@ -230,6 +231,8 @@
 		09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJumpManager.m; sourceTree = "<group>"; };
 		09E40CB01E6B17270042B5AE /* CRProductsMemberBriefInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRProductsMemberBriefInfoModel.h; sourceTree = "<group>"; };
 		09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRProductsMemberBriefInfoModel.m; sourceTree = "<group>"; };
+		09E40CB61E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGetAuthorInfoRequest.h; sourceTree = "<group>"; };
+		09E40CB71E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGetAuthorInfoRequest.m; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -549,6 +552,8 @@
 				09449E6B1E631D3D0008BD8F /* CRBaseRequestManager.m */,
 				09449E6D1E63268C0008BD8F /* CRProductsRequest.h */,
 				09449E6E1E63268D0008BD8F /* CRProductsRequest.m */,
+				09E40CB61E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.h */,
+				09E40CB71E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m */,
 			);
 			name = Request;
 			path = Base/Request;
@@ -1008,6 +1013,7 @@
 				257751521DC25A790019D38B /* HZLaunchViewDemoInfoModel.m in Sources */,
 				09449E7E1E6470A50008BD8F /* CRResponseBaseModel.m in Sources */,
 				092A2D671DBCA8DA00650DE1 /* WCLLoadingView.swift in Sources */,
+				09E40CB81E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m in Sources */,
 				092A2D301DBCA51C00650DE1 /* CRYFGifDemoViewController.m in Sources */,
 				0900809E1E4CB91200AE60A5 /* CRCodeAnimationVC.m in Sources */,
 				092A2D2C1DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.m in Sources */,

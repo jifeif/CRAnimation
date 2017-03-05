@@ -146,15 +146,15 @@
     
     
 #warning DAD Test
-    _memberInfoModel.headURL = TestCRIconSquareURL;
-    _memberInfoModel.productsCount = @10;
+    _memberInfoModel.headImageAddress = TestCRIconSquareURL;
+    _memberInfoModel.productionAmount = @10;
     _memberInfoModel.popularityCount = @20;
     
     
     
     UIImage *placeHolderHeaderImage = [UIImage imageNamed:@"tab_btn_control_n"];
-    if ([_memberInfoModel.headURL length] > 0) {
-        [_headerImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headURL] placeholderImage:placeHolderHeaderImage];
+    if ([_memberInfoModel.headImageAddress length] > 0) {
+        [_headerImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headImageAddress] placeholderImage:placeHolderHeaderImage];
     }else{
         _headerImageV.image = placeHolderHeaderImage;
     }
@@ -171,7 +171,7 @@
     _professionLabel.text = professionStr;
     _jobIconImageV.image = [UIImage imageNamed:jobImageName];
     
-    _productsCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.productsCount];
+    _productsCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.productionAmount];
     _popularityCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.popularityCount];
     
     [self relayUI];

@@ -7,8 +7,8 @@
 //
 
 typedef enum {
-    kProfessionTypeiOSDeveloper,    //开发者
-    kProfessionTypeDesigner,        //UI设计师
+    kProfessionTypeiOSDeveloper = 1,    //开发者
+    kProfessionTypeDesigner = 2,        //UI设计师
 }ProfessionType;
 
 #import <Foundation/Foundation.h>
@@ -16,42 +16,44 @@ typedef enum {
 
 @interface CRMemberInfoModel : NSObject
 
+@property (strong, nonatomic) NSString  *authorId;//
+
 //  Optional
 //  真实姓名
-@property (strong, nonatomic) NSString  *realName;
+@property (strong, nonatomic) NSString  *realName;//
 
 //  Require
 //  昵称
-@property (strong, nonatomic) NSString  *nickName;
+@property (strong, nonatomic) NSString  *nickName;//
 
 //  Require
 //  邮箱
-@property (strong, nonatomic) NSString  *mail;
+@property (strong, nonatomic) NSString  *mail;//
 
 //  Optional
 //  qq
-@property (strong, nonatomic) NSString  *qq;
+@property (strong, nonatomic) NSString  *qq;//
 
 //  Optional
 //  个人主页
-@property (strong, nonatomic) NSString  *homePage;
+@property (strong, nonatomic) NSString  *homePage;//
 
 //  Require
 //  职业
 //  kProfessionTypeiOSDeveloper    开发者
 //  kProfessionTypeDesigner        UI设计师
-@property (assign, nonatomic) ProfessionType  professionType;
+@property (assign, nonatomic) ProfessionType  professionType;//
 
 
 //  New add in 2017/02/11, 预留用来对接接口
 
 //  Optional
 //  头像地址
-@property (strong, nonatomic) NSString  *headURL;
+@property (strong, nonatomic) NSString  *headImageAddress;//
 
 //  Optional
 //  作品数量
-@property (strong, nonatomic) NSNumber  *productsCount;
+@property (strong, nonatomic) NSNumber  *productionAmount;//
 
 //  Optional
 //  人气

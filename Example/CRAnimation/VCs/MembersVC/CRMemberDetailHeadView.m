@@ -136,9 +136,9 @@
     _memberInfoModel = model;
     
     UIImage *placeHolderHeaderImage = [UIImage imageNamed:@"tab_btn_control_n"];
-    if ([_memberInfoModel.headURL length] > 0) {
-        [_headerImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headURL] placeholderImage:placeHolderHeaderImage];
-        [_backgroundHeaderImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headURL] placeholderImage:placeHolderHeaderImage];
+    if ([_memberInfoModel.headImageAddress length] > 0) {
+        [_headerImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headImageAddress] placeholderImage:placeHolderHeaderImage];
+        [_backgroundHeaderImageV sd_setImageWithURL:[NSURL URLWithString:_memberInfoModel.headImageAddress] placeholderImage:placeHolderHeaderImage];
     }else{
         _headerImageV.image = placeHolderHeaderImage;
         _backgroundHeaderImageV.image = placeHolderHeaderImage;

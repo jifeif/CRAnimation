@@ -17,4 +17,6 @@ NSString *const CR_HOME_PRODUCTS_CODE_ANIMATION_URL             =   @"/animation
 NSString *const CR_HOME_PRODUCTS_CODE_WIDGET_ANIMATION_URL      =   @"/animation/2/list";
 NSString *const CR_HOME_PRODUCTS_DESIGN_ANIMATION_URL           =   @"/animation/3/list";
 
+NSString *const CR_AUTHOR_INFO_URL           =   @"/animation/authorInfoWithAuthorId";  //获取作者信息
+
 @end

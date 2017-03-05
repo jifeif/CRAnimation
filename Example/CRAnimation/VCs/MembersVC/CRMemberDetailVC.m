@@ -20,6 +20,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     CRMemberInfoModel       *_memberInfoModel;
     
     UICollectionView        *_mainCollectionView;
+    NSNumber                *_userId;
 }
 
 @end
@@ -31,7 +32,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     self = [super init];
     
     if (self) {
-        
+        _userId = userId;
     }
     
     return self;
@@ -43,6 +44,8 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     [self createFakeDataWithAddBriefDemoInfo];
     [self createUI];
 }
+
+
 
 - (void)createFakeDataWithAddBriefDemoInfo
 {
