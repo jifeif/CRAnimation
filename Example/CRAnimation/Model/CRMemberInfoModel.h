@@ -57,10 +57,10 @@ typedef enum {
 
 //  Optional
 //  人气
-@property (strong, nonatomic) NSNumber  *popularityCount;
+@property (strong, nonatomic) NSNumber  *hotDegree;//
 
 //  Optional
 //  作品列表
-@property (strong, nonatomic) NSArray  <CRDemoInfoModel *> *animationList;
+@property (strong, nonatomic) NSArray  <CRDemoInfoModel *> *animationList;//
 
 @end

@@ -148,7 +148,7 @@
 #warning DAD Test
     _memberInfoModel.headImageAddress = TestCRIconSquareURL;
     _memberInfoModel.productionAmount = @10;
-    _memberInfoModel.popularityCount = @20;
+    _memberInfoModel.hotDegree = @20;
     
     
     
@@ -172,7 +172,7 @@
     _jobIconImageV.image = [UIImage imageNamed:jobImageName];
     
     _productsCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.productionAmount];
-    _popularityCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.popularityCount];
+    _popularityCountLabel.text = [NSString stringWithFormat:@"%@", _memberInfoModel.hotDegree];
     
     [self relayUI];
 }
