@@ -55,7 +55,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
         briefDemoInfo.gifAddress = TestCRDemoGifURL_Card;
         [briefDemoInfoArray addObject:briefDemoInfo];
     }
-    _memberInfoModel.productBriefModelArray = briefDemoInfoArray;
+    _memberInfoModel.animationList = briefDemoInfoArray;
 }
 
 - (void)createUI
@@ -98,7 +98,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [_memberInfoModel.productBriefModelArray count];
+    return [_memberInfoModel.animationList count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -107,7 +107,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     
     cell.backgroundColor = [UIColor purpleColor];
     
-    CRDemoInfoModel *demoInfoModel = _memberInfoModel.productBriefModelArray[indexPath.row];
+    CRDemoInfoModel *demoInfoModel = _memberInfoModel.animationList[indexPath.row];
     if (demoInfoModel.gifAddress) {
         [cell loadDemoInfoModel:demoInfoModel];
     }

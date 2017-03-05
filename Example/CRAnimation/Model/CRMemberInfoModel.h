@@ -60,7 +60,7 @@ typedef enum {
 @property (strong, nonatomic) NSNumber  *popularityCount;
 
 //  Optional
-//  作品简要信息数组
-@property (strong, nonatomic) NSArray  <CRDemoInfoModel *> *productBriefModelArray;
+//  作品列表
+@property (strong, nonatomic) NSArray  <CRDemoInfoModel *> *animationList;
 
 @end
