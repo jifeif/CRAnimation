@@ -18,11 +18,11 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 @interface CRMemberDetailVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     CRCustomNaviBarView     *_naviBarView;
-    CRMemberInfoModel       *_memberInfoModel;
-    
     UICollectionView        *_mainCollectionView;
     NSNumber                *_userId;
 }
+
+@property (strong, nonatomic) CRMemberInfoModel *memberInfoModel;
 
 @end
 
@@ -42,35 +42,26 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self createFakeDataWithAddBriefDemoInfo];
-    [self getAuthorInfo];
     [self createUI];
+    [self getAuthorInfo];
 }
 
+#pragma mark - Request
 - (void)getAuthorInfo
 {
     __weak typeof(self) weakSelf = self;
     
     [self showHud:@""];
-    [CRGetAuthorInfoRequest getAuthorInfoWithUserId:_userId success:^(CRMemberInfoModel *memeberInfoModel) {
+    [CRGetAuthorInfoRequest getAuthorInfoWithUserId:_userId success:^(CRMemberInfoModel *memberInfoModel) {
         [weakSelf hideHUDView];
-        memeberInfoModel;
+        weakSelf.memberInfoModel = memberInfoModel;
+        [weakSelf reloadData];
     } failure:^(NSString *errorMsg) {
         [weakSelf textStateHUD:errorMsg];
     }];
 }
 
-- (void)createFakeDataWithAddBriefDemoInfo
-{
-    NSMutableArray *briefDemoInfoArray = [NSMutableArray new];
-    for (int i = 0; i < 10; i++) {
-        CRDemoInfoModel *briefDemoInfo = [CRDemoInfoModel new];
-        briefDemoInfo.gifAddress = TestCRDemoGifURL_Card;
-        [briefDemoInfoArray addObject:briefDemoInfo];
-    }
-    _memberInfoModel.animationList = briefDemoInfoArray;
-}
-
+#pragma mark - CreateUI
 - (void)createUI
 {
     self.navigationController.navigationBarHidden = YES;
@@ -80,6 +71,11 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     [self createCollectionView];
     
     [self.view bringSubviewToFront:_naviBarView];
+}
+
+- (void)reloadData
+{
+    [_mainCollectionView reloadData];
 }
 
 - (void)creteNaviBarView
