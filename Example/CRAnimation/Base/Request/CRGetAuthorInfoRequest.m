@@ -11,7 +11,7 @@
 @implementation CRGetAuthorInfoRequest
 
 + (void)getAuthorInfoWithUserId:(NSNumber *)userId
-                        success:(void (^) ())success
+                        success:(void (^) (CRMemberInfoModel *memeberInfoModel))success
                         failure:(void (^) (NSString *errorMsg))failure
 {
     NSString *suffixUrlStr = [NSString stringWithFormat:@"%@/%@", CR_AUTHOR_INFO_URL, userId];

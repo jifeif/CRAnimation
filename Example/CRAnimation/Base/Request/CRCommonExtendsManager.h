@@ -1,5 +1,5 @@
 //
-//  CRGetAuthorInfoRequest.h
+//  CRCommonExtendsManager.h
 //  CRAnimation
 //
 //  Created by Bear on 17/3/5.
@@ -7,8 +7,9 @@
 //
 
 #import "CRBaseRequestManager.h"
-#import "CRMemberInfoModel.h"
 
-@interface CRGetAuthorInfoRequest : CRBaseRequestManager
+@interface CRCommonExtendsManager : CRBaseRequestManager
+
++ (void)productsExtendsSetting;
 
 @end
