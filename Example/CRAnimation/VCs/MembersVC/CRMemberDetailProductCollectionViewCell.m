@@ -40,11 +40,6 @@
     [self addSubview:_imageView];
 }
 
-- (void)loadBriefDemoInfoModel:(CRDemoBriefDemoInfo *)demoInfoModel
-{
-    [_imageView setGifImageWithURLStr:demoInfoModel.gifAddress];
-}
-
 - (void)loadDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
 {
     [_imageView setGifImageWithURLStr:demoInfoModel.gifAddress];

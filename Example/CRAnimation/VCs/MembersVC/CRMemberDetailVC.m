@@ -51,7 +51,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 {
     NSMutableArray *briefDemoInfoArray = [NSMutableArray new];
     for (int i = 0; i < 10; i++) {
-        CRDemoBriefDemoInfo *briefDemoInfo = [CRDemoBriefDemoInfo new];
+        CRDemoInfoModel *briefDemoInfo = [CRDemoInfoModel new];
         briefDemoInfo.gifAddress = TestCRDemoGifURL_Card;
         [briefDemoInfoArray addObject:briefDemoInfo];
     }
@@ -107,9 +107,9 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     
     cell.backgroundColor = [UIColor purpleColor];
     
-    CRDemoBriefDemoInfo *demoInfoModel = _memberInfoModel.productBriefModelArray[indexPath.row];
+    CRDemoInfoModel *demoInfoModel = _memberInfoModel.productBriefModelArray[indexPath.row];
     if (demoInfoModel.gifAddress) {
-        [cell loadBriefDemoInfoModel:demoInfoModel];
+        [cell loadDemoInfoModel:demoInfoModel];
     }
     
     return cell;
