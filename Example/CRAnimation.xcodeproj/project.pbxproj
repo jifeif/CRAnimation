@@ -1206,7 +1206,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = LSACC47SM4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRAnimation/CRAnimation-Prefix.pch";
 				INFOPLIST_FILE = "CRAnimation/CRAnimation-Info.plist";
@@ -1214,6 +1215,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bear.cranimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "88f0c369-497c-4c67-ab79-fa54c88f0c7f";
+				PROVISIONING_PROFILE_SPECIFIER = CRAnimationProfile_AdHoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "CRAnimation/CRAnimation-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
