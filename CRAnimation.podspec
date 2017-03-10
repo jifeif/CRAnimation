@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
         In here, we can find or create some incredible animation effects in iOS.
                        DESC
 
-    s.homepage         = 'https://github.com/BearRan/CRAnimation.git'
+    s.homepage         = 'https://github.com/CRAnimation/CRAnimation.git'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'BearRan' => '648070256@qq.com' }
-    s.source           = { :git => 'https://github.com/BearRan/CRAnimation.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/CRAnimation/CRAnimation.git', :tag => s.version.to_s }
     s.ios.deployment_target = '7.0'
     s.frameworks = 'UIKit'
     s.dependency 'BearSkill'
