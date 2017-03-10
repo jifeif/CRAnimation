@@ -33,8 +33,8 @@
     CRBaseNavigationViewController *codeAnimationNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeAnimationVC];
     
     //  CRCodeWidgetVC
-    CRCodeWidgetVC *codeWidgetVC = [[CRCodeWidgetVC alloc] init];
-    CRBaseNavigationViewController *codeWidgetNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeWidgetVC];
+//    CRCodeWidgetVC *codeWidgetVC = [[CRCodeWidgetVC alloc] init];
+//    CRBaseNavigationViewController *codeWidgetNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeWidgetVC];
     
     //  CRDesignerStageVC
     CRDesignerStageVC *designerStageVC = [[CRDesignerStageVC alloc] init];
@@ -47,7 +47,7 @@
     //  baseTabBarVC
     NSMutableArray *tabbarControllers = [[NSMutableArray alloc] initWithObjects:
                                          codeAnimationNaviVC,
-                                         codeWidgetNaviVC,
+//                                         codeWidgetNaviVC,
                                          designerStageNaviVC,
                                          memberNaviVC,
                                          nil];

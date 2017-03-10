@@ -37,17 +37,17 @@
 //        
 //        
         NSArray *titleArr = @[@"动效体验",
-                              @"精巧控件",
+//                              @"精巧控件",
                               @"动效原型",
                               @"成员档案"];
         
         NSArray *unSelectImageArr = @[@"tab_btn_index_n",
-                                      @"tab_btn_control_n",
+//                                      @"tab_btn_control_n",
                                       @"tab_btn_prototype_n",
                                       @"tab_btn_member_n"];
         
         NSArray *selectImageArr = @[@"tab_btn_index_s",
-                                    @"tab_btn_control_s",
+//                                    @"tab_btn_control_s",
                                     @"tab_btn_prototype_s",
                                     @"tab_btn_member_s"];
         
