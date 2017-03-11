@@ -58,6 +58,18 @@ CRAnimation为开源项目，CRAnimation Pod仓库中整理了各种封装好的
 
 <img src="http://oftcdgt2m.bkt.clouddn.com/S0005/HZLaunchView.gif" width=150 />
 
+- S0009
+- [WCLShineButton](Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton)
+- 类似太阳动画的按钮
+
+<img src="Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton/WCLShineButton.gif" width=150 />
+
+- S00010
+- [RollerCoasterLayer](Example/CRAnimation/Demo/WidgetDemo/S00010_RollerCoasterLayer)
+- 纯代码实现过山车动画
+
+<img src="http://ww4.sinaimg.cn/large/006tNbRwgw1f53ahi8vslg30if0a8e81" width=300 />
+
 ---
 ##组合动效
 
