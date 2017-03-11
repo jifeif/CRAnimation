@@ -19,8 +19,8 @@
 //  Copyright © 2016年 王崇磊. All rights reserved.
 //
 // @class CRRollerCoasterLayerModel
-// @abstract <#类的描述#>
-// @discussion <#类的功能#>
+// @abstract CRRollerCoasterLayerModel
+// @discussion CRRollerCoasterLayerModel
 //
 
 #import "CRDemoInfoModel.h"

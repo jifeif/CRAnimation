@@ -25,19 +25,19 @@
 
 import UIKit
 
-class RollerCoasterLayer: CALayer {
+public class RollerCoasterLayer: CALayer {
     
     var groundLayer:CALayer?
     var yellowPath:CAShapeLayer?
     var greenPath:CAShapeLayer?
     
-    init(frame: CGRect) {
+    public init(frame: CGRect) {
         super.init()
         self.frame = frame
         initLayers(size: frame.size)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -177,7 +177,7 @@ class RollerCoasterLayer: CALayer {
     func initGroundLayer(_ size:CGSize) -> CALayer {
         let ground:CALayer = CALayer()
         ground.frame = CGRect(x: 0, y: size.height - 20, width: size.width, height: 20)
-        ground.backgroundColor = UIColor.init(patternImage: UIImage.init(named: "ground")!).cgColor
+        ground.backgroundColor = UIColor.init(patternImage: imageFromBundle("ground")!).cgColor
         addSublayer(ground)
         return ground
     }
@@ -194,7 +194,7 @@ class RollerCoasterLayer: CALayer {
         path.addQuadCurve(to: CGPoint(x: size.width+10, y: size.height/3), controlPoint: CGPoint(x: size.width-100, y: 50))
         path.addLine(to: CGPoint(x: size.width + 10, y: size.height+10))
         path.addLine(to: CGPoint(x: 0, y: size.height+10))
-        calayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "yellow")!).cgColor
+        calayer.fillColor = UIColor.init(patternImage: imageFromBundle("yellow")!).cgColor
         calayer.path = path.cgPath
         insertSublayer(calayer, below: groundLayer)
         
@@ -239,7 +239,7 @@ class RollerCoasterLayer: CALayer {
         grennPath.addQuadCurve(to: CGPoint(x: size.width/1.8, y: size.height - 70), controlPoint: CGPoint(x: size.width - 120, y: 200))
         grennPath.addCurve(to: CGPoint(x: 0, y: size.height - 100), controlPoint1: CGPoint(x: size.width/1.8 - 60, y: size.height - 60), controlPoint2: CGPoint(x: 150, y: size.height/2.3))
         grennPath.addLine(to: CGPoint(x: -100, y: size.height + 10))
-        greenLayer.fillColor = UIColor.init(patternImage: UIImage.init(named: "green")!).cgColor
+        greenLayer.fillColor = UIColor.init(patternImage: imageFromBundle("green")!).cgColor
         greenLayer.path = grennPath.cgPath
         insertSublayer(greenLayer, below: calayer)
         
@@ -260,7 +260,7 @@ class RollerCoasterLayer: CALayer {
         let carLayer:CALayer = CALayer()
         carLayer.frame = CGRect(x: 0, y: 0, width: 17, height: 11)
         carLayer.setAffineTransform(carLayer.affineTransform().translatedBy(x: 0, y: -7))
-        carLayer.contents = UIImage.init(named: "car")!.cgImage
+        carLayer.contents = imageFromBundle("car")!.cgImage
         let animation:CAKeyframeAnimation = CAKeyframeAnimation.init(keyPath: "position")
         animation.path = yellowPath?.path
         animation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionLinear)
@@ -278,7 +278,7 @@ class RollerCoasterLayer: CALayer {
     func addGreenCarPathAnimation(_ size:CGSize, beginTime: CFTimeInterval) {
         let carLayer:CALayer = CALayer()
         carLayer.frame = CGRect(x: 0, y: 0, width: 17, height: 11)
-        carLayer.contents = UIImage.init(named: "otherCar")!.cgImage
+        carLayer.contents = imageFromBundle("otherCar")!.cgImage
         
         //绘制路径
         let path:UIBezierPath = UIBezierPath()
@@ -314,7 +314,7 @@ class RollerCoasterLayer: CALayer {
     @discardableResult
     func addCloudAnimation(_ size:CGSize) -> CALayer {
         let cloudLayer:CALayer = CALayer()
-        cloudLayer.contents = UIImage.init(named: "cloud")?.cgImage
+        cloudLayer.contents = imageFromBundle("cloud")?.cgImage
         cloudLayer.frame = CGRect(x: 0, y: 0, width: 63, height: 20)
         addSublayer(cloudLayer)
         
@@ -334,27 +334,28 @@ class RollerCoasterLayer: CALayer {
     
     //添加树
     func addTreeLayer(_ size:CGSize) {
+        let tree = imageFromBundle("tree")
         for index in 0...6 {
             let treeOne = CALayer()
-            treeOne.contents = UIImage.init(named: "tree")?.cgImage
+            treeOne.contents = tree?.cgImage
             treeOne.frame = CGRect(x: [5,55,70,size.width/3+15,size.width/3+25,size.width-130,size.width-160][index], y: size.height - 43, width: 13, height: 23)
             addSublayer(treeOne)
         }
         for index in 0...3 {
             let treeOne = CALayer()
-            treeOne.contents = UIImage.init(named: "tree")?.cgImage
+            treeOne.contents = tree?.cgImage
             treeOne.frame = CGRect(x: [10,60,size.width/3,size.width-150][index], y: size.height - 52, width: 18, height: 32)
             addSublayer(treeOne)
         }
         for index in 0...1 {
             let treeOne = CALayer()
-            treeOne.contents = UIImage.init(named: "tree")?.cgImage
+            treeOne.contents = tree?.cgImage
             treeOne.frame = CGRect(x: [size.width-210,size.width-50][index], y: [size.height - 75,size.height - 80][index], width: 18, height: 32)
             insertSublayer(treeOne, below: yellowPath)
         }
         for index in 0...2 {
             let treeOne = CALayer()
-            treeOne.contents = UIImage.init(named: "tree")?.cgImage
+            treeOne.contents = tree?.cgImage
             treeOne.frame = CGRect(x: [size.width-235, size.width-220, size.width-40][index], y: [size.height - 67 ,size.height - 67 , size.height - 72][index], width: 13, height: 23)
             insertSublayer(treeOne, below: yellowPath)
         }
@@ -373,5 +374,30 @@ class RollerCoasterLayer: CALayer {
         addSublayer(layer)
         return layer
     }
+    
+    func imageFromBundle(_ imageName: String) -> UIImage? {
+        var imageName = imageName
+        if let path = WCLImagePickerBundle.wclBundle.path(forResource: imageName, ofType: "png") {
+            let image = UIImage(contentsOfFile: path)
+            return image
+        }
+        return nil
+    }
 
+}
+
+
+internal struct WCLImagePickerBundle {
+    
+    // 当前的bundle
+    static var bundle: Bundle {
+        let bundle = Bundle(for: RollerCoasterLayer.self)
+        return bundle
+    }
+    
+    // 存放资源的bundle
+    static var wclBundle: Bundle {
+        let bundle = Bundle(path: self.bundle.path(forResource: "RollerCoasterLayer", ofType: "bundle")!)
+        return bundle!
+    }
 }

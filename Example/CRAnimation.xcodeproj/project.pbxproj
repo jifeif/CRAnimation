@@ -107,6 +107,8 @@
 		9704F1E11E7415F500604DFC /* RollerCoasterLayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1E01E7415F500604DFC /* RollerCoasterLayer.gif */; };
 		9704F1E41E74162C00604DFC /* CRRollerCoasterLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E31E74162C00604DFC /* CRRollerCoasterLayerModel.m */; };
 		9704F1E61E74177E00604DFC /* CRRollerCoasterLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E51E74177E00604DFC /* CRRollerCoasterLayerVC.swift */; };
+		9704F1E81E7432DC00604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E71E7432DC00604DFC /* README.md */; };
+		9704F1EA1E74333000604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E91E74333000604DFC /* README.md */; };
 		973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */; };
 		BCFA28746AFD50F5E1BE2C1A /* Pods_CRAnimation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F56DF0F33F6C42324864D8 /* Pods_CRAnimation_Example.framework */; };
 		ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED36EACA1DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif */; };
@@ -301,6 +303,8 @@
 		9704F1E21E74162C00604DFC /* CRRollerCoasterLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRollerCoasterLayerModel.h; sourceTree = "<group>"; };
 		9704F1E31E74162C00604DFC /* CRRollerCoasterLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRollerCoasterLayerModel.m; sourceTree = "<group>"; };
 		9704F1E51E74177E00604DFC /* CRRollerCoasterLayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRollerCoasterLayerVC.swift; sourceTree = "<group>"; };
+		9704F1E71E7432DC00604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9704F1E91E74333000604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		976F95561DB25275000776A6 /* CRAnimation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CRAnimation-Bridging-Header.h"; path = "../CRAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD775529C0010A6B82D84DCC /* Pods-CRAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -801,6 +805,7 @@
 		9704F1DF1E7402D100604DFC /* S00010_RollerCoasterLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9704F1E91E74333000604DFC /* README.md */,
 				9704F1E01E7415F500604DFC /* RollerCoasterLayer.gif */,
 				9704F1E21E74162C00604DFC /* CRRollerCoasterLayerModel.h */,
 				9704F1E31E74162C00604DFC /* CRRollerCoasterLayerModel.m */,
@@ -820,6 +825,7 @@
 		977CA5341E73DDDA0093851E /* S0009_WCLShineButton */ = {
 			isa = PBXGroup;
 			children = (
+				9704F1E71E7432DC00604DFC /* README.md */,
 				9704F1D91E73F06E00604DFC /* WCLShineButton.gif */,
 				9704F1D31E73ECAE00604DFC /* CRWCLShineButtonModel.h */,
 				9704F1D41E73ECAF00604DFC /* CRWCLShineButtonModel.m */,
@@ -1094,6 +1100,7 @@
 				09203ACE1E4F460D00FB2B25 /* CRCustomNaviBarView.m in Sources */,
 				9704F1E61E74177E00604DFC /* CRRollerCoasterLayerVC.swift in Sources */,
 				092A2D2E1DBCA51C00650DE1 /* CRImageGradientDemoVC.m in Sources */,
+				9704F1E81E7432DC00604DFC /* README.md in Sources */,
 				092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */,
 				092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */,
 				0920032D1DAAA1A6008266B8 /* CRDemoInfoModel.m in Sources */,
@@ -1140,6 +1147,7 @@
 				0950D5AE1E54A7AC009214E2 /* CRHomeNaviBarView.m in Sources */,
 				09203AD11E4F4BB600FB2B25 /* CRMemberDetailHeadView.m in Sources */,
 				092A2D4E1DBCA54C00650DE1 /* CRMyCardView.m in Sources */,
+				9704F1EA1E74333000604DFC /* README.md in Sources */,
 				09D168D81DC620210082C35E /* README.md in Sources */,
 				092A2D311DBCA51C00650DE1 /* GifDemoInfoModel.m in Sources */,
 				09449E811E6476C40008BD8F /* CRHomeProductsModel.m in Sources */,
@@ -1222,7 +1230,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-					"CONTRIBUTE_STATUS=0",
+					"CONTRIBUTE_STATUS=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

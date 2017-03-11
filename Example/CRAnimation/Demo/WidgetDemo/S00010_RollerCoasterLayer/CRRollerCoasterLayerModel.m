@@ -26,7 +26,7 @@
 #pragma mark - Override
 - (void)fillDemoInfo
 {
-    self.demoVCName     = @"_TtC19CRAnimation_Example22CRWCLShineButtonDemoVC";
+    self.demoVCName     = @"_TtC19CRAnimation_Example22CRRollerCoasterLayerVC";
     self.demoGifName    = @"RollerCoasterLayer.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S00010";

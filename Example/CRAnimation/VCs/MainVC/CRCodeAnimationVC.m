@@ -111,6 +111,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
                                        @"CRGatlingModel",
                                        @"CRJHUDDemoInfoModel",
                                        @"CRWCLShineButtonModel",
+                                       @"CRRollerCoasterLayerModel",
                                        ];
     
     _combinationDemoInfoModelNameArray = @[

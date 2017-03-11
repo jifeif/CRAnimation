@@ -35,14 +35,19 @@ class CRRollerCoasterLayerVC: CRProductionBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if let frame = UIApplication.shared.keyWindow?.bounds {
+            let rollerLayer = RollerCoasterLayer(frame: .init(origin: .zero, size: .init(width: frame.height, height: frame.width)))
+            view.layer.addSublayer(rollerLayer)
+            
+            var transform = CGAffineTransform.identity
+            transform  = transform.rotated(by: CGFloat(M_PI_2))
+            let offset = (frame.height - frame.width)/2
+            transform  = transform.translatedBy(x: offset, y: offset)
+            rollerLayer.setAffineTransform(transform)
+        }
         addTopBar(withTitle: "RollerCoasterLayer")
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-//        let rollerLayer = RollerCoasterLayer(frame: view.bounds)
-//        view.layer.addSublayer(rollerLayer)
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

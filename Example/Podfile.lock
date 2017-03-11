@@ -36,6 +36,8 @@ PODS:
     - BearSkill
   - CRAnimation/Widget/HZLaunchView (0.1.1):
     - BearSkill
+  - CRAnimation/Widget/RollerCoasterLayer (0.1.1):
+    - BearSkill
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -48,6 +50,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - WCLShineButton (1.0.2)
   - YLGIFImage (0.11)
 
 DEPENDENCIES:
@@ -58,7 +61,7 @@ DEPENDENCIES:
   - JHUD
   - MBProgressHUD
   - MJExtension
-  - SDWebImage (~> 3.8.2)
+  - SDWebImage
   - WCLShineButton
   - YLGIFImage
 
@@ -69,15 +72,16 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BearSkill: 180b4d49cfae7466f65402eabcdb8d5a28665314
-  CRAnimation: 662e79d446180183c578339ff08172a59174eadf
+  CRAnimation: eb2039b9113ad23d514a3d95eb906eb0d0d491af
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   JHUD: 17650f65045d9843a7ad19f6a0b1eac6c78a45d2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  WCLShineButton: 8d19aebd14274b96a8ffb8f4ebd93c16a4c2c943
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
-PODFILE CHECKSUM: b3db123b1203f8163276d400402a784d85656a28
+PODFILE CHECKSUM: e551dea81cfafb7765501551ec78f96bd7bde505
 
 COCOAPODS: 1.2.0
