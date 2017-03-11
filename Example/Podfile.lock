@@ -44,9 +44,9 @@ PODS:
   - JHUD (0.3.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - YLGIFImage (0.11)
 
 DEPENDENCIES:
@@ -73,7 +73,7 @@ SPEC CHECKSUMS:
   JHUD: 17650f65045d9843a7ad19f6a0b1eac6c78a45d2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
 PODFILE CHECKSUM: 53b9bfdf436d7b8a1dfe0d9399c44e47733b53fe
