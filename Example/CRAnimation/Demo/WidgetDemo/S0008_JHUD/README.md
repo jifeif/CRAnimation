@@ -10,8 +10,8 @@ JHUD 是一个用于在加载数据时全屏显示的HUD
 | CRID        | S00008                                                    |
 | author      | [晋先森](https://github.com/Jinxiansen)                        |
 | authorMail  | 463424863@qq.com                                         |
-| 源gitHub    | [https://github.com/Jinxiansen/JHUD](https://github.com/Jinxiansen/JHUD)  |
-| 其他说明     | [http://www.jianshu.com/p/fc07f027680c](http://www.jianshu.com/p/fc07f027680c)  |
+| 源gitHub    | <a href="https://github.com/Jinxiansen/JHUD" target="_blank">https://github.com/Jinxiansen/JHUD</a>  |
+| 其他说明     | <a href="http://www.jianshu.com/p/fc07f027680c" target="_blank">http://www.jianshu.com/p/fc07f027680c</a> |
 
 ##使用：
 
