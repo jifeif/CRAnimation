@@ -6,9 +6,9 @@
 //  Copyright © 2016年 晋先森. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CRProductionBaseVC.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : CRProductionBaseVC
 
 @property (nonatomic) NSString  *selName;
 

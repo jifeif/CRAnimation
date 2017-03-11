@@ -50,21 +50,7 @@
     _imageNameArray = @[@"TestImage_1",
                         @"TestImage_2",
                         @"TestImage_3",
-                        @"TestImage_4",
-                        @"TestImage_5",
-                        @"TestImage_6",
-                        @"TestImage_7",
-                        @"TestImage_8",
-                        @"TestImage_9",
-                        @"TestImage_10",
-                        @"TestImage_11",
-                        @"TestImage_12",
-                        @"TestImage_13",
-                        @"TestImage_14",
-                        @"TestImage_15",
-                        @"TestImage_16",
-                        @"TestImage_17",
-                        @"TestImage_18"];
+                        ];
     
     _imageGradientView = [[CRImageGradientView alloc] initWithFrame:self.contentView.bounds];
     _imageGradientView.animationDuration_EX = 1.0f;

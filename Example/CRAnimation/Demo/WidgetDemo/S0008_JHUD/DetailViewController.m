@@ -29,27 +29,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self createUI];
+    [self addTopBarWithTitle:self.selName];
+}
 
-    self.title = self.selName;
-    self.view.backgroundColor = [UIColor whiteColor];
-
+- (void)createUI
+{
+    [super createUI];
+    
+    self.contentView.backgroundColor = [UIColor whiteColor];
     // 建议基类中Lazy创建，进行二次封装，使用时直接调用，避免子类中频繁创建产生冗余代码的问题。
-    self.hudView = [[JHUD alloc]initWithFrame:self.view.bounds];
-
+    self.hudView = [[JHUD alloc]initWithFrame:self.contentView.bounds];
+    
     __weak typeof(self)  _self = self;
     [self.hudView setJHUDReloadButtonClickedBlock:^() {
         NSLog(@"refreshButton");
         [_self customAnimation];
     }];
-
+    
     SEL sel = NSSelectorFromString(self.selName);
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [self performSelector:sel withObject:nil];
 #pragma clang diagnostic pop
-
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.rightButton];
-
 }
 
 - (void)rightButtonClick:(UIButton *)button
@@ -79,7 +84,7 @@
     self.hudView.messageLabel.text = @"Hello ,this is a circle animation";
     self.hudView.indicatorBackGroundColor = [[UIColor darkGrayColor] colorWithAlphaComponent:0.1];
     self.hudView.indicatorForegroundColor = [UIColor lightGrayColor];
-    [self.hudView showAtView:self.view hudType:JHUDLoadingTypeCircle];
+    [self.hudView showAtView:self.contentView hudType:JHUDLoadingTypeCircle];
 }
 
 - (void)circleJoinAnimation
@@ -87,7 +92,7 @@
     self.hudView.messageLabel.text = @"Hello ,this is a circleJoin animation";
     self.hudView.indicatorForegroundColor = JHUDRGBA(60, 139, 246, .5);
     self.hudView.indicatorBackGroundColor = JHUDRGBA(185, 186, 200, 0.3);
-    [self.hudView showAtView:self.view hudType:JHUDLoadingTypeCircleJoin];
+    [self.hudView showAtView:self.contentView hudType:JHUDLoadingTypeCircleJoin];
 }
 
 - (void)dotAnimation
@@ -95,7 +100,7 @@
     self.hudView.messageLabel.text = @"Hello ,this is a dot animation";
     self.hudView.indicatorBackGroundColor = [UIColor whiteColor];
     self.hudView.indicatorForegroundColor = [UIColor orangeColor];
-    [self.hudView showAtView:self.view hudType:JHUDLoadingTypeDot];
+    [self.hudView showAtView:self.contentView hudType:JHUDLoadingTypeDot];
 }
 
 
@@ -111,7 +116,7 @@
     self.hudView.indicatorViewSize = CGSizeMake(80, 80);
     self.hudView.customAnimationImages = images;
     self.hudView.messageLabel.text = @"无人问我粥可温\n无人与我共黄昏";
-    [self.hudView showAtView:self.view hudType:JHUDLoadingTypeCustomAnimations];
+    [self.hudView showAtView:self.contentView hudType:JHUDLoadingTypeCustomAnimations];
 
     // Recommend two web sites
     // http://preloaders.net/en/people_and_animals
@@ -127,7 +132,7 @@
     self.hudView.gifImageData = data;
     self.hudView.indicatorViewSize = CGSizeMake(110, 110); // Maybe you can try to use (100,250);😂
     self.hudView.messageLabel.text = @"Hello ,this is a gif animation";
-    [self.hudView showAtView:self.view hudType:JHUDLoadingTypeGifImage];
+    [self.hudView showAtView:self.contentView hudType:JHUDLoadingTypeGifImage];
 }
 
 - (void)failure
@@ -137,7 +142,7 @@
     [self.hudView.refreshButton setTitle:@"Refresh" forState:UIControlStateNormal];
     self.hudView.customImage = [UIImage imageNamed:@"null"];
 
-    [self.hudView showAtView:self.view hudType:JHUDLoadingTypeFailure];
+    [self.hudView showAtView:self.contentView hudType:JHUDLoadingTypeFailure];
 
 }
 
@@ -148,7 +153,7 @@
     [self.hudView.refreshButton setTitle:@"Refresh ?" forState:UIControlStateNormal];
     self.hudView.customImage = [UIImage imageNamed:@"nullData"];
 
-    [self.hudView showAtView:self.view hudType:JHUDLoadingTypeFailure];
+    [self.hudView showAtView:self.contentView hudType:JHUDLoadingTypeFailure];
 
 }
 
@@ -156,10 +161,10 @@
 {
     self.rightButton.hidden = YES;
 
-    [JHUD showAtView:self.view message:@"I'm a class method."];
+    [JHUD showAtView:self.contentView message:@"I'm a class method."];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [JHUD hideForView:self.view];
+        [JHUD hideForView:self.contentView];
     });
     
 }
@@ -171,8 +176,8 @@
     CGFloat padding = 0;
     self.hudView.frame = CGRectMake(padding,
                                     padding,
-                                    self.view.frame.size.width - padding*2,
-                                    self.view.frame.size.height - padding*2);
+                                    self.contentView.frame.size.width - padding*2,
+                                    self.contentView.frame.size.height - padding*2);
 }
 
 - (void)hide
