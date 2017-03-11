@@ -77,6 +77,7 @@
 		09E40CB81E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB71E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m */; };
 		09E40CBB1E6C303E0042B5AE /* CRCommonExtendsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBA1E6C303E0042B5AE /* CRCommonExtendsManager.m */; };
 		09E40CBE1E6C4E210042B5AE /* CRGetMemebersListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */; };
+		09EE43E41E73DB47000DFF14 /* JHUD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EE43E31E73DB47000DFF14 /* JHUD.gif */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
@@ -247,6 +248,7 @@
 		09E40CBA1E6C303E0042B5AE /* CRCommonExtendsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCommonExtendsManager.m; sourceTree = "<group>"; };
 		09E40CBC1E6C4E210042B5AE /* CRGetMemebersListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGetMemebersListRequest.h; sourceTree = "<group>"; };
 		09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGetMemebersListRequest.m; sourceTree = "<group>"; };
+		09EE43E31E73DB47000DFF14 /* JHUD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHUD.gif; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -621,6 +623,7 @@
 			isa = PBXGroup;
 			children = (
 				09B519E11E73CE0D00065C27 /* README.md */,
+				09EE43E31E73DB47000DFF14 /* JHUD.gif */,
 				09B519E31E73CE4500065C27 /* CRJHUDDemoInfoModel.h */,
 				09B519E41E73CE4500065C27 /* CRJHUDDemoInfoModel.m */,
 				09B519E61E73CE5D00065C27 /* CRJHUDDemoVC.h */,
@@ -904,6 +907,7 @@
 				257751551DC25B070019D38B /* HZLaunchView.gif in Resources */,
 				5247C4F81DD212320024DF8B /* GatlingProgress.gif in Resources */,
 				092A2D2A1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif in Resources */,
+				09EE43E41E73DB47000DFF14 /* JHUD.gif in Resources */,
 				092A2D331DBCA51C00650DE1 /* GifPlay.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork.png in Resources */,
 				ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */,
