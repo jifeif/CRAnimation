@@ -62,7 +62,7 @@ CRAnimation为开源项目，CRAnimation Pod仓库中整理了各种封装好的
 - [WCLShineButton](Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton)
 - 类似太阳动画的按钮
 
-<img src="Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton/WCLShineButton.gif" width=300 />
+<img src="Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton/WCLShineButton.gif" width=150 />
 
 - S00010
 - [RollerCoasterLayer](Example/CRAnimation/Demo/WidgetDemo/S00010_RollerCoasterLayer)
