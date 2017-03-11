@@ -20,8 +20,8 @@
     self.demoSummary    = @"卡片切换动效";
     self.codeLanguage   = kCRLanguageTypeObjectiveC;
     
-    self.originGitHubAddress            = @"https://github.com/BearRan/CRAnimation";
-    self.homePage                       = @"https://github.com/BearRan/CRAnimation";
+    self.originGitHubAddress    = @"https://github.com/BearRan/CRAnimation";
+    self.homePage               = @"https://github.com/BearRan/CRAnimation";
 
     
 }
