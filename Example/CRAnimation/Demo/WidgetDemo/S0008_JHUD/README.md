@@ -2,7 +2,7 @@
 <img src="http://omk22jt2z.bkt.clouddn.com/S0008_JHUD_20170311.gif" width=200 />
 
 ##简介：
-测试动效
+JHUD 是一个用于在加载数据时全屏显示的HUD
 
 | demo信息    | 详情                                                      |
 |:-----------:|:---------------------------------------------------------:|
@@ -18,8 +18,8 @@
 ###Pod
 >pod ‘JHUD’
 
+###Usage:
 ```
-//  Usage
 hudView = [[JHUD alloc]initWithFrame:self.view.bounds];
 
 hudView.messageLabel.text = @"hello ,this is a circle animation";
@@ -31,8 +31,8 @@ hudView.messageLabel.text = @"hello ,this is a circle animation";
 [hudView hide];
 ```
 
+###Class method
 ```
-//  Class method
 [JHUD showAtView:self.view message:@"Hello, this is a message"];
 
 [JHUD hide];
