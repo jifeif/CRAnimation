@@ -100,7 +100,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 - (void)createNaviBarView
 {
     __weak typeof(self) weakSelf = self;
-    _naviBarView = [CRHomeNaviBarView commonNaviBarViewWithTitle:@"精巧控件" inVC:weakSelf];
+    _naviBarView = [CRHomeNaviBarView commonNaviBarViewWithTitle:@"动效原型" inVC:weakSelf];
     [self.view addSubview:_naviBarView];
 }
 
