@@ -41,6 +41,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - FLAnimatedImage (1.0.12)
+  - JHUD (0.3.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - SDWebImage (3.8.2):
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - CRAnimation (from `../`)
   - FBSnapshotTestCase
   - FLAnimatedImage (~> 1.0)
+  - JHUD
   - MBProgressHUD
   - MJExtension
   - SDWebImage
@@ -65,14 +67,15 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BearSkill: 180b4d49cfae7466f65402eabcdb8d5a28665314
-  CRAnimation: 1a6e3a2dcd55878364fd8d66a2aa80b47e092997
+  CRAnimation: a5fc9d5b4404150b872f3c3810815ea71c9c503c
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  JHUD: 17650f65045d9843a7ad19f6a0b1eac6c78a45d2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
-PODFILE CHECKSUM: 8f8d0d082b01e08774477e07c7c1e4e4e9e26950
+PODFILE CHECKSUM: 53b9bfdf436d7b8a1dfe0d9399c44e47733b53fe
 
 COCOAPODS: 1.1.0.rc.2

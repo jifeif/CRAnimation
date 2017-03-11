@@ -44,6 +44,8 @@
 
 - (void)createUI
 {
+    [super createUI];
+    
     _indexNow = -1;
     _imageNameArray = @[@"TestImage_1",
                         @"TestImage_2",
@@ -64,9 +66,9 @@
                         @"TestImage_17",
                         @"TestImage_18"];
     
-    _imageGradientView = [[CRImageGradientView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    _imageGradientView = [[CRImageGradientView alloc] initWithFrame:self.contentView.bounds];
     _imageGradientView.animationDuration_EX = 1.0f;
-    [self.view addSubview:_imageGradientView];
+    [self.contentView addSubview:_imageGradientView];
     
     [self createTimer];
 }

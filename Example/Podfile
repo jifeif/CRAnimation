@@ -8,6 +8,7 @@ target 'CRAnimation_Example' do
   pod 'AFNetworking'
   pod 'MJExtension'
   pod 'MBProgressHUD'
+  pod 'JHUD'
   
   target 'CRAnimation_Tests' do
     inherit! :search_paths

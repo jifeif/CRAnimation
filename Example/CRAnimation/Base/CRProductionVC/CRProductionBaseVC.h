@@ -12,6 +12,7 @@
 @interface CRProductionBaseVC : CRBaseViewController
 
 @property (strong, nonatomic) UIColor       *backBtnColor;
+@property (strong, nonatomic) UIView        *contentView;
 
 - (void)setDemoInfoModel:(CRDemoInfoModel *)demoInfoModel;
 - (void)addTopBarWithTitle:(NSString *)title;

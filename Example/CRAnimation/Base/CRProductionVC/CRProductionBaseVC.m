@@ -38,6 +38,7 @@
 {
     [super createUI];
     [self addTopBarWithTitle:nil];
+    [self createContentView];
 }
 
 - (void)addTopBarWithTitle:(NSString *)title
@@ -57,6 +58,14 @@
         _topBarView = [[UIView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, 40)];
         _topBarView.backgroundColor = [UIColor clearColor];
         [self.view addSubview:_topBarView];
+    }
+}
+
+- (void)createContentView
+{
+    if (!_contentView) {
+        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, _topBarView.maxY, WIDTH, HEIGHT - _topBarView.maxY)];
+        [self.view addSubview:_contentView];
     }
 }
 
