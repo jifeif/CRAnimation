@@ -37,7 +37,7 @@
     if (!_gifImageView) {
         _gifImageView = [[CRFLAnimatiatedImageView alloc] init];
         _gifImageView.frame = self.contentView.bounds;
-        _gifImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _gifImageView.contentMode = UIViewContentModeScaleAspectFit;
         _gifImageView.clipsToBounds = YES;
         [self.contentView addSubview:_gifImageView];
     }

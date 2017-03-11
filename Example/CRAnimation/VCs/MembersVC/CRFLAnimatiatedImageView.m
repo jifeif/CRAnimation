@@ -14,6 +14,10 @@
 - (void)setGifImageWithURLStr:(NSString *)urlStr
 {
     __weak typeof(self) weakSelf = self;
+    
+    //  clean
+    [weakSelf setGifImageWithGifImageData:nil];
+    
     NSData *gifImageData = [self imageDataFromDiskCacheWithKey:urlStr];
     
     if (gifImageData) {
