@@ -50,7 +50,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 {
     __weak typeof(self) weakSelf = self;
     [self showHud:nil];
-    [CRProductsRequest reuestProductsWithAnmationType:kCRHomeProductType_CodeAnimation
+    [CRProductsRequest reuestProductsWithAnmationType:kCRHomeProductType_DesignerAnimation
                                               success:^(CRHomeProductsModel *homeProductModel) {
                                                   [weakSelf hideHUDView];
                                                   [weakSelf dealDemoArray:homeProductModel.list];

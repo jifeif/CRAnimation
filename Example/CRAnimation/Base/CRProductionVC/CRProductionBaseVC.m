@@ -17,7 +17,6 @@
     UIButton    *_detailsBtn;
     UILabel     *_productionTitleLabel;
     UIView      *_topBarView;
-    CRDemoInfoModel *_demoInfoModel;
     CRProductionShowDetailManager   *_showDetailManager;
 }
 
@@ -37,7 +36,7 @@
 - (void)createUI
 {
     [super createUI];
-    [self addTopBarWithTitle:nil];
+    [self addTopBarWithTitle:self.demoInfoModel.demoName];
     [self createContentView];
 }
 

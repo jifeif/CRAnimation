@@ -11,13 +11,14 @@
 #import "CRProductsMemberBriefInfoModel.h"
 
 typedef enum {
-    kCRDemoTypeStorage,       //  动效仓库
-    kCRDemoTypeCombination,   //  组合动效
+    kCRDemoTypeStorage      = 1,    //  动效仓库
+    kCRDemoTypeCombination  = 2,    //  组合动效
+    kCRDemoTypeDesigner     = 3,    //  设计师动效
 } CRDemoType;
 
 typedef enum {
-    kCRLanguageTypeObjectiveC,  //  Objective-C
-    kCRLanguageTypeSwift,       //  Swift
+    kCRLanguageTypeObjectiveC = 1,  //  Objective-C
+    kCRLanguageTypeSwift      = 2,  //  Swift
 } CRLanguage;
 
 @interface CRDemoInfoModel : NSObject
@@ -35,12 +36,14 @@ typedef enum {
 //  动效类型（默认填写：kCRDemoTypeStorage）
 //  kCRDemoTypeStorage:         动效仓库
 //  kCRDemoTypeCombination:     组合动效
+//  kCRDemoTypeDesigner:        设计师动效
 @property (assign, nonatomic) CRDemoType    demoType;
 
 //  Require
 //  ID编号（向管理员申请）
 //  S0001:动效仓库
 //  C0001:组合动效
+//  D0001:设计师动效
 @property (strong, nonatomic) NSString      *CRID;
 
 //  Require

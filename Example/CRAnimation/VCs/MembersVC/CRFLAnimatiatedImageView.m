@@ -33,11 +33,8 @@
                                                              progress:nil
             completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
                 
-                [[[SDWebImageManager sharedManager] imageCache] storeImage:image
-                                                      recalculateFromImage:NO
-                                                                 imageData:data
-                                                                    forKey:url.absoluteString
-                                                                    toDisk:YES];
+                [[SDWebImageManager sharedManager] saveImageToCache:image
+                                                             forURL:url];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [weakSelf setGifImageWithGifImageData:data];
                 });

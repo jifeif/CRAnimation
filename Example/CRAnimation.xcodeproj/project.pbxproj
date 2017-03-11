@@ -72,11 +72,13 @@
 		09B519E81E73CE5D00065C27 /* CRJHUDDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B519E71E73CE5D00065C27 /* CRJHUDDemoVC.m */; };
 		09B519EB1E73CF8200065C27 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B519EA1E73CF8200065C27 /* DetailViewController.m */; };
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
+		09D671101E74168600FDB428 /* CRDesignProductionBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D6710F1E74168600FDB428 /* CRDesignProductionBaseVC.m */; };
 		09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */; };
 		09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */; };
 		09E40CB81E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB71E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m */; };
 		09E40CBB1E6C303E0042B5AE /* CRCommonExtendsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBA1E6C303E0042B5AE /* CRCommonExtendsManager.m */; };
 		09E40CBE1E6C4E210042B5AE /* CRGetMemebersListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */; };
+		09EE43E41E73DB47000DFF14 /* JHUD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EE43E31E73DB47000DFF14 /* JHUD.gif */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
@@ -242,6 +244,8 @@
 		09B519E91E73CF8200065C27 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		09B519EA1E73CF8200065C27 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		09D168D61DC620210082C35E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09D6710E1E74168600FDB428 /* CRDesignProductionBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDesignProductionBaseVC.h; sourceTree = "<group>"; };
+		09D6710F1E74168600FDB428 /* CRDesignProductionBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDesignProductionBaseVC.m; sourceTree = "<group>"; };
 		09D937D51DAEAC69007694BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		09DC1C391E583A4D007A8B10 /* CRJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRJumpManager.h; sourceTree = "<group>"; };
 		09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJumpManager.m; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		09E40CBA1E6C303E0042B5AE /* CRCommonExtendsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCommonExtendsManager.m; sourceTree = "<group>"; };
 		09E40CBC1E6C4E210042B5AE /* CRGetMemebersListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGetMemebersListRequest.h; sourceTree = "<group>"; };
 		09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGetMemebersListRequest.m; sourceTree = "<group>"; };
+		09EE43E31E73DB47000DFF14 /* JHUD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHUD.gif; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -343,6 +348,8 @@
 				090080821E4CAD6800AE60A5 /* CRHeaderButton.m */,
 				090080831E4CAD6800AE60A5 /* CRProductionBaseVC.h */,
 				090080841E4CAD6800AE60A5 /* CRProductionBaseVC.m */,
+				09D6710E1E74168600FDB428 /* CRDesignProductionBaseVC.h */,
+				09D6710F1E74168600FDB428 /* CRDesignProductionBaseVC.m */,
 				0950D5AF1E54B0D4009214E2 /* CRParticipateMembersView.h */,
 				0950D5B01E54B0D4009214E2 /* CRParticipateMembersView.m */,
 				0950D5B21E54B269009214E2 /* CRParticipateMemberCollectionCell.h */,
@@ -637,6 +644,7 @@
 			isa = PBXGroup;
 			children = (
 				09B519E11E73CE0D00065C27 /* README.md */,
+				09EE43E31E73DB47000DFF14 /* JHUD.gif */,
 				09B519E31E73CE4500065C27 /* CRJHUDDemoInfoModel.h */,
 				09B519E41E73CE4500065C27 /* CRJHUDDemoInfoModel.m */,
 				09B519E61E73CE5D00065C27 /* CRJHUDDemoVC.h */,
@@ -942,6 +950,7 @@
 				257751551DC25B070019D38B /* HZLaunchView.gif in Resources */,
 				5247C4F81DD212320024DF8B /* GatlingProgress.gif in Resources */,
 				092A2D2A1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif in Resources */,
+				09EE43E41E73DB47000DFF14 /* JHUD.gif in Resources */,
 				092A2D331DBCA51C00650DE1 /* GifPlay.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork.png in Resources */,
 				ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */,
@@ -1103,6 +1112,7 @@
 				257751521DC25A790019D38B /* HZLaunchViewDemoInfoModel.m in Sources */,
 				09449E7E1E6470A50008BD8F /* CRResponseBaseModel.m in Sources */,
 				092A2D671DBCA8DA00650DE1 /* WCLLoadingView.swift in Sources */,
+				09D671101E74168600FDB428 /* CRDesignProductionBaseVC.m in Sources */,
 				09E40CB81E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m in Sources */,
 				092A2D301DBCA51C00650DE1 /* CRYFGifDemoViewController.m in Sources */,
 				0900809E1E4CB91200AE60A5 /* CRCodeAnimationVC.m in Sources */,
@@ -1212,7 +1222,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-					"CONTRIBUTE_STATUS=1",
+					"CONTRIBUTE_STATUS=0",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
