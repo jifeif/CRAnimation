@@ -420,7 +420,7 @@
 		0920032F1DAAA20B008266B8 /* MixDemo */ = {
 			isa = PBXGroup;
 			children = (
-				092A2D3A1DBCA54C00650DE1 /* C0001_CRMusicCardDemo */,
+				092A2D3A1DBCA54C00650DE1 /* C0001_CRMusicCard */,
 			);
 			path = MixDemo;
 			sourceTree = "<group>";
@@ -428,13 +428,13 @@
 		0920033B1DAAA20B008266B8 /* WidgetDemo */ = {
 			isa = PBXGroup;
 			children = (
-				09D168D51DC61FFB0082C35E /* S0000_SampleDemo */,
-				092A2D0B1DBCA51C00650DE1 /* S0001_CRCardAnimationViewDemo */,
-				092A2D111DBCA51C00650DE1 /* S0002_CRImageGradientViewDemo */,
-				092A2D181DBCA51C00650DE1 /* S0003_GifDemo */,
+				09D168D51DC61FFB0082C35E /* S0000_Sample */,
+				092A2D0B1DBCA51C00650DE1 /* S0001_CRCardAnimationView */,
+				092A2D111DBCA51C00650DE1 /* S0002_CRImageGradientView */,
+				092A2D181DBCA51C00650DE1 /* S0003_Gif */,
 				092A2D5D1DBCA8DA00650DE1 /* S0004_WCLLoadingView */,
 				2577514D1DC25A790019D38B /* S0005_HZLaunchView */,
-				ED36EAC91DD2AF9A0050416B /* S0006_CCWormHUDDemo */,
+				ED36EAC91DD2AF9A0050416B /* S0006_CCWormHUD */,
 				527FF7331DD0E9270055026D /* S0007_CRGatling */,
 			);
 			path = WidgetDemo;
@@ -451,7 +451,7 @@
 			path = CRCustomNaviBarView;
 			sourceTree = "<group>";
 		};
-		092A2D0B1DBCA51C00650DE1 /* S0001_CRCardAnimationViewDemo */ = {
+		092A2D0B1DBCA51C00650DE1 /* S0001_CRCardAnimationView */ = {
 			isa = PBXGroup;
 			children = (
 				09EE9B9F1DBCE2E400BD81A2 /* README.md */,
@@ -461,10 +461,11 @@
 				092A2D0F1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.h */,
 				092A2D101DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m */,
 			);
+			name = S0001_CRCardAnimationView;
 			path = S0001_CRCardAnimationViewDemo;
 			sourceTree = "<group>";
 		};
-		092A2D111DBCA51C00650DE1 /* S0002_CRImageGradientViewDemo */ = {
+		092A2D111DBCA51C00650DE1 /* S0002_CRImageGradientView */ = {
 			isa = PBXGroup;
 			children = (
 				092A2D171DBCA51C00650DE1 /* README.md */,
@@ -474,10 +475,11 @@
 				092A2D151DBCA51C00650DE1 /* CRImageGradientDemoVC.h */,
 				092A2D161DBCA51C00650DE1 /* CRImageGradientDemoVC.m */,
 			);
+			name = S0002_CRImageGradientView;
 			path = S0002_CRImageGradientViewDemo;
 			sourceTree = "<group>";
 		};
-		092A2D181DBCA51C00650DE1 /* S0003_GifDemo */ = {
+		092A2D181DBCA51C00650DE1 /* S0003_Gif */ = {
 			isa = PBXGroup;
 			children = (
 				092A2D1F1DBCA51C00650DE1 /* GifPlay.gif */,
@@ -488,10 +490,11 @@
 				092A2D1D1DBCA51C00650DE1 /* GifDemoVC.h */,
 				092A2D1E1DBCA51C00650DE1 /* GifDemoVC.m */,
 			);
+			name = S0003_Gif;
 			path = S0003_GifDemo;
 			sourceTree = "<group>";
 		};
-		092A2D3A1DBCA54C00650DE1 /* C0001_CRMusicCardDemo */ = {
+		092A2D3A1DBCA54C00650DE1 /* C0001_CRMusicCard */ = {
 			isa = PBXGroup;
 			children = (
 				09EE9BA11DBCEA5A00BD81A2 /* README.md */,
@@ -509,6 +512,7 @@
 				092A2D461DBCA54C00650DE1 /* CRMyCardView.h */,
 				092A2D471DBCA54C00650DE1 /* CRMyCardView.m */,
 			);
+			name = C0001_CRMusicCard;
 			path = C0001_CRMusicCardDemo;
 			sourceTree = "<group>";
 		};
@@ -585,11 +589,12 @@
 			path = CRTabBar;
 			sourceTree = "<group>";
 		};
-		09D168D51DC61FFB0082C35E /* S0000_SampleDemo */ = {
+		09D168D51DC61FFB0082C35E /* S0000_Sample */ = {
 			isa = PBXGroup;
 			children = (
 				09D168D61DC620210082C35E /* README.md */,
 			);
+			name = S0000_Sample;
 			path = S0000_SampleDemo;
 			sourceTree = "<group>";
 		};
@@ -743,7 +748,7 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		ED36EAC91DD2AF9A0050416B /* S0006_CCWormHUDDemo */ = {
+		ED36EAC91DD2AF9A0050416B /* S0006_CCWormHUD */ = {
 			isa = PBXGroup;
 			children = (
 				ED36EACA1DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif */,
@@ -754,6 +759,7 @@
 				ED36EACF1DD2AF9A0050416B /* LICENSE.txt */,
 				ED36EAD01DD2AF9A0050416B /* README.md */,
 			);
+			name = S0006_CCWormHUD;
 			path = S0006_CCWormHUDDemo;
 			sourceTree = "<group>";
 		};
@@ -1124,7 +1130,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
-					"CONTRIBUTE_STATUS=0",
+					"CONTRIBUTE_STATUS=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

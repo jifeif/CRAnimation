@@ -26,10 +26,8 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 @property (strong, nonatomic) NSMutableArray    *dataArrayTitle;
 @property (strong, nonatomic) NSMutableArray    *dataArrayDemoModel;
-
 @property (strong, nonatomic) NSArray           *storageDemoInfoModelNameArray;
 @property (strong, nonatomic) NSArray           *combinationDemoInfoModelNameArray;
-
 @property (strong, nonatomic) UICollectionView  *mainCollectionView;
 
 @end
