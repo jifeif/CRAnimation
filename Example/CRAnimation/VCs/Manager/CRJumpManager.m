@@ -10,6 +10,7 @@
 #import "CRBaseViewController.h"
 #import "CRDemoInfoModel.h"
 #import "CRProductionBaseVC.h"
+#import "CRDesignProductionBaseVC.h"
 
 @interface CRJumpManager ()
 {
@@ -39,7 +40,14 @@
 
 - (void)jumpToProductDetailVCWithDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
 {
-    if (demoInfoModel.demoVCName) {
+    //  设计师显示界面
+    if (demoInfoModel.demoType == kCRDemoTypeDesigner) {
+        CRDesignProductionBaseVC *destinationVC = [CRDesignProductionBaseVC new];
+        [destinationVC setDemoInfoModel:demoInfoModel];
+        [_inVC.navigationController pushViewController:destinationVC animated:YES];
+    }
+    //  开发者显示界面
+    else{
         id idVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
         if ([idVC isKindOfClass:[CRProductionBaseVC class]]) {
             CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)idVC;

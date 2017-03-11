@@ -36,6 +36,7 @@ typedef enum {
 //  动效类型（默认填写：kCRDemoTypeStorage）
 //  kCRDemoTypeStorage:         动效仓库
 //  kCRDemoTypeCombination:     组合动效
+//  kCRDemoTypeDesigner:        设计师动效
 @property (assign, nonatomic) CRDemoType    demoType;
 
 //  Require
