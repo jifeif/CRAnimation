@@ -13,4 +13,7 @@
 
 + (NSString *)convertProfessionType:(ProfessionType )professionType;
 
++ (void)normalBlock:(void (^)())normalBlock
+    contributeBlock:(void (^)())contributeBlock;
+
 @end

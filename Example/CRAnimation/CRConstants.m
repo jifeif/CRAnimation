@@ -22,6 +22,19 @@
     return professionStr;
 }
 
++ (void)normalBlock:(void (^)())normalBlock
+    contributeBlock:(void (^)())contributeBlock
+{
+#if CONTRIBUTE_STATUS == 1
+    if (contributeBlock) {
+        contributeBlock();
+    }
+#else
+    if (normalBlock) {
+        normalBlock();
+    }
+#endif
+}
 
 
 @end

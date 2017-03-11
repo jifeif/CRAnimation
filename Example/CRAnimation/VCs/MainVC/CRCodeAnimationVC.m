@@ -36,6 +36,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 @implementation CRCodeAnimationVC
 
+#pragma mark - LifeCircle
 - (instancetype)init
 {
     self = [super init];
@@ -51,9 +52,14 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 {
     [super viewDidLoad];
     
-//    [self localDataReady];
+    __weak typeof(self) weakSelf = self;
     [self createUI];
-    [self requestData];
+    
+    [CRConstants normalBlock:^{
+        [weakSelf requestData];
+    } contributeBlock:^{
+        [weakSelf localDataReady];
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -65,6 +71,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     self.navigationController.navigationBarHidden = YES;
 }
 
+#pragma mark - RequestData
 - (void)requestData
 {
     [self requestForProducts];
@@ -75,7 +82,6 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     __weak typeof(self) weakSelf = self;
     _dataArrayTitle = [[NSMutableArray alloc] initWithArray:@[
                                                               __kCRDemoStorage,
-                                                              //__kCRDemoCombination,
                                                               ]];
     
     [self showHud:nil];
@@ -89,6 +95,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
                                               }];
 }
 
+#pragma mark - LocalData
 - (void)localDataReady
 {
     _dataArrayTitle = [[NSMutableArray alloc] initWithArray:@[
@@ -177,6 +184,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     }
 }
 
+#pragma mark - Create UI
 - (void)createUI
 {
     self.navigationController.navigationBarHidden = YES;
