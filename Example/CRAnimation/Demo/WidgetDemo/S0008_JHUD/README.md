@@ -1,45 +1,39 @@
 # S0000_SampleDemo
-<img src="https://camo.githubusercontent.com/a6eec93a26efa4b006ccddafcc132871e6a8a514/687474703a2f2f696d672e626c6f672e6373646e2e6e65742f3230313630393038313632333236353330" width=200 />
+<img src="http://omk22jt2z.bkt.clouddn.com/S0008_JHUD_20170311.gif" width=200 />
 
 ##简介：
 测试动效
 
 | demo信息    | 详情                                                      |
 |:-----------:|:---------------------------------------------------------:|
-| DemoName    | CRSampleAnimationView                                     |
-| CRID        | S0000                                                     |
-| author      | [Bear](https://github.com/BearRan)                        |
-| authorMail  | 648070256@qq.com                                          |
-| 源gitHub    | [https://github.com/BearRan](https://github.com/BearRan)  |
-| 其他说明     | [https://github.com/BearRan](https://github.com/BearRan)  |
+| DemoName    | JHUD                                     |
+| CRID        | S00008                                                    |
+| author      | [晋先森](https://github.com/Jinxiansen)                        |
+| authorMail  | 463424863@qq.com                                         |
+| 源gitHub    | [https://github.com/Jinxiansen/JHUD](https://github.com/Jinxiansen/JHUD)  |
+| 其他说明     | [http://www.jianshu.com/p/fc07f027680c](http://www.jianshu.com/p/fc07f027680c)  |
 
 ##使用：
 
 ###Pod
->pod ‘CRAnimation/Widget/CRSampleDemoView’
+>pod ‘JHUD’
 
 ```
-//  init
-CRCardAnimationView *cardAnimationView = [[CRCardAnimationView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
-cardAnimationView.delegate = self;
-cardAnimationView.cardShowInView_Count = 3;
-[self.view addSubview:_cardAnimationView];
+//  Usage
+hudView = [[JHUD alloc]initWithFrame:self.view.bounds];
+
+hudView.messageLabel.text = @"hello ,this is a circle animation";
+
+//show
+[hudView showAtView:self.view hudType:JHUDLoadingTypeCircle];
+
+//hide 
+[hudView hide];
 ```
 
-###代理方法
 ```
-//  显示的card数量，和tableView中的numberOfRows同理
-- (NSInteger)numberOfCardsInCardAnimationView:(CRCardAnimationView *)cardAnimationView
-{
-return 10;
-}
-```
+//  Class method
+[JHUD showAtView:self.view message:@"Hello, this is a message"];
 
-## 属性列表
-```
-CGFloat   animationDuration_Normal;   //普通动画时间
-int       cardShowInView_Count;       //可见的卡片数量
-CGFloat   cardAlphaGapValue;          //相邻卡片alpha差值
-CGPoint   cardOffSetPoint;            //相邻卡片偏移位置设定
-CGFloat   cardScaleRatio;             //相邻卡片缩放比例
+[JHUD hide];
 ```
