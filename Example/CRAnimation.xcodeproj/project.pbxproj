@@ -104,11 +104,11 @@
 		9704F1D51E73ECAF00604DFC /* CRWCLShineButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1D41E73ECAF00604DFC /* CRWCLShineButtonModel.m */; };
 		9704F1DA1E73F06E00604DFC /* WCLShineButton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1D91E73F06E00604DFC /* WCLShineButton.gif */; };
 		9704F1DC1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1DB1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift */; };
-		9704F1E11E7415F500604DFC /* RollerCoasterLayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1E01E7415F500604DFC /* RollerCoasterLayer.gif */; };
-		9704F1E41E74162C00604DFC /* CRRollerCoasterLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E31E74162C00604DFC /* CRRollerCoasterLayerModel.m */; };
-		9704F1E61E74177E00604DFC /* CRRollerCoasterLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E51E74177E00604DFC /* CRRollerCoasterLayerVC.swift */; };
 		9704F1E81E7432DC00604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E71E7432DC00604DFC /* README.md */; };
-		9704F1EA1E74333000604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E91E74333000604DFC /* README.md */; };
+		9704F1F11E7442C000604DFC /* CRRollerCoasterLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */; };
+		9704F1F21E7442C000604DFC /* CRRollerCoasterLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */; };
+		9704F1F31E7442C000604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EF1E7442C000604DFC /* README.md */; };
+		9704F1F41E7442C000604DFC /* RollerCoasterLayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */; };
 		973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */; };
 		BCFA28746AFD50F5E1BE2C1A /* Pods_CRAnimation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F56DF0F33F6C42324864D8 /* Pods_CRAnimation_Example.framework */; };
 		ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED36EACA1DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif */; };
@@ -299,12 +299,12 @@
 		9704F1D41E73ECAF00604DFC /* CRWCLShineButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRWCLShineButtonModel.m; sourceTree = "<group>"; };
 		9704F1D91E73F06E00604DFC /* WCLShineButton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WCLShineButton.gif; sourceTree = "<group>"; };
 		9704F1DB1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRWCLShineButtonDemoVC.swift; sourceTree = "<group>"; };
-		9704F1E01E7415F500604DFC /* RollerCoasterLayer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RollerCoasterLayer.gif; sourceTree = "<group>"; };
-		9704F1E21E74162C00604DFC /* CRRollerCoasterLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRollerCoasterLayerModel.h; sourceTree = "<group>"; };
-		9704F1E31E74162C00604DFC /* CRRollerCoasterLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRollerCoasterLayerModel.m; sourceTree = "<group>"; };
-		9704F1E51E74177E00604DFC /* CRRollerCoasterLayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRollerCoasterLayerVC.swift; sourceTree = "<group>"; };
 		9704F1E71E7432DC00604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9704F1E91E74333000604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9704F1EC1E7442C000604DFC /* CRRollerCoasterLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRollerCoasterLayerModel.h; sourceTree = "<group>"; };
+		9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRollerCoasterLayerModel.m; sourceTree = "<group>"; };
+		9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRollerCoasterLayerVC.swift; sourceTree = "<group>"; };
+		9704F1EF1E7442C000604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RollerCoasterLayer.gif; sourceTree = "<group>"; };
 		973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		976F95561DB25275000776A6 /* CRAnimation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CRAnimation-Bridging-Header.h"; path = "../CRAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD775529C0010A6B82D84DCC /* Pods-CRAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -474,7 +474,7 @@
 				527FF7331DD0E9270055026D /* S0007_CRGatling */,
 				09B519E01E73CDDE00065C27 /* S0008_JHUD */,
 				977CA5341E73DDDA0093851E /* S0009_WCLShineButton */,
-				9704F1DF1E7402D100604DFC /* S00010_RollerCoasterLayer */,
+				9704F1EB1E7442C000604DFC /* S0010_RollerCoasterLayer */,
 			);
 			path = WidgetDemo;
 			sourceTree = "<group>";
@@ -802,16 +802,16 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		9704F1DF1E7402D100604DFC /* S00010_RollerCoasterLayer */ = {
+		9704F1EB1E7442C000604DFC /* S0010_RollerCoasterLayer */ = {
 			isa = PBXGroup;
 			children = (
-				9704F1E91E74333000604DFC /* README.md */,
-				9704F1E01E7415F500604DFC /* RollerCoasterLayer.gif */,
-				9704F1E21E74162C00604DFC /* CRRollerCoasterLayerModel.h */,
-				9704F1E31E74162C00604DFC /* CRRollerCoasterLayerModel.m */,
-				9704F1E51E74177E00604DFC /* CRRollerCoasterLayerVC.swift */,
+				9704F1EC1E7442C000604DFC /* CRRollerCoasterLayerModel.h */,
+				9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */,
+				9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */,
+				9704F1EF1E7442C000604DFC /* README.md */,
+				9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */,
 			);
-			path = S00010_RollerCoasterLayer;
+			path = S0010_RollerCoasterLayer;
 			sourceTree = "<group>";
 		};
 		973FBA1B1DB244B4003A2C7E /* Extension */ = {
@@ -949,6 +949,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9704F1F41E7442C000604DFC /* RollerCoasterLayer.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x.png in Resources */,
 				092A2D2D1DBCA51C00650DE1 /* CRImageGradientDemoVC.gif in Resources */,
@@ -962,7 +963,6 @@
 				ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				9704F1E11E7415F500604DFC /* RollerCoasterLayer.gif in Resources */,
 				092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */,
 				ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */,
 				092A2D4C1DBCA54C00650DE1 /* CRMusicCardDemoVC.gif in Resources */,
@@ -1098,7 +1098,6 @@
 				090080A71E4CB9AE00AE60A5 /* CRMembersVC.m in Sources */,
 				092A2D651DBCA8DA00650DE1 /* README.md in Sources */,
 				09203ACE1E4F460D00FB2B25 /* CRCustomNaviBarView.m in Sources */,
-				9704F1E61E74177E00604DFC /* CRRollerCoasterLayerVC.swift in Sources */,
 				092A2D2E1DBCA51C00650DE1 /* CRImageGradientDemoVC.m in Sources */,
 				9704F1E81E7432DC00604DFC /* README.md in Sources */,
 				092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */,
@@ -1108,7 +1107,6 @@
 				09B519EB1E73CF8200065C27 /* DetailViewController.m in Sources */,
 				09109A831E5351B300031210 /* CRFLAnimatiatedImageView.m in Sources */,
 				092A2D681DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m in Sources */,
-				9704F1E41E74162C00604DFC /* CRRollerCoasterLayerModel.m in Sources */,
 				092A2D4B1DBCA54C00650DE1 /* CRMusicCardDemoInfoModel.m in Sources */,
 				9704F1D51E73ECAF00604DFC /* CRWCLShineButtonModel.m in Sources */,
 				09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */,
@@ -1143,11 +1141,13 @@
 				527FF73C1DD0E9770055026D /* CRGatlingVC.m in Sources */,
 				09B519E21E73CE0D00065C27 /* README.md in Sources */,
 				09109A7D1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m in Sources */,
+				9704F1F11E7442C000604DFC /* CRRollerCoasterLayerModel.m in Sources */,
 				09E40CBE1E6C4E210042B5AE /* CRGetMemebersListRequest.m in Sources */,
 				0950D5AE1E54A7AC009214E2 /* CRHomeNaviBarView.m in Sources */,
 				09203AD11E4F4BB600FB2B25 /* CRMemberDetailHeadView.m in Sources */,
+				9704F1F21E7442C000604DFC /* CRRollerCoasterLayerVC.swift in Sources */,
 				092A2D4E1DBCA54C00650DE1 /* CRMyCardView.m in Sources */,
-				9704F1EA1E74333000604DFC /* README.md in Sources */,
+				9704F1F31E7442C000604DFC /* README.md in Sources */,
 				09D168D81DC620210082C35E /* README.md in Sources */,
 				092A2D311DBCA51C00650DE1 /* GifDemoInfoModel.m in Sources */,
 				09449E811E6476C40008BD8F /* CRHomeProductsModel.m in Sources */,
