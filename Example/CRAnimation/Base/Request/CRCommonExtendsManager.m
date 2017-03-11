@@ -25,7 +25,8 @@
                  @"demoName" : @"name",
                  @"demoSummary" : @"shortDesc",
                  @"originGitHubAddress" : @"originGithubAddress",
-                 @"homePage" : @"otherAddress"
+                 @"homePage" : @"otherAddress",
+                 @"codeLanguage" : @"language"
                  };
     }];
     [CRDemoInfoModel mj_setupObjectClassInArray:^NSDictionary *{
