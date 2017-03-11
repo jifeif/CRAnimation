@@ -18,6 +18,7 @@
     self.CRID           = @"S0001";
     self.demoName       = @"CRCardAnimationView";
     self.demoSummary    = @"卡片切换动效";
+    self.detailDesc     = @"这是一款卡片式切换的动画效果，使用代理方法设置每个cell，类似于UITableView，便于集成。";
     self.codeLanguage   = kCRLanguageTypeObjectiveC;
     
     self.originGitHubAddress    = @"https://github.com/BearRan/CRAnimation";
