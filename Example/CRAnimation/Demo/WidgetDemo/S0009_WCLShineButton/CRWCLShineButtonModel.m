@@ -1,5 +1,5 @@
 //
-//  WCLLoadingViewDemoInfoModel.m
+//  CRWCLShineButtonModel.m
 //  CRAnimation
 //
 // **************************************************
@@ -19,27 +19,23 @@
 //  Copyright © 2016年 王崇磊. All rights reserved.
 //
 
-#import "WCLLoadingViewDemoInfoModel.h"
-#import "CRAnimation_Example-swift.h"
+#import "CRWCLShineButtonModel.h"
 
-@implementation WCLLoadingViewDemoInfoModel
+@implementation CRWCLShineButtonModel
 
 #pragma mark - Override
 - (void)fillDemoInfo
 {
-    // 去CRAnimation_Example-swift.h这个头文件里面去看你对于的swift的类名，例如我的就是_TtC19CRAnimation_Example14WCLLoadingView
-    self.demoVCName     = @"_TtC19CRAnimation_Example20WCLLoadingViewDemoVC";
-    self.demoGifName    = @"WCLLoadingView.gif";
+    self.demoVCName     = @"_TtC19CRAnimation_Example22CRWCLShineButtonDemoVC";
+    self.demoGifName    = @"WCLShineButton.gif";
     self.demoType       = kCRDemoTypeStorage;
-    self.CRID           = @"S0004";
-    self.demoName       = @"WCLLoadingView";
-    self.demoSummary    = @"Slack 的 Loading 动画";
+    self.CRID           = @"S0009";
+    self.demoName       = @"WCLShineButton";
+    self.demoSummary    = @"类似太阳动画的按钮";
     self.codeLanguage   = kCRLanguageTypeSwift;
     
-    self.originGitHubAddress            = @"https://github.com/631106979/WCLLoadingView";
+    self.originGitHubAddress            = @"https://github.com/631106979/WCLShineButton";
     self.homePage                       = @"https://imwcl.com";
-
-    
 }
 
 - (CRMemberInfoModel *)authorInfo

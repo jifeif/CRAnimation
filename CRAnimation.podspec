@@ -46,5 +46,10 @@ Pod::Spec.new do |s|
             crGatling.source_files = 'Pod/CRWidget/CRGatling/*'
         end
 
+        widget.subspec 'RollerCoasterLayer' do |rollerCoasterLayer|
+            rollerCoasterLayer.source_files = 'Pod/CRWidget/RollerCoasterLayer/*.swift'
+            rollerCoasterLayer.resources = 'Pod/CRWidget/RollerCoasterLayer/RollerCoasterLayer.bundle'
+        end
+
     end
 end
