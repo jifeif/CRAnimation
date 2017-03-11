@@ -46,5 +46,9 @@ Pod::Spec.new do |s|
             crGatling.source_files = 'Pod/CRWidget/CRGatling/*'
         end
 
+        widget.subspec 'RollerCoasterLayer' do |rollerCoasterLayer|
+            rollerCoasterLayer.source_files = 'Pod/CRWidget/RollerCoasterLayer/*'
+        end
+
     end
 end

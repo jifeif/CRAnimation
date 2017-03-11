@@ -37,7 +37,7 @@
     self.codeLanguage   = kCRLanguageTypeSwift;
     
     self.originGitHubAddress            = @"https://github.com/631106979/WCLLoadingView";
-    self.homePage                       = @"";
+    self.homePage                       = @"https://imwcl.com";
 
     
 }
