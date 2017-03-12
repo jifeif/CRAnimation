@@ -27,25 +27,20 @@
 		09203AD11E4F4BB600FB2B25 /* CRMemberDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09203AD01E4F4BB600FB2B25 /* CRMemberDetailHeadView.m */; };
 		092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D091DBC9A5C00650DE1 /* CRMemberInfoModel.m */; };
 		092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D0D1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m */; };
-		092A2D2A1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D0E1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif */; };
 		092A2D2B1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D101DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m */; };
 		092A2D2C1DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D131DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.m */; };
-		092A2D2D1DBCA51C00650DE1 /* CRImageGradientDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D141DBCA51C00650DE1 /* CRImageGradientDemoVC.gif */; };
 		092A2D2E1DBCA51C00650DE1 /* CRImageGradientDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D161DBCA51C00650DE1 /* CRImageGradientDemoVC.m */; };
 		092A2D2F1DBCA51C00650DE1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D171DBCA51C00650DE1 /* README.md */; };
 		092A2D301DBCA51C00650DE1 /* CRYFGifDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D1A1DBCA51C00650DE1 /* CRYFGifDemoViewController.m */; };
 		092A2D311DBCA51C00650DE1 /* GifDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D1C1DBCA51C00650DE1 /* GifDemoInfoModel.m */; };
 		092A2D321DBCA51C00650DE1 /* GifDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D1E1DBCA51C00650DE1 /* GifDemoVC.m */; };
-		092A2D331DBCA51C00650DE1 /* GifPlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D1F1DBCA51C00650DE1 /* GifPlay.gif */; };
 		092A2D481DBCA54C00650DE1 /* CRBottomPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D3C1DBCA54C00650DE1 /* CRBottomPageView.m */; };
 		092A2D491DBCA54C00650DE1 /* CRCardViewBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D3E1DBCA54C00650DE1 /* CRCardViewBack.m */; };
 		092A2D4A1DBCA54C00650DE1 /* CRCardViewFront.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D401DBCA54C00650DE1 /* CRCardViewFront.m */; };
 		092A2D4B1DBCA54C00650DE1 /* CRMusicCardDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D421DBCA54C00650DE1 /* CRMusicCardDemoInfoModel.m */; };
-		092A2D4C1DBCA54C00650DE1 /* CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D431DBCA54C00650DE1 /* CRMusicCardDemoVC.gif */; };
 		092A2D4D1DBCA54C00650DE1 /* CRMusicCardDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D451DBCA54C00650DE1 /* CRMusicCardDemoVC.m */; };
 		092A2D4E1DBCA54C00650DE1 /* CRMyCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D471DBCA54C00650DE1 /* CRMyCardView.m */; };
 		092A2D651DBCA8DA00650DE1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D5E1DBCA8DA00650DE1 /* README.md */; };
-		092A2D661DBCA8DA00650DE1 /* WCLLoadingView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D5F1DBCA8DA00650DE1 /* WCLLoadingView.gif */; };
 		092A2D671DBCA8DA00650DE1 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D601DBCA8DA00650DE1 /* WCLLoadingView.swift */; };
 		092A2D681DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */; };
 		092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D631DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift */; };
@@ -73,20 +68,28 @@
 		09B519EB1E73CF8200065C27 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B519EA1E73CF8200065C27 /* DetailViewController.m */; };
 		09D168D81DC620210082C35E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09D168D61DC620210082C35E /* README.md */; };
 		09D671101E74168600FDB428 /* CRDesignProductionBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D6710F1E74168600FDB428 /* CRDesignProductionBaseVC.m */; };
+		09D671111E74F40400FDB428 /* CRCardAnimationViewDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D0E1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif */; };
+		09D671121E74F40400FDB428 /* CRImageGradientDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D141DBCA51C00650DE1 /* CRImageGradientDemoVC.gif */; };
+		09D671131E74F40400FDB428 /* GifPlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D1F1DBCA51C00650DE1 /* GifPlay.gif */; };
+		09D671141E74F40400FDB428 /* WCLLoadingView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D5F1DBCA8DA00650DE1 /* WCLLoadingView.gif */; };
+		09D671151E74F40400FDB428 /* HZLaunchView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 257751541DC25B070019D38B /* HZLaunchView.gif */; };
+		09D671161E74F40400FDB428 /* a-diligent-worm-in-iOS.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED36EACA1DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif */; };
+		09D671171E74F40400FDB428 /* GatlingProgress.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5247C4F71DD212320024DF8B /* GatlingProgress.gif */; };
+		09D671181E74F40400FDB428 /* JHUD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EE43E31E73DB47000DFF14 /* JHUD.gif */; };
+		09D671191E74F40400FDB428 /* WCLShineButton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1D91E73F06E00604DFC /* WCLShineButton.gif */; };
+		09D6711A1E74F40400FDB428 /* RollerCoasterLayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */; };
+		09D6711B1E74F40400FDB428 /* CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D431DBCA54C00650DE1 /* CRMusicCardDemoVC.gif */; };
 		09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */; };
 		09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */; };
 		09E40CB81E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB71E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m */; };
 		09E40CBB1E6C303E0042B5AE /* CRCommonExtendsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBA1E6C303E0042B5AE /* CRCommonExtendsManager.m */; };
 		09E40CBE1E6C4E210042B5AE /* CRGetMemebersListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */; };
-		09EE43E41E73DB47000DFF14 /* JHUD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EE43E31E73DB47000DFF14 /* JHUD.gif */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
 		257751521DC25A790019D38B /* HZLaunchViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2577514F1DC25A790019D38B /* HZLaunchViewDemoInfoModel.m */; };
 		257751531DC25A790019D38B /* HZLaunchViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 257751511DC25A790019D38B /* HZLaunchViewDemoVC.m */; };
-		257751551DC25B070019D38B /* HZLaunchView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 257751541DC25B070019D38B /* HZLaunchView.gif */; };
 		366BCD0EA1948D6414619360 /* Pods_CRAnimation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02449F62305352FC64D71D38 /* Pods_CRAnimation_Tests.framework */; };
-		5247C4F81DD212320024DF8B /* GatlingProgress.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5247C4F71DD212320024DF8B /* GatlingProgress.gif */; };
 		527FF73C1DD0E9770055026D /* CRGatlingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 527FF73A1DD0E9770055026D /* CRGatlingVC.m */; };
 		527FF7431DD0EBB60055026D /* CRGatlingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 527FF7421DD0EBB60055026D /* CRGatlingModel.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -102,16 +105,13 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		9704F1D51E73ECAF00604DFC /* CRWCLShineButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1D41E73ECAF00604DFC /* CRWCLShineButtonModel.m */; };
-		9704F1DA1E73F06E00604DFC /* WCLShineButton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1D91E73F06E00604DFC /* WCLShineButton.gif */; };
 		9704F1DC1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1DB1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift */; };
 		9704F1E81E7432DC00604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1E71E7432DC00604DFC /* README.md */; };
 		9704F1F11E7442C000604DFC /* CRRollerCoasterLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */; };
 		9704F1F21E7442C000604DFC /* CRRollerCoasterLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */; };
 		9704F1F31E7442C000604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EF1E7442C000604DFC /* README.md */; };
-		9704F1F41E7442C000604DFC /* RollerCoasterLayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */; };
 		973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */; };
 		BCFA28746AFD50F5E1BE2C1A /* Pods_CRAnimation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F56DF0F33F6C42324864D8 /* Pods_CRAnimation_Example.framework */; };
-		ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED36EACA1DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif */; };
 		ED36EAD21DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED36EACC1DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m */; };
 		ED36EAD31DD2AF9B0050416B /* CCWormHUDDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED36EACE1DD2AF9A0050416B /* CCWormHUDDemoVC.m */; };
 		ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED36EACF1DD2AF9A0050416B /* LICENSE.txt */; };
@@ -949,24 +949,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9704F1F41E7442C000604DFC /* RollerCoasterLayer.gif in Resources */,
+				09D671151E74F40400FDB428 /* HZLaunchView.gif in Resources */,
+				09D6711B1E74F40400FDB428 /* CRMusicCardDemoVC.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				09D671111E74F40400FDB428 /* CRCardAnimationViewDemoVC.gif in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x.png in Resources */,
-				092A2D2D1DBCA51C00650DE1 /* CRImageGradientDemoVC.gif in Resources */,
-				092A2D661DBCA8DA00650DE1 /* WCLLoadingView.gif in Resources */,
-				257751551DC25B070019D38B /* HZLaunchView.gif in Resources */,
-				5247C4F81DD212320024DF8B /* GatlingProgress.gif in Resources */,
-				092A2D2A1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif in Resources */,
-				09EE43E41E73DB47000DFF14 /* JHUD.gif in Resources */,
-				092A2D331DBCA51C00650DE1 /* GifPlay.gif in Resources */,
+				09D671131E74F40400FDB428 /* GifPlay.gif in Resources */,
+				09D671141E74F40400FDB428 /* WCLLoadingView.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork.png in Resources */,
-				ED36EAD11DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif in Resources */,
+				09D671121E74F40400FDB428 /* CRImageGradientDemoVC.gif in Resources */,
+				09D671181E74F40400FDB428 /* JHUD.gif in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				09D671161E74F40400FDB428 /* a-diligent-worm-in-iOS.gif in Resources */,
+				09D6711A1E74F40400FDB428 /* RollerCoasterLayer.gif in Resources */,
 				092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */,
+				09D671171E74F40400FDB428 /* GatlingProgress.gif in Resources */,
 				ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */,
-				092A2D4C1DBCA54C00650DE1 /* CRMusicCardDemoVC.gif in Resources */,
-				9704F1DA1E73F06E00604DFC /* WCLShineButton.gif in Resources */,
+				09D671191E74F40400FDB428 /* WCLShineButton.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1322,8 +1322,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bear.cranimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "88f0c369-497c-4c67-ab79-fa54c88f0c7f";
-				PROVISIONING_PROFILE_SPECIFIER = CRAnimationProfile_AdHoc;
+				PROVISIONING_PROFILE = "84562126-5f77-41f0-9690-d74ecb8ee824";
+				PROVISIONING_PROFILE_SPECIFIER = CRAnimationProfile_AdHoc01;
 				SWIFT_OBJC_BRIDGING_HEADER = "CRAnimation/CRAnimation-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
