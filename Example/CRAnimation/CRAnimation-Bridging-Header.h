@@ -10,5 +10,9 @@
 #define CRAnimation_Bridging_Header_h
 
 #import "CRProductionBaseVC.h"
+#import "CRDefines.h"
+#import "CRSlider.h"
+#import <BearSkill/BearConstants.h>
+#import <BearSkill/UIView+BearSet.h>
 
 #endif /* CRAnimation_Bridging_Header_h */

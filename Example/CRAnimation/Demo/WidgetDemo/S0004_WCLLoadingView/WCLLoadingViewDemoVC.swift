@@ -28,6 +28,7 @@ import UIKit
 class WCLLoadingViewDemoVC: CRProductionBaseVC {
 
     @IBOutlet weak var loadingView: WCLLoadingView!
+    let controlViewHeight = 30
     //MARK: Public Methods
     
     
@@ -36,8 +37,9 @@ class WCLLoadingViewDemoVC: CRProductionBaseVC {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         loadingView.startAnimation()
-        view.backgroundColor = UIColor.init(rgba: "#F6F4F2")
+        view.backgroundColor = UIColor.init(rgba: "#0a090e")
         addTopBar(withTitle: "WCLLoadingView")
+//        createSliderView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,5 +65,32 @@ class WCLLoadingViewDemoVC: CRProductionBaseVC {
     
     @IBAction func durationSliderValueChange(_ sender: UISlider) {
         loadingView.duration = Double(sender.value)
+    }
+    
+    func createSizeControlView() {
+        
+        let sizeControlView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Int(view.width()) - 2*Int(CR_OFF_X), height: controlViewHeight))
+        view.addSubview(sizeControlView)
+        
+        let sizeLabel = UILabel.init()
+        sizeLabel.text = "Size"
+        sizeLabel.textColor = UIColor.white
+        sizeLabel.sizeToFit()
+        sizeControlView.addSubview(sizeLabel)
+//        kSDIR_LEFT
+//        kDIRECTION.kDIR_LEFT
+//        kSDIRECTION.SDIR_LEFT
+//        kDIRECTION(kDIR_LEFT)
+//        sizeLabel.bearSetRelativeLayout(with: kDIRECTION, destinationView: nil, parentRelation: YES, distance: 0, center: YES)
+//        sizeLabel.bearSetRelativeLayout(with: kDIRECTION.DIR_LEFT, destinationView: nil, parentRelation: YES, distance: 0, center: YES)
+        
+        let testSlider = CRSlider.init(frame: CGRect.init(x: 50, y: 300, width: 200, height: 30))
+        testSlider.sliderType = kCRSliderType_Normal
+        view.addSubview(testSlider)
+    }
+    
+    func createDurationControlView() {
+        let durationControlView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Int(view.width()) - 2*Int(CR_OFF_X), height: controlViewHeight))
+        view.addSubview(durationControlView)
     }
 }

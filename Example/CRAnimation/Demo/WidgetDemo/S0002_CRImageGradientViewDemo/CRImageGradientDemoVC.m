@@ -47,9 +47,9 @@
     [super createUI];
     
     _indexNow = -1;
-    _imageNameArray = @[@"TestImage_1",
-                        @"TestImage_2",
-                        @"TestImage_3",
+    _imageNameArray = @[@"S0002TestImage_1",
+                        @"S0002TestImage_2",
+                        @"S0002TestImage_3",
                         ];
     
     _imageGradientView = [[CRImageGradientView alloc] initWithFrame:self.contentView.bounds];

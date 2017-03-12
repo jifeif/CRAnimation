@@ -6,6 +6,13 @@
 //  Copyright © 2016年 BearRan. All rights reserved.
 //
 
+typedef NS_ENUM(NSUInteger, kSDIRECTION) {
+    kSDIR_LEFT,
+    kSDIR_RIGHT,
+    kSDIR_UP,
+    kSDIR_DOWN,
+};
+
 #import <Foundation/Foundation.h>
 
 #define TestCRIconURL @"http://oftcdgt2m.bkt.clouddn.com/CRLogo.png"
@@ -23,6 +30,8 @@
 #define color_5e67f7    UIColorFromHEX(0x5e67f7)
 #define color_6a696f    UIColorFromHEX(0x6a696f)
 #define color_8c2424    UIColorFromHEX(0x8c2424)
+
+#define color_0a090e    UIColorFromHEX(0x0a090e)
 
 #define color_Master    color_323341
 
@@ -65,6 +74,9 @@
 #define FontSize_5(value)       FontSize(XX_5(value))
 #define FontSize_6(value)       FontSize(XX_6(value))
 #define FontSize_6P(value)      FontSize(XX_6P(value))
+
+//  Distance
+#define CR_OFF_X 10
 
 @interface CRDefines : NSObject
 

@@ -52,7 +52,7 @@
     [_backBtn setImage:[UIImage imageNamed:@"nav_btn_return"] forState:UIControlStateNormal];
     [_backBtn addTarget:self action:@selector(backBtnEvent) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_backBtn];
-    [_backBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:nil parentRelation:YES distance:10 center:YES];
+    [_backBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:nil parentRelation:YES distance:CR_OFF_X center:YES];
     
     self.showBackBtn = YES;
 }

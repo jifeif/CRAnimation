@@ -33,10 +33,10 @@
     [super createUI];
     self.view.backgroundColor = color_Master;
     
-    _imageNameArray = @[@"TestImage_1",
-                        @"TestImage_2",
-                        @"TestImage_3",
-                        @"TestImage_2",
+    _imageNameArray = @[@"S0001TestImage_1",
+                        @"S0001TestImage_2",
+                        @"S0001TestImage_3",
+                        @"S0001TestImage_2",
                         ];
     
     _cardAnimationView = [[CRCardAnimationView alloc] initWithFrame:CGRectMake(0, NAV_STA, WIDTH, HEIGHT - NAV_STA)];
