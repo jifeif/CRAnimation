@@ -7,12 +7,14 @@
 //
 
 #import "CRCardAnimationViewDemoVC.h"
-#import "CRCardAnimationView.h"
+#import <CRAnimation/CRCardAnimationView.h>
+#import "CRCardCustomViewCell.h"
 
 @interface CRCardAnimationViewDemoVC () <CardAnimationViewDelegate>
 {
     
     CRCardAnimationView *_cardAnimationView;
+    NSArray             *_imageNameArray;
 }
 
 @end
@@ -31,6 +33,12 @@
     [super createUI];
     self.view.backgroundColor = color_Master;
     
+    _imageNameArray = @[@"TestImage_1",
+                        @"TestImage_2",
+                        @"TestImage_3",
+                        @"TestImage_2",
+                        ];
+    
     _cardAnimationView = [[CRCardAnimationView alloc] initWithFrame:CGRectMake(0, NAV_STA, WIDTH, HEIGHT - NAV_STA)];
     _cardAnimationView.delegate = self;
     _cardAnimationView.backgroundColor = color_323341;
@@ -41,7 +49,6 @@
     [self.view addSubview:_cardAnimationView];
 }
 
-
 #pragma mark - CardAnimationView delegate
 
 - (CRCardViewCell *)cardViewInCardAnimationView:(CRCardAnimationView *)cardAnimationView Index:(int)index
@@ -50,36 +57,34 @@
     CGFloat cardView_height = (1.0 * 811 / 1134) * HEIGHT;
     NSString *cardViewID_Str = @"cardViewID_Str";
     
-    CRCardViewCell *cardView = (CRCardViewCell *)[cardAnimationView dequeueReusableCardViewCellWithIdentifier:cardViewID_Str];
+    CRCardCustomViewCell *cardView = (CRCardCustomViewCell *)[cardAnimationView dequeueReusableCardViewCellWithIdentifier:cardViewID_Str];
     if (!cardView) {
-        cardView = [[CRCardViewCell alloc] initWithFrame:CGRectMake(0, 0, cardView_width, cardView_height) reuseIdentifier:cardViewID_Str];
+        cardView = [[CRCardCustomViewCell alloc] initWithFrame:CGRectMake(0, 0, cardView_width, cardView_height) reuseIdentifier:cardViewID_Str];
         cardView.layer.cornerRadius = 7.0f;
+        cardView.layer.masksToBounds = YES;
     }
     
     cardView.backgroundColor = UIColorFromHEX(0x494fa5);
+    if (index < [_imageNameArray count]) {
+        cardView.contentImageView.image = [UIImage imageNamed:_imageNameArray[index]];
+    }
     
     return cardView;
 }
 
 - (NSInteger)numberOfCardsInCardAnimationView:(CRCardAnimationView *)cardAnimationView
 {
-    return 10;
+    return [_imageNameArray count];
 }
 
 - (void)cardViewWillDisappearWithCardViewCell:(CRCardViewCell *)cardViewCell Index:(NSInteger)index
 {
-    NSLog(@"will disappear index:%ld", (long)index);
+//    NSLog(@"will disappear index:%ld", (long)index);
 }
 
 - (void)cardViewWillShowInTopWithCardViewCell:(CRCardViewCell *)cardViewCell Index:(NSInteger)index
 {
-    NSLog(@"will show index:%ld", (long)index);
+//    NSLog(@"will show index:%ld", (long)index);
 }
 
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 @end

@@ -80,6 +80,7 @@
 		09D6711A1E74F40400FDB428 /* RollerCoasterLayer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */; };
 		09D6711B1E74F40400FDB428 /* CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D431DBCA54C00650DE1 /* CRMusicCardDemoVC.gif */; };
 		09D6711F1E750A3F00FDB428 /* CRSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D6711E1E750A3F00FDB428 /* CRSlider.m */; };
+		09D671221E751A5500FDB428 /* CRCardCustomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D671211E751A5500FDB428 /* CRCardCustomViewCell.m */; };
 		09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */; };
 		09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB11E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m */; };
 		09E40CB81E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CB71E6C2A2D0042B5AE /* CRGetAuthorInfoRequest.m */; };
@@ -251,6 +252,8 @@
 		09D6710F1E74168600FDB428 /* CRDesignProductionBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDesignProductionBaseVC.m; sourceTree = "<group>"; };
 		09D6711D1E750A3F00FDB428 /* CRSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSlider.h; sourceTree = "<group>"; };
 		09D6711E1E750A3F00FDB428 /* CRSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSlider.m; sourceTree = "<group>"; };
+		09D671201E751A5500FDB428 /* CRCardCustomViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardCustomViewCell.h; sourceTree = "<group>"; };
+		09D671211E751A5500FDB428 /* CRCardCustomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardCustomViewCell.m; sourceTree = "<group>"; };
 		09D937D51DAEAC69007694BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		09DC1C391E583A4D007A8B10 /* CRJumpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRJumpManager.h; sourceTree = "<group>"; };
 		09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJumpManager.m; sourceTree = "<group>"; };
@@ -502,6 +505,8 @@
 				092A2D0D1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m */,
 				092A2D0F1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.h */,
 				092A2D101DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m */,
+				09D671201E751A5500FDB428 /* CRCardCustomViewCell.h */,
+				09D671211E751A5500FDB428 /* CRCardCustomViewCell.m */,
 			);
 			name = S0001_CRCardAnimationView;
 			path = S0001_CRCardAnimationViewDemo;
@@ -1168,6 +1173,7 @@
 				0900808B1E4CAD6800AE60A5 /* CRProductionDetailView.m in Sources */,
 				09203AC71E4F22DE00FB2B25 /* CRMembersTableViewCell.m in Sources */,
 				257751531DC25A790019D38B /* HZLaunchViewDemoVC.m in Sources */,
+				09D671221E751A5500FDB428 /* CRCardCustomViewCell.m in Sources */,
 				09109A8B1E5359B500031210 /* CRDesignerStageVC.m in Sources */,
 				090080A11E4CB91200AE60A5 /* CRItemBriefCollectionViewCell.m in Sources */,
 				092A2D2F1DBCA51C00650DE1 /* README.md in Sources */,
