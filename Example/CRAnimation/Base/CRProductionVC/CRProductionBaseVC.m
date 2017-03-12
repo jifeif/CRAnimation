@@ -125,9 +125,9 @@
 
 - (void)relayTopBarContentsUI
 {
-    [_backBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:nil parentRelation:YES distance:XX_6(20) center:YES];
-    [_detailsBtn BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:nil parentRelation:YES distance:XX_6(20) center:YES];
-    [_shareBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:_detailsBtn parentRelation:NO distance:XX_6(15) center:YES];
+    [_backBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:nil parentRelation:YES distance:CR_OFF_STARTX center:YES];
+    [_detailsBtn BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:nil parentRelation:YES distance:CR_OFF_STARTX center:YES];
+    [_shareBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:_detailsBtn parentRelation:NO distance:CR_OFF_ENDX center:YES];
     
     CGFloat titleLabelOffX = _topBarView.width - _shareBtn.x;
     CGFloat titleLabelWidth = _topBarView.width - 2 * titleLabelOffX;

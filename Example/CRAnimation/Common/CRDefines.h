@@ -76,7 +76,8 @@ typedef NS_ENUM(NSUInteger, kSDIRECTION) {
 #define FontSize_6P(value)      FontSize(XX_6P(value))
 
 //  Distance
-#define CR_OFF_X 10
+#define CR_OFF_STARTX 20
+#define CR_OFF_ENDX 15
 
 @interface CRDefines : NSObject
 
