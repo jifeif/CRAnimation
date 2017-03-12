@@ -37,6 +37,7 @@ class CRWCLShineButtonDemoVC: CRProductionBaseVC {
     
     override func createUI() {
         let center = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
+        view.backgroundColor = color_0a090e
         
         var param1 = WCLShineParams()
         param1.bigShineColor = UIColor(rgb: (153,152,38))
@@ -80,8 +81,6 @@ class CRWCLShineButtonDemoVC: CRProductionBaseVC {
         bt4.addTarget(self, action: #selector(action), for: .touchUpInside)
         bt4.center = .init(x: center.x + 50, y: center.y + 50)
         view.addSubview(bt4)
-        
-        view.backgroundColor = UIColor(rgba: "#E9E9E9")
     }
     
     @objc private func action() {
