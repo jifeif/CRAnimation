@@ -28,7 +28,11 @@ import UIKit
 class WCLLoadingViewDemoVC: CRProductionBaseVC {
 
     @IBOutlet weak var loadingView: WCLLoadingView!
-    let controlViewHeight = 30
+    let controlViewHeight = 40
+    let offY = 20
+    let SWIFT_WIDTH = UIScreen.main.bounds.size.width
+    let SWIFT_HEIGHT = UIScreen.main.bounds.size.height
+    
     //MARK: Public Methods
     
     
@@ -39,7 +43,8 @@ class WCLLoadingViewDemoVC: CRProductionBaseVC {
         loadingView.startAnimation()
         view.backgroundColor = UIColor.init(rgba: "#0a090e")
         addTopBar(withTitle: "WCLLoadingView")
-//        createSliderView()
+        createSizeControlView()
+        createDurationControlView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,9 +72,14 @@ class WCLLoadingViewDemoVC: CRProductionBaseVC {
         loadingView.duration = Double(sender.value)
     }
     
+    func createControlView() -> Void {
+        createSizeControlView()
+        createDurationControlView()
+    }
+    
     func createSizeControlView() {
         
-        let sizeControlView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Int(view.width()) - 2*Int(CR_OFF_X), height: controlViewHeight))
+        let sizeControlView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Int(SWIFT_WIDTH) - 2*Int(CR_OFF_X), height: controlViewHeight))
         view.addSubview(sizeControlView)
         
         let sizeLabel = UILabel.init()
@@ -77,20 +87,38 @@ class WCLLoadingViewDemoVC: CRProductionBaseVC {
         sizeLabel.textColor = UIColor.white
         sizeLabel.sizeToFit()
         sizeControlView.addSubview(sizeLabel)
-//        kSDIR_LEFT
-//        kDIRECTION.kDIR_LEFT
-//        kSDIRECTION.SDIR_LEFT
-//        kDIRECTION(kDIR_LEFT)
-//        sizeLabel.bearSetRelativeLayout(with: kDIRECTION, destinationView: nil, parentRelation: YES, distance: 0, center: YES)
+//        sizeLabel.bearSetCenterToParentView(with: kAXIS.kAXIS_Y)
 //        sizeLabel.bearSetRelativeLayout(with: kDIRECTION.DIR_LEFT, destinationView: nil, parentRelation: YES, distance: 0, center: YES)
         
-        let testSlider = CRSlider.init(frame: CGRect.init(x: 50, y: 300, width: 200, height: 30))
-        testSlider.sliderType = kCRSliderType_Normal
-        view.addSubview(testSlider)
+        let sizeControlSlider = CRSlider.init(frame: CGRect.init(x: sizeLabel.maxX(), y: 0, width: sizeControlView.width() - sizeLabel.maxX(), height: sizeControlView.height()))
+        sizeControlSlider.sliderType = kCRSliderType_Normal
+        sizeControlSlider.minimumValue = 1
+        sizeControlSlider.maximumValue = 2
+        sizeControlSlider.value = 1
+        sizeControlSlider.addTarget(self, action: #selector(WCLLoadingViewDemoVC.sizeSliderValueChange(_:)), for: UIControlEvents.valueChanged)
+        sizeControlView.addSubview(sizeControlSlider)
+//        sizeControlView.setMaxY(view.height() - 2*controlViewHeight - offY)
+        sizeControlView.setMaxY(SWIFT_HEIGHT - 40 - 20)
     }
     
     func createDurationControlView() {
-        let durationControlView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Int(view.width()) - 2*Int(CR_OFF_X), height: controlViewHeight))
+        
+        let durationControlView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Int(SWIFT_WIDTH) - 2*Int(CR_OFF_X), height: controlViewHeight))
         view.addSubview(durationControlView)
+        
+        let durationLabel = UILabel.init()
+        durationLabel.text = "Duration"
+        durationLabel.textColor = UIColor.white
+        durationLabel.sizeToFit()
+        durationControlView.addSubview(durationLabel)
+        
+        let durationControlSlider = CRSlider.init(frame: CGRect.init(x: durationLabel.maxX(), y: 0, width: durationControlView.width() - durationLabel.maxX(), height: durationControlView.height()))
+        durationControlSlider.sliderType = kCRSliderType_Normal
+        durationControlSlider.minimumValue = 1
+        durationControlSlider.maximumValue = 2
+        durationControlSlider.value = 1
+        durationControlSlider.addTarget(self, action: #selector(WCLLoadingViewDemoVC.durationSliderValueChange(_:)), for: UIControlEvents.valueChanged)
+        durationControlView.addSubview(durationControlSlider)
+        durationControlView.setMaxY(SWIFT_HEIGHT - 20)
     }
 }

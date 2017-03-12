@@ -35,7 +35,7 @@
     [self setThumbImage:[UIImage imageNamed:@"icon_CRSliderNormal"] forState:UIControlStateNormal];
     self.minimumTrackTintColor = color_8c2424;
     self.maximumTrackTintColor = color_8c2424;
-    self.backgroundColor = [UIColor whiteColor];
+//    self.backgroundColor = [UIColor whiteColor];
 //    self.layer.shadowColor = [UIColor whiteColor].CGColor;
 //    self.layer.shadowOpacity = 1;
 //    self.layer.shadowRadius = 10;
