@@ -14,16 +14,13 @@
 {
     UIImageView     *_backgroundHeaderImageV;
     UIVisualEffectView *_blurView;
-    CRMemeberTagsView *_tagsView;
     
     UIImageView     *_headerImageV;
-    
     UIView          *_nameAndProfessionView;
     UILabel         *_nameLabel;
     UILabel         *_professionLabel;
-    
     UILabel         *_personalHomePageLabel;
-    UIView          *_keyWordsView;
+    CRMemeberTagsView *_tagsView;
     
     CRMemberInfoModel   *_memberInfoModel;
     CGFloat             _off_x;
@@ -65,14 +62,11 @@
     _backgroundHeaderImageV.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:_backgroundHeaderImageV];
     
-    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
     _blurView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     _blurView.frame = _backgroundHeaderImageV.bounds;
     _blurView.backgroundColor = [color_323341 colorWithAlphaComponent:0.1];
     [_backgroundHeaderImageV addSubview:_blurView];
-    
-    _tagsView = [CRMemeberTagsView new];
-    [_backgroundHeaderImageV addSubview:_tagsView];
 }
 
 - (void)createContents
@@ -104,9 +98,8 @@
     _personalHomePageLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:_personalHomePageLabel];
     
-    _keyWordsView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, YY_6N(55))];
-    _keyWordsView.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.7];
-    [self addSubview:_keyWordsView];
+    _tagsView = [CRMemeberTagsView new];
+    [self addSubview:_tagsView];
 }
 
 #pragma mark - relayUI
@@ -125,7 +118,7 @@
     [_personalHomePageLabel sizeToFit];
     [_personalHomePageLabel setWidth:labelMax_width];
     
-    [UIView BearAutoLayViewArray:(NSMutableArray *)@[_headerImageV, _nameAndProfessionView, _personalHomePageLabel, _keyWordsView]
+    [UIView BearAutoLayViewArray:(NSMutableArray *)@[_headerImageV, _nameAndProfessionView, _personalHomePageLabel, _tagsView]
                       layoutAxis:kLAYOUT_AXIS_Y
                           center:YES
                          gapAray:@[@160, @24, @28, @40, @44]];
@@ -158,7 +151,7 @@
     _personalHomePageLabel.text = _memberInfoModel.homePage;
     
 #warning DAD Test
-    model.tag = @"UI|动效|视觉";
+    model.tag = @"UI|动效|视觉kk|UI|动效|视kk觉|UI|UI|动效|视觉动效|视觉|UI|动效|视觉";
     
     if (model.tag && [model.tag length] > 0) {
         [_tagsView setTagString:model.tag];

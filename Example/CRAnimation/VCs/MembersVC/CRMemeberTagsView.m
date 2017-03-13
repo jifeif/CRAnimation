@@ -40,20 +40,32 @@
         
         CGFloat offX = 24;
         CGFloat gapX = 14;
+        CGFloat gapY = 5;
         CGFloat maxX = offX;
-        CGFloat height = 0;
+        CGFloat maxY = 0;
+        [self setWidth:WIDTH];
         for (int i = 0; i < [_tagsArray count]; i++) {
             
             if ([_tagsArray[i] isKindOfClass:[NSString class]]) {
                 UILabel *label = [self generateLabelWithStr:_tagsArray[i]];
                 [label setX:maxX];
+                
+                if (label.maxX + gapX > self.width) {
+                    [label setX:offX];
+                    maxY += label.height;
+                }
+                
+                [label setY:maxY];
                 maxX = label.maxX + gapX;
-                height = label.height;
                 [self addSubview:label];
+                
+                //  最后一个label
+                if (i == [_tagsArray count] - 1) {
+                    maxY += label.height;
+                }
             }
         }
-        [self setWidth:WIDTH];
-        [self setHeight:height];
+        [self setHeight:maxY];
     }
 }
 
