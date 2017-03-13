@@ -23,22 +23,18 @@
 }
 
 -(void)createUI{
+    [super createUI];
     
-    self.view.backgroundColor = [UIColor grayColor];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    imageView.image = [UIImage imageNamed:@"img_HZBg"];
+    [self.view insertSubview:imageView atIndex:0];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    UILabel *twitterLabel = [UILabel new];
-    twitterLabel.text = @"Hello,twitter. :)";
-    twitterLabel.font = [UIFont systemFontOfSize:19];
-    [twitterLabel sizeToFit];
-    [self.view addSubview:twitterLabel];
-    [twitterLabel BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
-    
-    UIColor *twitterBgcolor = UIColorFromHEX(0x4099FF);
-    UIImage *twitterImage = [UIImage imageNamed:@"twitter"];
+    UIColor *twitterBgcolor = [UIColor orangeColor];
+    UIImage *twitterImage = [UIImage imageNamed:@"icon_HZRunningMan"];
     
     HZLaunchView *launchView = [[HZLaunchView alloc] initWithIconImage:twitterImage backgroundColor:twitterBgcolor];
     [self.view addSubview:launchView];
