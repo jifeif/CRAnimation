@@ -63,4 +63,8 @@ typedef enum {
 //  作品列表
 @property (strong, nonatomic) NSArray  <CRDemoInfoModel *> *animationList;//
 
+//  Optional
+//  标签
+@property (strong, nonatomic) NSString  *tag;//
+
 @end

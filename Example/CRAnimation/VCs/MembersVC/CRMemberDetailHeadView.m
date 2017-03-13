@@ -13,6 +13,7 @@
 {
     UIImageView     *_backgroundHeaderImageV;
     UIView          *_darkMaskV;
+    UIVisualEffectView *_blurView;
     
     UIImageView     *_headerImageV;
     
@@ -63,9 +64,15 @@
     _backgroundHeaderImageV.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:_backgroundHeaderImageV];
     
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    _blurView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    _blurView.frame = _backgroundHeaderImageV.bounds;
+    _blurView.backgroundColor = [color_323341 colorWithAlphaComponent:0.1];
+    [_backgroundHeaderImageV addSubview:_blurView];
+    
     _darkMaskV = [[UIView alloc] initWithFrame:self.bounds];
-    _darkMaskV.backgroundColor = [color_323341 colorWithAlphaComponent:0.1];
-    [self addSubview:_darkMaskV];
+    _darkMaskV.backgroundColor = [color_323341 colorWithAlphaComponent:0.7];
+//    [self addSubview:_darkMaskV];
 }
 
 - (void)createContents

@@ -32,6 +32,7 @@ typedef NS_ENUM(NSUInteger, kSDIRECTION) {
 #define color_8c2424    UIColorFromHEX(0x8c2424)
 
 #define color_0a090e    UIColorFromHEX(0x0a090e)
+#define color_f1f2fa    UIColorFromHEX(0xf1f2fa)
 
 #define color_Master    color_323341
 
