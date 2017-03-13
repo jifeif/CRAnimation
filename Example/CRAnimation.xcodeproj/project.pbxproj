@@ -88,6 +88,7 @@
 		09E40CBE1E6C4E210042B5AE /* CRGetMemebersListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
+		09F45A711E76FA8500083387 /* CRMemeberTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F45A701E76FA8400083387 /* CRMemeberTagsView.m */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
 		257751521DC25A790019D38B /* HZLaunchViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2577514F1DC25A790019D38B /* HZLaunchViewDemoInfoModel.m */; };
 		257751531DC25A790019D38B /* HZLaunchViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 257751511DC25A790019D38B /* HZLaunchViewDemoVC.m */; };
@@ -268,6 +269,8 @@
 		09EE43E31E73DB47000DFF14 /* JHUD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHUD.gif; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09F45A6F1E76FA8400083387 /* CRMemeberTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemeberTagsView.h; sourceTree = "<group>"; };
+		09F45A701E76FA8400083387 /* CRMemeberTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMemeberTagsView.m; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		18D8B62B1DD80BB600C6545D /* CRGatlingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGatlingView.h; sourceTree = "<group>"; };
 		18D8B62C1DD80BB600C6545D /* CRGatlingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGatlingView.m; sourceTree = "<group>"; };
@@ -409,6 +412,8 @@
 				09109A7C1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m */,
 				09203ACF1E4F4BB600FB2B25 /* CRMemberDetailHeadView.h */,
 				09203AD01E4F4BB600FB2B25 /* CRMemberDetailHeadView.m */,
+				09F45A6F1E76FA8400083387 /* CRMemeberTagsView.h */,
+				09F45A701E76FA8400083387 /* CRMemeberTagsView.m */,
 				09109A781E533D7300031210 /* CRMemberDetailProductsView.h */,
 				09109A791E533D7300031210 /* CRMemberDetailProductsView.m */,
 			);
@@ -1110,6 +1115,7 @@
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
 				0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */,
 				09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */,
+				09F45A711E76FA8500083387 /* CRMemeberTagsView.m in Sources */,
 				09449E671E631CE70008BD8F /* CRBaseNavigationViewController.m in Sources */,
 				18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */,
 				0950D5B41E54B269009214E2 /* CRParticipateMemberCollectionCell.m in Sources */,

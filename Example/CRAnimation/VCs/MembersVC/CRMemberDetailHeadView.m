@@ -7,13 +7,14 @@
 //
 
 #import "CRMemberDetailHeadView.h"
+#import "CRMemeberTagsView.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface CRMemberDetailHeadView ()
 {
     UIImageView     *_backgroundHeaderImageV;
-    UIView          *_darkMaskV;
     UIVisualEffectView *_blurView;
+    CRMemeberTagsView *_tagsView;
     
     UIImageView     *_headerImageV;
     
@@ -70,9 +71,8 @@
     _blurView.backgroundColor = [color_323341 colorWithAlphaComponent:0.1];
     [_backgroundHeaderImageV addSubview:_blurView];
     
-    _darkMaskV = [[UIView alloc] initWithFrame:self.bounds];
-    _darkMaskV.backgroundColor = [color_323341 colorWithAlphaComponent:0.7];
-//    [self addSubview:_darkMaskV];
+    _tagsView = [CRMemeberTagsView new];
+    [_backgroundHeaderImageV addSubview:_tagsView];
 }
 
 - (void)createContents
@@ -113,6 +113,8 @@
 
 - (void)relayUI
 {
+    [_tagsView BearSetRelativeLayoutWithDirection:kDIR_DOWN destinationView:nil parentRelation:YES distance:43 center:YES];
+    
     //  _nameLabel & _professionLabel
     [_nameLabel sizeToFit];
     [_professionLabel sizeToFit];
@@ -154,6 +156,13 @@
     _nameLabel.text = _memberInfoModel.nickName;
     _professionLabel.text = [CRConstants convertProfessionType:_memberInfoModel.professionType];
     _personalHomePageLabel.text = _memberInfoModel.homePage;
+    
+#warning DAD Test
+    model.tag = @"UI|动效|视觉";
+    
+    if (model.tag && [model.tag length] > 0) {
+        [_tagsView setTagString:model.tag];
+    }
     
     [self relayUI];
 }
