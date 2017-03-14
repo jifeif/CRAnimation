@@ -12,11 +12,8 @@
 
 @interface CRProductionBaseVC ()
 {
-    UIButton    *_backBtn;
     UIButton    *_shareBtn;
     UIButton    *_detailsBtn;
-    UILabel     *_productionTitleLabel;
-    UIView      *_topBarView;
     CRProductionShowDetailManager   *_showDetailManager;
 }
 
@@ -42,59 +39,30 @@
 
 - (void)addTopBarWithTitle:(NSString *)title
 {
-    [self createTopBarView];
-    [self createTitleLabelWithTitle:title];
-    [self createBackBtn];
+    [self createTopBarViewWithTitle:title];
     [self createShareBtn];
     [self createDetailsBtn];
     
     [self relayTopBarContentsUI];
 }
 
-- (void)createTopBarView
+- (void)createTopBarViewWithTitle:(NSString *)title
 {
-    if (!_topBarView) {
-        _topBarView = [[UIView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, 40)];
-        _topBarView.backgroundColor = [UIColor clearColor];
-        [self.view addSubview:_topBarView];
+    if (!_customNaviBarView) {
+        _customNaviBarView = [CRNavigationBarView new];
+        [_customNaviBarView setNaviBarWithTitle:title];
+        [_customNaviBarView.backBtn setTintColor:_backBtnColor];
+        [_customNaviBarView.backBtn addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
+        _customNaviBarView.backgroundColor = [UIColor clearColor];
+        [self.view addSubview:_customNaviBarView];
     }
 }
 
 - (void)createContentView
 {
     if (!_contentView) {
-        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, _topBarView.maxY, WIDTH, HEIGHT - _topBarView.maxY)];
+        _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, _customNaviBarView.maxY, WIDTH, HEIGHT - _customNaviBarView.maxY)];
         [self.view addSubview:_contentView];
-    }
-}
-
-- (void)createTitleLabelWithTitle:(NSString *)title
-{
-    if (!title) {
-        title = @"";
-    }
-    if (!_productionTitleLabel) {
-        _productionTitleLabel = [UILabel new];
-        _productionTitleLabel.textColor = [UIColor whiteColor];
-        _productionTitleLabel.font = FontSize_6(18);
-        _productionTitleLabel.textAlignment = NSTextAlignmentCenter;
-        [_topBarView addSubview:_productionTitleLabel];
-    }
-    _productionTitleLabel.text = title;
-}
-
-- (void)createBackBtn
-{
-    if (!_backBtn) {
-        
-        UIImage *backImage = [[UIImage imageNamed:@"nav_btn_close"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        
-        _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_backBtn setImage:backImage forState:UIControlStateNormal];
-        [_backBtn setTintColor:_backBtnColor];
-        [_backBtn sizeToFit];
-        [_backBtn addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
-        [_topBarView addSubview:_backBtn];
     }
 }
 
@@ -105,7 +73,7 @@
         [_shareBtn setImage:[UIImage imageNamed:@"nav_btn_share1"] forState:UIControlStateNormal];
         [_shareBtn sizeToFit];
         [_shareBtn addTarget:self action:@selector(shareBtnEvent) forControlEvents:UIControlEventTouchUpInside];
-        [_topBarView addSubview:_shareBtn];
+        [_customNaviBarView addSubview:_shareBtn];
     }
 }
 
@@ -116,7 +84,7 @@
         [_detailsBtn setImage:[UIImage imageNamed:@"nav_btn_details"] forState:UIControlStateNormal];
         [_detailsBtn sizeToFit];
         [_detailsBtn addTarget:self action:@selector(detailBtnEvent) forControlEvents:UIControlEventTouchUpInside];
-        [_topBarView addSubview:_detailsBtn];
+        [_customNaviBarView addSubview:_detailsBtn];
     }
 }
 
@@ -125,15 +93,15 @@
 
 - (void)relayTopBarContentsUI
 {
-    [_backBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:nil parentRelation:YES distance:CR_OFF_STARTX center:YES];
+    [_customNaviBarView.backBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:nil parentRelation:YES distance:CR_OFF_STARTX center:YES];
     [_detailsBtn BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:nil parentRelation:YES distance:CR_OFF_STARTX center:YES];
     [_shareBtn BearSetRelativeLayoutWithDirection:kDIR_LEFT destinationView:_detailsBtn parentRelation:NO distance:CR_OFF_ENDX center:YES];
     
-    CGFloat titleLabelOffX = _topBarView.width - _shareBtn.x;
-    CGFloat titleLabelWidth = _topBarView.width - 2 * titleLabelOffX;
-    [_productionTitleLabel sizeToFit];
-    [_productionTitleLabel setWidth:titleLabelWidth];
-    [_productionTitleLabel BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
+    CGFloat titleLabelOffX = _customNaviBarView.width - _shareBtn.x;
+    CGFloat titleLabelWidth = _customNaviBarView.width - 2 * titleLabelOffX;
+    [_customNaviBarView.productionTitleLabel sizeToFit];
+    [_customNaviBarView.productionTitleLabel setWidth:titleLabelWidth];
+    [_customNaviBarView.productionTitleLabel BearSetCenterToParentViewWithAxis:kAXIS_X_Y];
 }
 
 

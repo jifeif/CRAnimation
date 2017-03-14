@@ -96,6 +96,7 @@
     _personalHomePageLabel.font = FontSize(15);
     _personalHomePageLabel.textColor = color_5e67f7;
     _personalHomePageLabel.textAlignment = NSTextAlignmentCenter;
+    _personalHomePageLabel.userInteractionEnabled = YES;
     [self addSubview:_personalHomePageLabel];
     
     UITapGestureRecognizer *homePageLabelTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHomePageEvent)];
