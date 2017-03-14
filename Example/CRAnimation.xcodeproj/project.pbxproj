@@ -59,6 +59,8 @@
 		0950D5B11E54B0D4009214E2 /* CRParticipateMembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5B01E54B0D4009214E2 /* CRParticipateMembersView.m */; };
 		0950D5B41E54B269009214E2 /* CRParticipateMemberCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5B31E54B269009214E2 /* CRParticipateMemberCollectionCell.m */; };
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
+		09A63EAC1E7849A000E93AEA /* CRBaseWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A63EAB1E7849A000E93AEA /* CRBaseWebVC.m */; };
+		09A63EAF1E784A4300E93AEA /* CRJumpWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A63EAE1E784A4300E93AEA /* CRJumpWebViewManager.m */; };
 		09B519DD1E739EF400065C27 /* CRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B519D81E739EF400065C27 /* CRCommon.m */; };
 		09B519DE1E739EF400065C27 /* CRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B519DA1E739EF400065C27 /* CRConstants.m */; };
 		09B519DF1E739EF400065C27 /* CRDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B519DC1E739EF400065C27 /* CRDefines.m */; };
@@ -235,6 +237,10 @@
 		0950D5B31E54B269009214E2 /* CRParticipateMemberCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRParticipateMemberCollectionCell.m; sourceTree = "<group>"; };
 		0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseTabBarController.h; sourceTree = "<group>"; };
 		0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseTabBarController.m; sourceTree = "<group>"; };
+		09A63EAA1E7849A000E93AEA /* CRBaseWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseWebVC.h; sourceTree = "<group>"; };
+		09A63EAB1E7849A000E93AEA /* CRBaseWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseWebVC.m; sourceTree = "<group>"; };
+		09A63EAD1E784A4300E93AEA /* CRJumpWebViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRJumpWebViewManager.h; sourceTree = "<group>"; };
+		09A63EAE1E784A4300E93AEA /* CRJumpWebViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRJumpWebViewManager.m; sourceTree = "<group>"; };
 		09B519D71E739EF400065C27 /* CRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCommon.h; sourceTree = "<group>"; };
 		09B519D81E739EF400065C27 /* CRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCommon.m; sourceTree = "<group>"; };
 		09B519D91E739EF400065C27 /* CRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRConstants.h; sourceTree = "<group>"; };
@@ -623,6 +629,7 @@
 		0993B46A1DA9C6650012F962 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				09A63EA41E78461F00E93AEA /* CRBaseWebVC */,
 				09D6711C1E750A2E00FDB428 /* CRSlider */,
 				09449E641E631CE70008BD8F /* CRBaseVC */,
 				09449E611E631CE70008BD8F /* CRBaseNaviVC */,
@@ -640,6 +647,15 @@
 				0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */,
 			);
 			path = CRTabBar;
+			sourceTree = "<group>";
+		};
+		09A63EA41E78461F00E93AEA /* CRBaseWebVC */ = {
+			isa = PBXGroup;
+			children = (
+				09A63EAA1E7849A000E93AEA /* CRBaseWebVC.h */,
+				09A63EAB1E7849A000E93AEA /* CRBaseWebVC.m */,
+			);
+			path = CRBaseWebVC;
 			sourceTree = "<group>";
 		};
 		09B519D61E739EF400065C27 /* Common */ = {
@@ -696,6 +712,8 @@
 			children = (
 				09DC1C391E583A4D007A8B10 /* CRJumpManager.h */,
 				09DC1C3A1E583A4D007A8B10 /* CRJumpManager.m */,
+				09A63EAD1E784A4300E93AEA /* CRJumpWebViewManager.h */,
+				09A63EAE1E784A4300E93AEA /* CRJumpWebViewManager.m */,
 			);
 			name = Manager;
 			path = VCs/Manager;
@@ -1115,6 +1133,7 @@
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
 				0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */,
 				09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */,
+				09A63EAF1E784A4300E93AEA /* CRJumpWebViewManager.m in Sources */,
 				09F45A711E76FA8500083387 /* CRMemeberTagsView.m in Sources */,
 				09449E671E631CE70008BD8F /* CRBaseNavigationViewController.m in Sources */,
 				18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */,
@@ -1157,6 +1176,7 @@
 				09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */,
 				092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */,
 				973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */,
+				09A63EAC1E7849A000E93AEA /* CRBaseWebVC.m in Sources */,
 				09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */,
 				090080A21E4CB91200AE60A5 /* CRItemBriefSetcionHeaderView.m in Sources */,
 				09203ACA1E4F435D00FB2B25 /* CRMemberDetailVC.m in Sources */,

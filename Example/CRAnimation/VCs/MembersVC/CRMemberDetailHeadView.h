@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "CRMemberInfoModel.h"
 
+@protocol CRMemberDetailHeadViewDelegate <NSObject>
+
+- (void)didTapUrlWtihUrlStr:(NSString *)urlStr;
+
+@end
+
 @interface CRMemberDetailHeadView : UICollectionReusableView
+
+@property (weak, nonatomic) id <CRMemberDetailHeadViewDelegate> delegate;
 
 + (CRMemberDetailHeadView *)commonHeadView;
 

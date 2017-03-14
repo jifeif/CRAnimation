@@ -11,11 +11,12 @@
 #import "CRMemberDetailHeadView.h"
 #import "CRMemberDetailProductCollectionViewCell.h"
 #import "CRGetAuthorInfoRequest.h"
+#import "CRJumpWebViewManager.h"
 
 static NSString *__collectionViewCellID = @"__collectionViewCellID";
 static NSString *__collectionViewReusableViewID = @"__collectionViewReusableViewID";
 
-@interface CRMemberDetailVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface CRMemberDetailVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, CRMemberDetailHeadViewDelegate>
 {
     CRCustomNaviBarView     *_naviBarView;
     UICollectionView        *_mainCollectionView;
@@ -128,6 +129,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 {
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         CRMemberDetailHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:__collectionViewReusableViewID forIndexPath:indexPath];
+        headerView.delegate = self;
         if (!headerView) {
             headerView = [CRMemberDetailHeadView commonHeadView];
         }
@@ -141,6 +143,14 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     return nil;
 }
 
+
+#pragma mark - CRMemberDetailHeadViewDelegate
+
+- (void)didTapUrlWtihUrlStr:(NSString *)urlStr
+{
+    __weak typeof(self) weakSelf = self;
+    [CRJumpWebViewManager jumpToUrlStr:urlStr inVC:weakSelf];
+}
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 

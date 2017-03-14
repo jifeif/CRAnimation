@@ -98,8 +98,18 @@
     _personalHomePageLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:_personalHomePageLabel];
     
+    UITapGestureRecognizer *homePageLabelTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHomePageEvent)];
+    [_personalHomePageLabel addGestureRecognizer:homePageLabelTapGR];
+    
     _tagsView = [CRMemeberTagsView new];
     [self addSubview:_tagsView];
+}
+
+- (void)tapHomePageEvent
+{
+    if ([_delegate respondsToSelector:@selector(didTapUrlWtihUrlStr:)]) {
+        [_delegate didTapUrlWtihUrlStr:_memberInfoModel.homePage];
+    }
 }
 
 #pragma mark - relayUI

@@ -10,6 +10,7 @@ target 'CRAnimation_Example' do
   pod 'MBProgressHUD'
   pod 'JHUD'
   pod 'WCLShineButton'
+  pod 'TOWebViewController'
   pod 'BearSkill', :git => 'https://github.com/BearRan/BearSkill.git', :commit => '81b9c9a'
 
   target 'CRAnimation_Tests' do
