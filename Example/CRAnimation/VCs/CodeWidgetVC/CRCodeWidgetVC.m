@@ -88,7 +88,6 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 
 - (void)createUI
 {
-    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = color_323341;
     
     [self createNaviBarView];

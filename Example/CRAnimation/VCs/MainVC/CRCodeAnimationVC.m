@@ -65,8 +65,6 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     [super viewWillAppear:animated];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
-    self.navigationController.navigationBarHidden = YES;
 }
 
 #pragma mark - RequestData
@@ -188,7 +186,6 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 #pragma mark - Create UI
 - (void)createUI
 {
-    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = color_Master;
     
     [self createNaviBarView];

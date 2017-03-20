@@ -8,6 +8,7 @@
 
 #import "CRProductionDetailView.h"
 #import "CRParticipateMembersView.h"
+#import "CRJumpWebViewManager.h"
 
 @interface CRProductionDetailView ()
 {
@@ -190,7 +191,11 @@
     
     _urlDetailsLabel = [UILabel new];
     [self setContentLabel:_urlDetailsLabel text:_infoModel.originGitHubAddress inView:_bodyDownView textColor:color_354ff1 font:[UIFont systemFontOfSize:15]];
+    _urlDetailsLabel.userInteractionEnabled = YES;
     [_urlDetailsLabel setY:_urlTitleLabel.maxY + YY_6N(20)];
+    
+    UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(urlTapEvent)];
+    [_urlDetailsLabel addGestureRecognizer:tapGR];
     
     [_bodyDownView setHeight:_urlDetailsLabel.maxY + YY_6N(55)];
 }
@@ -236,5 +241,11 @@
     _mainScrollView.contentSize = CGSizeMake(_mainScrollView.width, _bodyView.maxY);
 }
 
+#pragma mark - TapEvent
+
+- (void)urlTapEvent
+{
+    [CRJumpWebViewManager jumpToUrlStr:_infoModel.originGitHubAddress inVC:_inVC];
+}
 
 @end

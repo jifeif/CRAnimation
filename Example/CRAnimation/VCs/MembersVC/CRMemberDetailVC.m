@@ -50,8 +50,6 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBarHidden = YES;
 }
 
 #pragma mark - Request
@@ -72,7 +70,6 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 #pragma mark - CreateUI
 - (void)createUI
 {
-    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = color_323341;
     
     [self creteNaviBarView];
