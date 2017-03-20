@@ -13,10 +13,10 @@
 
 @property (assign, nonatomic) BOOL  showBackBtn;
 
-+ (CRCustomNaviBarView *)commonNaviBarViewWithTitle:(NSString *)title inVC:(__weak CRBaseViewController *)inVC;
-- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title inVC:(__weak CRBaseViewController *)inVC;
++ (CRCustomNaviBarView *)commonNaviBarViewWithTitle:(NSString *)title inVC:(__weak UIViewController *)inVC;
+- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title inVC:(__weak UIViewController *)inVC;
 
 - (void)createUI;
-- (CRBaseViewController *)getInVC;
+- (UIViewController *)getInVC;
 
 @end

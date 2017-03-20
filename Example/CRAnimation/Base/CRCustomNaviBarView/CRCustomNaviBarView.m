@@ -13,20 +13,20 @@
     UILabel     *_titleLabel;
     NSString    *_titleStr;
     UIButton    *_backBtn;
-    CRBaseViewController    *_inVC;
+    UIViewController    *_inVC;
 }
 
 @end
 
 @implementation CRCustomNaviBarView
 
-+ (CRCustomNaviBarView *)commonNaviBarViewWithTitle:(NSString *)title inVC:(__weak CRBaseViewController *)inVC
++ (CRCustomNaviBarView *)commonNaviBarViewWithTitle:(NSString *)title inVC:(__weak UIViewController *)inVC
 {
     CRCustomNaviBarView *naviBarView = [[CRCustomNaviBarView alloc] initWithFrame:CGRectMake(0, STATUS_HEIGHT, WIDTH, NAV_44) title:title inVC:inVC];
     return naviBarView;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title inVC:(__weak CRBaseViewController *)inVC
+- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title inVC:(__weak UIViewController *)inVC
 {
     self = [super initWithFrame:frame];
     
@@ -92,7 +92,7 @@
 
 #pragma mark - get
 
-- (CRBaseViewController *)getInVC
+- (UIViewController *)getInVC
 {
     if (_inVC) {
         return _inVC;

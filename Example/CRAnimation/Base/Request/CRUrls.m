@@ -10,7 +10,11 @@
 
 @implementation CRUrls
 
-NSString *const CR_BASE_URL =   @"http://114.55.96.18:7005";
+//Dist
+//NSString *const CR_BASE_URL =   @"http://114.55.96.18:7005";
+NSString *const CR_BASE_URL =   @"https://www.likecr.com";
+
+//Test
 //NSString *const CR_BASE_URL =   @"http://192.168.1.103:7005";
 
 NSString *const CR_HOME_PRODUCTS_CODE_ANIMATION_URL             =   @"/animation/1/list";

@@ -162,7 +162,7 @@
     _personalHomePageLabel.text = _memberInfoModel.homePage;
     
 #warning DAD Test
-    model.tag = @"UI|动效|视觉kk|UI|动效|视kk觉|UI|UI|动效|视觉动效|视觉|UI|动效|视觉";
+    //model.tag = @"UI|动效|视觉kk|UI|动效|视kk觉|UI|UI|动效|视觉动效|视觉|UI|动效|视觉";
     
     if (model.tag && [model.tag length] > 0) {
         [_tagsView setTagString:model.tag];
