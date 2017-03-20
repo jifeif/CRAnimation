@@ -47,6 +47,13 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
     [self getAuthorInfo];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
+}
+
 #pragma mark - Request
 - (void)getAuthorInfo
 {
