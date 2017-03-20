@@ -6,8 +6,8 @@
 //  Copyright © 2017年 BearRan. All rights reserved.
 //
 
-#import <TOWebViewController/TOWebViewController.h>
+#import <RxWebViewController/RxWebViewController.h>
 
-@interface CRBaseWebVC : TOWebViewController
+@interface CRBaseWebVC : RxWebViewController
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright © 2016年 BearRan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <RxWebViewController/RxWebViewNavigationViewController.h>
 
-@interface CRBaseNavigationViewController : UINavigationController
+@interface CRBaseNavigationViewController : RxWebViewNavigationViewController
 
 @end

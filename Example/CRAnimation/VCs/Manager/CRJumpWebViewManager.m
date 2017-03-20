@@ -19,7 +19,7 @@
     }
     
     NSURL *url = [NSURL URLWithString:urlStr];
-    CRBaseWebVC *webVC = [[CRBaseWebVC alloc] initWithURL:url];
+    CRBaseWebVC *webVC = [[CRBaseWebVC alloc] initWithUrl:url];
     [inVC.navigationController pushViewController:webVC animated:YES];
 }
 

@@ -15,21 +15,29 @@
 
 @implementation CRBaseWebVC
 
-- (instancetype)initWithURL:(NSURL *)url
+- (instancetype)initWithUrl:(NSURL *)url
 {
-    self = [super initWithURL:url];
+    self = [super initWithUrl:url];
     
     if (self) {
-    
+        
     }
     
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     return;
+    
     __weak typeof(self) weakSelf = self;
     CRCustomNaviBarView *naviBarView = [CRCustomNaviBarView commonNaviBarViewWithTitle:@"个人主页" inVC:weakSelf];
     [self.view addSubview:naviBarView];
