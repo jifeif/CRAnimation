@@ -30,8 +30,8 @@
     UIButton *shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, shareBtn_width, shareBtn_width)];
     [shareBtn setImage:[UIImage imageNamed:@"Nav_btn_share"] forState:UIControlStateNormal];
     [shareBtn addTarget:self action:@selector(shareBtnEvent) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:shareBtn];
-    [shareBtn BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:nil parentRelation:YES distance:10 center:YES];
+    //[self addSubview:shareBtn];
+    //[shareBtn BearSetRelativeLayoutWithDirection:kDIR_RIGHT destinationView:nil parentRelation:YES distance:10 center:YES];
 }
 
 
