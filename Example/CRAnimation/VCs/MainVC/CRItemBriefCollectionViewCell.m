@@ -40,6 +40,7 @@
     _imageView = [[CRFLAnimatiatedImageView alloc] init];
     _imageView.frame = self.bounds;
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
+    _imageView.layer.masksToBounds = YES;
     [self addSubview:_imageView];
     
     _labelView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.width, 0)];
