@@ -6,10 +6,10 @@
 <img src="http://oftcdgt2m.bkt.clouddn.com/Base/TitleImage1.png">
 </left>
 
-### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8" target="_blank">CR动效</a>
+### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">CR动效</a>
 <img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>
 
-### 加入我们！:<http://www.jianshu.com/p/66362f927086>
+### <a href="http://www.jianshu.com/p/66362f927086">加入我们！</a>
 ### 简介：
 CRAnimation为开源项目，CRAnimation Pod仓库中整理了各种封装好的动效代码，并且在App中可以直接体验Demo，并且能够直接交互。找到适合自己需要的Demo后，再去查看源代码。减少不必要的时间去下载，运行demo。
 
