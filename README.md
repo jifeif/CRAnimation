@@ -8,17 +8,24 @@
 
 gitHub:<https://github.com/CRAnimation/CRAnimation>
 <br>
-QQ群：iOS动效特攻队->547897182
+QQ群：iOS动效特攻队->547897182 （加群请写明加群原因）
+### 想加入CRAnimation？<a href="http://www.jianshu.com/p/66362f927086">查看如何加入CRAnimation</a>
 <br>
+<<<<<<< HEAD
 群主：熊熊->648070256
 <br>
 需要加群的小伙伴请附上个人github地址和个人博客，联系群主，通过审核后方可入群。
  
 ### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8" target="_blank">CR动效</a>
+=======
+
+
+### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">CR动效</a>
+>>>>>>> develop
 <img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>
 
-### 简介：
 
+### 简介：
 CRAnimation为开源项目，CRAnimation Pod仓库中整理了各种封装好的动效代码，并且在App中可以直接体验Demo，并且能够直接交互。找到适合自己需要的Demo后，再去查看源代码。减少不必要的时间去下载，运行demo。
 
 将动效做成Demo后，再进行封装，提供接口，这样能够方便开发者在最短的时间内集成自己需要的动效。
