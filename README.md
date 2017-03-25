@@ -6,7 +6,7 @@
 <img src="http://oftcdgt2m.bkt.clouddn.com/Base/TitleImage1.png">
 </left>
 
-gitHub:<https://github.com/BearRan/CRAnimation>
+gitHub:<https://github.com/CRAnimation/CRAnimation>
 <br>
 QQ群：iOS动效特攻队->547897182
 <br>
