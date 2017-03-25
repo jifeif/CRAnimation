@@ -8,8 +8,7 @@
 
 gitHub:<https://github.com/CRAnimation/CRAnimation>
 <br>
-QQ群：iOS动效特攻队->547897182
-加群请写明加群原因
+QQ群：iOS动效特攻队->547897182 （加群请写明加群原因）
 ### 想加入CRAnimation？<a href="http://www.jianshu.com/p/66362f927086">查看如何加入CRAnimation</a>
 <br>
 
