@@ -1,81 +1,66 @@
-# CRAnimation计 划
+CRAnimation  动效计划
+=============================================
 
 [![Join the chat at https://gitter.im/CRAnimation/Lobby](https://badges.gitter.im/CRAnimation/Lobby.svg)](https://gitter.im/CRAnimation/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-<left>
+CR\_Github主页:<https://github.com/CRAnimation/CRAnimation>
+<br>
+CR\_QQ群：547897182 (iOS动效特攻队)
+<br>
+CR\_简书主页:<a href="http://www.jianshu.com/p/66362f927086">如何加入CRAnimation团队</a>
+<br>
+CR\_AppleStore:<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">体验CRAnimation动效APP</a>
+
+<!--<left>
 <img src="http://oftcdgt2m.bkt.clouddn.com/Base/TitleImage1.png">
-</left>
+</left>-->
 
-gitHub:<https://github.com/CRAnimation/CRAnimation>
+<!--### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">CR动效</a>
+<img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>-->
+
+---
+### 项目简介
+CRAnimation是一个关于iOS动效集成的开源项目.CRAnimation团队由一群极富激情的小伙伴组成,目标就是搭建业内最大的有情调的动效提供平台,通过化零为整地整理和收集各种动效,并完成代码构建或者优化既有源码,以期达到初级开发者即可零成本快速集成所需动效的目的.CRAnimation将通过丰富的形式给各领域的开发者提供便捷的服务,为Designers提供酷炫的"动效蓝本",为Newer Coders提供傻瓜式的"模块化动效",为Advanced Developers提供可深度研习和定制的"动效源码".
+
 <br>
-QQ群：iOS动效特攻队->547897182 （加群请写明加群原因）
-### 想加入CRAnimation？<a href="http://www.jianshu.com/p/66362f927086">查看如何加入CRAnimation</a>
+同时,CRAnimation团队也欢迎热心的开发小伙伴向我们投稿,CRCoder和CRUED将随时待命,对所收到动效稿件进行审核和优化,使之变得更有情调,拥有更加良好的交互和集成体验,更加吸引其他开发者、产品经理、设计师的眼球.在征得投稿人同意后,我们还会将其纳入CRAnimation动效计划内,并在项目的App中集成可以直接体验的Demo,以及进行类似下图效果的展示和宣传!欢迎投稿!
 <br>
-
-
-### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">CR动效</a>
-<img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>
-
-
-### 简介：
-CRAnimation为开源项目，CRAnimation Pod仓库中整理了各种封装好的动效代码，并且在App中可以直接体验Demo，并且能够直接交互。找到适合自己需要的Demo后，再去查看源代码。减少不必要的时间去下载，运行demo。
-
-将动效做成Demo后，再进行封装，提供接口，这样能够方便开发者在最短的时间内集成自己需要的动效。
-
-如果开发者对源码感兴趣，也可以研究源码，给作者提建议，提升代码质量，完善代码接口和功能。
-
 <img src="http://oftcdgt2m.bkt.clouddn.com/Base/CRPerformance4.gif" width=150 />
 
-### 特色：
-
-即使是很简单的Demo，通过我们的CRCoder和CRUED改变后，可以变得更有情调，更吸引其他开发者、产品经理、设计师的眼球，并且提升交互体验，方便开发者找到适合的Demo并进行集成。
-
----
-## 控件动效
-
-- S0001
-- [CRCardAnimationView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0001_CRCardAnimationViewDemo)
-- 卡片切换动效
-
-<img src="http://oftcdgt2m.bkt.clouddn.com/S0001/CRCardAnimationViewDemoVC1.gif" width=150 />
-
-- S0002
-- [CRImageGradientView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0002_CRImageGradientViewDemo)
-- ImageView过渡切换动效
-
-<img src="http://oftcdgt2m.bkt.clouddn.com/S0002/CRImageGradientDemoVC2.gif" width=150 />
-
-- S0003
-- Gif demo
-- Gif播放控件
-
-<img src="http://oftcdgt2m.bkt.clouddn.com/S0003/GifPlay1.gif" width=150 />
-
-- S0004
-- [WCLLoadingView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0004_WCLLoadingView)
-- Slack 的 Loading 动画
-
-<img src="http://oftcdgt2m.bkt.clouddn.com/S0004/WCLLoadingView.gif" width=150 />
-
-- S0005
-- [HZLaunchView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0005_HZLaunchView)
-- Twitter 的 Launch 动画
-
-<img src="http://oftcdgt2m.bkt.clouddn.com/S0005/HZLaunchView.gif" width=150 />
-
-- S0009
-- [WCLShineButton](Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton)
-- 类似太阳动画的按钮
-
-<img src="Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton/WCLShineButton.gif" width=150 />
-
-- S00010
-- [RollerCoasterLayer](Example/CRAnimation/Demo/WidgetDemo/S0010_RollerCoasterLayer)
-- 纯代码实现过山车动画
-
-<img src="http://ww4.sinaimg.cn/large/006tNbRwgw1f53ahi8vslg30if0a8e81" width=300 />
+<br>
+CRAnimation团队再次对小伙伴儿们的使用和支持表示诚挚的感谢!如有热心的小伙伴想要加入开发团队,或者有什么好的意见或者建议,都可以随时联系我们,我们将竭诚为各位提供更加优质的服务!
 
 ---
+
+### 如何使用
+
+* 下载项目源码,通过源码查看项目提供的功能和项目中包含的动效Demo.
+* 利用Cocopods方便地集成,在您的PodFile中加入
+```
+pod 'CRAnimation', '~> 0.1.3'
+```
+然后打开命令行定位到本地项目路径下,然后运行
+```
+$ pod install
+```
+即可在项目中集成使用CRAnimation的各种酷炫动效了.
+
+---
+
+### 动效示例
+
+| 示例信息  | 示例动图 |
+| ---------- | ----------- | 
+| S0001 <br> [CRCardAnimationView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0001_CRCardAnimationViewDemo) <br> 卡片切换动效 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0001/CRCardAnimationViewDemoVC1.gif" width=150 /> |
+| S0002 <br> [CRImageGradientView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0002_CRImageGradientViewDemo) <br> ImageView过渡切换动效 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0002/CRImageGradientDemoVC2.gif" width=150 /> |
+| S0004 <br> [WCLLoadingView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0004_WCLLoadingView) <br> Slack 的 Loading 动画 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0004/WCLLoadingView.gif" width=150 /> |
+| S0005 <br> [HZLaunchView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0005_HZLaunchView) <br> Twitter 的 Launch 动画 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0005/HZLaunchView.gif" width=150 /> |
+| S0009 <br> [WCLShineButton](Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton) <br> 类似太阳动画的按钮 | <img src="Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton/WCLShineButton.gif" width=150 /> |
+| S00010 <br> [RollerCoasterLayer](Example/CRAnimation/Demo/WidgetDemo/S0010_RollerCoasterLayer) <br> 纯代码实现过山车动画 | <img src="http://ww4.sinaimg.cn/large/006tNbRwgw1f53ahi8vslg30if0a8e81" width=300 /> |
+<!--|  S0003 <br> Gif demo <br> Gif播放控件 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0003/GifPlay1.gif" width=150 /> |-->
+
+
+<!-----
 ## 组合动效
 
 - C0001
@@ -84,13 +69,12 @@ CRAnimation为开源项目，CRAnimation Pod仓库中整理了各种封装好的
 
 <img src="http://oftcdgt2m.bkt.clouddn.com/C0001/CRMusicCardDemoVC3.gif" width=150 />
 
----
+----->
+
 ### Find
 
-目前，我们在寻找合适的UI设计师，产品经理，iOS动效工程师。
-
-有意向者，可与管理员取得联系。
-
-QQ:648070256熊熊
-
-
+目前,我们正在寻找富有激情的UI设计师,产品经理,iOS动效工程师加入壮大我们的团队.只要你对动效开发有兴趣,想要做一点自己的事情,想要自己开发出酷炫的动效来和大家分享,那就不要犹豫快来加入这个大家庭,这里有一群跟你志趣相投的小伙伴正等着你~我们,做有情怀的动效,我们,相信诗和远方!!!
+<br>有意向者,可与项目发起者联系,熊熊 QQ:648070256
+<br>
+<br>
+<br>
