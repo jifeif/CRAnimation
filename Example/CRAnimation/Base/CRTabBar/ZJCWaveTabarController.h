@@ -18,7 +18,11 @@
 // background Wave Color
 @property (strong, nonatomic) UIColor * backgroundWaveFillColor;
 @property (strong, nonatomic) UIColor * backgroundWaveStrokeColor;
+// init With themeColor
+- (instancetype)initWithThemeColor:(UIColor *)color;
 // add Controller
 - (void)addViewControllerWithName:(NSString *)viewControllerName andTitle:(NSString *)title andNormalImage:(NSString *)image andSelectedImage:(NSString *)selectedImage;
+
+- (void)addViewControllerWithName:(NSString *)viewControllerName andTitle:(NSString *)title andNormalTitleColor:(UIColor *)titleNormalColor andSelectedTitleColor:(UIColor *)titleSelectColor andNormalImage:(NSString *)image andSelectedImage:(NSString *)selectedImage;
 
 @end

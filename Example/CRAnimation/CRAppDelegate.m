@@ -62,7 +62,7 @@
      */
     //////////////////////////////
     // 1.配置tabbar基础信息
-    ZJCWaveTabarController * tabbar = [[ZJCWaveTabarController alloc] init];
+    ZJCWaveTabarController * tabbar = [[ZJCWaveTabarController alloc] initWithThemeColor:[UIColor orangeColor]]; // color_Master
     //////////////////////////////
     // 2.配置tabbar的Controllers
     [tabbar addViewControllerWithName:@"CRCodeAnimationVC" andTitle:@"动效库" andNormalImage:@"tab_btn_index_n" andSelectedImage:@"tab_btn_index_s"];

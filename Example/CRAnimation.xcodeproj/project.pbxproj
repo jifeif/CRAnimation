@@ -94,6 +94,8 @@
 		262A75AB1E8CE77D00E8D9D6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 262A75AA1E8CE77D00E8D9D6 /* README.md */; };
 		366BCD0EA1948D6414619360 /* Pods_CRAnimation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02449F62305352FC64D71D38 /* Pods_CRAnimation_Tests.framework */; };
 		3734D3991E97614D0022D537 /* ZJCWaveTabarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734D3981E97614D0022D537 /* ZJCWaveTabarController.m */; };
+		3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3734D39A1E977E560022D537 /* sound_press_long.wav */; };
+		3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3734D39B1E977E560022D537 /* sound_press_short.wav */; };
 		527FF73C1DD0E9770055026D /* CRGatlingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 527FF73A1DD0E9770055026D /* CRGatlingVC.m */; };
 		527FF7431DD0EBB60055026D /* CRGatlingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 527FF7421DD0EBB60055026D /* CRGatlingModel.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -301,6 +303,8 @@
 		262A75AA1E8CE77D00E8D9D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3734D3971E97614D0022D537 /* ZJCWaveTabarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCWaveTabarController.h; sourceTree = "<group>"; };
 		3734D3981E97614D0022D537 /* ZJCWaveTabarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCWaveTabarController.m; sourceTree = "<group>"; };
+		3734D39A1E977E560022D537 /* sound_press_long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_press_long.wav; sourceTree = "<group>"; };
+		3734D39B1E977E560022D537 /* sound_press_short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_press_short.wav; sourceTree = "<group>"; };
 		5247C4F71DD212320024DF8B /* GatlingProgress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GatlingProgress.gif; sourceTree = "<group>"; };
 		527FF7391DD0E9770055026D /* CRGatlingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGatlingVC.h; sourceTree = "<group>"; };
 		527FF73A1DD0E9770055026D /* CRGatlingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGatlingVC.m; sourceTree = "<group>"; };
@@ -662,6 +666,8 @@
 		0996C4491E4764A1000CA8EC /* CRTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				3734D39A1E977E560022D537 /* sound_press_long.wav */,
+				3734D39B1E977E560022D537 /* sound_press_short.wav */,
 				3734D3971E97614D0022D537 /* ZJCWaveTabarController.h */,
 				3734D3981E97614D0022D537 /* ZJCWaveTabarController.m */,
 				0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */,
@@ -1043,9 +1049,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				262A75961E8CE0C600E8D9D6 /* HJWCircleView.gif in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x in Resources */,
+				3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork in Resources */,
 				262A75941E8CE0B800E8D9D6 /* HJWWaterWave.gif in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x in Resources */,

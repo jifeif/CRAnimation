@@ -7,18 +7,16 @@
 //
 
 #import "ZJCWaveTabarController.h"
-#import "CRBaseNavigationViewController.h"
-
 #import <AudioToolbox/AudioToolbox.h>
 #import "HJWWaveView.h"
 #import "ReplicatorLineAnimationView.h"
-//#import "UIView+HJW.h"
 
 // 波浪颜色
 #define ThemeColor [UIColor orangeColor]
 
 @interface ZJCWaveTabarController (){
     SystemSoundID _soundFileObject;
+    UIColor * _themeWaveColor;
 }
 
 @end
@@ -26,27 +24,31 @@
 
 
 @implementation ZJCWaveTabarController
-// 初始化方法,需要定制,可以将定制方法剥离出去
-- (instancetype)init{
+
+- (instancetype)initWithThemeColor:(UIColor *)color{
     if (self = [super init]) {
-        // 隐藏原生的
+        // 隐藏原生
         self.tabBar.hidden = NO;
         
+        _themeWaveColor = color;
         // 搭建自己的
         [self configSelf];
     }
     return self;
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
 }
+
 
 - (void)addViewControllerWithName:(NSString *)viewControllerName andTitle:(NSString *)title andNormalImage:(NSString *)normalImage andSelectedImage:(NSString *)selectedImage{
     // 获取类名,通过类名创建类
@@ -64,15 +66,23 @@
     
     // 设置标题栏属性
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:10]} forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:14]} forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:10]} forState:UIControlStateSelected];
     
     // **添加NavigationController导航器
-    CRBaseNavigationViewController * navTemp = [[CRBaseNavigationViewController alloc] initWithRootViewController:tempVC];
+    UINavigationController * navTemp = [[UINavigationController alloc] initWithRootViewController:tempVC];
     NSMutableArray * tempArray = [NSMutableArray arrayWithArray:self.viewControllers];
     [tempArray addObject:navTemp];
     self.viewControllers = tempArray;
 }
 
+
+- (void)addViewControllerWithName:(NSString *)viewControllerName andTitle:(NSString *)title andNormalTitleColor:(UIColor *)titleNormalColor andSelectedTitleColor:(UIColor *)titleSelectColor andNormalImage:(NSString *)image andSelectedImage:(NSString *)selectedImage{
+    //
+    [self addViewControllerWithName:viewControllerName andTitle:title andNormalImage:image andSelectedImage:selectedImage];
+    // 设置标题栏属性
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:titleNormalColor,NSFontAttributeName:[UIFont boldSystemFontOfSize:10]} forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:titleSelectColor,NSFontAttributeName:[UIFont boldSystemFontOfSize:10]} forState:UIControlStateSelected];
+}
 
 
 
@@ -89,10 +99,10 @@
     
     UIView * view1 = [[UIView alloc] initWithFrame:CGRectMake(0, 10, self.tabBar.bounds.size.width, self.tabBar.bounds.size.height - 10)];
     [view addSubview:view1];
-    view1.backgroundColor = ThemeColor;
+    view1.backgroundColor = _themeWaveColor;
     // wave background
     {
-        HJWWaveView *waveView = [[HJWWaveView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 10)];
+        HJWWaveView *waveView = [[HJWWaveView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 10)];
         waveView.phase     = 0.f;
         waveView.waveCrest = 5.f;
         waveView.waveCount = 1;
@@ -100,11 +110,11 @@
         
         {
             DrawingStyle *fillStyle = [DrawingStyle new];
-            fillStyle.fillColor     = [DrawingColor colorWithUIColor:[ThemeColor colorWithAlphaComponent:0.25f]];
+            fillStyle.fillColor     = [DrawingColor colorWithUIColor:[_themeWaveColor colorWithAlphaComponent:0.25f]];
             waveView.fillStyle      = fillStyle;
             
             DrawingStyle *strokeStyle = [DrawingStyle new];
-            strokeStyle.strokeColor   = [DrawingColor colorWithUIColor:[ThemeColor colorWithAlphaComponent:0.5f]];
+            strokeStyle.strokeColor   = [DrawingColor colorWithUIColor:[_themeWaveColor colorWithAlphaComponent:0.5f]];
             strokeStyle.lineWidth     = 0.5f;
             waveView.strokeStyle      = strokeStyle;
         }
@@ -119,7 +129,7 @@
     
     // Wave mid
     {
-        HJWWaveView *waveView = [[HJWWaveView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 10)];
+        HJWWaveView *waveView = [[HJWWaveView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 10)];
         waveView.phase     = 2.0f;
         waveView.waveCrest = 5.f;
         waveView.waveCount = 1;
@@ -127,11 +137,11 @@
         
         {
             DrawingStyle *fillStyle = [DrawingStyle new];
-            fillStyle.fillColor     = [DrawingColor colorWithUIColor:[ThemeColor colorWithAlphaComponent:0.5f]];
+            fillStyle.fillColor     = [DrawingColor colorWithUIColor:[_themeWaveColor colorWithAlphaComponent:0.5f]];
             waveView.fillStyle      = fillStyle;
             
             DrawingStyle *strokeStyle = [DrawingStyle new];
-            strokeStyle.strokeColor   = [DrawingColor colorWithUIColor:ThemeColor];
+            strokeStyle.strokeColor   = [DrawingColor colorWithUIColor:_themeWaveColor];
             strokeStyle.lineWidth     = 1.f;
             waveView.strokeStyle      = strokeStyle;
         }
@@ -146,7 +156,7 @@
     
     // Wave foreground
     {
-        HJWWaveView *waveView = [[HJWWaveView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 10)];
+        HJWWaveView *waveView = [[HJWWaveView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 10)];
         waveView.phase     = 4.f;
         waveView.waveCrest = 5.f;
         waveView.waveCount = 1;
@@ -154,7 +164,7 @@
         
         {
             DrawingStyle *fillStyle = [DrawingStyle new];
-            fillStyle.fillColor     = [DrawingColor colorWithUIColor:ThemeColor];
+            fillStyle.fillColor     = [DrawingColor colorWithUIColor:_themeWaveColor];
             waveView.fillStyle      = fillStyle;
         }
         
