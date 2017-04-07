@@ -51,5 +51,13 @@ Pod::Spec.new do |s|
             rollerCoasterLayer.resources = 'Pod/CRWidget/RollerCoasterLayer/RollerCoasterLayer.bundle'
         end
 
+        widget.subspec 'HJWCircleView' do |hjwCircleView|
+        hjwCircleView.source_files = 'Pod/CRWidget/HJWCircleView/*'
+        end
+
+        widget.subspec 'HJWWaterWave' do |hjwWaterWave|
+        hjwWaterWave.source_files = 'Pod/CRWidget/HJWWaterWave/*'
+        end
+
     end
 end
