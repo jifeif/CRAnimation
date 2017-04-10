@@ -8,7 +8,8 @@
     
 #import "CRAppDelegate.h"
 #import "CRBaseNavigationViewController.h"
-#import "CRBaseTabBarController.h"
+//#import "CRBaseTabBarController.h"
+#import "ZJCWaveTabarController.h"
 
 #import "CRCodeAnimationVC.h"
 #import "CRCodeWidgetVC.h"
@@ -28,35 +29,49 @@
 
 - (void)initSetTabbarVC
 {
+    /**
+     *  旧版的tbabar,没有去掉,仅仅注释了
+     */
     //  CRCodeAnimationVC
-    CRCodeAnimationVC *codeAnimationVC = [[CRCodeAnimationVC alloc] init];
-    CRBaseNavigationViewController *codeAnimationNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeAnimationVC];
+//    CRCodeAnimationVC *codeAnimationVC = [[CRCodeAnimationVC alloc] init];
+//    CRBaseNavigationViewController *codeAnimationNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeAnimationVC];
+//    
+//    //  CRCodeWidgetVC
+////    CRCodeWidgetVC *codeWidgetVC = [[CRCodeWidgetVC alloc] init];
+////    CRBaseNavigationViewController *codeWidgetNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeWidgetVC];
+//    
+//    //  CRDesignerStageVC
+//    CRDesignerStageVC *designerStageVC = [[CRDesignerStageVC alloc] init];
+//    CRBaseNavigationViewController *designerStageNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:designerStageVC];
+//    
+//    //  CRMemberFileVC
+//    CRMembersVC *memberVC = [[CRMembersVC alloc] init];
+//    CRBaseNavigationViewController *memberNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:memberVC];
+//    //  baseTabBarVC
+//    NSMutableArray *tabbarControllers = [[NSMutableArray alloc] initWithObjects:
+//                                         codeAnimationNaviVC,
+////                                         codeWidgetNaviVC,
+//                                         designerStageNaviVC,
+//                                         memberNaviVC,
+//                                         nil];
+//    CRBaseTabBarController *baseTabBarVC = [[CRBaseTabBarController alloc] initWithViewControllers:tabbarControllers];
     
-    //  CRCodeWidgetVC
-//    CRCodeWidgetVC *codeWidgetVC = [[CRCodeWidgetVC alloc] init];
-//    CRBaseNavigationViewController *codeWidgetNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:codeWidgetVC];
     
-    //  CRDesignerStageVC
-    CRDesignerStageVC *designerStageVC = [[CRDesignerStageVC alloc] init];
-    CRBaseNavigationViewController *designerStageNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:designerStageVC];
-    
-    //  CRMemberFileVC
-    CRMembersVC *memberVC = [[CRMembersVC alloc] init];
-    CRBaseNavigationViewController *memberNaviVC = [[CRBaseNavigationViewController alloc] initWithRootViewController:memberVC];
-    
-    //  baseTabBarVC
-    NSMutableArray *tabbarControllers = [[NSMutableArray alloc] initWithObjects:
-                                         codeAnimationNaviVC,
-//                                         codeWidgetNaviVC,
-                                         designerStageNaviVC,
-                                         memberNaviVC,
-                                         nil];
-    CRBaseTabBarController *baseTabBarVC = [[CRBaseTabBarController alloc] initWithViewControllers:tabbarControllers];
-    
+    /**
+     *  新版的波浪tabbar
+     */
+    //////////////////////////////
+    // 1.配置tabbar基础信息
+    ZJCWaveTabarController * tabbar = [[ZJCWaveTabarController alloc] initWithThemeColor:[UIColor orangeColor]]; // color_Master
+    //////////////////////////////
+    // 2.配置tabbar的Controllers
+    [tabbar addViewControllerWithName:@"CRCodeAnimationVC" andTitle:@"动效库" andNormalImage:@"tab_btn_index_n" andSelectedImage:@"tab_btn_index_s"];
+    [tabbar addViewControllerWithName:@"CRDesignerStageVC" andTitle:@"设计原型" andNormalImage:@"tab_btn_prototype_n" andSelectedImage:@"tab_btn_prototype_s"];
+    [tabbar addViewControllerWithName:@"CRMembersVC" andTitle:@"成员" andNormalImage:@"tab_btn_member_n" andSelectedImage:@"tab_btn_member_s"];
     
     //  rootVC
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = baseTabBarVC;
+    self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];
 }
 

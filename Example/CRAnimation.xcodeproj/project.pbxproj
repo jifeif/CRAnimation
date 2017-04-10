@@ -93,6 +93,9 @@
 		262A75A91E8CE77600E8D9D6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 262A75A81E8CE77600E8D9D6 /* README.md */; };
 		262A75AB1E8CE77D00E8D9D6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 262A75AA1E8CE77D00E8D9D6 /* README.md */; };
 		366BCD0EA1948D6414619360 /* Pods_CRAnimation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02449F62305352FC64D71D38 /* Pods_CRAnimation_Tests.framework */; };
+		3734D3991E97614D0022D537 /* ZJCWaveTabarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734D3981E97614D0022D537 /* ZJCWaveTabarController.m */; };
+		3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3734D39A1E977E560022D537 /* sound_press_long.wav */; };
+		3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3734D39B1E977E560022D537 /* sound_press_short.wav */; };
 		527FF73C1DD0E9770055026D /* CRGatlingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 527FF73A1DD0E9770055026D /* CRGatlingVC.m */; };
 		527FF7431DD0EBB60055026D /* CRGatlingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 527FF7421DD0EBB60055026D /* CRGatlingModel.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -298,6 +301,10 @@
 		262A75951E8CE0C600E8D9D6 /* HJWCircleView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HJWCircleView.gif; sourceTree = "<group>"; };
 		262A75A81E8CE77600E8D9D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		262A75AA1E8CE77D00E8D9D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3734D3971E97614D0022D537 /* ZJCWaveTabarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCWaveTabarController.h; sourceTree = "<group>"; };
+		3734D3981E97614D0022D537 /* ZJCWaveTabarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCWaveTabarController.m; sourceTree = "<group>"; };
+		3734D39A1E977E560022D537 /* sound_press_long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_press_long.wav; sourceTree = "<group>"; };
+		3734D39B1E977E560022D537 /* sound_press_short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_press_short.wav; sourceTree = "<group>"; };
 		5247C4F71DD212320024DF8B /* GatlingProgress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GatlingProgress.gif; sourceTree = "<group>"; };
 		527FF7391DD0E9770055026D /* CRGatlingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGatlingVC.h; sourceTree = "<group>"; };
 		527FF73A1DD0E9770055026D /* CRGatlingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGatlingVC.m; sourceTree = "<group>"; };
@@ -659,6 +666,10 @@
 		0996C4491E4764A1000CA8EC /* CRTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				3734D39A1E977E560022D537 /* sound_press_long.wav */,
+				3734D39B1E977E560022D537 /* sound_press_short.wav */,
+				3734D3971E97614D0022D537 /* ZJCWaveTabarController.h */,
+				3734D3981E97614D0022D537 /* ZJCWaveTabarController.m */,
 				0996C44A1E4764A1000CA8EC /* CRBaseTabBarController.h */,
 				0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */,
 			);
@@ -950,12 +961,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CRAnimation_Example" */;
 			buildPhases = (
+				2E9DD0AABBBEF62BF446FD8F /* 📦 Check Pods Manifest.lock */,
 				F61F1CF0251B4B6FE81CC64F /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				034C6F1DAECBD9FE755A8CB3 /* [CP] Embed Pods Frameworks */,
 				4143EC936961473DBD4268D8 /* [CP] Copy Pods Resources */,
+				5C495CBCF368A19BA2BE0196 /* 📦 Embed Pods Frameworks */,
+				113CD4C812D9D68B84179D5C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -970,12 +984,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CRAnimation_Tests" */;
 			buildPhases = (
+				D928B7F54E5DB9325D952D5E /* 📦 Check Pods Manifest.lock */,
 				2B96F60F53AEFA467AAE7928 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				F631833200D3FB37A9A6F0BA /* [CP] Embed Pods Frameworks */,
 				1B88A392EE36004B911876A9 /* [CP] Copy Pods Resources */,
+				616F731CA4DE71F1066BCD0E /* 📦 Embed Pods Frameworks */,
+				3D818A69F63D3B8F0D4CA93E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1032,9 +1049,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				262A75961E8CE0C600E8D9D6 /* HJWCircleView.gif in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x in Resources */,
+				3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork in Resources */,
 				262A75941E8CE0B800E8D9D6 /* HJWWaterWave.gif in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x in Resources */,
@@ -1070,6 +1089,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		113CD4C812D9D68B84179D5C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1B88A392EE36004B911876A9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1100,6 +1134,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		2E9DD0AABBBEF62BF446FD8F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D818A69F63D3B8F0D4CA93E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4143EC936961473DBD4268D8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1113,6 +1177,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C495CBCF368A19BA2BE0196 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		616F731CA4DE71F1066BCD0E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D928B7F54E5DB9325D952D5E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F61F1CF0251B4B6FE81CC64F /* [CP] Check Pods Manifest.lock */ = {
@@ -1211,6 +1320,7 @@
 				9704F1DC1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift in Sources */,
 				092A2D481DBCA54C00650DE1 /* CRBottomPageView.m in Sources */,
 				092A2D4A1DBCA54C00650DE1 /* CRCardViewFront.m in Sources */,
+				3734D3991E97614D0022D537 /* ZJCWaveTabarController.m in Sources */,
 				0950D5B11E54B0D4009214E2 /* CRParticipateMembersView.m in Sources */,
 				09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */,
 				262A758C1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.m in Sources */,

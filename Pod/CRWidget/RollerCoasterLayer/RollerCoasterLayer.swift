@@ -25,7 +25,7 @@
 
 import UIKit
 
-public class RollerCoasterLayer: CALayer {
+open class RollerCoasterLayer: CALayer {
     
     var groundLayer:CALayer?
     var yellowPath:CAShapeLayer?
@@ -34,14 +34,14 @@ public class RollerCoasterLayer: CALayer {
     public init(frame: CGRect) {
         super.init()
         self.frame = frame
-        initLayers(size: frame.size)
+        initLayers(frame.size)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func initLayers(size: CGSize) {
+    func initLayers(_ size: CGSize) {
         initGradientLayer(size)
         initMountainLayer(size)
         initGrasslandlayer(size)
@@ -49,7 +49,7 @@ public class RollerCoasterLayer: CALayer {
         yellowPath = initYellowPathLayer(size)
         greenPath = initGreenPathLayer(size)
         for index in 0...4 {
-            addYellowCarPathAnimation(beginTime: CACurrentMediaTime() + 0.07 * Double(index))
+            addYellowCarPathAnimation(CACurrentMediaTime() + 0.07 * Double(index))
         }
         for index in 0...4 {
             addGreenCarPathAnimation(size, beginTime: CACurrentMediaTime() + 0.085 * Double(index))
@@ -256,7 +256,7 @@ public class RollerCoasterLayer: CALayer {
     }
     
     //添加黄色轨道的动画
-    func addYellowCarPathAnimation(beginTime: CFTimeInterval) {
+    func addYellowCarPathAnimation(_ beginTime: CFTimeInterval) {
         let carLayer:CALayer = CALayer()
         carLayer.frame = CGRect(x: 0, y: 0, width: 17, height: 11)
         carLayer.setAffineTransform(carLayer.affineTransform().translatedBy(x: 0, y: -7))
