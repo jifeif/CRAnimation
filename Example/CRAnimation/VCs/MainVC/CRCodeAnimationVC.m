@@ -230,7 +230,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 {
     CRItemBriefCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewCellID forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor purpleColor];
+    cell.backgroundColor = [UIColor whiteColor];
     
     CRDemoInfoModel *demoInfoModel = _dataArrayDemoModel[indexPath.section][indexPath.row];
     if (demoInfoModel.demoVCName) {

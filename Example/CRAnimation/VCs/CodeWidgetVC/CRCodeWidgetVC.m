@@ -132,7 +132,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 {
     CRMemberDetailProductCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:__collectionViewCellID forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor purpleColor];
+    cell.backgroundColor = [UIColor whiteColor];
     
     CRDemoInfoModel *demoInfoModel = _demoInfoModelArray[indexPath.row];
     if (demoInfoModel.gifAddress) {

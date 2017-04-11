@@ -78,7 +78,7 @@ static NSString *__collectionViewCellID = @"__collectionViewCellID";
 {
     CRParticipateMemberCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:__collectionViewCellID forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor purpleColor];
+    cell.backgroundColor = [UIColor whiteColor];
     
     CRProductsMemberBriefInfoModel *memberInfoModel = _memberInfoModelArray[indexPath.row];
     [cell setDataWithMemberInfoModel:memberInfoModel];

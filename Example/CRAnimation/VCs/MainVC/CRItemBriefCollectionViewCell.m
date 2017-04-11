@@ -14,6 +14,7 @@
     CRFLAnimatiatedImageView     *_imageView;
     
     UIView                  *_labelView;
+    UIView                  *_sepLineV;
     UILabel                 *_namelabel;
     UILabel                 *_summaryLabel;
 }
@@ -43,25 +44,32 @@
     _imageView.layer.masksToBounds = YES;
     [self addSubview:_imageView];
     
-    _labelView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.width, 0)];
-    _labelView.backgroundColor = [color_Master colorWithAlphaComponent:0.6];
+    _labelView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.width, 55)];
+    _labelView.backgroundColor = [UIColor whiteColor];
     [self addSubview:_labelView];
     
-    _namelabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.width - 2 * off_x, 25)];
-    _namelabel.textColor = [UIColor whiteColor];
-    _namelabel.font = [UIFont systemFontOfSize:14];
+    _sepLineV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _labelView.width, 0.5)];
+    _sepLineV.backgroundColor = color_e5e5e5;
+    [_labelView addSubview:_sepLineV];
+    
+    _namelabel = [UILabel new];
+    _namelabel.textColor = color_333333;
+    _namelabel.text = @" ";
+    _namelabel.font = [UIFont systemFontOfSize:15];
+    [_namelabel sizeToFit];
+    [_namelabel setWidth:self.width - 2 * off_x];
     [_labelView addSubview:_namelabel];
     
-    _summaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.width - 2 * off_x, 25)];
-    _summaryLabel.textColor = [UIColor whiteColor];
-    _summaryLabel.font = [UIFont systemFontOfSize:12];
+    _summaryLabel = [UILabel new];
+    _summaryLabel.textColor = color_9a9ba9;
+    _summaryLabel.text = @" ";
+    _summaryLabel.font = [UIFont systemFontOfSize:10];
+    [_summaryLabel sizeToFit];
+    [_summaryLabel setWidth:self.width - 2 * off_x];
     [_labelView addSubview:_summaryLabel];
     
-    [_labelView setHeight:_namelabel.height + _summaryLabel.height];
     [_labelView BearSetRelativeLayoutWithDirection:kDIR_DOWN destinationView:nil parentRelation:YES distance:0 center:NO];
-    
-    [_summaryLabel BearSetRelativeLayoutWithDirection:kDIR_DOWN destinationView:nil parentRelation:YES distance:0 center:YES];
-    [_namelabel BearSetRelativeLayoutWithDirection:kDIR_UP destinationView:_summaryLabel parentRelation:NO distance:0 center:YES];
+    [UIView BearV2AutoLayViewArray:(NSMutableArray *)@[_namelabel, _summaryLabel] layoutAxis:kLAYOUT_AXIS_Y alignmentType:kSetAlignmentType_Center alignmentOffDis:0 gapAray:@[@30, @22, @18]];
 }
 
 - (void)loadDemoInfoModel:(CRDemoInfoModel *)demoInfoModel
