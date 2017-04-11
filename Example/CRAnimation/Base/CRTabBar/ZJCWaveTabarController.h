@@ -9,15 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ZJCWaveTabarController : UITabBarController
-// foreground Wave Color
-@property (strong, nonatomic) UIColor * foregroundWaveFillColor;
-@property (strong, nonatomic) UIColor * foregroundWaveStrokeColor;
-// mid Wave Color
-@property (strong, nonatomic) UIColor * midgroundWaveFillColor;
-@property (strong, nonatomic) UIColor * midgroundWaveStrokeColor;
-// background Wave Color
-@property (strong, nonatomic) UIColor * backgroundWaveFillColor;
-@property (strong, nonatomic) UIColor * backgroundWaveStrokeColor;
+
 // init With themeColor
 - (instancetype)initWithThemeColor:(UIColor *)color;
 // add Controller
