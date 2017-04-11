@@ -253,14 +253,14 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat cellWidth = WIDTH / 2.0 - 20;
+    CGFloat cellWidth = (WIDTH - 55) / 2.0;
     CGFloat cellHeight = 1.0 * HEIGHT6 / WIDTH6 * cellWidth;
     return (CGSize){cellWidth, cellHeight};
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(5, 15, 5, 15);
+    return UIEdgeInsetsMake(12.5, 20, 5, 20);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
@@ -270,7 +270,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 10.f;
+    return 15.f;
 }
 
 @end

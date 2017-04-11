@@ -38,6 +38,9 @@
 {
     CGFloat off_x = 5;
     
+    self.layer.cornerRadius = 4;
+    self.layer.masksToBounds = YES;
+    
     _imageView = [[CRFLAnimatiatedImageView alloc] init];
     _imageView.frame = self.bounds;
     _imageView.contentMode = UIViewContentModeScaleAspectFill;

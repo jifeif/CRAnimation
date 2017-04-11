@@ -1492,7 +1492,7 @@
 				GCC_PREFIX_HEADER = "CRAnimation/CRAnimation-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
-					"CONTRIBUTE_STATUS=1",
+					"CONTRIBUTE_STATUS=0",
 				);
 				INFOPLIST_FILE = "CRAnimation/CRAnimation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
