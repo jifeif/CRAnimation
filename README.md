@@ -51,10 +51,10 @@ $ pod install
 
 | 示例信息  | 示例动图 |
 | ---------- | ----------- | 
-| S0001 <br> [CRCardAnimationView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0001_CRCardAnimationViewDemo) <br> 卡片切换动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0001_CRCardAnimation_20170322.gif" width=150 /> |
-| S0002 <br> [CRImageGradientView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0002_CRImageGradientViewDemo) <br> ImageView过渡切换动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0002_CRGradientAnimation_20170322.gif" width=150 /> |
-| S0004 <br> [WCLLoadingView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0004_WCLLoadingView) <br> Slack 的 Loading 动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0004_WCLLoadingView_20170420.gif" width=150 /> |
-| S0005 <br> [HZLaunchView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0005_HZLaunchView) <br> Twitter 的 Launch 动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0005_HZLaunchView_20170322.gif" width=150 /> |
+| S0001 <br> [CRCardAnimationView](https://github.com/CRAnimation/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0001_CRCardAnimationViewDemo) <br> 卡片切换动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0001_CRCardAnimation_20170322.gif" width=150 /> |
+| S0002 <br> [CRImageGradientView](https://github.com/CRAnimation/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0002_CRImageGradientViewDemo) <br> ImageView过渡切换动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0002_CRGradientAnimation_20170322.gif" width=150 /> |
+| S0004 <br> [WCLLoadingView](https://github.com/CRAnimation/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0004_WCLLoadingView) <br> Slack 的 Loading 动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0004_WCLLoadingView_20170420.gif" width=150 /> |
+| S0005 <br> [HZLaunchView](https://github.com/CRAnimation/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0005_HZLaunchView) <br> Twitter 的 Launch 动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0005_HZLaunchView_20170322.gif" width=150 /> |
 | S0006 <br> CCWorm <br> 虫儿跑动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0006_CCWorm_20170322.gif" width=150 /> |
 | S0007 <br> CRGatling <br> 加特林动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0007_CRGatling_20170309.gif" width=150 /> |
 | S0008 <br> JHUD <br> JHUD动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0008_JHUD_20170311.gif" width=150 /> |
@@ -70,7 +70,7 @@ $ pod install
 ## 组合动效
 
 - C0001
-- [音乐切换动效](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/MixDemo/C0001_CRMusicCardDemo)
+- [音乐切换动效](https://github.com/CRAnimation/CRAnimation/tree/master/Example/CRAnimation/Demo/MixDemo/C0001_CRMusicCardDemo)
 - CRCardAnimationView和CRImageGradientView的组合动效
 
 <img src="http://oftcdgt2m.bkt.clouddn.com/C0001/CRMusicCardDemoVC3.gif" width=150 />
@@ -84,3 +84,4 @@ $ pod install
 <br>
 <br>
 <br>
+
