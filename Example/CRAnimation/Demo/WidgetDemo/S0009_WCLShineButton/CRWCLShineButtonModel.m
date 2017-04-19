@@ -27,7 +27,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"_TtC19CRAnimation_Example22CRWCLShineButtonDemoVC";
-    self.demoGifName    = @"WCLShineButton.gif";
+    self.demoGifName    = @"S0009_WCLShineButton_20170322.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0009";
     self.demoName       = @"WCLShineButton";

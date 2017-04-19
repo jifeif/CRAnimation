@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"GifDemoVC";
-    self.demoGifName    = @"GifPlay.gif";
+    self.demoGifName    = @"S0003_GifPlay.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0003";
     self.demoName       = @"Gif demo";

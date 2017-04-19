@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"CCWormHUDDemoVC";
-    self.demoGifName    = @"a-diligent-worm-in-iOS.gif";
+    self.demoGifName    = @"S0006_CCWorm_20170322.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0006";
     self.demoName       = @"CCWormHUD";

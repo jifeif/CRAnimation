@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"HJWCircleViewDemoVC";
-    self.demoGifName    = @"HJWCircleView.gif";
+    self.demoGifName    = @"S0011_HJWCircleView.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0011";
     self.demoName       = @"HJWCircleView";

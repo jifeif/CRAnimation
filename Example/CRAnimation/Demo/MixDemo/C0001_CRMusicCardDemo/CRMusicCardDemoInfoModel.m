@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"CRMusicCardDemoVC";
-    self.demoGifName    = @"CRMusicCardDemoVC.gif";
+    self.demoGifName    = @"C0001_CRMusicCardDemoVC.gif";
     self.demoType       = kCRDemoTypeCombination;
     self.CRID           = @"C0001";
     self.demoName       = @"音乐切换动效";

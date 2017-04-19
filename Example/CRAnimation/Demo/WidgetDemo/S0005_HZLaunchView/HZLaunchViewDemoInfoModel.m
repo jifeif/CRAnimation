@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"HZLaunchViewDemoVC";
-    self.demoGifName    = @"HZLaunchView.gif";
+    self.demoGifName    = @"S0005_HZLaunchView_20170322.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0005";
     self.demoName       = @"HZLaunchView";

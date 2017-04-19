@@ -59,6 +59,9 @@ typedef enum {
     if (!_maskBgView && _inVC) {
         _maskBgView = [[UIView alloc] initWithFrame:_inVC.view.bounds];
         _maskBgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
+        
+        UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fadeDetailView)];
+        [_maskBgView addGestureRecognizer:tapGR];
     }
 }
 

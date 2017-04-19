@@ -81,6 +81,19 @@
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
 		09F45A711E76FA8500083387 /* CRMemeberTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F45A701E76FA8400083387 /* CRMemeberTagsView.m */; };
+		09FAC1D11EA7C1DF0064D100 /* C0001_CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1C41EA7C1DF0064D100 /* C0001_CRMusicCardDemoVC.gif */; };
+		09FAC1D21EA7C1DF0064D100 /* S0001_CRCardAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1C51EA7C1DF0064D100 /* S0001_CRCardAnimation_20170322.gif */; };
+		09FAC1D31EA7C1DF0064D100 /* S0002_CRGradientAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1C61EA7C1DF0064D100 /* S0002_CRGradientAnimation_20170322.gif */; };
+		09FAC1D41EA7C1DF0064D100 /* S0003_GifPlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1C71EA7C1DF0064D100 /* S0003_GifPlay.gif */; };
+		09FAC1D51EA7C1DF0064D100 /* S0004_WCLLoadingView_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1C81EA7C1DF0064D100 /* S0004_WCLLoadingView_20170322.gif */; };
+		09FAC1D61EA7C1DF0064D100 /* S0005_HZLaunchView_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1C91EA7C1DF0064D100 /* S0005_HZLaunchView_20170322.gif */; };
+		09FAC1D71EA7C1DF0064D100 /* S0006_CCWorm_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1CA1EA7C1DF0064D100 /* S0006_CCWorm_20170322.gif */; };
+		09FAC1D81EA7C1DF0064D100 /* S0007_CRGatling_20170309.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1CB1EA7C1DF0064D100 /* S0007_CRGatling_20170309.gif */; };
+		09FAC1D91EA7C1DF0064D100 /* S0008_JHUD_20170311.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1CC1EA7C1DF0064D100 /* S0008_JHUD_20170311.gif */; };
+		09FAC1DA1EA7C1DF0064D100 /* S0009_WCLShineButton_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1CD1EA7C1DF0064D100 /* S0009_WCLShineButton_20170322.gif */; };
+		09FAC1DB1EA7C1DF0064D100 /* S0010_RollerCoasterLayer_20170312.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1CE1EA7C1DF0064D100 /* S0010_RollerCoasterLayer_20170312.gif */; };
+		09FAC1DC1EA7C1DF0064D100 /* S0011_HJWCircleView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1CF1EA7C1DF0064D100 /* S0011_HJWCircleView.gif */; };
+		09FAC1DD1EA7C1DF0064D100 /* S0012_HJWWaterWave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1D01EA7C1DF0064D100 /* S0012_HJWWaterWave.gif */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
 		257751521DC25A790019D38B /* HZLaunchViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2577514F1DC25A790019D38B /* HZLaunchViewDemoInfoModel.m */; };
 		257751531DC25A790019D38B /* HZLaunchViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 257751511DC25A790019D38B /* HZLaunchViewDemoVC.m */; };
@@ -88,8 +101,6 @@
 		262A758C1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A758B1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.m */; };
 		262A758F1E8CDBD000E8D9D6 /* HJWCircleViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A758E1E8CDBD000E8D9D6 /* HJWCircleViewDemoVC.m */; };
 		262A75921E8CDBE500E8D9D6 /* HJWWaterWaveDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 262A75911E8CDBE500E8D9D6 /* HJWWaterWaveDemoVC.m */; };
-		262A75941E8CE0B800E8D9D6 /* HJWWaterWave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 262A75931E8CE0B800E8D9D6 /* HJWWaterWave.gif */; };
-		262A75961E8CE0C600E8D9D6 /* HJWCircleView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 262A75951E8CE0C600E8D9D6 /* HJWCircleView.gif */; };
 		262A75A91E8CE77600E8D9D6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 262A75A81E8CE77600E8D9D6 /* README.md */; };
 		262A75AB1E8CE77D00E8D9D6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 262A75AA1E8CE77D00E8D9D6 /* README.md */; };
 		366BCD0EA1948D6414619360 /* Pods_CRAnimation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02449F62305352FC64D71D38 /* Pods_CRAnimation_Tests.framework */; };
@@ -177,12 +188,10 @@
 		092A2D091DBC9A5C00650DE1 /* CRMemberInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMemberInfoModel.m; sourceTree = "<group>"; };
 		092A2D0C1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardAnimationViewDemoInfoModel.h; sourceTree = "<group>"; };
 		092A2D0D1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardAnimationViewDemoInfoModel.m; sourceTree = "<group>"; };
-		092A2D0E1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CRCardAnimationViewDemoVC.gif; sourceTree = "<group>"; };
 		092A2D0F1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardAnimationViewDemoVC.h; sourceTree = "<group>"; };
 		092A2D101DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardAnimationViewDemoVC.m; sourceTree = "<group>"; };
 		092A2D121DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRImageGradientDemoInfoModel.h; sourceTree = "<group>"; };
 		092A2D131DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRImageGradientDemoInfoModel.m; sourceTree = "<group>"; };
-		092A2D141DBCA51C00650DE1 /* CRImageGradientDemoVC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CRImageGradientDemoVC.gif; sourceTree = "<group>"; };
 		092A2D151DBCA51C00650DE1 /* CRImageGradientDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRImageGradientDemoVC.h; sourceTree = "<group>"; };
 		092A2D161DBCA51C00650DE1 /* CRImageGradientDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRImageGradientDemoVC.m; sourceTree = "<group>"; };
 		092A2D171DBCA51C00650DE1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -192,7 +201,6 @@
 		092A2D1C1DBCA51C00650DE1 /* GifDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDemoInfoModel.m; sourceTree = "<group>"; };
 		092A2D1D1DBCA51C00650DE1 /* GifDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifDemoVC.h; sourceTree = "<group>"; };
 		092A2D1E1DBCA51C00650DE1 /* GifDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDemoVC.m; sourceTree = "<group>"; };
-		092A2D1F1DBCA51C00650DE1 /* GifPlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GifPlay.gif; sourceTree = "<group>"; };
 		092A2D3B1DBCA54C00650DE1 /* CRBottomPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBottomPageView.h; sourceTree = "<group>"; };
 		092A2D3C1DBCA54C00650DE1 /* CRBottomPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBottomPageView.m; sourceTree = "<group>"; };
 		092A2D3D1DBCA54C00650DE1 /* CRCardViewBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardViewBack.h; sourceTree = "<group>"; };
@@ -201,13 +209,11 @@
 		092A2D401DBCA54C00650DE1 /* CRCardViewFront.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardViewFront.m; sourceTree = "<group>"; };
 		092A2D411DBCA54C00650DE1 /* CRMusicCardDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMusicCardDemoInfoModel.h; sourceTree = "<group>"; };
 		092A2D421DBCA54C00650DE1 /* CRMusicCardDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMusicCardDemoInfoModel.m; sourceTree = "<group>"; };
-		092A2D431DBCA54C00650DE1 /* CRMusicCardDemoVC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CRMusicCardDemoVC.gif; sourceTree = "<group>"; };
 		092A2D441DBCA54C00650DE1 /* CRMusicCardDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMusicCardDemoVC.h; sourceTree = "<group>"; };
 		092A2D451DBCA54C00650DE1 /* CRMusicCardDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMusicCardDemoVC.m; sourceTree = "<group>"; };
 		092A2D461DBCA54C00650DE1 /* CRMyCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMyCardView.h; sourceTree = "<group>"; };
 		092A2D471DBCA54C00650DE1 /* CRMyCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMyCardView.m; sourceTree = "<group>"; };
 		092A2D5E1DBCA8DA00650DE1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		092A2D5F1DBCA8DA00650DE1 /* WCLLoadingView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WCLLoadingView.gif; sourceTree = "<group>"; };
 		092A2D601DBCA8DA00650DE1 /* WCLLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
 		092A2D611DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLLoadingViewDemoInfoModel.h; sourceTree = "<group>"; };
 		092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLLoadingViewDemoInfoModel.m; sourceTree = "<group>"; };
@@ -275,11 +281,23 @@
 		09E40CBA1E6C303E0042B5AE /* CRCommonExtendsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCommonExtendsManager.m; sourceTree = "<group>"; };
 		09E40CBC1E6C4E210042B5AE /* CRGetMemebersListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGetMemebersListRequest.h; sourceTree = "<group>"; };
 		09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGetMemebersListRequest.m; sourceTree = "<group>"; };
-		09EE43E31E73DB47000DFF14 /* JHUD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = JHUD.gif; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09F45A6F1E76FA8400083387 /* CRMemeberTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemeberTagsView.h; sourceTree = "<group>"; };
 		09F45A701E76FA8400083387 /* CRMemeberTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMemeberTagsView.m; sourceTree = "<group>"; };
+		09FAC1C41EA7C1DF0064D100 /* C0001_CRMusicCardDemoVC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = C0001_CRMusicCardDemoVC.gif; sourceTree = "<group>"; };
+		09FAC1C51EA7C1DF0064D100 /* S0001_CRCardAnimation_20170322.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0001_CRCardAnimation_20170322.gif; sourceTree = "<group>"; };
+		09FAC1C61EA7C1DF0064D100 /* S0002_CRGradientAnimation_20170322.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0002_CRGradientAnimation_20170322.gif; sourceTree = "<group>"; };
+		09FAC1C71EA7C1DF0064D100 /* S0003_GifPlay.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0003_GifPlay.gif; sourceTree = "<group>"; };
+		09FAC1C81EA7C1DF0064D100 /* S0004_WCLLoadingView_20170322.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0004_WCLLoadingView_20170322.gif; sourceTree = "<group>"; };
+		09FAC1C91EA7C1DF0064D100 /* S0005_HZLaunchView_20170322.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0005_HZLaunchView_20170322.gif; sourceTree = "<group>"; };
+		09FAC1CA1EA7C1DF0064D100 /* S0006_CCWorm_20170322.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0006_CCWorm_20170322.gif; sourceTree = "<group>"; };
+		09FAC1CB1EA7C1DF0064D100 /* S0007_CRGatling_20170309.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0007_CRGatling_20170309.gif; sourceTree = "<group>"; };
+		09FAC1CC1EA7C1DF0064D100 /* S0008_JHUD_20170311.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0008_JHUD_20170311.gif; sourceTree = "<group>"; };
+		09FAC1CD1EA7C1DF0064D100 /* S0009_WCLShineButton_20170322.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0009_WCLShineButton_20170322.gif; sourceTree = "<group>"; };
+		09FAC1CE1EA7C1DF0064D100 /* S0010_RollerCoasterLayer_20170312.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0010_RollerCoasterLayer_20170312.gif; sourceTree = "<group>"; };
+		09FAC1CF1EA7C1DF0064D100 /* S0011_HJWCircleView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0011_HJWCircleView.gif; sourceTree = "<group>"; };
+		09FAC1D01EA7C1DF0064D100 /* S0012_HJWWaterWave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0012_HJWWaterWave.gif; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		18D8B62B1DD80BB600C6545D /* CRGatlingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGatlingView.h; sourceTree = "<group>"; };
 		18D8B62C1DD80BB600C6545D /* CRGatlingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGatlingView.m; sourceTree = "<group>"; };
@@ -288,7 +306,6 @@
 		2577514F1DC25A790019D38B /* HZLaunchViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZLaunchViewDemoInfoModel.m; sourceTree = "<group>"; };
 		257751501DC25A790019D38B /* HZLaunchViewDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZLaunchViewDemoVC.h; sourceTree = "<group>"; };
 		257751511DC25A790019D38B /* HZLaunchViewDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZLaunchViewDemoVC.m; sourceTree = "<group>"; };
-		257751541DC25B070019D38B /* HZLaunchView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HZLaunchView.gif; sourceTree = "<group>"; };
 		262A75871E8CDB7300E8D9D6 /* HJWCircleViewDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWCircleViewDemoInfoModel.h; sourceTree = "<group>"; };
 		262A75881E8CDB7300E8D9D6 /* HJWCircleViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWCircleViewDemoInfoModel.m; sourceTree = "<group>"; };
 		262A758A1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWWaterWaveDemoInfoModel.h; sourceTree = "<group>"; };
@@ -297,15 +314,12 @@
 		262A758E1E8CDBD000E8D9D6 /* HJWCircleViewDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWCircleViewDemoVC.m; sourceTree = "<group>"; };
 		262A75901E8CDBE500E8D9D6 /* HJWWaterWaveDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWWaterWaveDemoVC.h; sourceTree = "<group>"; };
 		262A75911E8CDBE500E8D9D6 /* HJWWaterWaveDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWWaterWaveDemoVC.m; sourceTree = "<group>"; };
-		262A75931E8CE0B800E8D9D6 /* HJWWaterWave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HJWWaterWave.gif; sourceTree = "<group>"; };
-		262A75951E8CE0C600E8D9D6 /* HJWCircleView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = HJWCircleView.gif; sourceTree = "<group>"; };
 		262A75A81E8CE77600E8D9D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		262A75AA1E8CE77D00E8D9D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3734D3971E97614D0022D537 /* ZJCWaveTabarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCWaveTabarController.h; sourceTree = "<group>"; };
 		3734D3981E97614D0022D537 /* ZJCWaveTabarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCWaveTabarController.m; sourceTree = "<group>"; };
 		3734D39A1E977E560022D537 /* sound_press_long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_press_long.wav; sourceTree = "<group>"; };
 		3734D39B1E977E560022D537 /* sound_press_short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_press_short.wav; sourceTree = "<group>"; };
-		5247C4F71DD212320024DF8B /* GatlingProgress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GatlingProgress.gif; sourceTree = "<group>"; };
 		527FF7391DD0E9770055026D /* CRGatlingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGatlingVC.h; sourceTree = "<group>"; };
 		527FF73A1DD0E9770055026D /* CRGatlingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGatlingVC.m; sourceTree = "<group>"; };
 		527FF7411DD0EBB60055026D /* CRGatlingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGatlingModel.h; sourceTree = "<group>"; };
@@ -331,19 +345,16 @@
 		78F10664FBE1F9AD60E81962 /* Pods-CRAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9704F1D31E73ECAE00604DFC /* CRWCLShineButtonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRWCLShineButtonModel.h; sourceTree = "<group>"; };
 		9704F1D41E73ECAF00604DFC /* CRWCLShineButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRWCLShineButtonModel.m; sourceTree = "<group>"; };
-		9704F1D91E73F06E00604DFC /* WCLShineButton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WCLShineButton.gif; sourceTree = "<group>"; };
 		9704F1DB1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRWCLShineButtonDemoVC.swift; sourceTree = "<group>"; };
 		9704F1E71E7432DC00604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9704F1EC1E7442C000604DFC /* CRRollerCoasterLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRollerCoasterLayerModel.h; sourceTree = "<group>"; };
 		9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRollerCoasterLayerModel.m; sourceTree = "<group>"; };
 		9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRollerCoasterLayerVC.swift; sourceTree = "<group>"; };
 		9704F1EF1E7442C000604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RollerCoasterLayer.gif; sourceTree = "<group>"; };
 		973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		976F95561DB25275000776A6 /* CRAnimation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CRAnimation-Bridging-Header.h"; path = "../CRAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD775529C0010A6B82D84DCC /* Pods-CRAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C662237C9E60F0C433AB69 /* Pods-CRAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ED36EACA1DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "a-diligent-worm-in-iOS.gif"; sourceTree = "<group>"; };
 		ED36EACB1DD2AF9A0050416B /* CCWormHUDDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWormHUDDemoInfoModel.h; sourceTree = "<group>"; };
 		ED36EACC1DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWormHUDDemoInfoModel.m; sourceTree = "<group>"; };
 		ED36EACD1DD2AF9A0050416B /* CCWormHUDDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWormHUDDemoVC.h; sourceTree = "<group>"; };
@@ -534,7 +545,6 @@
 			isa = PBXGroup;
 			children = (
 				09EE9B9F1DBCE2E400BD81A2 /* README.md */,
-				092A2D0E1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.gif */,
 				092A2D0C1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.h */,
 				092A2D0D1DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m */,
 				092A2D0F1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.h */,
@@ -550,7 +560,6 @@
 			isa = PBXGroup;
 			children = (
 				092A2D171DBCA51C00650DE1 /* README.md */,
-				092A2D141DBCA51C00650DE1 /* CRImageGradientDemoVC.gif */,
 				092A2D121DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.h */,
 				092A2D131DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.m */,
 				092A2D151DBCA51C00650DE1 /* CRImageGradientDemoVC.h */,
@@ -563,7 +572,6 @@
 		092A2D181DBCA51C00650DE1 /* S0003_Gif */ = {
 			isa = PBXGroup;
 			children = (
-				092A2D1F1DBCA51C00650DE1 /* GifPlay.gif */,
 				092A2D1B1DBCA51C00650DE1 /* GifDemoInfoModel.h */,
 				092A2D1C1DBCA51C00650DE1 /* GifDemoInfoModel.m */,
 				092A2D191DBCA51C00650DE1 /* CRYFGifDemoViewController.h */,
@@ -579,7 +587,6 @@
 			isa = PBXGroup;
 			children = (
 				09EE9BA11DBCEA5A00BD81A2 /* README.md */,
-				092A2D431DBCA54C00650DE1 /* CRMusicCardDemoVC.gif */,
 				092A2D411DBCA54C00650DE1 /* CRMusicCardDemoInfoModel.h */,
 				092A2D421DBCA54C00650DE1 /* CRMusicCardDemoInfoModel.m */,
 				092A2D3B1DBCA54C00650DE1 /* CRBottomPageView.h */,
@@ -601,7 +608,6 @@
 			isa = PBXGroup;
 			children = (
 				092A2D5E1DBCA8DA00650DE1 /* README.md */,
-				092A2D5F1DBCA8DA00650DE1 /* WCLLoadingView.gif */,
 				092A2D611DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.h */,
 				092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */,
 				092A2D601DBCA8DA00650DE1 /* WCLLoadingView.swift */,
@@ -705,7 +711,6 @@
 			isa = PBXGroup;
 			children = (
 				09B519E11E73CE0D00065C27 /* README.md */,
-				09EE43E31E73DB47000DFF14 /* JHUD.gif */,
 				09B519E31E73CE4500065C27 /* CRJHUDDemoInfoModel.h */,
 				09B519E41E73CE4500065C27 /* CRJHUDDemoInfoModel.m */,
 				09B519E61E73CE5D00065C27 /* CRJHUDDemoVC.h */,
@@ -746,10 +751,29 @@
 			path = VCs/Manager;
 			sourceTree = "<group>";
 		};
+		09FAC1C31EA7C1DF0064D100 /* DemoGifs */ = {
+			isa = PBXGroup;
+			children = (
+				09FAC1C41EA7C1DF0064D100 /* C0001_CRMusicCardDemoVC.gif */,
+				09FAC1C51EA7C1DF0064D100 /* S0001_CRCardAnimation_20170322.gif */,
+				09FAC1C61EA7C1DF0064D100 /* S0002_CRGradientAnimation_20170322.gif */,
+				09FAC1C71EA7C1DF0064D100 /* S0003_GifPlay.gif */,
+				09FAC1C81EA7C1DF0064D100 /* S0004_WCLLoadingView_20170322.gif */,
+				09FAC1C91EA7C1DF0064D100 /* S0005_HZLaunchView_20170322.gif */,
+				09FAC1CA1EA7C1DF0064D100 /* S0006_CCWorm_20170322.gif */,
+				09FAC1CB1EA7C1DF0064D100 /* S0007_CRGatling_20170309.gif */,
+				09FAC1CC1EA7C1DF0064D100 /* S0008_JHUD_20170311.gif */,
+				09FAC1CD1EA7C1DF0064D100 /* S0009_WCLShineButton_20170322.gif */,
+				09FAC1CE1EA7C1DF0064D100 /* S0010_RollerCoasterLayer_20170312.gif */,
+				09FAC1CF1EA7C1DF0064D100 /* S0011_HJWCircleView.gif */,
+				09FAC1D01EA7C1DF0064D100 /* S0012_HJWWaterWave.gif */,
+			);
+			path = DemoGifs;
+			sourceTree = "<group>";
+		};
 		2577514D1DC25A790019D38B /* S0005_HZLaunchView */ = {
 			isa = PBXGroup;
 			children = (
-				257751541DC25B070019D38B /* HZLaunchView.gif */,
 				2577514E1DC25A790019D38B /* HZLaunchViewDemoInfoModel.h */,
 				2577514F1DC25A790019D38B /* HZLaunchViewDemoInfoModel.m */,
 				257751501DC25A790019D38B /* HZLaunchViewDemoVC.h */,
@@ -762,7 +786,6 @@
 			isa = PBXGroup;
 			children = (
 				262A75A81E8CE77600E8D9D6 /* README.md */,
-				262A75951E8CE0C600E8D9D6 /* HJWCircleView.gif */,
 				262A75871E8CDB7300E8D9D6 /* HJWCircleViewDemoInfoModel.h */,
 				262A75881E8CDB7300E8D9D6 /* HJWCircleViewDemoInfoModel.m */,
 				262A758D1E8CDBD000E8D9D6 /* HJWCircleViewDemoVC.h */,
@@ -775,7 +798,6 @@
 			isa = PBXGroup;
 			children = (
 				262A75AA1E8CE77D00E8D9D6 /* README.md */,
-				262A75931E8CE0B800E8D9D6 /* HJWWaterWave.gif */,
 				262A758A1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.h */,
 				262A758B1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.m */,
 				262A75901E8CDBE500E8D9D6 /* HJWWaterWaveDemoVC.h */,
@@ -787,7 +809,6 @@
 		527FF7331DD0E9270055026D /* S0007_CRGatling */ = {
 			isa = PBXGroup;
 			children = (
-				5247C4F71DD212320024DF8B /* GatlingProgress.gif */,
 				18D8B62B1DD80BB600C6545D /* CRGatlingView.h */,
 				18D8B62C1DD80BB600C6545D /* CRGatlingView.m */,
 				527FF7411DD0EBB60055026D /* CRGatlingModel.h */,
@@ -844,6 +865,7 @@
 				0993B46A1DA9C6650012F962 /* Base */,
 				09449E691E631D110008BD8F /* Request */,
 				0920032E1DAAA20B008266B8 /* Demo */,
+				09FAC1C31EA7C1DF0064D100 /* DemoGifs */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -903,7 +925,6 @@
 				9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */,
 				9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */,
 				9704F1EF1E7442C000604DFC /* README.md */,
-				9704F1F01E7442C000604DFC /* RollerCoasterLayer.gif */,
 			);
 			path = S0010_RollerCoasterLayer;
 			sourceTree = "<group>";
@@ -920,7 +941,6 @@
 			isa = PBXGroup;
 			children = (
 				9704F1E71E7432DC00604DFC /* README.md */,
-				9704F1D91E73F06E00604DFC /* WCLShineButton.gif */,
 				9704F1D31E73ECAE00604DFC /* CRWCLShineButtonModel.h */,
 				9704F1D41E73ECAF00604DFC /* CRWCLShineButtonModel.m */,
 				9704F1DB1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift */,
@@ -931,7 +951,6 @@
 		ED36EAC91DD2AF9A0050416B /* S0006_CCWormHUD */ = {
 			isa = PBXGroup;
 			children = (
-				ED36EACA1DD2AF9A0050416B /* a-diligent-worm-in-iOS.gif */,
 				ED36EACB1DD2AF9A0050416B /* CCWormHUDDemoInfoModel.h */,
 				ED36EACC1DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m */,
 				ED36EACD1DD2AF9A0050416B /* CCWormHUDDemoVC.h */,
@@ -961,7 +980,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CRAnimation_Example" */;
 			buildPhases = (
-				2E9DD0AABBBEF62BF446FD8F /* 📦 Check Pods Manifest.lock */,
+				2E9DD0AABBBEF62BF446FD8F /* [CP] Check Pods Manifest.lock */,
 				F61F1CF0251B4B6FE81CC64F /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
@@ -984,7 +1003,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CRAnimation_Tests" */;
 			buildPhases = (
-				D928B7F54E5DB9325D952D5E /* 📦 Check Pods Manifest.lock */,
+				D928B7F54E5DB9325D952D5E /* [CP] Check Pods Manifest.lock */,
 				2B96F60F53AEFA467AAE7928 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
@@ -1049,17 +1068,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09FAC1D71EA7C1DF0064D100 /* S0006_CCWorm_20170322.gif in Resources */,
+				09FAC1DC1EA7C1DF0064D100 /* S0011_HJWCircleView.gif in Resources */,
+				09FAC1DD1EA7C1DF0064D100 /* S0012_HJWWaterWave.gif in Resources */,
+				09FAC1D51EA7C1DF0064D100 /* S0004_WCLLoadingView_20170322.gif in Resources */,
+				09FAC1D61EA7C1DF0064D100 /* S0005_HZLaunchView_20170322.gif in Resources */,
 				3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */,
+				09FAC1D31EA7C1DF0064D100 /* S0002_CRGradientAnimation_20170322.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				262A75961E8CE0C600E8D9D6 /* HJWCircleView.gif in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x in Resources */,
 				3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */,
+				09FAC1D11EA7C1DF0064D100 /* C0001_CRMusicCardDemoVC.gif in Resources */,
+				09FAC1DB1EA7C1DF0064D100 /* S0010_RollerCoasterLayer_20170312.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork in Resources */,
-				262A75941E8CE0B800E8D9D6 /* HJWWaterWave.gif in Resources */,
+				09FAC1D21EA7C1DF0064D100 /* S0001_CRCardAnimation_20170322.gif in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				09FAC1D41EA7C1DF0064D100 /* S0003_GifPlay.gif in Resources */,
+				09FAC1D91EA7C1DF0064D100 /* S0008_JHUD_20170311.gif in Resources */,
+				09FAC1D81EA7C1DF0064D100 /* S0007_CRGatling_20170309.gif in Resources */,
 				092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */,
 				ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */,
+				09FAC1DA1EA7C1DF0064D100 /* S0009_WCLShineButton_20170322.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1134,19 +1164,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2E9DD0AABBBEF62BF446FD8F /* 📦 Check Pods Manifest.lock */ = {
+		2E9DD0AABBBEF62BF446FD8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3D818A69F63D3B8F0D4CA93E /* 📦 Copy Pods Resources */ = {
@@ -1209,19 +1239,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D928B7F54E5DB9325D952D5E /* 📦 Check Pods Manifest.lock */ = {
+		D928B7F54E5DB9325D952D5E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F61F1CF0251B4B6FE81CC64F /* [CP] Check Pods Manifest.lock */ = {
@@ -1492,7 +1522,7 @@
 				GCC_PREFIX_HEADER = "CRAnimation/CRAnimation-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
-					"CONTRIBUTE_STATUS=0",
+					"CONTRIBUTE_STATUS=1",
 				);
 				INFOPLIST_FILE = "CRAnimation/CRAnimation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

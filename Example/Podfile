@@ -11,6 +11,7 @@ target 'CRAnimation_Example' do
   pod 'JHUD'
   pod 'WCLShineButton'
   pod 'RxWebViewController'
+  pod 'RZTransitions'
   pod 'BearSkill', :git => 'https://github.com/BearRan/BearSkill.git', :commit => '81b9c9a'
 
   target 'CRAnimation_Tests' do

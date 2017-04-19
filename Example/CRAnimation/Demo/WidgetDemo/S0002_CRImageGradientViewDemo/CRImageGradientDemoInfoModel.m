@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"CRImageGradientDemoVC";
-    self.demoGifName    = @"CRImageGradientDemoVC.gif";
+    self.demoGifName    = @"S0002_CRGradientAnimation_20170322.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0002";
     self.demoName       = @"CRImageGradientView";

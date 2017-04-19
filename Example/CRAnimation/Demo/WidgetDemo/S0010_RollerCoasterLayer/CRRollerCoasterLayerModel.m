@@ -27,7 +27,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"_TtC19CRAnimation_Example22CRRollerCoasterLayerVC";
-    self.demoGifName    = @"RollerCoasterLayer.gif";
+    self.demoGifName    = @"S0010_RollerCoasterLayer_20170312.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S00010";
     self.demoName       = @"RollerCoasterLayer";
