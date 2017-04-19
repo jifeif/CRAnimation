@@ -1,9 +1,9 @@
 [TOC]
 
 # S0005_HZLaunchView
-<img src="http://oftcdgt2m.bkt.clouddn.com/S0005/HZLaunchView.gif" width=200 />
+<img src="http://omk22jt2z.bkt.clouddn.com/S0005_HZLaunchView_20170322.gif" width=200 />
 
-##简介：
+## 简介：
 HZLaunchVies，用CAAnimation写的Launch动画，供大家学习交流使用，已封装好也可以用到项目里面当Launch动画
 
 | demo信息    | 详情                      |

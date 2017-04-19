@@ -1,5 +1,5 @@
 # S0002_CRImageGradientViewDemo
-<img src="CRImageGradientDemoVC.gif" width=200 />
+<img src="http://omk22jt2z.bkt.clouddn.com/S0002_CRGradientAnimation_20170322.gif" width=200 />
 
 ## 简介：
 图片渐变切换效果

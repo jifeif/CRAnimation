@@ -1,5 +1,5 @@
 # S0001_CRCardAnimationViewDemo
-<img src="CRCardAnimationViewDemoVC.gif" width=200 />
+<img src="http://omk22jt2z.bkt.clouddn.com/S0001_CRCardAnimation_20170322.gif" width=200 />
 
 ## 简介：
 卡片切换动效

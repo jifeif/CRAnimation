@@ -67,7 +67,7 @@ Use:
 
 ```
 
-###Class method
+### Class method
 ```
 /**
 *  Wave type, default is kFillWave.
