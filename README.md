@@ -1,5 +1,6 @@
-CRAnimation  动效计划
-=============================================
+<p align="center" >
+<img src="https://github.com/iXiaoChuan/CRAnimation/raw/master/READMEResource/newTitleImage.png" alt="CRAnimation" title="CRAnimation">
+</p>
 
 [![Join the chat at https://gitter.im/CRAnimation/Lobby](https://badges.gitter.im/CRAnimation/Lobby.svg)](https://gitter.im/CRAnimation/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
