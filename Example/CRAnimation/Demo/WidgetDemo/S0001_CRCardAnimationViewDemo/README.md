@@ -1,7 +1,7 @@
 # S0001_CRCardAnimationViewDemo
 <img src="CRCardAnimationViewDemoVC.gif" width=200 />
 
-##简介：
+## 简介：
 卡片切换动效
 
 | demo信息    | 详情                  |
@@ -13,9 +13,9 @@
 | 源gitHub     | 无                    |
 | 其他说明     | 无                    |
 
-##使用：
+## 使用：
 
-###Pod
+### Pod
 >pod ‘CRAnimation/Widget/CRCardAnimationView’
 
 ```
@@ -32,7 +32,7 @@ cardAnimationView.cardCycleShow = YES;
 [self.view addSubview:_cardAnimationView];
 ```
 
-###代理方法
+### 代理方法
 ```
 #pragma mark - CardAnimationView delegate
 

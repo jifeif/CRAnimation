@@ -1,7 +1,7 @@
 # S0002_CRImageGradientViewDemo
 <img src="CRImageGradientDemoVC.gif" width=200 />
 
-##简介：
+## 简介：
 图片渐变切换效果
 
 | demo信息    | 详情                  |
@@ -13,9 +13,9 @@
 | 源gitHub    | 无                    |
 | 其他说明    | 无                    |
 
-##使用：
+## 使用：
 
-###Pod
+### Pod
 >pod ‘CRAnimation/Widget/CRImageGradientView’
 
 ```

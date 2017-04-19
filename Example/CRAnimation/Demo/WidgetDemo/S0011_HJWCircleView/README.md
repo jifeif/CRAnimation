@@ -1,7 +1,7 @@
 # S0011_HJWCircleView
 <img src="http://omk22jt2z.bkt.clouddn.com/S0011_HJWCircleView.gif" width=200 />
 
-##简介：
+## 简介：
 HJWCircleView 是一个类似iOS系统软件GameCenter中圆球的浮动效果的视图
 
 | demo信息    | 详情                                                      |
@@ -13,12 +13,12 @@ HJWCircleView 是一个类似iOS系统软件GameCenter中圆球的浮动效果�
 | 源gitHub    | [https://github.com/SmallLion](https://github.com/SmallLion)   |
 | 其他说明     | [https://github.com/SmallLion](https://github.com/SmallLion)   |
 
-##使用：
+## 使用：
 
-###Pod
+### Pod
 >pod ‘CRAnimation/Widget/HJWCircleView’
 
-###Usage:
+### Usage:
 ```
 HJWCircleView * circle = [[HJWCircleView alloc] initWithFrame:CGRectMake(80, self.view.centerY / 2 + 80, 35, 35)];
 circle.color = [UIColor colorWithHexString:@"57d0c9" alpha:1.f] ;
@@ -27,7 +27,7 @@ circle.color = [UIColor colorWithHexString:@"57d0c9" alpha:1.f] ;
 
 ```
 
-###Class method
+### Class method
 ```
 /**
 *  Cicle Color.

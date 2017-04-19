@@ -1,7 +1,7 @@
 # S0012_HJWWaterWave
 <img src="http://omk22jt2z.bkt.clouddn.com/S0012_HJWWaterWave.gif" width=200 />
 
-##简介：
+## 简介：
 HJWWaterWave 是一个用drawRect以及CAReplicatorLayer绘制动态水波纹视图
 
 - DrawRectObject
@@ -20,12 +20,12 @@ This is a tool, to help you realize the effects what is repeat moving.
 | 源gitHub    | [https://github.com/SmallLion](https://github.com/SmallLion)   |
 | 其他说明     | [https://github.com/SmallLion](https://github.com/SmallLion)   |
 
-##使用：
+## 使用：
 
-###Pod
+### Pod
 >pod ‘CRAnimation/Widget/HJWWaterWave’
 
-###Usage:
+### Usage:
 ```
 /**
 Use:

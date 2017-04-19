@@ -2,7 +2,7 @@
 # S00010_RollerCoasterLayer
 ![](http://ww4.sinaimg.cn/large/006tNbRwgw1f53ahi8vslg30if0a8e81)
 
-##简介：
+## 简介：
 RollerCoasterLayer，用CAAnimation写的动画，供大家学习交流使用
 
 |   demo信息   | 详情                                       |

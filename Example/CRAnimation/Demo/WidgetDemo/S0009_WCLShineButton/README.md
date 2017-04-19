@@ -1,8 +1,8 @@
 [TOC]
 # S0009_WCLShineButton
-![](WCLShineButton.gif)
+<img src="http://omk22jt2z.bkt.clouddn.com/S0009_WCLShineButton_20170322.gif" width=200 />
 
-##简介：
+## 简介：
 WCLShineButton，用CAAnimation写的按钮动画，供大家学习交流使用，已封装好也可以用到项目里面使用
 
 |   demo信息   | 详情                                       |

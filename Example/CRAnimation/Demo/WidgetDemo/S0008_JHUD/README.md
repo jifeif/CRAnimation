@@ -1,7 +1,7 @@
 # S0008_JHUD
 <img src="http://omk22jt2z.bkt.clouddn.com/S0008_JHUD_20170311.gif" width=200 />
 
-##简介：
+## 简介：
 JHUD 是一个用于在加载数据时全屏显示的HUD
 
 | demo信息    | 详情                                                      |
@@ -13,12 +13,12 @@ JHUD 是一个用于在加载数据时全屏显示的HUD
 | 源gitHub    | <a href="https://github.com/Jinxiansen/JHUD" target="_blank">https://github.com/Jinxiansen/JHUD</a>  |
 | 其他说明     | <a href="http://www.jianshu.com/p/fc07f027680c" target="_blank">http://www.jianshu.com/p/fc07f027680c</a> |
 
-##使用：
+## 使用：
 
-###Pod
+### Pod
 >pod ‘JHUD’
 
-###Usage:
+### Usage:
 ```
 hudView = [[JHUD alloc]initWithFrame:self.view.bounds];
 
