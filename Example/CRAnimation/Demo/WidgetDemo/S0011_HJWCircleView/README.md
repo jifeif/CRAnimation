@@ -1,5 +1,5 @@
 # S0011_HJWCircleView
-<img src="HJWCircleView.gif" width=200 />
+<img src="http://omk22jt2z.bkt.clouddn.com/S0011_HJWCircleView.gif" width=200 />
 
 ##简介：
 HJWCircleView 是一个类似iOS系统软件GameCenter中圆球的浮动效果的视图

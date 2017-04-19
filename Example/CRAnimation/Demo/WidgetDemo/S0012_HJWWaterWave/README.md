@@ -1,5 +1,5 @@
 # S0012_HJWWaterWave
-<img src="HJWWaterWave.gif" width=200 />
+<img src="http://omk22jt2z.bkt.clouddn.com/S0012_HJWWaterWave.gif" width=200 />
 
 ##简介：
 HJWWaterWave 是一个用drawRect以及CAReplicatorLayer绘制动态水波纹视图
