@@ -1,6 +1,5 @@
-<p align="center" >
-  <img src="https://github.com/iXiaoChuan/CRAnimation/raw/master/READMEResource/newTitleImage.png" alt="CRAnimation" title="CRAnimation">
-</p>
+CRAnimation  动效计划
+=============================================
 
 [![Join the chat at https://gitter.im/CRAnimation/Lobby](https://badges.gitter.im/CRAnimation/Lobby.svg)](https://gitter.im/CRAnimation/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -13,11 +12,11 @@ CR\_简书主页:<a href="http://www.jianshu.com/p/66362f927086">如何加入CRA
 CR\_AppleStore:<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">体验CRAnimation动效APP</a>
 
 <!--<left>
-<img src="http://oftcdgt2m.bkt.clouddn.com/Base/TitleImage1.png">
-</left>-->
+ <img src="http://oftcdgt2m.bkt.clouddn.com/Base/TitleImage1.png">
+ </left>-->
 
 <!--### 扫描二维码下载<a href="https://itunes.apple.com/cn/app/cr%E5%8A%A8%E6%95%88-%E4%BA%A7%E5%93%81ui%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88%E6%8A%80%E6%9C%AF%E9%83%BD%E5%9C%A8%E8%BF%99/id1217923882?mt=8">CR动效</a>
-<img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>-->
+ <img src="http://ondgwaa89.bkt.clouddn.com/CR-QRImg-Middle.png" width="150"/>-->
 
 ---
 ### 项目简介
@@ -52,12 +51,18 @@ $ pod install
 
 | 示例信息  | 示例动图 |
 | ---------- | ----------- | 
-| S0001 <br> [CRCardAnimationView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0001_CRCardAnimationViewDemo) <br> 卡片切换动效 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0001/CRCardAnimationViewDemoVC1.gif" width=150 /> |
-| S0002 <br> [CRImageGradientView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0002_CRImageGradientViewDemo) <br> ImageView过渡切换动效 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0002/CRImageGradientDemoVC2.gif" width=150 /> |
-| S0004 <br> [WCLLoadingView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0004_WCLLoadingView) <br> Slack 的 Loading 动画 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0004/WCLLoadingView.gif" width=150 /> |
-| S0005 <br> [HZLaunchView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0005_HZLaunchView) <br> Twitter 的 Launch 动画 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0005/HZLaunchView.gif" width=150 /> |
-| S0009 <br> [WCLShineButton](Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton) <br> 类似太阳动画的按钮 | <img src="Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton/WCLShineButton.gif" width=150 /> |
-| S00010 <br> [RollerCoasterLayer](Example/CRAnimation/Demo/WidgetDemo/S0010_RollerCoasterLayer) <br> 纯代码实现过山车动画 | <img src="http://ww4.sinaimg.cn/large/006tNbRwgw1f53ahi8vslg30if0a8e81" width=300 /> |
+| S0001 <br> [CRCardAnimationView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0001_CRCardAnimationViewDemo) <br> 卡片切换动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0001_CRCardAnimation_20170322.gif" width=150 /> |
+| S0002 <br> [CRImageGradientView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0002_CRImageGradientViewDemo) <br> ImageView过渡切换动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0002_CRGradientAnimation_20170322.gif" width=150 /> |
+| S0004 <br> [WCLLoadingView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0004_WCLLoadingView) <br> Slack 的 Loading 动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0004_WCLLoadingView_20170420.gif" width=150 /> |
+| S0005 <br> [HZLaunchView](https://github.com/BearRan/CRAnimation/tree/master/Example/CRAnimation/Demo/WidgetDemo/S0005_HZLaunchView) <br> Twitter 的 Launch 动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0005_HZLaunchView_20170322.gif" width=150 /> |
+| S0006 <br> CCWorm <br> 虫儿跑动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0006_CCWorm_20170322.gif" width=150 /> |
+| S0007 <br> CRGatling <br> 加特林动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0007_CRGatling_20170309.gif" width=150 /> |
+| S0008 <br> JHUD <br> JHUD动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0008_JHUD_20170311.gif" width=150 /> |
+| S0009 <br> [WCLShineButton](Example/CRAnimation/Demo/WidgetDemo/S0009_WCLShineButton) <br> 类似太阳动画的按钮 | <img src="http://omk22jt2z.bkt.clouddn.com/S0009_WCLShineButton_20170322.gif" width=150 /> |
+| S00010 <br> [RollerCoasterLayer](http://omk22jt2z.bkt.clouddn.com/S0010_RollerCoasterLayer_20170312.gif) <br> 纯代码实现过山车动画 | <img src="http://ww4.sinaimg.cn/large/006tNbRwgw1f53ahi8vslg30if0a8e81" width=300 /> |
+| S0011 <br> [HJWCircleView](Example/CRAnimation/Demo/WidgetDemo/S0011_HJWCircleView) <br> 气泡浮动动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0011_HJWCircleView.gif" width=150 /> |
+| S0012 <br> [HJWWaterWave](Example/CRAnimation/Demo/WidgetDemo/S0012_HJWWaterWave) <br> 水波纹动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0012_HJWWaterWave.gif" width=150 /> |
+
 <!--|  S0003 <br> Gif demo <br> Gif播放控件 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0003/GifPlay1.gif" width=150 /> |-->
 
 
