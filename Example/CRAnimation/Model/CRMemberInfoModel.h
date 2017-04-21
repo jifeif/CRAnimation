@@ -9,6 +9,7 @@
 typedef enum {
     kProfessionTypeiOSDeveloper = 1,    //开发者
     kProfessionTypeDesigner = 2,        //UI设计师
+    kProfessionTypeTeam = 3,            //团队
 }ProfessionType;
 
 #import <Foundation/Foundation.h>

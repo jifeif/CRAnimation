@@ -15,8 +15,9 @@
     @import Foundation;
 #endif
 
-#import "UIView+BearSet.h"
-#import "BearConstants.h"
+#import <BearSkill/UIView+BearSet.h>
+#import <BearSkill/BearConstants.h>
+#import <BearSkill/BearDefines.h>
 #import "CRDefines.h"
 #import "CRConstants.h"
 #import "CRCommon.h"

@@ -95,6 +95,9 @@
 		09FAC1F61EA7C6550064D100 /* S0011_HJWCircleView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E91EA7C6550064D100 /* S0011_HJWCircleView.gif */; };
 		09FAC1F71EA7C6550064D100 /* S0012_HJWWaterWave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */; };
 		09FAC1F91EA7CB220064D100 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC1F81EA7CB220064D100 /* README.md */; };
+		09FAC2031EAA608A0064D100 /* FoldingTabBarDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC2021EAA608A0064D100 /* FoldingTabBarDemoInfoModel.m */; };
+		09FAC2061EAA60A90064D100 /* FoldingTabBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC2051EAA60A90064D100 /* FoldingTabBarDemoVC.m */; };
+		09FAC2081EAA60BA0064D100 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC2071EAA60BA0064D100 /* README.md */; };
 		18D8B62D1DD80BB600C6545D /* CRGatlingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8B62C1DD80BB600C6545D /* CRGatlingView.m */; };
 		257751521DC25A790019D38B /* HZLaunchViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2577514F1DC25A790019D38B /* HZLaunchViewDemoInfoModel.m */; };
 		257751531DC25A790019D38B /* HZLaunchViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 257751511DC25A790019D38B /* HZLaunchViewDemoVC.m */; };
@@ -300,6 +303,11 @@
 		09FAC1E91EA7C6550064D100 /* S0011_HJWCircleView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0011_HJWCircleView.gif; sourceTree = "<group>"; };
 		09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0012_HJWWaterWave.gif; sourceTree = "<group>"; };
 		09FAC1F81EA7CB220064D100 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09FAC2011EAA608A0064D100 /* FoldingTabBarDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBarDemoInfoModel.h; sourceTree = "<group>"; };
+		09FAC2021EAA608A0064D100 /* FoldingTabBarDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingTabBarDemoInfoModel.m; sourceTree = "<group>"; };
+		09FAC2041EAA60A90064D100 /* FoldingTabBarDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBarDemoVC.h; sourceTree = "<group>"; };
+		09FAC2051EAA60A90064D100 /* FoldingTabBarDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingTabBarDemoVC.m; sourceTree = "<group>"; };
+		09FAC2071EAA60BA0064D100 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0EE5779AF28D42163CC3E896 /* Pods-CRAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Example/Pods-CRAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		18D8B62B1DD80BB600C6545D /* CRGatlingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGatlingView.h; sourceTree = "<group>"; };
 		18D8B62C1DD80BB600C6545D /* CRGatlingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGatlingView.m; sourceTree = "<group>"; };
@@ -528,6 +536,7 @@
 				9704F1EB1E7442C000604DFC /* S0010_RollerCoasterLayer */,
 				26C7E4451E8BC81A007A6BB5 /* S0011_HJWCircleView */,
 				26C7E4461E8BC81A007A6BB5 /* S0012_HJWWaterWave */,
+				09FAC2001EAA60630064D100 /* S0013_FoldingTabBar */,
 			);
 			path = WidgetDemo;
 			sourceTree = "<group>";
@@ -771,6 +780,18 @@
 				09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */,
 			);
 			path = DemoGifs;
+			sourceTree = "<group>";
+		};
+		09FAC2001EAA60630064D100 /* S0013_FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				09FAC2071EAA60BA0064D100 /* README.md */,
+				09FAC2011EAA608A0064D100 /* FoldingTabBarDemoInfoModel.h */,
+				09FAC2021EAA608A0064D100 /* FoldingTabBarDemoInfoModel.m */,
+				09FAC2041EAA60A90064D100 /* FoldingTabBarDemoVC.h */,
+				09FAC2051EAA60A90064D100 /* FoldingTabBarDemoVC.m */,
+			);
+			path = S0013_FoldingTabBar;
 			sourceTree = "<group>";
 		};
 		2577514D1DC25A790019D38B /* S0005_HZLaunchView */ = {
@@ -1302,6 +1323,7 @@
 				ED36EAD31DD2AF9B0050416B /* CCWormHUDDemoVC.m in Sources */,
 				0900808A1E4CAD6800AE60A5 /* CRProductionBaseVC.m in Sources */,
 				262A75921E8CDBE500E8D9D6 /* HJWWaterWaveDemoVC.m in Sources */,
+				09FAC2031EAA608A0064D100 /* FoldingTabBarDemoInfoModel.m in Sources */,
 				09B519DF1E739EF400065C27 /* CRDefines.m in Sources */,
 				09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */,
 				092A2D2B1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m in Sources */,
@@ -1356,8 +1378,10 @@
 				092A2D4A1DBCA54C00650DE1 /* CRCardViewFront.m in Sources */,
 				3734D3991E97614D0022D537 /* ZJCWaveTabarController.m in Sources */,
 				0950D5B11E54B0D4009214E2 /* CRParticipateMembersView.m in Sources */,
+				09FAC2061EAA60A90064D100 /* FoldingTabBarDemoVC.m in Sources */,
 				09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */,
 				262A758C1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.m in Sources */,
+				09FAC2081EAA60BA0064D100 /* README.md in Sources */,
 				092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */,
 				973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */,
 				09A63EAC1E7849A000E93AEA /* CRBaseWebVC.m in Sources */,
