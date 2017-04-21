@@ -62,7 +62,11 @@
     tabBarController.selectedIndex = 2;
     tabBarController.centerButtonImage = [UIImage imageNamed:@"plus_icon"];
     tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:72.f/255.f green:211.f/255.f blue:178.f/255.f alpha:1.f];
+    tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight;
+    tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
     tabBarController.tabBarView.state = YALTabBarStateCollapsed;
+    tabBarController.tabBarView.tabBarViewEdgeInsets = UIEdgeInsetsMake(0, 14.f, 7.f, 14.f);
+    tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
     
     //  ViewControllers
     NSMutableArray *viewControllers = [NSMutableArray new];
