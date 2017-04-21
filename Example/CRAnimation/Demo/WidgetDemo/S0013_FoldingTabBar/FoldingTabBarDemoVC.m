@@ -9,6 +9,7 @@
 #import "FoldingTabBarDemoVC.h"
 #import "YALFoldingTabBarController.h"
 #import "YALTabBarItem.h"
+#import "YALAnimatingTabBarConstants.h"
 #import <BearSkill/BearConstants.h>
 
 @interface FoldingTabBarDemoVC ()
@@ -57,12 +58,20 @@
                                                      rightItemImage:nil];
     tabBarController.rightBarItems = @[item3, item4];
     
+    //  Custom Config
+    tabBarController.selectedIndex = 2;
+    tabBarController.centerButtonImage = [UIImage imageNamed:@"plus_icon"];
+    tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:72.f/255.f green:211.f/255.f blue:178.f/255.f alpha:1.f];
+    tabBarController.tabBarView.state = YALTabBarStateCollapsed;
+    
+    //  ViewControllers
+    NSMutableArray *viewControllers = [NSMutableArray new];
     for (int i = 0; i < 4; i++) {
         CRProductionBaseVC *testVC = [[CRProductionBaseVC alloc] init];
         testVC.view.backgroundColor = [BearConstants randomColor];
+        [viewControllers addObject:testVC];
     }
-//    self.view.window.rootViewController = tabBarController;
-//    return;
+    tabBarController.viewControllers = viewControllers;
     
     tabBarController.view.frame = self.contentView.bounds;
     [self addChildViewController:tabBarController];
