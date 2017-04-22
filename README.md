@@ -63,11 +63,6 @@ $ pod install
 | S00010 <br> [RollerCoasterLayer](Example/CRAnimation/Demo/WidgetDemo/S0010_RollerCoasterLayer) <br> 纯代码实现过山车动画 | <img src="http://ww4.sinaimg.cn/large/006tNbRwgw1f53ahi8vslg30if0a8e81" width=300 /> |
 | S0011 <br> [HJWCircleView](Example/CRAnimation/Demo/WidgetDemo/S0011_HJWCircleView) <br> 气泡浮动动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0011_HJWCircleView.gif" width=150 /> |
 | S0012 <br> [HJWWaterWave](Example/CRAnimation/Demo/WidgetDemo/S0012_HJWWaterWave) <br> 水波纹动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0012_HJWWaterWave.gif" width=150 /> |
-
-| S0012 <br> [Test](Example/CRAnimation/Demo/WidgetDemo/S0012_HJWWaterWave) <br> 水波纹动画 | <p align="center" >
-<img src="http://omk22jt2z.bkt.clouddn.com/S0012_HJWWaterWave.gif" alt="CRAnimation" title="CRAnimation" width="150">
-</p> |
-
 | S0013 <br> [FoldingTabBar](Example/CRAnimation/Demo/WidgetDemo/S0013_FoldingTabBar) <br> 折叠TabBar动画 | <img src="https://d13yacurqjgara.cloudfront.net/users/495792/screenshots/2003376/tab_bar_animation_fin-02.gif" height=267 /> |
 
 <!--|  S0003 <br> Gif demo <br> Gif播放控件 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0003/GifPlay1.gif" width=150 /> |-->
