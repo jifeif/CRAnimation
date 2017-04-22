@@ -80,6 +80,7 @@
 		09E40CBE1E6C4E210042B5AE /* CRGetMemebersListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
+		09EF431C1EAAFC5400825254 /* S0013_FoldingTabBar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */; };
 		09F45A711E76FA8500083387 /* CRMemeberTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F45A701E76FA8400083387 /* CRMemeberTagsView.m */; };
 		09FAC1EB1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DE1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif */; };
 		09FAC1EC1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DF1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif */; };
@@ -287,6 +288,7 @@
 		09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGetMemebersListRequest.m; sourceTree = "<group>"; };
 		09EE9B9F1DBCE2E400BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		09EE9BA11DBCEA5A00BD81A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0013_FoldingTabBar.gif; sourceTree = "<group>"; };
 		09F45A6F1E76FA8400083387 /* CRMemeberTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemeberTagsView.h; sourceTree = "<group>"; };
 		09F45A701E76FA8400083387 /* CRMemeberTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMemeberTagsView.m; sourceTree = "<group>"; };
 		09FAC1DE1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = C0001_CRMusicCardDemoVC.gif; sourceTree = "<group>"; };
@@ -778,6 +780,7 @@
 				09FAC1E81EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif */,
 				09FAC1E91EA7C6550064D100 /* S0011_HJWCircleView.gif */,
 				09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */,
+				09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */,
 			);
 			path = DemoGifs;
 			sourceTree = "<group>";
@@ -1101,6 +1104,7 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x in Resources */,
 				3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */,
+				09EF431C1EAAFC5400825254 /* S0013_FoldingTabBar.gif in Resources */,
 				09FAC1EB1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork in Resources */,
 				09FAC1F51EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif in Resources */,

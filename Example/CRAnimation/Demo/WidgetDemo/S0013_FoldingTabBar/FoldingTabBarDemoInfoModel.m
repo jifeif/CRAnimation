@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"FoldingTabBarDemoVC";
-    self.demoGifName    = @"S0012_HJWWaterWave.gif";
+    self.demoGifName    = @"S0013_FoldingTabBar.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0013";
     self.demoName       = @"FoldingTabBar";
