@@ -52,6 +52,7 @@
     _mainTableView = [[UITableView alloc] initWithFrame:self.contentView.bounds];
     _mainTableView.delegate = self;
     _mainTableView.dataSource = self;
+    _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.contentView addSubview:_mainTableView];
     
     [self setupRefreshControl];
