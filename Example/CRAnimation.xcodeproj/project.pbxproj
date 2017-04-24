@@ -21,6 +21,7 @@
 		0905B93F1EAE3F4B003FAA5D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0905B93E1EAE3F4B003FAA5D /* README.md */; };
 		0905B9421EAE4709003FAA5D /* RQShineLabelDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905B9411EAE4709003FAA5D /* RQShineLabelDemoInfoModel.m */; };
 		0905B9451EAE4722003FAA5D /* RQShineLabelDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905B9441EAE4722003FAA5D /* RQShineLabelDemoVC.m */; };
+		0905B9471EAE4F30003FAA5D /* S0015_RQShineLabel.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel.gif */; };
 		09109A7A1E533D7300031210 /* CRMemberDetailProductsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A791E533D7300031210 /* CRMemberDetailProductsView.m */; };
 		09109A7D1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A7C1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m */; };
 		09109A831E5351B300031210 /* CRFLAnimatiatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A821E5351B300031210 /* CRFLAnimatiatedImageView.m */; };
@@ -187,6 +188,7 @@
 		0905B9411EAE4709003FAA5D /* RQShineLabelDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabelDemoInfoModel.m; sourceTree = "<group>"; };
 		0905B9431EAE4722003FAA5D /* RQShineLabelDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQShineLabelDemoVC.h; sourceTree = "<group>"; };
 		0905B9441EAE4722003FAA5D /* RQShineLabelDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabelDemoVC.m; sourceTree = "<group>"; };
+		0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0015_RQShineLabel.gif; sourceTree = "<group>"; };
 		09109A781E533D7300031210 /* CRMemberDetailProductsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemberDetailProductsView.h; sourceTree = "<group>"; };
 		09109A791E533D7300031210 /* CRMemberDetailProductsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMemberDetailProductsView.m; sourceTree = "<group>"; };
 		09109A7B1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemberDetailProductCollectionViewCell.h; sourceTree = "<group>"; };
@@ -834,6 +836,7 @@
 				09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */,
 				09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */,
 				0905B93B1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif */,
+				0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel.gif */,
 			);
 			path = DemoGifs;
 			sourceTree = "<group>";
@@ -1160,6 +1163,7 @@
 				3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */,
 				09EF431C1EAAFC5400825254 /* S0013_FoldingTabBar.gif in Resources */,
 				09FAC1EB1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif in Resources */,
+				0905B9471EAE4F30003FAA5D /* S0015_RQShineLabel.gif in Resources */,
 				0905B93C1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork in Resources */,
 				09FAC1F51EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif in Resources */,

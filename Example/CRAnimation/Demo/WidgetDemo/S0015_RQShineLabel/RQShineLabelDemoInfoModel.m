@@ -13,11 +13,11 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"RQShineLabelDemoVC";
-    self.demoGifName    = @"S0014_PullToRefreshRentals.gif";
+    self.demoGifName    = @"S0015_RQShineLabel.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0015";
     self.demoName       = @"RQShineLabel";
-    self.demoSummary    = @"文字过度动画";
+    self.demoSummary    = @"文字过渡动画";
     self.codeLanguage   = kCRLanguageTypeObjectiveC;
     
     self.originGitHubAddress            = @"https://github.com/zipme/RQShineLabel";

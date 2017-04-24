@@ -2,8 +2,8 @@
 
 | demo信息    | 详情                                                      |
 |:-----------:|:---------------------------------------------------------:|
-| DemoName    | FoldingTabBar                                     |
-| CRID        | S00013                                                    |
+| DemoName    | PullToRefreshRentals                                     |
+| CRID        | S00014                                                    |
 | author      | [Yalantis组织](https://github.com/Yalantis)                       |
 | 源gitHub    | [Pull-to-Refresh.Rentals-IOS](https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS)   |
 

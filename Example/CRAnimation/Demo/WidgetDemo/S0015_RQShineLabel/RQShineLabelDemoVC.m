@@ -34,7 +34,6 @@
 
 - (void)createUI
 {
-    [super createUI];
     _textArray = @[
                    @"For something this complicated, it’s really hard to design products by focus groups. A lot of times, people don’t know what they want until you show it to them.",
                    @"We’re just enthusiastic about what we do.",

@@ -2,105 +2,79 @@
 
 | demo信息    | 详情                                                      |
 |:-----------:|:---------------------------------------------------------:|
-| DemoName    | FoldingTabBar                                     |
-| CRID        | S00013                                                    |
-| author      | [Yalantis组织](https://github.com/Yalantis)                       |
-| 源gitHub    | [Pull-to-Refresh.Rentals-IOS](https://github.com/Yalantis/Pull-to-Refresh.Rentals-iOS)   |
+| DemoName    | RQShineLabel                                     |
+| CRID        | S00015                                                    |
+| author      | [Zipme](https://github.com/zipme)                       |
+| 源gitHub    | [RQShineLabel](https://github.com/zipme/RQShineLabel)   |
 
-# Pull-to-Refresh.Rentals-IOS
+# RQShineLabel
 
-This project aims to provide a simple and customizable pull to refresh implementation.
+A UILabel subclass that lets you animate text similar to [Secret app](http://capptivate.co/?s=secret).
 
-[![Yalantis](https://raw.githubusercontent.com/Yalantis/Pull-to-Refresh.Rentals-iOS/master/badge_grey.png)](https://yalantis.com/?utm_source=github)
+![image](https://raw.githubusercontent.com/zipme/RQShineLabel/master/Screenshots/rqshinelabel.gif)
 
-Check this [project on Dribbble] (https://dribbble.com/shots/1650317-Pull-to-Refresh-Rentals)  
-Check this [project on Behance] (https://www.behance.net/gallery/20411445/Mobile-Animations-Interactions)  
+## Installation
 
-<img src="https://d13yacurqjgara.cloudfront.net/users/125056/screenshots/1650317/realestate-pull_1-2-3.gif" alt="alt text" style="width:200;height:200">
+#### CocoaPods
+RQShineLabel is available through [CocoaPods](http://cocoapods.org), to install
+it simply add the following line to your Podfile:
 
+pod "RQShineLabel"
 
-#Installing with [CocoaPods](https://cocoapods.org)
+#### Manually
+1. Download and drop ```RQShineLabel.h``` and ```RQShineLabel.m``` in your project.  
+2. Congratulations! 
 
-```ruby
-pod 'Pull-to-Refresh.Rentals-IOS', '~> 1.0'
+## Usage
+
+```objc
+- (void)viewDidLoad
+{
+self.shineLabel = [[RQShineLabel alloc] initWithFrame:CGRectMake(16, 16, 298, 300)];
+self.shineLabel.numberOfLines = 0;
+self.shineLabel.text = @"some text";
+self.shineLabel.backgroundColor = [UIColor clearColor];
+[self.shineLabel sizeToFit];
+self.shineLabel.center = self.view.center;
+[self.view addSubview:self.shineLabel];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+[super viewDidAppear:animated];
+[self.shineLabel shine];
+}
 ```
 
+### Other methods
 
-# Usage
-
-*For a working implementation, Have a look at the Sample Project - sample*
-
-1. Add folder YALSunnyRefreshControll to your project.
-2. Implement header and setup YALSunnyRefreshControl as a property.
-3. Init and associate YALSunnyRefreshControl with your UITableView or UICollectionView.
-4. Add images from Images.xcassets folder in Sample Project.
-
-```objective-c
-#import "YALSunnyRefreshControl.h"
-
-@property (nonatomic,strong) YALSunnyRefreshControl *sunnyRefreshControl;
-
-- (void)viewDidLoad {
-[super viewDidLoad];
-[self setupRefreshControl];
-}
-
-- (void)setupRefreshControl{
-self.sunnyRefreshControl = [YALSunnyRefreshControl new];
-[self.sunnyRefreshControl addTarget:self
-action:@selector(sunnyControlDidStartAnimation)
-forControlEvents:UIControlEventValueChanged];
-[self.sunnyRefreshControl attachToScrollView:self.tableView];
-}
-
-- (void)sunnyControlDidStartAnimation{
-// start loading something
-}
-
-- (IBAction)endAnimationHandle{
-[self.sunnyRefreshControl endRefreshing];
-}
-
+fade in with completion block
+```objc
+- (void)shineWithCompletion:(void (^)())completion;
 ```
 
-# Customization
+fade out
+```objc
+- (void)fadeOut
+```
 
-To customize drawables you can change:
-* sun.png - Sun image
-* sky.png - background image
-* buildings.png - foreground image
+fade out with completion block
+```objc
+- (void)fadeOutWithCompletion:(void (^)())completion;
+```
 
-# Compatibility
+## Requirements
 
-* IOS 7-9
+iOS >= 6.0
 
-# Changelog
 
-### Version: 1.0
+## Author
 
-* Initial Build
-
-#### Let us know!
-
-We’d be really happy if you send us links to your projects where you use our component. Just send an email to github@yalantis.com And do let us know if you have any questions or suggestion regarding the animation. 
-
-P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on how to make UI for iOS (Android) better than better. Stay tuned!
+gk
 
 ## License
 
-Copyright 2017, Yalantis
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+RQShineLabel is available under the MIT license. See the LICENSE file for more info.
 
 
 
