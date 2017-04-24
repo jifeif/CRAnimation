@@ -13,7 +13,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"RQShineLabelDemoVC";
-    self.demoGifName    = @"S0015_RQShineLabel.gif";
+    self.demoGifName    = @"S0015_RQShineLabel_20170424.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0015";
     self.demoName       = @"RQShineLabel";
