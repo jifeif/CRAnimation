@@ -14,7 +14,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"_TtC19CRAnimation_Example29NVActivityIndicatorViewDemoVC";
-    self.demoGifName    = @"S0004_WCLLoadingView_20170420.gif";
+    self.demoGifName    = @"S0016_NVActivityIndicatorView_20170425.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0016";
     self.demoName       = @"NVActivityIndicatorView";

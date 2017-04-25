@@ -66,8 +66,9 @@ $ pod install
 | S0013 <br> [FoldingTabBar](Example/CRAnimation/Demo/WidgetDemo/S0013_FoldingTabBar) <br> 折叠TabBar动画 | <img src="https://d13yacurqjgara.cloudfront.net/users/495792/screenshots/2003376/tab_bar_animation_fin-02.gif" height=267 /> |
 | S0014 <br> [PullToRefreshRentals](Example/CRAnimation/Demo/WidgetDemo/S0014_PullToRefreshRentals) <br> 折叠TabBar动画 | <img src="https://d13yacurqjgara.cloudfront.net/users/125056/screenshots/1650317/realestate-pull_1-2-3.gif" height=267 /> |
 | S0015 <br> [RQShineLabel](Example/CRAnimation/Demo/WidgetDemo/S0015_RQShineLabel) <br> 文字过渡动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0015_RQShineLabel_20170424.gif" height=267 /> |
+| S0016 <br> [NVActivityIndicatorView](Example/CRAnimation/Demo/WidgetDemo/S0016_NVActivityIndicatorView) <br> 各种实用的加载指示器 | <img src="http://omk22jt2z.bkt.clouddn.com/S0016_NVActivityIndicatorView_20170425.gif" height=267 /> |
 
-<!--|  S0003 <br> Gif demo <br> Gif播放控件 | <img src="http://oftcdgt2m.bkt.clouddn.com/S0003/GifPlay1.gif" width=150 /> |-->
+<!--|  S0003 <br> Gif demo <br> Gif播放控件 | <img src="http://omk22jt2z.bkt.clouddn.com/S0016_NVActivityIndicatorView_20170425.gif" width=150 /> |-->
 
 
 <!-----
@@ -88,6 +89,7 @@ $ pod install
 <br>
 <br>
 <br>
+
 
 
 
