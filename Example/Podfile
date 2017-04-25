@@ -15,6 +15,7 @@ target 'CRAnimation_Example' do
   pod 'Pull-to-Refresh.Rentals-IOS', '~> 1.0'
   pod 'BearSkill', :git => 'https://github.com/BearRan/BearSkill.git', :commit => 'c33d282'
   pod 'RQShineLabel'
+  pod 'NVActivityIndicatorView'
 
   target 'CRAnimation_Tests' do
     inherit! :search_paths

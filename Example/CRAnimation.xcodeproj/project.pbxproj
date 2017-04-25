@@ -17,11 +17,28 @@
 		090080A71E4CB9AE00AE60A5 /* CRMembersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 090080A61E4CB9AE00AE60A5 /* CRMembersVC.m */; };
 		0905B9381EACFB02003FAA5D /* PullToRefreshRentalsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905B9371EACFB02003FAA5D /* PullToRefreshRentalsCell.m */; };
 		0905B93A1EAD0356003FAA5D /* YALSunnyRefreshControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0905B9391EAD0356003FAA5D /* YALSunnyRefreshControl.xib */; };
-		0905B93C1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B93B1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif */; };
 		0905B93F1EAE3F4B003FAA5D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0905B93E1EAE3F4B003FAA5D /* README.md */; };
 		0905B9421EAE4709003FAA5D /* RQShineLabelDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905B9411EAE4709003FAA5D /* RQShineLabelDemoInfoModel.m */; };
 		0905B9451EAE4722003FAA5D /* RQShineLabelDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905B9441EAE4722003FAA5D /* RQShineLabelDemoVC.m */; };
-		0905B9471EAE4F30003FAA5D /* S0015_RQShineLabel_20170424.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel_20170424.gif */; };
+		0905B9481EAF984D003FAA5D /* C0001_CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DE1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif */; };
+		0905B9491EAF984D003FAA5D /* S0001_CRCardAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DF1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif */; };
+		0905B94A1EAF984D003FAA5D /* S0002_CRGradientAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E01EA7C6550064D100 /* S0002_CRGradientAnimation_20170322.gif */; };
+		0905B94B1EAF984D003FAA5D /* S0003_GifPlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E11EA7C6550064D100 /* S0003_GifPlay.gif */; };
+		0905B94C1EAF984D003FAA5D /* S0004_WCLLoadingView_20170420.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E21EA7C6550064D100 /* S0004_WCLLoadingView_20170420.gif */; };
+		0905B94D1EAF984D003FAA5D /* S0005_HZLaunchView_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E31EA7C6550064D100 /* S0005_HZLaunchView_20170322.gif */; };
+		0905B94E1EAF984D003FAA5D /* S0006_CCWorm_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E41EA7C6550064D100 /* S0006_CCWorm_20170322.gif */; };
+		0905B94F1EAF984D003FAA5D /* S0007_CRGatling_20170309.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E51EA7C6550064D100 /* S0007_CRGatling_20170309.gif */; };
+		0905B9501EAF984D003FAA5D /* S0008_JHUD_20170311.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E61EA7C6550064D100 /* S0008_JHUD_20170311.gif */; };
+		0905B9511EAF984D003FAA5D /* S0009_WCLShineButton_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E71EA7C6550064D100 /* S0009_WCLShineButton_20170322.gif */; };
+		0905B9521EAF984D003FAA5D /* S0010_RollerCoasterLayer_20170312.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E81EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif */; };
+		0905B9531EAF984D003FAA5D /* S0011_HJWCircleView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E91EA7C6550064D100 /* S0011_HJWCircleView.gif */; };
+		0905B9541EAF984D003FAA5D /* S0012_HJWWaterWave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */; };
+		0905B9551EAF984D003FAA5D /* S0013_FoldingTabBar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */; };
+		0905B9561EAF984D003FAA5D /* S0014_PullToRefreshRentals.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B93B1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif */; };
+		0905B9571EAF984D003FAA5D /* S0015_RQShineLabel_20170424.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel_20170424.gif */; };
+		0905B95A1EAF9CC2003FAA5D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0905B9591EAF9CC2003FAA5D /* README.md */; };
+		0905B95D1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905B95C1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.m */; };
+		0905B9631EAFA1B0003FAA5D /* NVActivityIndicatorViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905B9621EAFA1B0003FAA5D /* NVActivityIndicatorViewDemoVC.swift */; };
 		09109A7A1E533D7300031210 /* CRMemberDetailProductsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A791E533D7300031210 /* CRMemberDetailProductsView.m */; };
 		09109A7D1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A7C1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.m */; };
 		09109A831E5351B300031210 /* CRFLAnimatiatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109A821E5351B300031210 /* CRFLAnimatiatedImageView.m */; };
@@ -87,24 +104,10 @@
 		09E40CBE1E6C4E210042B5AE /* CRGetMemebersListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E40CBD1E6C4E210042B5AE /* CRGetMemebersListRequest.m */; };
 		09EE9BA01DBCE2E400BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9B9F1DBCE2E400BD81A2 /* README.md */; };
 		09EE9BA21DBCEA5A00BD81A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EE9BA11DBCEA5A00BD81A2 /* README.md */; };
-		09EF431C1EAAFC5400825254 /* S0013_FoldingTabBar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */; };
 		09EF43201EABA96F00825254 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09EF431F1EABA96F00825254 /* README.md */; };
 		09EF43231EABA98C00825254 /* PullToRefreshRentalsDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EF43221EABA98C00825254 /* PullToRefreshRentalsDemoInfoModel.m */; };
 		09EF43261EABA9A600825254 /* PullToRefreshRentalsDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EF43251EABA9A600825254 /* PullToRefreshRentalsDemoVC.m */; };
 		09F45A711E76FA8500083387 /* CRMemeberTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F45A701E76FA8400083387 /* CRMemeberTagsView.m */; };
-		09FAC1EB1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DE1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif */; };
-		09FAC1EC1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DF1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif */; };
-		09FAC1ED1EA7C6550064D100 /* S0002_CRGradientAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E01EA7C6550064D100 /* S0002_CRGradientAnimation_20170322.gif */; };
-		09FAC1EE1EA7C6550064D100 /* S0003_GifPlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E11EA7C6550064D100 /* S0003_GifPlay.gif */; };
-		09FAC1EF1EA7C6550064D100 /* S0004_WCLLoadingView_20170420.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E21EA7C6550064D100 /* S0004_WCLLoadingView_20170420.gif */; };
-		09FAC1F01EA7C6550064D100 /* S0005_HZLaunchView_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E31EA7C6550064D100 /* S0005_HZLaunchView_20170322.gif */; };
-		09FAC1F11EA7C6550064D100 /* S0006_CCWorm_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E41EA7C6550064D100 /* S0006_CCWorm_20170322.gif */; };
-		09FAC1F21EA7C6550064D100 /* S0007_CRGatling_20170309.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E51EA7C6550064D100 /* S0007_CRGatling_20170309.gif */; };
-		09FAC1F31EA7C6550064D100 /* S0008_JHUD_20170311.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E61EA7C6550064D100 /* S0008_JHUD_20170311.gif */; };
-		09FAC1F41EA7C6550064D100 /* S0009_WCLShineButton_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E71EA7C6550064D100 /* S0009_WCLShineButton_20170322.gif */; };
-		09FAC1F51EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E81EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif */; };
-		09FAC1F61EA7C6550064D100 /* S0011_HJWCircleView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E91EA7C6550064D100 /* S0011_HJWCircleView.gif */; };
-		09FAC1F71EA7C6550064D100 /* S0012_HJWWaterWave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */; };
 		09FAC1F91EA7CB220064D100 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC1F81EA7CB220064D100 /* README.md */; };
 		09FAC2031EAA608A0064D100 /* FoldingTabBarDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC2021EAA608A0064D100 /* FoldingTabBarDemoInfoModel.m */; };
 		09FAC2061EAA60A90064D100 /* FoldingTabBarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC2051EAA60A90064D100 /* FoldingTabBarDemoVC.m */; };
@@ -189,6 +192,10 @@
 		0905B9431EAE4722003FAA5D /* RQShineLabelDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQShineLabelDemoVC.h; sourceTree = "<group>"; };
 		0905B9441EAE4722003FAA5D /* RQShineLabelDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabelDemoVC.m; sourceTree = "<group>"; };
 		0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel_20170424.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0015_RQShineLabel_20170424.gif; sourceTree = "<group>"; };
+		0905B9591EAF9CC2003FAA5D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0905B95B1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVActivityIndicatorViewDemoInfoModel.h; sourceTree = "<group>"; };
+		0905B95C1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVActivityIndicatorViewDemoInfoModel.m; sourceTree = "<group>"; };
+		0905B9621EAFA1B0003FAA5D /* NVActivityIndicatorViewDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorViewDemoVC.swift; sourceTree = "<group>"; };
 		09109A781E533D7300031210 /* CRMemberDetailProductsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemberDetailProductsView.h; sourceTree = "<group>"; };
 		09109A791E533D7300031210 /* CRMemberDetailProductsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMemberDetailProductsView.m; sourceTree = "<group>"; };
 		09109A7B1E533ED500031210 /* CRMemberDetailProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMemberDetailProductCollectionViewCell.h; sourceTree = "<group>"; };
@@ -507,6 +514,17 @@
 			path = S0015_RQShineLabel;
 			sourceTree = "<group>";
 		};
+		0905B9581EAF9C97003FAA5D /* S0016_NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				0905B9591EAF9CC2003FAA5D /* README.md */,
+				0905B95B1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.h */,
+				0905B95C1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.m */,
+				0905B9621EAFA1B0003FAA5D /* NVActivityIndicatorViewDemoVC.swift */,
+			);
+			path = S0016_NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
 		09109A841E53596600031210 /* CodeWidgetVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +596,7 @@
 				09FAC2001EAA60630064D100 /* S0013_FoldingTabBar */,
 				09EF431E1EABA91800825254 /* S0014_PullToRefreshRentals */,
 				0905B93D1EAE3F38003FAA5D /* S0015_RQShineLabel */,
+				0905B9581EAF9C97003FAA5D /* S0016_NVActivityIndicatorView */,
 			);
 			path = WidgetDemo;
 			sourceTree = "<group>";
@@ -1151,32 +1170,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09FAC1F11EA7C6550064D100 /* S0006_CCWorm_20170322.gif in Resources */,
-				09FAC1F61EA7C6550064D100 /* S0011_HJWCircleView.gif in Resources */,
-				09FAC1F71EA7C6550064D100 /* S0012_HJWWaterWave.gif in Resources */,
 				3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */,
-				09FAC1F01EA7C6550064D100 /* S0005_HZLaunchView_20170322.gif in Resources */,
-				09FAC1ED1EA7C6550064D100 /* S0002_CRGradientAnimation_20170322.gif in Resources */,
 				0905B93A1EAD0356003FAA5D /* YALSunnyRefreshControl.xib in Resources */,
+				0905B94D1EAF984D003FAA5D /* S0005_HZLaunchView_20170322.gif in Resources */,
+				0905B9531EAF984D003FAA5D /* S0011_HJWCircleView.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x in Resources */,
+				0905B94F1EAF984D003FAA5D /* S0007_CRGatling_20170309.gif in Resources */,
 				3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */,
-				09EF431C1EAAFC5400825254 /* S0013_FoldingTabBar.gif in Resources */,
-				09FAC1EB1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif in Resources */,
-				0905B9471EAE4F30003FAA5D /* S0015_RQShineLabel_20170424.gif in Resources */,
-				0905B93C1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork in Resources */,
-				09FAC1F51EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif in Resources */,
-				09FAC1EC1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif in Resources */,
+				0905B94B1EAF984D003FAA5D /* S0003_GifPlay.gif in Resources */,
+				0905B9501EAF984D003FAA5D /* S0008_JHUD_20170311.gif in Resources */,
+				0905B9541EAF984D003FAA5D /* S0012_HJWWaterWave.gif in Resources */,
+				0905B9561EAF984D003FAA5D /* S0014_PullToRefreshRentals.gif in Resources */,
+				0905B94E1EAF984D003FAA5D /* S0006_CCWorm_20170322.gif in Resources */,
+				0905B94C1EAF984D003FAA5D /* S0004_WCLLoadingView_20170420.gif in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x in Resources */,
+				0905B94A1EAF984D003FAA5D /* S0002_CRGradientAnimation_20170322.gif in Resources */,
+				0905B9551EAF984D003FAA5D /* S0013_FoldingTabBar.gif in Resources */,
+				0905B9481EAF984D003FAA5D /* C0001_CRMusicCardDemoVC.gif in Resources */,
+				0905B9511EAF984D003FAA5D /* S0009_WCLShineButton_20170322.gif in Resources */,
+				0905B9521EAF984D003FAA5D /* S0010_RollerCoasterLayer_20170312.gif in Resources */,
+				0905B9491EAF984D003FAA5D /* S0001_CRCardAnimation_20170322.gif in Resources */,
+				0905B9571EAF984D003FAA5D /* S0015_RQShineLabel_20170424.gif in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				09FAC1EE1EA7C6550064D100 /* S0003_GifPlay.gif in Resources */,
 				092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */,
-				09FAC1F31EA7C6550064D100 /* S0008_JHUD_20170311.gif in Resources */,
-				09FAC1F21EA7C6550064D100 /* S0007_CRGatling_20170309.gif in Resources */,
 				ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */,
-				09FAC1EF1EA7C6550064D100 /* S0004_WCLLoadingView_20170420.gif in Resources */,
-				09FAC1F41EA7C6550064D100 /* S0009_WCLShineButton_20170322.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1390,6 +1409,7 @@
 				0905B9451EAE4722003FAA5D /* RQShineLabelDemoVC.m in Sources */,
 				09B519DF1E739EF400065C27 /* CRDefines.m in Sources */,
 				09DC1C3B1E583A4D007A8B10 /* CRJumpManager.m in Sources */,
+				0905B95A1EAF9CC2003FAA5D /* README.md in Sources */,
 				092A2D2B1DBCA51C00650DE1 /* CRCardAnimationViewDemoVC.m in Sources */,
 				09109A7A1E533D7300031210 /* CRMemberDetailProductsView.m in Sources */,
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
@@ -1406,6 +1426,7 @@
 				092A2D651DBCA8DA00650DE1 /* README.md in Sources */,
 				09203ACE1E4F460D00FB2B25 /* CRCustomNaviBarView.m in Sources */,
 				092A2D2E1DBCA51C00650DE1 /* CRImageGradientDemoVC.m in Sources */,
+				0905B9631EAFA1B0003FAA5D /* NVActivityIndicatorViewDemoVC.swift in Sources */,
 				9704F1E81E7432DC00604DFC /* README.md in Sources */,
 				092A2D0A1DBC9A5C00650DE1 /* CRMemberInfoModel.m in Sources */,
 				092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */,
@@ -1449,6 +1470,7 @@
 				09FAC2061EAA60A90064D100 /* FoldingTabBarDemoVC.m in Sources */,
 				09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */,
 				262A758C1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.m in Sources */,
+				0905B95D1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.m in Sources */,
 				09FAC2081EAA60BA0064D100 /* README.md in Sources */,
 				092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */,
 				973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */,
@@ -1620,7 +1642,7 @@
 				GCC_PREFIX_HEADER = "CRAnimation/CRAnimation-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
-					"CONTRIBUTE_STATUS=0",
+					"CONTRIBUTE_STATUS=1",
 				);
 				INFOPLIST_FILE = "CRAnimation/CRAnimation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
