@@ -16,6 +16,7 @@ target 'CRAnimation_Example' do
   pod 'BearSkill', :git => 'https://github.com/BearRan/BearSkill.git', :commit => 'c33d282'
   pod 'RQShineLabel'
   pod 'NVActivityIndicatorView'
+  pod 'LTMorphingLabel'
 
   target 'CRAnimation_Tests' do
     inherit! :search_paths

@@ -100,6 +100,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
                                                               ]];
     
     _storageDemoInfoModelNameArray = @[
+                                       @"LTMoriphingLabelDemoInfoModel",
                                        @"NVActivityIndicatorViewDemoInfoModel",
                                        @"RQShineLabelDemoInfoModel",
                                        @"PullToRefreshRentalsDemoInfoModel",
