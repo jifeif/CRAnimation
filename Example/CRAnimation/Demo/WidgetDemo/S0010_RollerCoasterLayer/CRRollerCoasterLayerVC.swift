@@ -40,7 +40,7 @@ class CRRollerCoasterLayerVC: CRProductionBaseVC {
             view.layer.addSublayer(rollerLayer)
             
             var transform = CGAffineTransform.identity
-            transform  = transform.rotated(by: CGFloat(M_PI_2))
+            transform  = transform.rotated(by: CGFloat(Double.pi/2))
             let offset = (frame.height - frame.width)/2
             transform  = transform.translatedBy(x: offset, y: offset)
             rollerLayer.setAffineTransform(transform)

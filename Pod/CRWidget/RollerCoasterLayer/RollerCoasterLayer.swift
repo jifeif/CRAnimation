@@ -223,7 +223,7 @@ open class RollerCoasterLayer: CALayer {
         path.move(to: CGPoint(x: size.width + 10, y: size.height))
         path.addLine(to: CGPoint(x: size.width + 10, y: size.height - 70))
         path.addQuadCurve(to: CGPoint(x: size.width/1.8, y: size.height - 70), controlPoint: CGPoint(x: size.width - 120, y: 200))
-        path.addArc(withCenter: CGPoint(x: size.width/1.9, y: size.height - 140), radius: 70, startAngle: CGFloat(0.5*M_PI), endAngle: CGFloat(2.5*M_PI), clockwise: true)
+        path.addArc(withCenter: CGPoint(x: size.width/1.9, y: size.height - 140), radius: 70, startAngle: CGFloat(0.5*Double.pi), endAngle: CGFloat(2.5*Double.pi), clockwise: true)
         path.addCurve(to: CGPoint(x: 0, y: size.height - 100), controlPoint1: CGPoint(x: size.width/1.8 - 60, y: size.height - 60), controlPoint2: CGPoint(x: 150, y: size.height/2.3))
         path.addLine(to: CGPoint(x: -100, y: size.height + 10))
         calayer.fillColor = UIColor.clear.cgColor
@@ -287,7 +287,7 @@ open class RollerCoasterLayer: CALayer {
         path.move(to: CGPoint(x: size.width + 10, y: size.height - 7))
         path.addLine(to: CGPoint(x: size.width + 10, y: size.height - 77))
         path.addQuadCurve(to: CGPoint(x: size.width/1.8, y: size.height - 77), controlPoint: CGPoint(x: size.width - 120, y: 193))
-        path.addArc(withCenter: CGPoint(x: size.width/1.9, y: size.height - 140), radius: 63, startAngle: CGFloat(0.5*M_PI), endAngle: CGFloat(2.5*M_PI), clockwise: true)
+        path.addArc(withCenter: CGPoint(x: size.width/1.9, y: size.height - 140), radius: 63, startAngle: CGFloat(0.5*Double.pi), endAngle: CGFloat(2.5*Double.pi), clockwise: true)
         path.addCurve(to: CGPoint(x: 0, y: size.height - 107), controlPoint1: CGPoint(x: size.width/1.8 - 60, y: size.height - 67), controlPoint2: CGPoint(x: 150, y: size.height/2.3-7))
         path.addLine(to: CGPoint(x: -100, y: size.height + 7))
         
@@ -376,7 +376,7 @@ open class RollerCoasterLayer: CALayer {
     }
     
     func imageFromBundle(_ imageName: String) -> UIImage? {
-        var imageName = imageName
+        let imageName = imageName
         if let path = WCLImagePickerBundle.wclBundle.path(forResource: imageName, ofType: "png") {
             let image = UIImage(contentsOfFile: path)
             return image
