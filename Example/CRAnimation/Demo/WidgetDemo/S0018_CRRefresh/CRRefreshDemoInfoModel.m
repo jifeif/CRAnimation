@@ -31,7 +31,7 @@
     self.demoVCName     = @"_TtC19CRAnimation_Example11CRRefreshVC";
     self.demoGifName    = @"S0017_CRRefresh.gif";
     self.demoType       = kCRDemoTypeStorage;
-    self.CRID           = @"S0017";
+    self.CRID           = @"S0018";
     self.demoName       = @"CRRefresh";
     self.demoSummary    = @"炫酷的上拉刷新动效";
     self.codeLanguage   = kCRLanguageTypeSwift;
