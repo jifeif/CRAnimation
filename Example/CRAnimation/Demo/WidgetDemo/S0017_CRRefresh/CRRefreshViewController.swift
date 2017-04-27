@@ -61,7 +61,7 @@ class CRRefreshViewController: CRProductionBaseVC {
     
     //MARK: Public Methods
     func configView() {
-        tableView.frame = .init(x: 0, y: 0, width: view.frame.width, height: view.frame.height - 60)
+        tableView.frame = .init(x: 0, y: 0, width: contentView.frame.width, height: contentView.frame.height)
         tableView.register(UINib.init(nibName: "CRRefreshTableViewCell", bundle: nil), forCellReuseIdentifier: "CRRefreshTableViewCell")
         contentView.addSubview(tableView)
         tableView.delegate   = self
