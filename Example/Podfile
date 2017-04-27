@@ -17,6 +17,7 @@ target 'CRAnimation_Example' do
   pod 'RQShineLabel'
   pod 'NVActivityIndicatorView'
   pod 'LTMorphingLabel'
+  pod 'CRRefresh'
 
   target 'CRAnimation_Tests' do
     inherit! :search_paths
