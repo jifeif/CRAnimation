@@ -7,7 +7,7 @@
 //
 
 #import "NVActivityIndicatorViewDemoInfoModel.h"
-#import "CRAnimation_Example-swift.h"
+#import "CRAnimation_Example-Swift.h"
 
 @implementation NVActivityIndicatorViewDemoInfoModel
 

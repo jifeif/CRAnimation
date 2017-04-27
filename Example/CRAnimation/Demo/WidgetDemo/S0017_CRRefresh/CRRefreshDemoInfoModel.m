@@ -1,5 +1,5 @@
 //
-//  WCLLoadingViewDemoInfoModel.m
+//  CRRefreshInfoModel.m
 //  CRAnimation
 //
 // **************************************************
@@ -11,7 +11,7 @@
 // *                               /_____/          *
 // *                                                *
 // **************************************************
-//  Github  :https://github.com/631106979
+//  Github  :https://github.com/imwcl
 //  HomePage:https://imwcl.com
 //  CSDN    :http://blog.csdn.net/wang631106979
 //
@@ -19,26 +19,26 @@
 //  Copyright © 2016年 王崇磊. All rights reserved.
 //
 
-#import "WCLLoadingViewDemoInfoModel.h"
+#import "CRRefreshDemoInfoModel.h"
 #import "CRAnimation_Example-Swift.h"
 
-@implementation WCLLoadingViewDemoInfoModel
 
-#pragma mark - Override
+@implementation CRRefreshDemoInfoModel
+
+
 - (void)fillDemoInfo
 {
-    // 去CRAnimation_Example-swift.h这个头文件里面去看你对于的swift的类名，例如我的就是_TtC19CRAnimation_Example14WCLLoadingView
-    self.demoVCName     = @"_TtC19CRAnimation_Example20WCLLoadingViewDemoVC";
-    self.demoGifName    = @"S0004_WCLLoadingView_20170420.gif";
+    self.demoVCName     = @"_TtC19CRAnimation_Example11CRRefreshVC";
+    self.demoGifName    = @"S0017_CRRefresh.gif";
     self.demoType       = kCRDemoTypeStorage;
-    self.CRID           = @"S0004";
-    self.demoName       = @"WCLLoadingView";
-    self.demoSummary    = @"Slack 的 Loading 动画";
+    self.CRID           = @"S0017";
+    self.demoName       = @"CRRefresh";
+    self.demoSummary    = @"炫酷的上拉刷新动效";
     self.codeLanguage   = kCRLanguageTypeSwift;
     
-    self.originGitHubAddress            = @"https://github.com/631106979/WCLLoadingView";
-    self.homePage                       = @"https://imwcl.com";
-
+    self.originGitHubAddress            = @"https://github.com/CRAnimation/CRRefresh";
+    self.homePage                       = @"https://github.com/CRAnimation/CRRefresh";
+    
     
 }
 
@@ -49,7 +49,7 @@
     authorInfo.nickName = @"WCL";
     authorInfo.mail     = @"wangchonhlei93@icloud.com";
     authorInfo.qq       = @"631106979";
-    authorInfo.homePage = @"http://imwcl.com";
+    authorInfo.homePage = @"https://imwcl.com";
     authorInfo.professionType = kProfessionTypeiOSDeveloper;
     
     return authorInfo;

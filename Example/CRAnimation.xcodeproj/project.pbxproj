@@ -147,6 +147,15 @@
 		9704F1F21E7442C000604DFC /* CRRollerCoasterLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */; };
 		9704F1F31E7442C000604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EF1E7442C000604DFC /* README.md */; };
 		973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */; };
+		977889131EB229F300F163D2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 977889121EB229F300F163D2 /* README.md */; };
+		977889151EB22BE500F163D2 /* CRRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977889141EB22BE500F163D2 /* CRRefreshViewController.swift */; };
+		977889171EB22CBC00F163D2 /* CRRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977889161EB22CBC00F163D2 /* CRRefreshVC.swift */; };
+		9778891B1EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977889191EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.swift */; };
+		9778891C1EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9778891A1EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.xib */; };
+		9778891F1EB22FB700F163D2 /* CRRefreshTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778891D1EB22FB700F163D2 /* CRRefreshTableViewCell.swift */; };
+		977889201EB22FB700F163D2 /* CRRefreshTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9778891E1EB22FB700F163D2 /* CRRefreshTableViewCell.xib */; };
+		977889231EB231CA00F163D2 /* CRRefreshDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 977889221EB231CA00F163D2 /* CRRefreshDemoInfoModel.m */; };
+		977889251EB2339E00F163D2 /* S0017_CRRefresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 977889241EB2339E00F163D2 /* S0017_CRRefresh.gif */; };
 		BCFA28746AFD50F5E1BE2C1A /* Pods_CRAnimation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F56DF0F33F6C42324864D8 /* Pods_CRAnimation_Example.framework */; };
 		ED36EAD21DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED36EACC1DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m */; };
 		ED36EAD31DD2AF9B0050416B /* CCWormHUDDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED36EACE1DD2AF9A0050416B /* CCWormHUDDemoVC.m */; };
@@ -399,6 +408,16 @@
 		9704F1EF1E7442C000604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		973FBA1C1DB244B4003A2C7E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		976F95561DB25275000776A6 /* CRAnimation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CRAnimation-Bridging-Header.h"; path = "../CRAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		977889121EB229F300F163D2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		977889141EB22BE500F163D2 /* CRRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshViewController.swift; sourceTree = "<group>"; };
+		977889161EB22CBC00F163D2 /* CRRefreshVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshVC.swift; sourceTree = "<group>"; };
+		977889191EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshNormalCellTableViewCell.swift; sourceTree = "<group>"; };
+		9778891A1EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRRefreshNormalCellTableViewCell.xib; sourceTree = "<group>"; };
+		9778891D1EB22FB700F163D2 /* CRRefreshTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRefreshTableViewCell.swift; sourceTree = "<group>"; };
+		9778891E1EB22FB700F163D2 /* CRRefreshTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRRefreshTableViewCell.xib; sourceTree = "<group>"; };
+		977889211EB231CA00F163D2 /* CRRefreshDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRefreshDemoInfoModel.h; sourceTree = "<group>"; };
+		977889221EB231CA00F163D2 /* CRRefreshDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRefreshDemoInfoModel.m; sourceTree = "<group>"; };
+		977889241EB2339E00F163D2 /* S0017_CRRefresh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0017_CRRefresh.gif; sourceTree = "<group>"; };
 		CD775529C0010A6B82D84DCC /* Pods-CRAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C662237C9E60F0C433AB69 /* Pods-CRAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRAnimation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRAnimation_Tests/Pods-CRAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED36EACB1DD2AF9A0050416B /* CCWormHUDDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWormHUDDemoInfoModel.h; sourceTree = "<group>"; };
@@ -599,6 +618,7 @@
 				09EF431E1EABA91800825254 /* S0014_PullToRefreshRentals */,
 				0905B93D1EAE3F38003FAA5D /* S0015_RQShineLabel */,
 				0905B9581EAF9C97003FAA5D /* S0016_NVActivityIndicatorView */,
+				977889111EB229A200F163D2 /* S0017_CRRefresh */,
 			);
 			path = WidgetDemo;
 			sourceTree = "<group>";
@@ -842,6 +862,7 @@
 		09FAC1C31EA7C1DF0064D100 /* DemoGifs */ = {
 			isa = PBXGroup;
 			children = (
+				977889241EB2339E00F163D2 /* S0017_CRRefresh.gif */,
 				09FAC1DE1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif */,
 				09FAC1DF1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif */,
 				09FAC1E01EA7C6550064D100 /* S0002_CRGradientAnimation_20170322.gif */,
@@ -1042,6 +1063,30 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		977889111EB229A200F163D2 /* S0017_CRRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				977889121EB229F300F163D2 /* README.md */,
+				977889211EB231CA00F163D2 /* CRRefreshDemoInfoModel.h */,
+				977889221EB231CA00F163D2 /* CRRefreshDemoInfoModel.m */,
+				977889161EB22CBC00F163D2 /* CRRefreshVC.swift */,
+				977889141EB22BE500F163D2 /* CRRefreshViewController.swift */,
+				977889181EB22F4700F163D2 /* Cells */,
+			);
+			path = S0017_CRRefresh;
+			sourceTree = "<group>";
+		};
+		977889181EB22F4700F163D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				977889191EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.swift */,
+				9778891A1EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.xib */,
+				9778891D1EB22FB700F163D2 /* CRRefreshTableViewCell.swift */,
+				9778891E1EB22FB700F163D2 /* CRRefreshTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		977CA5341E73DDDA0093851E /* S0009_WCLShineButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1192,12 +1237,15 @@
 				0905B94A1EAF984D003FAA5D /* S0002_CRGradientAnimation_20170322.gif in Resources */,
 				0905B9551EAF984D003FAA5D /* S0013_FoldingTabBar.gif in Resources */,
 				0905B9481EAF984D003FAA5D /* C0001_CRMusicCardDemoVC.gif in Resources */,
+				977889251EB2339E00F163D2 /* S0017_CRRefresh.gif in Resources */,
 				0905B9511EAF984D003FAA5D /* S0009_WCLShineButton_20170322.gif in Resources */,
 				0905B9521EAF984D003FAA5D /* S0010_RollerCoasterLayer_20170312.gif in Resources */,
 				0905B9491EAF984D003FAA5D /* S0001_CRCardAnimation_20170322.gif in Resources */,
 				0905B9571EAF984D003FAA5D /* S0015_RQShineLabel_20170424.gif in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				977889201EB22FB700F163D2 /* CRRefreshTableViewCell.xib in Resources */,
 				092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */,
+				9778891C1EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.xib in Resources */,
 				0905B9651EAFA6BB003FAA5D /* S0016_NVActivityIndicatorView_20170425.gif in Resources */,
 				ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */,
 			);
@@ -1401,6 +1449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977889231EB231CA00F163D2 /* CRRefreshDemoInfoModel.m in Sources */,
 				092A2D4D1DBCA54C00650DE1 /* CRMusicCardDemoVC.m in Sources */,
 				ED36EAD21DD2AF9A0050416B /* CCWormHUDDemoInfoModel.m in Sources */,
 				09B519E51E73CE4500065C27 /* CRJHUDDemoInfoModel.m in Sources */,
@@ -1450,9 +1499,11 @@
 				09EF43201EABA96F00825254 /* README.md in Sources */,
 				09449E721E6327540008BD8F /* CRUrls.m in Sources */,
 				09B519DD1E739EF400065C27 /* CRCommon.m in Sources */,
+				9778891B1EB22F9B00F163D2 /* CRRefreshNormalCellTableViewCell.swift in Sources */,
 				092A2D491DBCA54C00650DE1 /* CRCardViewBack.m in Sources */,
 				09A63EB21E784DC000E93AEA /* CRNavigationBarView.m in Sources */,
 				257751521DC25A790019D38B /* HZLaunchViewDemoInfoModel.m in Sources */,
+				977889131EB229F300F163D2 /* README.md in Sources */,
 				09449E7E1E6470A50008BD8F /* CRResponseBaseModel.m in Sources */,
 				092A2D671DBCA8DA00650DE1 /* WCLLoadingView.swift in Sources */,
 				09D671101E74168600FDB428 /* CRDesignProductionBaseVC.m in Sources */,
@@ -1463,6 +1514,7 @@
 				092A2D2C1DBCA51C00650DE1 /* CRImageGradientDemoInfoModel.m in Sources */,
 				09EF43231EABA98C00825254 /* PullToRefreshRentalsDemoInfoModel.m in Sources */,
 				09449E6F1E63268D0008BD8F /* CRProductsRequest.m in Sources */,
+				9778891F1EB22FB700F163D2 /* CRRefreshTableViewCell.swift in Sources */,
 				527FF7431DD0EBB60055026D /* CRGatlingModel.m in Sources */,
 				09109A871E53596600031210 /* CRCodeWidgetVC.m in Sources */,
 				9704F1DC1E73F0FC00604DFC /* CRWCLShineButtonDemoVC.swift in Sources */,
@@ -1476,9 +1528,11 @@
 				262A758C1E8CDB8700E8D9D6 /* HJWWaterWaveDemoInfoModel.m in Sources */,
 				0905B95D1EAF9CF0003FAA5D /* NVActivityIndicatorViewDemoInfoModel.m in Sources */,
 				09FAC2081EAA60BA0064D100 /* README.md in Sources */,
+				977889171EB22CBC00F163D2 /* CRRefreshVC.swift in Sources */,
 				092A2D291DBCA51C00650DE1 /* CRCardAnimationViewDemoInfoModel.m in Sources */,
 				973FBA1D1DB244B4003A2C7E /* UIColorExtension.swift in Sources */,
 				09A63EAC1E7849A000E93AEA /* CRBaseWebVC.m in Sources */,
+				977889151EB22BE500F163D2 /* CRRefreshViewController.swift in Sources */,
 				09E40CB21E6B17270042B5AE /* CRProductsMemberBriefInfoModel.m in Sources */,
 				0905B9381EACFB02003FAA5D /* PullToRefreshRentalsCell.m in Sources */,
 				090080A21E4CB91200AE60A5 /* CRItemBriefSetcionHeaderView.m in Sources */,
