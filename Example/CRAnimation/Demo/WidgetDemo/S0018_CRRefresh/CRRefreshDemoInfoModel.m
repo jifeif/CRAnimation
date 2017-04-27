@@ -29,7 +29,7 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"_TtC19CRAnimation_Example11CRRefreshVC";
-    self.demoGifName    = @"S0017_CRRefresh.gif";
+    self.demoGifName    = @"S0018_CRRefresh.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0018";
     self.demoName       = @"CRRefresh";
