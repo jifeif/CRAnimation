@@ -22,7 +22,7 @@
     self = [super init];
     
     if (self) {
-        self.frame = CGRectMake(0, STATUS_HEIGHT, WIDTH, 40);
+        self.frame = CGRectMake(0, STATUS_HEIGHT, WIDTH, NAV_44);
         [self setNaviBarWithTitle:nil];
     }
     
