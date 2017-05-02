@@ -31,7 +31,7 @@ class LTDemoViewController : UIViewController, LTMorphingLabelDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        label.delegate = self
+        label.delegate = self
     }
 
     @IBOutlet fileprivate var label: LTMorphingLabel!
