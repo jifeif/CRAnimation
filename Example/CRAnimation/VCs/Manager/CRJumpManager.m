@@ -48,13 +48,62 @@
     }
     //  开发者显示界面
     else{
-        id idVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
-        if ([idVC isKindOfClass:[CRProductionBaseVC class]]) {
-            CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)idVC;
-            [destinationVC setDemoInfoModel:demoInfoModel];
-            [_inVC.navigationController pushViewController:destinationVC animated:YES];
+        NSString *SBPrefix = @"StoryBoard?";
+        NSString *SBNameKey = @"SBName";
+        NSString *schemeStr = demoInfoModel.demoVCName;
+        
+        //  SB解析VC
+        if ([schemeStr hasPrefix:SBPrefix]) {
+            schemeStr = [schemeStr stringByReplacingOccurrencesOfString:SBPrefix withString:@""];
+            NSDictionary *schemePara = [self convertParaStrToDict_paraStr:schemeStr];
+            NSString *SBName = [schemePara objectForKey:SBNameKey];
+            UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:SBName bundle:nil];
+            if (!storyBoard) {
+                return;
+            }
+            UIViewController *vc = [storyBoard instantiateInitialViewController];
+            if (!vc) {
+                return;
+            }
+            [_inVC.navigationController pushViewController:vc animated:YES];
+            
+        }
+        //  正常VC
+        else{
+            id idVC = [[NSClassFromString(demoInfoModel.demoVCName) alloc] init];
+            if ([idVC isKindOfClass:[CRProductionBaseVC class]]) {
+                CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)idVC;
+                [destinationVC setDemoInfoModel:demoInfoModel];
+                [_inVC.navigationController pushViewController:destinationVC animated:YES];
+            }
         }
     }
+}
+
+#pragma mark - Analysis
+/** 字符串解析成字典
+ *
+ *  参考解析数据
+ *  para_1=1&para_2=2
+ */
+- (NSDictionary *)convertParaStrToDict_paraStr:(NSString *)paraStr
+{
+    NSMutableDictionary *paraDict = [[NSMutableDictionary alloc] init];
+    
+    NSArray *parasArray = [paraStr componentsSeparatedByString:@"&"];
+    for (int i = 0; i < [parasArray count]; i++) {
+        
+        NSString    *paraDetailStr      = parasArray[i];
+        NSArray     *paraKeyValueArray  = [paraDetailStr componentsSeparatedByString:@"="];
+        
+        if ([paraKeyValueArray count] >= 2) {
+            NSString *paraKey = paraKeyValueArray[0];
+            NSString *paraValue = [[paraKeyValueArray subarrayWithRange:NSMakeRange(1, paraKeyValueArray.count - 1)] componentsJoinedByString:@"="];
+            [paraDict setObject:paraValue forKey:paraKey];
+        }
+    }
+    
+    return paraDict;
 }
 
 @end

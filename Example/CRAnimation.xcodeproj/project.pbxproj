@@ -138,7 +138,6 @@
 		9704F1F11E7442C000604DFC /* CRRollerCoasterLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */; };
 		9704F1F21E7442C000604DFC /* CRRollerCoasterLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */; };
 		9704F1F31E7442C000604DFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9704F1EF1E7442C000604DFC /* README.md */; };
-		97218BB71EB24E4E0002F4E7 /* CRTestLTMorphingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97218BB11EB24E4E0002F4E7 /* CRTestLTMorphingViewController.m */; };
 		97218BB81EB24E4E0002F4E7 /* LTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97218BB21EB24E4E0002F4E7 /* LTDemoViewController.swift */; };
 		97218BB91EB24E4E0002F4E7 /* LTMoriphingLabelDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97218BB41EB24E4E0002F4E7 /* LTMoriphingLabelDemoInfoModel.m */; };
 		97218BBA1EB24E4E0002F4E7 /* LTMorphingLabelDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97218BB51EB24E4E0002F4E7 /* LTMorphingLabelDemo.storyboard */; };
@@ -403,8 +402,6 @@
 		9704F1ED1E7442C000604DFC /* CRRollerCoasterLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRRollerCoasterLayerModel.m; sourceTree = "<group>"; };
 		9704F1EE1E7442C000604DFC /* CRRollerCoasterLayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRRollerCoasterLayerVC.swift; sourceTree = "<group>"; };
 		9704F1EF1E7442C000604DFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		97218BB01EB24E4E0002F4E7 /* CRTestLTMorphingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTestLTMorphingViewController.h; sourceTree = "<group>"; };
-		97218BB11EB24E4E0002F4E7 /* CRTestLTMorphingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRTestLTMorphingViewController.m; sourceTree = "<group>"; };
 		97218BB21EB24E4E0002F4E7 /* LTDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDemoViewController.swift; sourceTree = "<group>"; };
 		97218BB31EB24E4E0002F4E7 /* LTMoriphingLabelDemoInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMoriphingLabelDemoInfoModel.h; sourceTree = "<group>"; };
 		97218BB41EB24E4E0002F4E7 /* LTMoriphingLabelDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMoriphingLabelDemoInfoModel.m; sourceTree = "<group>"; };
@@ -1063,8 +1060,6 @@
 		97218BAF1EB24E4E0002F4E7 /* S0017_LTMorphingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				97218BB01EB24E4E0002F4E7 /* CRTestLTMorphingViewController.h */,
-				97218BB11EB24E4E0002F4E7 /* CRTestLTMorphingViewController.m */,
 				97218BB21EB24E4E0002F4E7 /* LTDemoViewController.swift */,
 				97218BB31EB24E4E0002F4E7 /* LTMoriphingLabelDemoInfoModel.h */,
 				97218BB41EB24E4E0002F4E7 /* LTMoriphingLabelDemoInfoModel.m */,
@@ -1571,7 +1566,6 @@
 				09203AC71E4F22DE00FB2B25 /* CRMembersTableViewCell.m in Sources */,
 				257751531DC25A790019D38B /* HZLaunchViewDemoVC.m in Sources */,
 				09D671221E751A5500FDB428 /* CRCardCustomViewCell.m in Sources */,
-				97218BB71EB24E4E0002F4E7 /* CRTestLTMorphingViewController.m in Sources */,
 				09109A8B1E5359B500031210 /* CRDesignerStageVC.m in Sources */,
 				977889381EB246C300F163D2 /* README.md in Sources */,
 				090080A11E4CB91200AE60A5 /* CRItemBriefCollectionViewCell.m in Sources */,

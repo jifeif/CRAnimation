@@ -12,7 +12,7 @@
 
 - (void)fillDemoInfo
 {
-    self.demoVCName     = @"CRTestLTMorphingViewController";
+    self.demoVCName     = @"StoryBoard?SBName=LTMorphingLabelDemo";
     self.demoGifName    = @"S0016_NVActivityIndicatorView_20170425.gif";
     self.demoType       = kCRDemoTypeStorage;
     self.CRID           = @"S0016";
