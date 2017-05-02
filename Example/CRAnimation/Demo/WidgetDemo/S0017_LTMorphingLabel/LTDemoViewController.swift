@@ -9,7 +9,7 @@
 import UIKit
 import LTMorphingLabel
 
-class LTDemoViewController : UIViewController, LTMorphingLabelDelegate {
+class LTDemoViewController : CRProductionBaseVC, LTMorphingLabelDelegate {
     
     fileprivate var i = -1
     fileprivate var textArray = [
@@ -32,12 +32,14 @@ class LTDemoViewController : UIViewController, LTMorphingLabelDelegate {
         super.viewDidLoad()
         
         label.delegate = self
+        addTopBar(withTitle: "LTMoriphingLabel")
     }
-
+    
     @IBOutlet fileprivate var label: LTMorphingLabel!
     
     @IBAction func changeText(_ sender: AnyObject) {
         label.text = text
+        print("test/(text)")
     }
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
