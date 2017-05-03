@@ -13,25 +13,25 @@
 - (void)fillDemoInfo
 {
     self.demoVCName     = @"StoryBoard?SBName=LTMorphingLabelDemo";
-    self.demoGifName    = @"S0016_NVActivityIndicatorView_20170425.gif";
+    self.demoGifName    = @"S0017_LTMoriphingLabel_20170503.gif";
     self.demoType       = kCRDemoTypeStorage;
-    self.CRID           = @"S0016";
-    self.demoName       = @"NVActivityIndicatorView";
-    self.demoSummary    = @"各种实用的加载指示器";
+    self.CRID           = @"S0017";
+    self.demoName       = @"LTMorphingLabel";
+    self.demoSummary    = @"炫酷的文字切换效果";
     self.codeLanguage   = kCRLanguageTypeSwift;
     
-    self.originGitHubAddress            = @"https://github.com/ninjaprox/NVActivityIndicatorView";
-    self.homePage                       = @"http://blog.vinhis.me";
+    self.originGitHubAddress            = @"https://github.com/lexrus/LTMorphingLabel";
+    self.homePage                       = @"https://github.com/lexrus/LTMorphingLabel";
 }
 
 - (CRMemberInfoModel *)authorInfo
 {
     CRMemberInfoModel *authorInfo = [CRMemberInfoModel new];
     authorInfo.realName = @"";
-    authorInfo.nickName = @"Vinh Nguyen";
-    authorInfo.mail     = @"ninjaprox@gmail.com";
+    authorInfo.nickName = @"Lex Tang";
+    authorInfo.mail     = @"lexrus@gmail.com";
     authorInfo.qq       = @"";
-    authorInfo.homePage = @"http://blog.vinhis.me";
+    authorInfo.homePage = @"http://lexrus.com/";
     authorInfo.professionType = kProfessionTypeiOSDeveloper;
     
     return authorInfo;

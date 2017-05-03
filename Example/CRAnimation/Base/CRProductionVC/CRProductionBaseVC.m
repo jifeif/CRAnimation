@@ -131,7 +131,9 @@
         [_showDetailManager loadUI];
     }
     
-    [_showDetailManager showDetailView];
+    if (_showDetailManager) {
+        [_showDetailManager showDetailView];
+    }
 }
 
 #pragma mark - Set CRDemoInfoModel

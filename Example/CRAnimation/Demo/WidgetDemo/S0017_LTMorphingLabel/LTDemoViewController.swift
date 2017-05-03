@@ -27,7 +27,7 @@ class LTDemoViewController : CRProductionBaseVC, LTMorphingLabelDelegate {
         i = i >= textArray.count - 1 ? 0 : i + 1
         return textArray[i]
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

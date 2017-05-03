@@ -61,11 +61,12 @@
             if (!storyBoard) {
                 return;
             }
-            UIViewController *vc = [storyBoard instantiateInitialViewController];
-            if (!vc) {
+            CRProductionBaseVC *destinationVC = (CRProductionBaseVC *)[storyBoard instantiateInitialViewController];
+            if (!destinationVC) {
                 return;
             }
-            [_inVC.navigationController pushViewController:vc animated:YES];
+            [destinationVC setDemoInfoModel:demoInfoModel];
+            [_inVC.navigationController pushViewController:destinationVC animated:YES];
             
         }
         //  正常VC

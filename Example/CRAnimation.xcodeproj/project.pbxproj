@@ -53,6 +53,7 @@
 		092A2D681DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */; };
 		092A2D691DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A2D631DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift */; };
 		092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 092A2D641DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib */; };
+		09362BE31EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09362BE21EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif */; };
 		09449E671E631CE70008BD8F /* CRBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09449E631E631CE70008BD8F /* CRBaseNavigationViewController.m */; };
 		09449E681E631CE70008BD8F /* CRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09449E661E631CE70008BD8F /* CRBaseViewController.m */; };
 		09449E6C1E631D3D0008BD8F /* CRBaseRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09449E6B1E631D3D0008BD8F /* CRBaseRequestManager.m */; };
@@ -258,6 +259,7 @@
 		092A2D621DBCA8DA00650DE1 /* WCLLoadingViewDemoInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLLoadingViewDemoInfoModel.m; sourceTree = "<group>"; };
 		092A2D631DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCLLoadingViewDemoVC.swift; sourceTree = "<group>"; };
 		092A2D641DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCLLoadingViewDemoVC.xib; sourceTree = "<group>"; };
+		09362BE21EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = S0017_LTMoriphingLabel_20170503.gif; sourceTree = "<group>"; };
 		09449E621E631CE70008BD8F /* CRBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseNavigationViewController.h; sourceTree = "<group>"; };
 		09449E631E631CE70008BD8F /* CRBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBaseNavigationViewController.m; sourceTree = "<group>"; };
 		09449E651E631CE70008BD8F /* CRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBaseViewController.h; sourceTree = "<group>"; };
@@ -881,6 +883,7 @@
 				0905B93B1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif */,
 				0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel_20170424.gif */,
 				0905B9641EAFA6BB003FAA5D /* S0016_NVActivityIndicatorView_20170425.gif */,
+				09362BE21EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif */,
 				977889241EB2339E00F163D2 /* S0018_CRRefresh.gif */,
 			);
 			path = DemoGifs;
@@ -1247,6 +1250,7 @@
 				09F826FD1EB0EBCB00E3A4DA /* S0012_HJWWaterWave.gif in Resources */,
 				09F826FF1EB0EBCB00E3A4DA /* S0014_PullToRefreshRentals.gif in Resources */,
 				09F826F71EB0EBCB00E3A4DA /* S0006_CCWorm_20170322.gif in Resources */,
+				09362BE31EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif in Resources */,
 				09F826F51EB0EBCB00E3A4DA /* S0004_WCLLoadingView_20170420.gif in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x in Resources */,
 				977889251EB2339E00F163D2 /* S0018_CRRefresh.gif in Resources */,
