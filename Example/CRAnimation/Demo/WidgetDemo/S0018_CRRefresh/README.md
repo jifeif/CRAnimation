@@ -1,3 +1,14 @@
+# S0018_CRRefresh
+
+| demo信息    | 详情                                                      |
+|:-----------:|:---------------------------------------------------------:|
+| DemoName    | CRRefresh                                     |
+| CRID        | S00018                                                    |
+| author      | [WCL](https://github.com/631106979) |
+| authorMail  | wangchonhlei93@icloud.com |
+| 源gitHub    | [CRRefresh](https://github.com/CRAnimation/CRRefresh)   |
+
+
 [![Version](https://img.shields.io/cocoapods/v/CRRefresh.svg?style=flat)](http://cocoapods.org/pods/CRRefresh)
 [![License](https://img.shields.io/cocoapods/l/CRRefresh.svg?style=flat)](http://cocoapods.org/pods/CRRefresh)
 [![Platform](https://img.shields.io/cocoapods/p/CRRefresh.svg?style=flat)](http://cocoapods.org/pods/CRRefresh)
