@@ -1,289 +1,90 @@
-# S0016_NVActivityIndicatorView
+# S0017_LTMorphingLabel
 
 | demo信息    | 详情                                                      |
 |:-----------:|:---------------------------------------------------------:|
-| DemoName    | NVActivityIndicatorView                                     |
-| CRID        | S00016                                                    |
-| author      | [Vinh Nguyen](http://blog.vinhis.me)                       |
-| 源gitHub    | [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)   |
+| DemoName    | LTMorphingLabel                                     |
+| CRID        | S00017                                                    |
+| author      | [Lex Tang](http://lexrus.com/)                       |
+| 源gitHub    | [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel)   |
 
-NVActivityIndicatorView
-===================
+# LTMorphingLabel
 
-[![Build Status](https://travis-ci.org/ninjaprox/NVActivityIndicatorView.svg?branch=master)](https://travis-ci.org/ninjaprox/NVActivityIndicatorView)
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/NVActivityIndicatorView.svg)](https://img.shields.io/cocoapods/v/NVActivityIndicatorView.svg)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Travis](https://img.shields.io/travis/lexrus/LTMorphingLabel.svg)](https://travis-ci.org/lexrus/LTMorphingLabel)
+![Language](https://img.shields.io/badge/language-Swift%203-orange.svg)
+[![CocoaPods](https://img.shields.io/cocoapods/v/LTMorphingLabel.svg?style=flat)](https://github.com/lexrus/LTMorphingLabel)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![License](https://img.shields.io/github/license/lexrus/LTMorphingLabel.svg?style=flat)
 
-# Introduction
-`NVActivityIndicatorView` is a collection of awesome loading animations.
+A morphing UILabel subclass written in Swift.
+The ```.Scale``` effect mimicked [Apple's QuickType animation of iOS 8](https://youtu.be/w87fOAG8fjk?t=3451) in WWDC 2014. New morphing effects are available as Swift extensions.
 
-This is original a fork from [DGActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView), inspired by [Loaders.css](https://github.com/ConnorAtherton/loaders.css), written in Swift with full implementation of animations, plus more.
+## enum LTMorphingEffect: Int, Printable
 
-You can also find Objective-C version of this [here](https://github.com/ninjaprox/DGActivityIndicatorView).
+#### .Scale - _default_
+<img src="https://cloud.githubusercontent.com/assets/219689/3491822/96bf5de6-059d-11e4-9826-a6f82025d1af.gif" width="300" height="70" alt="LTMorphingLabel"/>
 
-# Demo
-![alt tag](https://raw.githubusercontent.com/ninjaprox/NVActivityIndicatorView/master/Demo.gif)
+#### [.Evaporate](https://github.com/lexrus/LTMorphingLabel/blob/master/LTMorphingLabel/LTMorphingLabel%2BEvaporate.swift)
+<img src="https://cloud.githubusercontent.com/assets/219689/3491838/ffc5aff2-059d-11e4-970c-6e2d7664785a.gif" width="300" height="70" alt="LTMorphingLabel-Evaporate"/>
 
-For first-hand experience, just open the project and run it.
+#### [.Fall](https://github.com/lexrus/LTMorphingLabel/blob/master/LTMorphingLabel/LTMorphingLabel%2BFall.swift)
+<img src="https://cloud.githubusercontent.com/assets/219689/3491840/173c2238-059e-11e4-9b33-dcd21edae9e2.gif" width="300" height="70" alt="LTMorphingLabel-Fall"/>
 
-# Animation types
+#### [.Pixelate](https://github.com/lexrus/LTMorphingLabel/blob/master/LTMorphingLabel/LTMorphingLabel%2BPixelate.swift)
+<img src="https://cloud.githubusercontent.com/assets/219689/3491845/29bb0f8c-059e-11e4-9ef8-de56bec1baba.gif" width="300" height="70" alt="LTMorphingLabel-Pixelate"/>
 
-| Type | Type | Type | Type |
-|---|---|---|---|
-|1. ballPulse | 2. ballGridPulse | 3. ballClipRotate | 4. squareSpin|
-|5. ballClipRotatePulse | 6. ballClipRotateMultiple | 7. ballPulseRise | 8. ballRotate|
-|9. cubeTransition | 10. ballZigZag | 11. ballZigZagDeflect | 12. ballTrianglePath|
-|13. ballScale | 14. lineScale | 15. lineScaleParty | 16. ballScaleMultiple|
-|17. ballPulseSync | 18. ballBeat | 19. lineScalePulseOut | 20. lineScalePulseOutRapid|
-|21. ballScaleRipple | 22. ballScaleRippleMultiple | 23. ballSpinFadeLoader | 24. lineSpinFadeLoader|
-|25. triangleSkewSpin | 26. pacman | 27. ballGridBeat | 28. semiCircleSpin|
-|29. ballRotateChase | 30. orbit | 31. audioEqualizer|
+#### [.Sparkle](https://github.com/lexrus/LTMorphingLabel/blob/master/LTMorphingLabel/LTMorphingLabel%2BSparkle.swift)
+<img src="https://cloud.githubusercontent.com/assets/219689/3508789/31e9fafe-0690-11e4-9a76-ba3ef45eb53a.gif" width="300" height="70" alt="LTMorphingLabel-Sparkle"/>
 
-# Installation
+```.Sparkle``` is built on top of QuartzCore.CAEmitterLayer. There's also a [SpriteKit powered version here](https://github.com/lexrus/LTMorphingLabel/blob/spritekit-sparkle/LTMorphingLabel/LTMorphingLabel%2BSparkle.swift).
 
-## Cocoapods
+#### [.Burn](https://github.com/lexrus/LTMorphingLabel/blob/master/LTMorphingLabel/LTMorphingLabel%2BBurn.swift)
+<img src="https://cloud.githubusercontent.com/assets/219689/3582586/4fb8c52e-0bfe-11e4-9b6f-f070f7f3ab55.gif" width="300" height="70" alt="LTMorphingLabel-Burn"/>
 
-Install Cocoapods if need be.
+#### [.Anvil](https://github.com/lexrus/LTMorphingLabel/blob/master/LTMorphingLabel/LTMorphingLabel%2BAnvil.swift)
+<img src="https://cloud.githubusercontent.com/assets/219689/3594949/815cd3e8-0caa-11e4-9738-278a9c959478.gif" width="300" height="70" alt="LTMorphingLabel-Anvil"/>
 
-```bash
-$ gem install cocoapods
-```
+## Requirements
 
-Add `NVActivityIndicatorView` in your `Podfile`.
+1. Xcode 8.3
+2. iOS 8.0+
 
-```ruby
-use_frameworks!
+## Installation
 
-pod 'NVActivityIndicatorView'
-```
+### [Carthage](https://github.com/Carthage/Carthage)
 
-Then, run the following command.
+1. Add this line to your Cartfile: `github "lexrus/LTMorphingLabel"`
+2. Read the [official instruction](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application)
 
-```bash
-$ pod install
-```
-## Carthage
+### [CocoaPods](http://cocoapods.org)
 
-Install Carthage if need be.
+1. Install the latest release of CocoaPods: `gem install cocoapods`
+2. Add this line to your Podfile: `pod 'LTMorphingLabel'`
+3. Install the pod: `pod install`
 
-```bash
-$ brew update
-$ brew install carthage
-```
+## Usage
 
-Add `NVActivityIndicatorView` in your `Cartfile`.
+1. Change the class of a label from UILabel to LTMorphingLabel;
+2. Programmatically set a new String to its text property.
 
-```ruby
-github "ninjaprox/NVActivityIndicatorView"
-```
+## Unit tests
 
-Run `carthage` to build the framework and drag the built `NVActivityIndicatorView.framework` into your Xcode project.
+Open the project with Xcode then press command + u.
 
-_**Note:** You might encounter compile issue, if so please use `carthage` branch instead. Check issue [#101](https://github.com/ninjaprox/NVActivityIndicatorView/issues/101) for more information._
+## Alternative
 
-## Manual
+Even though this lib was used in
+[a few products on App Store](https://github.com/lexrus/LTMorphingLabel/wiki/Apps-using-LTMorphingLabel),
+it’s still an experimental project. Frankly, there’re some nice competitors out
+there guarantee both compatibility and stability.
+And the most outstanding one is
+[ZCAnimatedLabel](https://github.com/overboming/ZCAnimatedLabel).
+I’d like to recommend it for production use.
 
-Copy `NVActivityIndicatorView` folder to your project. That's it.
+And finally, [an Android port](https://github.com/hanks-zyh/HTextView).
 
-_**Note:** Make sure that all files in `NVActivityIndicatorView` included in Compile Sources in Build Phases._
+## License
 
-_**Note:** If you encounter issues while uploading the app to iTunes Connect, remove the `Info.plist` file in `NVActivityIndicatorView`. Check issue [#129](https://github.com/ninjaprox/NVActivityIndicatorView/issues/129) for more information._
+This code is distributed under the terms and conditions of the MIT license.
 
-# Migration
 
-## Version 3.6.0
-
-This version requires Xcode 8.3 and Swift 3.1.
-
-## Version 3.0
-
-This version requires Xcode 8.0 and Swift 3.
-
-- `NVActivityIndicatorView.startAnimation()` and `NVActivityIndicatorView.stopAnimation()` are deleted. Use `NVActivityIndicatorView.startAnimating()` and `NVActivityIndicatorView.stopAnimating()` instead.
-- `UIViewController.startActivityAnimating()` and `UIViewController.stopActivityAnimating()` are deleted. Use `UIViewController.startAnimating()` and `UIViewController.stopAnimating()` instead.
-
-## Version 2.0
-
-This version continues to spport Xcode 7.0 and Swift 2.2 and earlier.
-For Swift 2.3 support, use `swift2.3` branch instead.
-
-```ruby
-pod 'NVActivityIndicatorView', :git => 'https://github.com/ninjaprox/NVActivityIndicatorView.git', :branch => 'swift2.3'
-```
-
-# Usage
-
-Firstly, import `NVActivityIndicatorView`.
-
-```swift
-import NVActivityIndicatorView
-```
-
-## Initialization
-
-Then, there are two ways you can create NVActivityIndicatorView:
-
-- By storyboard, changing class of any `UIView` to `NVActivityIndicatorView`.
-
-_**Note:** Set Module to `NVActivityIndicatorView`._
-
-- By code, using initializer. All parameters other than `frame` are optional and `NVActivityIndicatorView.DEFAULT_*` are used as default values.
-
-```swift
-NVActivityIndicatorView(frame: frame, type: type, color: color, padding: padding)
-```
-
-_**Note:** Check [DEFAULTS](#defaults) for default values._
-
-## Control
-
-Start animating.
-
-```swift
-activityIndicatorView.startAnimating()
-```
-
-Stop animating.
-
-```swift
-activityIndicatorView.stopAnimating()
-```
-
-Determine if it is animating.
-
-```swift
-animating = activityIndicatorView.animating
-```
-
-## Change properties
-
-In storyboard, you can change all properties in Attributes inspector tab of Utilities panel.
-
-_**Note:** Use one of values (case-insensitive) in [Animation types](#animation-types) for `Type Name`._
-
-All properties are public so you can change them all after initiating.
-
-_**Note:** All changes must be made before calling `startAnimating()`._
-
-## UI blocker
-
-By conforming `NVActivityIndicatorViewable` protocol, you can use `NVActivityIndicatorView` as UI blocker for `UIViewController`.
-
-```swift
-class ViewController: UIViewController, NVActivityIndicatorViewable { }
-```
-
-Start animating.
-
-```swift
-startAnimating(size, message) // plus other parameters as in initializer.
-```
-
-Stop animating.
-
-```swift
-stopAnimating()
-```
-
-Or you can use `NVActivityIndicatorPresenter` to display UI blocker anywhere.
-
-Start animating.
-
-```swift
-let activityData = ActivityData()
-
-NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
-```
-
-_**Note:** Check [documentation](http://cocoadocs.org/docsets/NVActivityIndicatorView) for detail of `ActivityData`._
-
-Stop animating.
-
-```swift
-NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
-```
-
-Change message.
-
-```swift
-NVActivityIndicatorPresenter.sharedInstance.setMessage("Done")
-```
-
-## DEFAULTS
-
-There are global defaults for all `NVActivityIndicatorView` instances.
-
-- Default animation type.
-
-```swift
-NVActivityIndicatorView.DEFAULT_TYPE = .ballSpinFadeLoader
-```
-
-- Default color of activity indicator view.
-
-```swift
-NVActivityIndicatorView.DEFAULT_COLOR = UIColor.white
-```
-
-- Default color of the text below the activity indicator view when using an `NVActivityIndicatorPresenter`. The presentor will use the activity indicator `color` for the text if it is set but a `textColor` is not. `DEFAULT_TEXT_COLOR` is only used when neither are set.
-
-```swift
-NVActivityIndicatorView.DEFAULT_TEXT_COLOR = UIColor.white
-```
-
-- Default padding of activity indicator view.
-
-```swift
-NVActivityIndicatorView.DEFAULT_PADDING = CGFloat(0)
-```
-
-- Default size of activity indicator view used in UI blocker.
-
-```swift
-NVActivityIndicatorView.DEFAULT_BLOCKER_SIZE = CGSizeMake(60, 60)
-```
-
-- Default background color of UI blocker.
-
-```swift
-NVActivityIndicatorView.DEFAULT_BLOCKER_BACKGROUND_COLOR = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-```
-
-- Default display time threshold.
-
-> Default time that has to be elapsed (between calls of `startAnimating()` and `stopAnimating()`) in order to actually display UI blocker. It should be set thinking about what the minimum duration of an activity is to be worth showing it to the user. If the activity ends before this time threshold, then it will not be displayed at all.
-
-```swift
-NVActivityIndicatorView.DEFAULT_BLOCKER_DISPLAY_TIME_THRESHOLD = 0 // in milliseconds
-```
-
-- Default minimum display time.
-
-> Default minimum display time of UI blocker. Its main purpose is to avoid flashes showing and hiding it so fast. For instance, setting it to 200ms will force UI blocker to be shown for at least this time (regardless of calling `stopAnimating()` ealier).
-
-```swift
-NVActivityIndicatorView.DEFAULT_BLOCKER_MINIMUM_DISPLAY_TIME = 0 // in milliseconds
-```
-
-- Default message displayed in UI blocker.
-
-```swift
-NVActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE: String? = nil
-```
-
-- Default font of message displayed in UI blocker.
-
-```swift
-NVActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE_FONT = UIFont.boldSystemFont(ofSize: 20)
-```
-
-# Acknowledgment
-
-Thanks [Connor Atherton](https://github.com/ConnorAtherton) for great loaders and [Danil Gontovnik](https://github.com/gontovnik) for kick-start.
-
-# License
-
-The MIT License (MIT)
-
-Copyright (c) 2016 Vinh Nguyen [@ninjaprox](http://twitter.com/ninjaprox)
 

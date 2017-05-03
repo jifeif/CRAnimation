@@ -28,7 +28,7 @@
 {
     CRMemberInfoModel *authorInfo = [CRMemberInfoModel new];
     authorInfo.realName = @"";
-    authorInfo.nickName = @"Lex Tang";
+    authorInfo.nickName = @"LexTang";
     authorInfo.mail     = @"lexrus@gmail.com";
     authorInfo.qq       = @"";
     authorInfo.homePage = @"http://lexrus.com/";

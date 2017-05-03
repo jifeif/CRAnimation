@@ -67,6 +67,8 @@ $ pod install
 | S0014 <br> [PullToRefreshRentals](Example/CRAnimation/Demo/WidgetDemo/S0014_PullToRefreshRentals) <br> 折叠TabBar动画 | <img src="https://d13yacurqjgara.cloudfront.net/users/125056/screenshots/1650317/realestate-pull_1-2-3.gif" height=267 /> |
 | S0015 <br> [RQShineLabel](Example/CRAnimation/Demo/WidgetDemo/S0015_RQShineLabel) <br> 文字过渡动画 | <img src="http://omk22jt2z.bkt.clouddn.com/S0015_RQShineLabel_20170424.gif" height=267 /> |
 | S0016 <br> [NVActivityIndicatorView](Example/CRAnimation/Demo/WidgetDemo/S0016_NVActivityIndicatorView) <br> 各种实用的加载指示器 | <img src="http://omk22jt2z.bkt.clouddn.com/S0016_NVActivityIndicatorView_20170425.gif" height=267 /> |
+| S0017 <br> [LTMorphingLabel](Example/CRAnimation/Demo/WidgetDemo/S0017_LTMorphingLabel) <br> 炫酷的文字切换效果 | <img src="http://omk22jt2z.bkt.clouddn.com/S0017_LTMoriphingLabel_20170503.gif" height=267 /> |
+| S0018 <br> [CRRefresh](Example/CRAnimation/Demo/WidgetDemo/S0018_CRRefresh) <br> 炫酷的上拉刷新动效 | <img src="http://omk22jt2z.bkt.clouddn.com/S0018_CRRefresh.gif" height=267 /> |
 
 <!--|  S0003 <br> Gif demo <br> Gif播放控件 | <img src="http://omk22jt2z.bkt.clouddn.com/S0016_NVActivityIndicatorView_20170425.gif" width=150 /> |-->
 
@@ -89,6 +91,7 @@ $ pod install
 <br>
 <br>
 <br>
+
 
 
 
