@@ -245,7 +245,7 @@
 
 - (void)urlTapEvent
 {
-    [CRJumpWebViewManager jumpToUrlStr:_infoModel.originGitHubAddress inVC:_inVC];
+    [[CRJumpWebViewManager new] jumpToUrlStr:_infoModel.originGitHubAddress inVC:_inVC];
 }
 
 @end

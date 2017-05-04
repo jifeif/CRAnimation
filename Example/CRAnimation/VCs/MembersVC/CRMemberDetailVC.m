@@ -153,7 +153,7 @@ static NSString *__collectionViewReusableViewID = @"__collectionViewReusableView
 - (void)didTapUrlWtihUrlStr:(NSString *)urlStr
 {
     __weak typeof(self) weakSelf = self;
-    [CRJumpWebViewManager jumpToUrlStr:urlStr inVC:weakSelf];
+    [[CRJumpWebViewManager new] jumpToUrlStr:urlStr inVC:weakSelf];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout

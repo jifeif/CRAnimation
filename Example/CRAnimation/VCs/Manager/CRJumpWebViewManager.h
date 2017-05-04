@@ -11,6 +11,6 @@
 
 @interface CRJumpWebViewManager : NSObject
 
-+ (void)jumpToUrlStr:(NSString *)urlStr inVC:(__weak CRBaseViewController*)inVC;
+- (void)jumpToUrlStr:(NSString *)urlStr inVC:(__weak CRBaseViewController*)inVC;
 
 @end
