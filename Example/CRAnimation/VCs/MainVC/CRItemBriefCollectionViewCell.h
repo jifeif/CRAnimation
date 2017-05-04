@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CRDemoInfoModel.h"
+#define labelViewHeight 55
 
 @interface CRItemBriefCollectionViewCell : UICollectionViewCell
 

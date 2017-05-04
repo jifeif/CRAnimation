@@ -42,12 +42,12 @@
     self.layer.masksToBounds = YES;
     
     _imageView = [[CRFLAnimatiatedImageView alloc] init];
-    _imageView.frame = self.bounds;
+    _imageView.frame = CGRectMake(0, 0, self.width, self.height - labelViewHeight);
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
     _imageView.layer.masksToBounds = YES;
     [self addSubview:_imageView];
     
-    _labelView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.width, 55)];
+    _labelView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.width, labelViewHeight)];
     _labelView.backgroundColor = [UIColor whiteColor];
     [self addSubview:_labelView];
     
