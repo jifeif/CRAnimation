@@ -260,7 +260,6 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat cellWidth = (WIDTH - 55) / 2.0;
-    CGFloat cellHeight = 1.0 * HEIGHT6 / WIDTH6 * cellWidth;
     CGFloat cellHeight = 1.0 * HEIGHT6 / WIDTH6 * cellWidth + labelViewHeight;
     return (CGSize){cellWidth, cellHeight};
 }
