@@ -83,6 +83,8 @@ typedef enum {
 //  Gif地址
 @property (strong, nonatomic) NSString      *gifAddress;
 
+@property (strong, nonatomic) NSString      *imageSize;
+
 //  数据库用id
 @property (strong, nonatomic) NSNumber  *animationId;
 
@@ -90,5 +92,7 @@ typedef enum {
 @property (strong, nonatomic) NSArray <CRProductsMemberBriefInfoModel *> *designAuthors;
 
 - (void)fillDemoInfo;
+
++ (CGSize)caculateImageSize:(NSString *)imageSizeStr;
 
 @end

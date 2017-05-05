@@ -50,4 +50,17 @@
     return authorInfo;
 }
 
++ (CGSize)caculateImageSize:(NSString *)imageSizeStr
+{
+    CGSize imageSize = CGSizeZero;
+    imageSizeStr = [imageSizeStr stringByReplacingOccurrencesOfString:@"(" withString:@""];
+    imageSizeStr = [imageSizeStr stringByReplacingOccurrencesOfString:@")" withString:@""];
+    NSArray *sizeParaArray = [imageSizeStr componentsSeparatedByString:@","];
+    if ([sizeParaArray count] == 2) {
+        imageSize = CGSizeMake([sizeParaArray[0] floatValue], [sizeParaArray[1] floatValue]);
+    }
+    
+    return imageSize;
+}
+
 @end

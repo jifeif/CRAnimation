@@ -42,7 +42,6 @@
     self.layer.masksToBounds = YES;
     
     _imageView = [[CRFLAnimatiatedImageView alloc] init];
-    _imageView.frame = CGRectMake(0, 0, self.width, self.height - labelViewHeight);
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
     _imageView.layer.masksToBounds = YES;
     [self addSubview:_imageView];
@@ -71,7 +70,6 @@
     [_summaryLabel setWidth:self.width - 2 * off_x];
     [_labelView addSubview:_summaryLabel];
     
-    [_labelView BearSetRelativeLayoutWithDirection:kDIR_DOWN destinationView:nil parentRelation:YES distance:0 center:NO];
     [UIView BearV2AutoLayViewArray:(NSMutableArray *)@[_namelabel, _summaryLabel] layoutAxis:kLAYOUT_AXIS_Y alignmentType:kSetAlignmentType_Center alignmentOffDis:0 gapAray:@[@30, @22, @18]];
 }
 
@@ -88,6 +86,15 @@
     
     _namelabel.text = demoInfoModel.demoName;
     _summaryLabel.text = demoInfoModel.demoSummary;
+    
+    [self relayUI];
+}
+
+- (void)relayUI
+{
+    _imageView.frame = CGRectMake(0, 0, self.width, self.height - labelViewHeight);
+    
+    [_labelView BearSetRelativeLayoutWithDirection:kDIR_DOWN destinationView:nil parentRelation:YES distance:0 center:NO];
 }
 
 @end

@@ -260,8 +260,18 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat cellWidth = (WIDTH - 55) / 2.0;
-    CGFloat cellHeight = 1.0 * HEIGHT6 / WIDTH6 * cellWidth + labelViewHeight;
-    return (CGSize){cellWidth, cellHeight};
+    CGFloat cellHeight = 0;
+    
+    CRDemoInfoModel *demoInfoModel = _dataArrayDemoModel[indexPath.section][indexPath.row];
+    CGSize caculateSize = [CRDemoInfoModel caculateImageSize:demoInfoModel.imageSize];
+    if (caculateSize.width != 0 && caculateSize.height != 0) {
+        CGFloat scaleRatio = 1.0 * caculateSize.width / cellWidth;
+        cellHeight = 1.0 * caculateSize.height / scaleRatio + labelViewHeight;
+    }else{
+        cellHeight = 1.0 * HEIGHT6 / WIDTH6 * cellWidth + labelViewHeight;
+    }
+    
+    return CGSizeMake(cellWidth, cellHeight);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
