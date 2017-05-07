@@ -67,25 +67,6 @@
 		0950D5B11E54B0D4009214E2 /* CRParticipateMembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5B01E54B0D4009214E2 /* CRParticipateMembersView.m */; };
 		0950D5B41E54B269009214E2 /* CRParticipateMemberCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D5B31E54B269009214E2 /* CRParticipateMemberCollectionCell.m */; };
 		096FCA831EBEECAF00A5D8AC /* CRFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 096FCA821EBEECAF00A5D8AC /* CRFlowLayout.m */; };
-		096FCA971EBEFC2600A5D8AC /* C0001_CRMusicCardDemoVC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DE1EA7C6550064D100 /* C0001_CRMusicCardDemoVC.gif */; };
-		096FCA981EBEFC2600A5D8AC /* S0001_CRCardAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1DF1EA7C6550064D100 /* S0001_CRCardAnimation_20170322.gif */; };
-		096FCA991EBEFC2600A5D8AC /* S0002_CRGradientAnimation_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E01EA7C6550064D100 /* S0002_CRGradientAnimation_20170322.gif */; };
-		096FCA9A1EBEFC2600A5D8AC /* S0003_GifPlay.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E11EA7C6550064D100 /* S0003_GifPlay.gif */; };
-		096FCA9B1EBEFC2600A5D8AC /* S0004_WCLLoadingView_20170420.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E21EA7C6550064D100 /* S0004_WCLLoadingView_20170420.gif */; };
-		096FCA9C1EBEFC2600A5D8AC /* S0005_HZLaunchView_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E31EA7C6550064D100 /* S0005_HZLaunchView_20170322.gif */; };
-		096FCA9D1EBEFC2600A5D8AC /* S0006_CCWorm_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E41EA7C6550064D100 /* S0006_CCWorm_20170322.gif */; };
-		096FCA9E1EBEFC2600A5D8AC /* S0007_CRGatling_20170309.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E51EA7C6550064D100 /* S0007_CRGatling_20170309.gif */; };
-		096FCA9F1EBEFC2600A5D8AC /* S0008_JHUD_20170311.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E61EA7C6550064D100 /* S0008_JHUD_20170311.gif */; };
-		096FCAA01EBEFC2600A5D8AC /* S0009_WCLShineButton_20170322.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E71EA7C6550064D100 /* S0009_WCLShineButton_20170322.gif */; };
-		096FCAA11EBEFC2600A5D8AC /* S0010_RollerCoasterLayer_20170312.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E81EA7C6550064D100 /* S0010_RollerCoasterLayer_20170312.gif */; };
-		096FCAA21EBEFC2600A5D8AC /* S0011_HJWCircleView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1E91EA7C6550064D100 /* S0011_HJWCircleView.gif */; };
-		096FCAA31EBEFC2600A5D8AC /* S0012_HJWWaterWave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09FAC1EA1EA7C6550064D100 /* S0012_HJWWaterWave.gif */; };
-		096FCAA41EBEFC2600A5D8AC /* S0013_FoldingTabBar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09EF431B1EAAFC5400825254 /* S0013_FoldingTabBar.gif */; };
-		096FCAA51EBEFC2600A5D8AC /* S0014_PullToRefreshRentals.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B93B1EAD0622003FAA5D /* S0014_PullToRefreshRentals.gif */; };
-		096FCAA61EBEFC2600A5D8AC /* S0015_RQShineLabel_20170424.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B9461EAE4F2F003FAA5D /* S0015_RQShineLabel_20170424.gif */; };
-		096FCAA71EBEFC2600A5D8AC /* S0016_NVActivityIndicatorView_20170425.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0905B9641EAFA6BB003FAA5D /* S0016_NVActivityIndicatorView_20170425.gif */; };
-		096FCAA81EBEFC2600A5D8AC /* S0017_LTMoriphingLabel_20170503.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09362BE21EBA27E2001FAA46 /* S0017_LTMoriphingLabel_20170503.gif */; };
-		096FCAA91EBEFC2600A5D8AC /* S0018_CRRefresh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 977889241EB2339E00F163D2 /* S0018_CRRefresh.gif */; };
 		0996C44E1E4764A1000CA8EC /* CRBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0996C44B1E4764A1000CA8EC /* CRBaseTabBarController.m */; };
 		09A63EAC1E7849A000E93AEA /* CRBaseWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A63EAB1E7849A000E93AEA /* CRBaseWebVC.m */; };
 		09A63EAF1E784A4300E93AEA /* CRJumpWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A63EAE1E784A4300E93AEA /* CRJumpWebViewManager.m */; };
@@ -1256,37 +1237,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				096FCAA31EBEFC2600A5D8AC /* S0012_HJWWaterWave.gif in Resources */,
 				3734D39C1E977E560022D537 /* sound_press_long.wav in Resources */,
-				096FCAA11EBEFC2600A5D8AC /* S0010_RollerCoasterLayer_20170312.gif in Resources */,
-				096FCA991EBEFC2600A5D8AC /* S0002_CRGradientAnimation_20170322.gif in Resources */,
-				096FCAA41EBEFC2600A5D8AC /* S0013_FoldingTabBar.gif in Resources */,
 				97218BBA1EB24E4E0002F4E7 /* LTMorphingLabelDemo.storyboard in Resources */,
-				096FCA981EBEFC2600A5D8AC /* S0001_CRCardAnimation_20170322.gif in Resources */,
-				096FCA9D1EBEFC2600A5D8AC /* S0006_CCWorm_20170322.gif in Resources */,
 				0905B93A1EAD0356003FAA5D /* YALSunnyRefreshControl.xib in Resources */,
-				096FCAA51EBEFC2600A5D8AC /* S0014_PullToRefreshRentals.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				0950D5AB1E54A5DF009214E2 /* iTunesArtwork@3x in Resources */,
-				096FCAA01EBEFC2600A5D8AC /* S0009_WCLShineButton_20170322.gif in Resources */,
-				096FCA9E1EBEFC2600A5D8AC /* S0007_CRGatling_20170309.gif in Resources */,
-				096FCA9B1EBEFC2600A5D8AC /* S0004_WCLLoadingView_20170420.gif in Resources */,
-				096FCAA81EBEFC2600A5D8AC /* S0017_LTMoriphingLabel_20170503.gif in Resources */,
 				977889321EB246C300F163D2 /* CRRefreshNormalCellTableViewCell.xib in Resources */,
-				096FCA9C1EBEFC2600A5D8AC /* S0005_HZLaunchView_20170322.gif in Resources */,
-				096FCA971EBEFC2600A5D8AC /* C0001_CRMusicCardDemoVC.gif in Resources */,
-				096FCAA61EBEFC2600A5D8AC /* S0015_RQShineLabel_20170424.gif in Resources */,
 				3734D39D1E977E560022D537 /* sound_press_short.wav in Resources */,
-				096FCA9F1EBEFC2600A5D8AC /* S0008_JHUD_20170311.gif in Resources */,
-				096FCAA91EBEFC2600A5D8AC /* S0018_CRRefresh.gif in Resources */,
 				0950D5A91E54A5DF009214E2 /* iTunesArtwork in Resources */,
 				0950D5AA1E54A5DF009214E2 /* iTunesArtwork@2x in Resources */,
 				977889341EB246C300F163D2 /* CRRefreshTableViewCell.xib in Resources */,
-				096FCA9A1EBEFC2600A5D8AC /* S0003_GifPlay.gif in Resources */,
-				096FCAA21EBEFC2600A5D8AC /* S0011_HJWCircleView.gif in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				092A2D6A1DBCA8DA00650DE1 /* WCLLoadingViewDemoVC.xib in Resources */,
-				096FCAA71EBEFC2600A5D8AC /* S0016_NVActivityIndicatorView_20170425.gif in Resources */,
 				ED36EAD41DD2AF9B0050416B /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

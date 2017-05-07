@@ -9,10 +9,18 @@
 #import "CRFLAnimatiatedImageView.h"
 #import "UIImageView+WebCache.h"
 
+@interface CRFLAnimatiatedImageView ()
+{
+    NSString *_urlStr;
+}
+
+@end
+
 @implementation CRFLAnimatiatedImageView
 
 - (void)setGifImageWithURLStr:(NSString *)urlStr
 {
+    _urlStr = urlStr;
     __weak typeof(self) weakSelf = self;
     
     //  clean
@@ -36,7 +44,9 @@
                                                                     toDisk:YES
                                                                 completion:nil];
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf setGifImageWithGifImageData:data];
+                    if ([urlStr isEqualToString:_urlStr]) {
+                        [weakSelf setGifImageWithGifImageData:data];
+                    }
                 });
             }];
     }
