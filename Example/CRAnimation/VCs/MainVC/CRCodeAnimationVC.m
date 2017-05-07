@@ -12,6 +12,7 @@
 #import "CRHomeNaviBarView.h"
 #import "CRJumpManager.h"
 #import "CRProductsRequest.h"
+#import "CRFlowLayout.h"
 
 static NSString *collectionViewCellID           = @"collectionViewCellID";
 static NSString *collectionViewReusableViewID   = @"collectionViewReusableViewID";
@@ -19,7 +20,7 @@ static NSString *collectionViewReusableViewID   = @"collectionViewReusableViewID
 static NSString *__kCRDemoStorage       = @"动效仓库";
 static NSString *__kCRDemoCombination   = @"组合动效";
 
-@interface CRCodeAnimationVC () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface CRCodeAnimationVC () <UICollectionViewDataSource, UICollectionViewDelegate>
 {
     CRHomeNaviBarView   *_naviBarView;
 }
@@ -29,6 +30,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 @property (strong, nonatomic) NSArray           *storageDemoInfoModelNameArray;
 @property (strong, nonatomic) NSArray           *combinationDemoInfoModelNameArray;
 @property (strong, nonatomic) UICollectionView  *mainCollectionView;
+@property (strong, nonatomic) CRFlowLayout      *flowLayout;
 
 @end
 
@@ -194,7 +196,7 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 #pragma mark - Create UI
 - (void)createUI
 {
-    self.view.backgroundColor = color_Master;
+    self.view.backgroundColor = color_0a090e;
     
     [self createNaviBarView];
     [self createCollectionView];
@@ -209,14 +211,12 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (void)createCollectionView
 {
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    
-    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, _naviBarView.maxY, WIDTH, HEIGHT - _naviBarView.maxY - TABBAR_HEIGHT) collectionViewLayout:layout];
-    _mainCollectionView.backgroundColor = color_Master;
+    _mainCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, _naviBarView.maxY, WIDTH, HEIGHT - _naviBarView.maxY - TABBAR_HEIGHT) collectionViewLayout:self.flowLayout];
+    _mainCollectionView.backgroundColor = color_0a090e;
+    [_mainCollectionView registerClass:[CRItemBriefCollectionViewCell class] forCellWithReuseIdentifier:collectionViewCellID];
     _mainCollectionView.delegate = self;
     _mainCollectionView.dataSource = self;
     [self.view addSubview:_mainCollectionView];
-    [_mainCollectionView registerClass:[CRItemBriefCollectionViewCell class] forCellWithReuseIdentifier:collectionViewCellID];
 }
 
 
@@ -224,12 +224,21 @@ static NSString *__kCRDemoCombination   = @"组合动效";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
+    if (!_dataArrayDemoModel) {
+        return 0;
+    }
+    
     return [_dataArrayDemoModel count];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return [_dataArrayDemoModel[section] count];
+    if (!_dataArrayDemoModel) {
+        return 0;
+    }
+    
+    NSInteger itemsCount = [_dataArrayDemoModel[section] count];
+    return itemsCount;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -255,38 +264,33 @@ static NSString *__kCRDemoCombination   = @"组合动效";
     [[CRJumpManager commonManagerInVC:weakSelf] jumpToProductDetailVCWithDemoInfoModel:demoInfoModel];
 }
 
-#pragma mark - UICollectionViewDelegateFlowLayout
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - Setter & Getter
+- (CRFlowLayout *)flowLayout
 {
-    CGFloat cellWidth = (WIDTH - 55) / 2.0;
-    CGFloat cellHeight = 0;
-    
-    CRDemoInfoModel *demoInfoModel = _dataArrayDemoModel[indexPath.section][indexPath.row];
-    CGSize caculateSize = [CRDemoInfoModel caculateImageSize:demoInfoModel.imageSize];
-    if (caculateSize.width != 0 && caculateSize.height != 0) {
-        CGFloat scaleRatio = 1.0 * caculateSize.width / cellWidth;
-        cellHeight = 1.0 * caculateSize.height / scaleRatio + labelViewHeight;
-    }else{
-        cellHeight = 1.0 * HEIGHT6 / WIDTH6 * cellWidth + labelViewHeight;
+    if (!_flowLayout) {
+        _flowLayout = [[CRFlowLayout alloc] init];
+        _flowLayout.sectionInset = UIEdgeInsetsMake(12.5, 20, 5, 20);
+        _flowLayout.lineNumber = 2;
+        _flowLayout.rowSpacing = 15.f;
+        _flowLayout.lineSpacing = 15.f;
+        
+        [_flowLayout computeIndexCellHeightWithWidthBlock:^CGFloat(NSIndexPath *indexPath, CGFloat width) {
+            
+            CGFloat cellHeight = 0;
+            CRDemoInfoModel *demoInfoModel = _dataArrayDemoModel[indexPath.section][indexPath.row];
+            CGSize caculateSize = [CRDemoInfoModel caculateImageSize:demoInfoModel.imageSize];
+            if (width != 0 && caculateSize.height != 0) {
+                CGFloat scaleRatio = 1.0 * caculateSize.width / width;
+                cellHeight = 1.0 * caculateSize.height / scaleRatio + labelViewHeight;
+            }else{
+                cellHeight = 1.0 * HEIGHT6 / WIDTH6 * width + labelViewHeight;
+            }
+            
+            return cellHeight;
+        }];
     }
     
-    return CGSizeMake(cellWidth, cellHeight);
-}
-
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    return UIEdgeInsetsMake(12.5, 20, 5, 20);
-}
-
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
-{
-    return 15.f;
-}
-
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
-{
-    return 15.f;
+    return _flowLayout;
 }
 
 @end
