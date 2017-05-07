@@ -37,6 +37,8 @@ typedef NS_ENUM(NSUInteger, kSDIRECTION) {
 #define color_333333    UIColorFromHEX(0x333333)
 #define color_9a9ba9    UIColorFromHEX(0x9a9ba9)
 
+#define color_ffffff    UIColorFromHEX(0xffffff)
+
 #define color_Master    color_323341
 
 //  适配对应 高度 < 5高度时，高度 = 5高度
