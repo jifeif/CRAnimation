@@ -203,8 +203,10 @@
     NSURL * fileUrl = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:soundName ofType:soundType]];
     // 系统API播放
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)fileUrl, &_soundFileObject);
-    //    AudioServicesPlaySystemSound(_soundFileObject);
-    AudioServicesPlayAlertSound(_soundFileObject);
+    //  播放音频
+    AudioServicesPlaySystemSound(_soundFileObject);
+    //  播放音频+震动
+//    AudioServicesPlayAlertSound(_soundFileObject);
 }
 
 
